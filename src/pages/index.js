@@ -2,6 +2,8 @@ import React from "react"
 // import Header from "../components/header"
 import Footer from "../components/footer"
 // import { Link } from "gatsby"
+import { WorkshopCardList } from '../components/WorkshopCardList'
+import workshopData from './workshop-data'
 
 export default () => (
     <div style={{ color: `purple` }}>
@@ -123,7 +125,8 @@ export default () => (
               <div className="inner-blog">
                 <div>
                   <div className="row">
-                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <WorkshopCardList items={workshopData} />
+                    {/* <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
                           <a href="workshops.html#vue-vixens"><img className="img-fluid" src="assets/img/workshops/vue-vixens.png" alt="Vue Vixens Workshop" /></a>
@@ -242,7 +245,7 @@ export default () => (
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 {/* /row end*/}
