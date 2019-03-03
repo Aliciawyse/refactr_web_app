@@ -27,7 +27,7 @@ export default () =>
                     <form id="mc-embedded-subscribe-form" className="validate">
                         <input type="text" placeholder="Your email address " name="EMAIL" className="required email" id="mce-EMAIL"/>
                           
-                        <div style={{position: "absolute", left: "-5000px", ariaHidden: "true"}}><input type="text" tabindex="-1" value=""/></div>
+                        <div style={{position: "absolute", left: "-5000px", ariaHidden: "true"}}><input type="text" tabIndex="-1" /></div>
             
                         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
                     </form>
@@ -45,7 +45,7 @@ export default () =>
         <div className="col-lg-12">
             <div className="copyright">
                 <p>©2018-2019 ConnectEvents.io</p>
-                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="/privacy-policy">Privacy Policy</a>
             </div>
         </div>
     </div>

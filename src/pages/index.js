@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
+// import Header from "../components/header"
 import Footer from "../components/footer"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 export default () => (
     <div style={{ color: `purple` }}>
@@ -24,7 +24,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-2">
                   <div className="brand-logo">
-                    <a className="eventex-brand" href="index.html"><img src="assets/img/logo/logo-3.png?123" alt /></a>
+                    <a className="eventex-brand" href="index.html"><img src="assets/img/logo/logo-3.png?123" alt="logo" /></a>
                   </div>
                 </div>
                 {/* /col end*/}
@@ -36,10 +36,10 @@ export default () => (
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                          <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                          <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="about.html">About</a>
+                          <a className="nav-link" href="/about">About</a>
                           {/*ul class="dropdown-menu animation  slideUpIn">
                                             <li>
                                                 <a href="about.html">About Us</a>
@@ -56,7 +56,7 @@ export default () => (
                                         </ul*/}
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="code-of-conduct.html">Code of Conduct</a>
+                          <a className="nav-link" href="/code-of-conduct">Code of Conduct</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link " href="https://cfp.connectevents.io/en/refactr2019/cfp/session/new" rel="noreferrer noopener" target="_blank">Call for Speakers</a>
@@ -66,7 +66,7 @@ export default () => (
                         </li>
                         <li className="nav-item d-lg-none ">
                           <a className="nav-link" href="https://tickets.connectevents.io/events/rtech2019/" rel="noreferrer noopener" target="_blank">Tickets</a>
-                        </li>   
+                        </li>
                       </ul>
                     </div>
                   </nav>
@@ -126,7 +126,7 @@ export default () => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#vue-vixens"><img className="img-fluid" src="assets/img/workshops/vue-vixens.png" alt /></a>
+                          <a href="workshops.html#vue-vixens"><img className="img-fluid" src="assets/img/workshops/vue-vixens.png" alt="Vue Vixens Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#vue-vixens">
@@ -146,7 +146,7 @@ export default () => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#cypress"><img className="img-fluid" src="assets/img/workshops/cypress.png" alt /></a>
+                          <a href="workshops.html#cypress"><img className="img-fluid" src="assets/img/workshops/cypress.png" alt="Cypress Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#cypress">
@@ -166,7 +166,7 @@ export default () => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#graphql"><img className="img-fluid" src="assets/img/workshops/graphql.png" alt /></a>
+                          <a href="workshops.html#graphql"><img className="img-fluid" src="assets/img/workshops/graphql.png" alt="GraphQL Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#graphql">
@@ -186,7 +186,7 @@ export default () => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#gatsby"><img className="img-fluid" src="assets/img/workshops/gatsby.png" alt /></a>
+                          <a href="workshops.html#gatsby"><img className="img-fluid" src="assets/img/workshops/gatsby.png" alt="Gatsby Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#gatsby">
@@ -203,10 +203,10 @@ export default () => (
                         </div>
                       </div>
                     </div>
-                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">   
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#a11y"><img className="img-fluid" src="assets/img/workshops/a11y.png" alt /></a>
+                          <a href="workshops.html#a11y"><img className="img-fluid" src="assets/img/workshops/a11y.png" alt="Accessibility Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#a11y">
@@ -226,7 +226,7 @@ export default () => (
                     <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                       <div className="single-blog mb30">
                         <div className="blog-img">
-                          <a href="workshops.html#flutter"><img className="img-fluid" src="assets/img/workshops/flutter.png" alt /></a>
+                          <a href="workshops.html#flutter"><img className="img-fluid" src="assets/img/workshops/flutter.png" alt="Flutter Workshop" /></a>
                         </div>
                         <div className="blog-content">
                           <a href="workshops.html#flutter">
@@ -346,7 +346,7 @@ export default () => (
                       <a href="https://twitter.com/mekkaokereke" rel="noreferrer noopener" target="_blank">
                         <h3>Mekka Okereke</h3>
                       </a>
-                      <p>Engineering Director</p> 
+                      <p>Engineering Director</p>
                       <h6>Google</h6>
                     </div>
                   </div>
@@ -365,7 +365,7 @@ export default () => (
                       <a href="https://twitter.com/Tzmanics" rel="noreferrer noopener" target="_blank">
                         <h3>Tara Z. Manicsic</h3>
                       </a>
-                      <p>Developer Advocate</p> 
+                      <p>Developer Advocate</p>
                       <h6>Progress</h6>
                     </div>
                   </div>
@@ -478,10 +478,11 @@ export default () => (
                       </ul>
                     </div>
                     <div className="spk-info">
-                      <a href="https://twitter.com/ChloeCondon" rel="noreferrer noopener" target="_blank" />
-                      <h3>Chloe Condon</h3>
-                      <p>Sr. Cloud Developer Advocate</p>
-                      <h6>Microsoft</h6>
+                      <a href="https://twitter.com/ChloeCondon" rel="noreferrer noopener" target="_blank">
+                        <h3>Chloe Condon</h3>
+                        <p>Sr. Cloud Developer Advocate</p>
+                        <h6>Microsoft</h6>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -583,7 +584,7 @@ export default () => (
                     </div>
                   </div>
                 </div>
-                {/* /col end*/}                  
+                {/* /col end*/}
                 <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
                   <div className="speakers">
                     <div className="spk-img">
@@ -940,7 +941,7 @@ export default () => (
           {/* /container end*/}
         </div>
         {/*Contact Us Area End Here*/}
-        
+
         {/*Main Container End Here*/}
         {/*All Js Here*/}
         {/* Google Map js */}

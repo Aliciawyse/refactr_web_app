@@ -20,7 +20,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-2">
                   <div className="brand-logo">
-                    <a className="eventex-brand" href="index.html"><img src="assets/img/logo/logo-3.png?123" alt /></a>
+                    <a className="eventex-brand" href="/"><img src="assets/img/logo/logo-3.png?123" alt="logo" /></a>
                   </div>
                 </div>
                 {/* /col end*/}
@@ -32,10 +32,10 @@ export default () => (
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                          <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                          <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="about.html">About</a>
+                          <a className="nav-link" href="/about">About</a>
                           {/*ul class="dropdown-menu animation  slideUpIn">
                                             <li>
                                                 <a href="about.html">About Us</a>
@@ -52,7 +52,7 @@ export default () => (
                                         </ul*/}
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="code-of-conduct.html">Code of Conduct</a>
+                          <a className="nav-link" href="/code-of-conduct">Code of Conduct</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link " href="https://cfp.connectevents.io/en/refactr2019/cfp/session/new" rel="noreferrer noopener" target="_blank">Call for Speakers</a>
@@ -62,7 +62,7 @@ export default () => (
                         </li>
                         <li className="nav-item d-lg-none ">
                           <a className="nav-link" href="https://tickets.connectevents.io/events/rtech2019/" rel="noreferrer noopener" target="_blank">Tickets</a>
-                        </li>   
+                        </li>
                       </ul>
                     </div>
                   </nav>
@@ -129,7 +129,7 @@ export default () => (
                     <p>If you choose to attend DevNexus your visit and any dispute over privacy is subject to this notice, including limitations on damages, arbitration of disputes, and application of the law of the state of Georgia. If you have any concern about privacy at DevNexus, please contact us with a thorough description, and we will try to resolve it.</p>
                     <p>Our business changes constantly, and our Privacy Notice will change also. We may e-mail periodic reminders of our notices and conditions, unless you have instructed us not to, but you should check our website frequently to see recent changes. Unless stated otherwise, our current Privacy Notice applies to all information that we have about you. We stand behind the promises we make, however, and will never materially change our policies and practices to make them less protective of customer information collected in the past without the consent of affected customers</p>
                     <h2>Opting Out of Receiving Communications</h2>
-                    <p>You may opt-out of receiving communications from REFACTR.TECH by sending an email to 
+                    <p>You may opt-out of receiving communications from REFACTR.TECH by sending an email to
                       <strong>hello [at] REFACTR dot TECH </strong>
                     </p>
                   </div>
@@ -141,7 +141,7 @@ export default () => (
             {/* /container end*/}
           </div>
           {/*Privacy Policy Content Area End Here*/}
-          
+
         </div>
         {/*Main Container End Here*/}
         {/*All Js Here*/}

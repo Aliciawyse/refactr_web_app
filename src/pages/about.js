@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import { Link } from "gatsby"
+// import Header from "../components/header"
+// import Footer from "../components/footer"
+// import { Link } from "gatsby"
 
 export default () => (
   <div>
@@ -23,7 +23,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-2">
                   <div className="brand-logo">
-                    <a className="eventex-brand" href="index.html"><img src="assets/img/logo/logo-3.png?123" alt /></a>
+                    <a className="eventex-brand" href="/"><img src="assets/img/logo/logo-3.png?123" alt="logo" /></a>
                   </div>
                 </div>
                 {/* /col end*/}
@@ -35,10 +35,10 @@ export default () => (
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                          <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                          <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                          <a className="nav-link" href="#">About</a>
+                          <a className="nav-link" href="/about">About</a>
                           {/*ul class="dropdown-menu animation  slideUpIn">
                                             <li>
                                                 <a href="about.html">About Us</a>
@@ -55,7 +55,7 @@ export default () => (
                                         </ul*/}
                         </li>
                         <li className="nav-item">
-                          <a className="nav-link" href="code-of-conduct.html">Code of Conduct</a>
+                          <a className="nav-link" href="/code-of-conduct">Code of Conduct</a>
                         </li>
                         <li className="nav-item">
                           <a className="nav-link " href="https://cfp.connectevents.io/en/refactr2019/cfp/session/new" rel="noreferrer noopener" target="_blank">Call for Speakers</a>
@@ -65,7 +65,7 @@ export default () => (
                         </li>
                         <li className="nav-item d-lg-none ">
                           <a className="nav-link" href="https://tickets.connectevents.io/events/rtech2019/" rel="noreferrer noopener" target="_blank">Tickets</a>
-                        </li>   
+                        </li>
                       </ul>
                     </div>
                   </nav>
@@ -95,7 +95,7 @@ export default () => (
                       <h2>About Us</h2>
                     </div>
                     <ol className="breadcrumb">
-                      <li><a href="index.html">Home</a></li>
+                      <li><a href="/">Home</a></li>
                       <li>|</li>
                       <li>About us</li>
                     </ol>
@@ -113,7 +113,7 @@ export default () => (
             <div className="container">
               <div className="row">
                 <div className="col-lg-5 xs-mb40">
-                  <img className="img-fluid" src="assets/img/others/element.png?123" alt />
+                  <img className="img-fluid" src="assets/img/others/element.png?123" alt="element" />
                 </div>
                 <div className="col-lg-7">
                   <div className="inner-content">
@@ -197,7 +197,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-5 col-md-12">
                   <div className="speakers-img">
-                    <img className="img-fluid" src="assets/img/team/organizers/angel.jpg" alt width={400} height={400} />
+                    <img className="img-fluid" src="assets/img/team/organizers/angel.jpg" alt="Angel" width={400} height={400} />
                   </div>
                 </div>
                 {/* /.col end*/}
@@ -220,7 +220,7 @@ export default () => (
               <div className="row pad100">
                 <div className="col-lg-5 col-md-12">
                   <div className="speakers-img">
-                    <img className="img-fluid" src="assets/img/team/organizers/beth.jpg" alt />
+                    <img className="img-fluid" src="assets/img/team/organizers/beth.jpg" alt="Beth Laing" />
                   </div>
                 </div>
                 {/* /.col end*/}
@@ -245,7 +245,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-5 col-md-12">
                   <div className="speakers-img">
-                    <img className="img-fluid" src="assets/img/team/organizers/erica.jpg" alt />
+                    <img className="img-fluid" src="assets/img/team/organizers/erica.jpg" alt="Erica Stanley" />
                   </div>
                 </div>
                 {/* /.col end*/}
@@ -281,7 +281,7 @@ export default () => (
                 <div className="col-lg-5">
                   <div className="am">
                     <div className="f-logo">
-                      <img src="assets/img/logo/logo-2.png?123" width={428} height={188} alt />
+                      <img src="assets/img/logo/logo-2.png?123" width={428} height={188} alt="logo" />
                     </div>
                     <div className="border-right" />
                   </div>
@@ -347,3 +347,4 @@ export default () => (
         {/* template main js file */}
       </div>
 )
+

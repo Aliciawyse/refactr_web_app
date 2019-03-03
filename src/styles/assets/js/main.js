@@ -1,3 +1,6 @@
+import WOW from "wowjs";
+import Lightbox from 'react-images';
+
 (function ($) {
     "use strict";
 
@@ -193,7 +196,7 @@
         /*----------------------------
          Lightbox
         ------------------------------ */
-        lightbox.option({
+        Lightbox.option({
             'resizeDuration': 700,
             'wrapAround': true
         })
