@@ -13,5 +13,6 @@ The goals are to:
 - Navigate to the terminal
 - Clone this repo with `git@github.com:Aliciawyse/refactr_web_app.git`
 - `cd` to refactr_web_app
-- Run `gatsby develop`
+- run `npm install`
+- Run `npm run develop`
 - Open up a new tab in your browser and navigate to http://localhost:8000.
