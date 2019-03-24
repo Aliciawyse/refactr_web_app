@@ -113,6 +113,37 @@ export default () => (
           </div>
           {/*Hero Banner Area End Here*/}
           {/*Feature Area Start Here*/}
+
+{/* Topics Section */}
+      <section className="topics-section-two">
+        {/* <span className="float-text">Session Topics</span> */}
+        <div className="anim-icons">
+          <span className="icon icon-circle-3" />
+          <span className="icon icon-circle-5" />
+        </div>
+        <div className="auto-container">
+          <div className="sec-title">
+            <h2>Tracks</h2>
+          </div>
+          {/*Event Topics*/}
+          <div className="event-topics-tabs">
+            <div className="tabs-box">
+              {/*Tab Btns*/}
+              <ul className="tab-btns tab-buttons clearfix">
+                <li data-tab="#tab1" className="tab-btn"><div>Front-End Engineering</div></li>
+                <li data-tab="#tab2" className="tab-btn"><div>Software Engineering</div></li>
+                <li data-tab="#tab3" className="tab-btn"><div>Product &amp; UX</div></li>
+                <li data-tab="#tab3" className="tab-btn"><div>Cool $h!t</div></li>
+                <li data-tab="#tab4" className="tab-btn"><div>Career &amp; Leadership</div></li>
+                <li data-tab="#tab3" className="tab-btn"><div>Social Impact</div></li>
+              </ul>                
+            </div>
+          </div>
+          {/*End Product Info Tabs*/}  
+        </div>
+      </section>
+
+
           <div className="our-blog-area  pad100">
             <div className="container">
               <div className="row">
@@ -187,6 +218,84 @@ export default () => (
             {/* /container end*/}
           </div>
           {/*Counter Up Area End Here*/}
+
+{/*Keynote Speaker Area Start Here*/}
+      <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <p>Introducing Our Keynote Speakers</p>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /.row  end*/}
+          <div className="row">
+            <div className="col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="img/speakers/tracy-lee.jpeg" alt="trainer-img" />
+                  {/*ul>
+                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul*/}
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/ladyleet" rel="noreferrer noopener" target="_blank">
+                    <h3 style={{color: 'white'}}>Tracy Lee</h3>
+                  </a>
+                  <h6 style={{color: '#aaa'}}>Co-founder, This Dot Labs</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="img/speakers/kortney-ziegler.jpg" alt="trainer-img" />
+                  {/*ul>
+                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul*/}
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/fakerapper" rel="noreferrer noopener" target="_blank">
+                    <h3 style={{color: 'white'}}>Kortney Ziegler</h3>
+                  </a>
+                  <h6 style={{color: '#aaa'}}>Director of Research and Design, ZaMLabs</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="img/speakers/alex-castillo-headshot-square.jpg" alt="trainer-img" />
+                  {/*ul>
+                                                <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul*/}
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/castillo__io" rel="noreferrer noopener" target="_blank">
+                    <h3 style={{color: 'white'}}>Alex Castillo</h3>
+                  </a>
+                  <h6 style={{color: '#aaa'}}>Co-Founder, Neurosity</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* /row end*/}
+        </div>
+        {/* /container end*/}
+      </div>
+      {/*Keynote Speakers Area End Here*/}
+
+
+
           {/*Whos Speaking Area Start Here*/}
           <div className="whos-speaking-area pad100">
             <div className="container">
@@ -215,6 +324,188 @@ export default () => (
             {/* /container end*/}
           </div>
           {/*Whos Speaking Area End Here*/}
+
+{/*Pricing Tables Area Start Here*/}
+      <div className="pricing-tables-area pad-b100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>2-Day Conference Pricing</h2>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /row end*/}
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 175
+                  </div>
+                </div>
+                <div className="pricing-title">Early Bird (Ended)</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <div className="bordered-btn" style={{color: 'red'}}>
+                  <a href>Sold Out</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 250
+                  </div>
+                </div>
+                <div className="pricing-title">Regular - Ends May 26</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <div className="bordered-btn">
+                  <a href="https://tickets.connectevents.io/events/rtech2019/">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 300
+                  </div>
+                </div>
+                <div className="pricing-title">Late</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <div className="bordered-btn">
+                  <a href="https://tickets.connectevents.io/events/rtech2019/">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /row end*/}
+          <div className="row mt60">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>3-Day Conference + Workshop Pricing</h2>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /row end*/}
+          <div className="row">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 275
+                  </div>
+                </div>
+                <div className="pricing-title">Early Bird + Workshop (Ended)</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Choice of 1 Full-Day <a href="workshops.html">Workshop</a></li>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <div className="bordered-btn">
+                  <a href>Sold Out</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 375
+                  </div>
+                </div>
+                <div className="pricing-title">Regular + Workshop - Ends May 26</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Choice of 1 Full-Day <a href="workshops.html">Workshop</a></li>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <div className="bordered-btn">
+                  <a href="https://tickets.connectevents.io/events/rtech2019/">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="pricing-box bg-pricing xs-mb30">
+                <div className="pricing-header">
+                  <div className="pricing-value">
+                    <span>$</span> 425
+                  </div>
+                </div>
+                <div className="pricing-title">Late + Workshop</div>
+                <div className="pricing-content">
+                  <ul>
+                    <li>Choice of 1 Full-Day <a href="workshops.html">Workshop</a></li>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 6 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                  </ul>
+                </div>
+                <br />
+                <div className="bordered-btn">
+                  <a href="https://tickets.connectevents.io/events/rtech2019/">Buy Ticket</a>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /row end*/}
+        </div>
+        {/* /container end*/}
+      </div>
+      {/*Pricing Tables Area End Here*/}
+
+
+
+
           {/*Our Sponsors Area Start Here*/}
           <div className="our-sponsers-area-tow pad100 bg-color">
             <div className="container">

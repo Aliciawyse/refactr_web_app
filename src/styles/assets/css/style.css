@@ -483,7 +483,7 @@ a {
   background-attachment: scroll; }
 
 .bg-pricing {
-  background-image: url("../img/others/1.png");
+  background-image: url("../img/others/6.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -2357,3 +2357,208 @@ a {
 
 .shop button {
   top: 10px !important; }
+
+  /*** 
+====================================================================
+		Topics Section Two
+====================================================================
+***/
+
+.topics-section-two{
+	position: relative;
+	padding: 140px 0 30px;
+	counter-reset:count;
+}
+
+.topics-section-two.style-two{
+	background-color:#f8f8fa;
+	margin-bottom: 50px;
+}
+
+.topics-section-two .icon-circle-3{
+	left: -140px;
+	bottom: 200px;
+	opacity: 0.35;
+}
+
+.topics-section-two .icon-circle-5{
+	top: 60px;
+	left: -415px;
+}
+
+.topics-section-two .float-text{
+	right: -90px;
+	top: 65px;
+}
+
+.event-topics-tabs{
+	position: relative;
+}
+
+.event-topics-tabs .tab-btns{
+	position: relative;
+	margin: 0 -15px;
+}
+
+.event-topics-tabs .tab-btns li{
+	float: left;
+	width: 25%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.event-topics-tabs .tab-btns li div{
+	position: relative;
+	display: block;
+	margin-bottom: 12px;
+	box-shadow: 0 5px 14px rgba(11,11,77,.14);
+	font-size: 16px;
+	line-height: 24px;
+	color: #12114a;
+	font-weight: 500;
+	padding: 38px 30px 0;
+	padding-left: 70px;
+	min-height: 100px;
+	background-color:#ffffff;
+	cursor: pointer;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.event-topics-tabs .tab-btns li div:before{
+	position: absolute;
+	left: 30px;
+	top: 38px;
+	font-size: 18px;
+	line-height: 24px;
+	color: #12114a;
+	font-weight: 700;
+	counter-increment: count;
+    content: "0" counter(count);
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.event-topics-tabs .tab-btns li.active-btn div:before,
+.event-topics-tabs .tab-btns li:hover div:before{
+	color: #ffffff;
+}
+
+.event-topics-tabs .tab-btns li.active-btn div,
+.event-topics-tabs .tab-btns li:hover div{
+	background-color:#4b1ece;
+	color: #ffffff;
+}
+
+.event-topics-tabs .tabs-content{
+	position: relative;
+	padding-top: 20px;
+}
+
+.tabs-box .tab{
+	display: none;
+}
+
+.tabs-box .tab.active-tab{
+	display: block;
+}
+
+.event-topics-tabs .tabs-content .content-column{
+	position: relative;
+}
+
+.event-topics-tabs .content-column .inner-column{
+	position: relative;
+	max-width: 480px;
+}
+
+.event-topics-tabs .content-column .date{
+	position: relative;
+	display: block;
+	font-size: 15px;
+	line-height: 25px;
+	color: #f20487;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.event-topics-tabs .content-column h4{
+	position: relative;
+	display: block;
+	font-size: 25px;
+	line-height: 1.3em;
+	color: #12114a;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.event-topics-tabs .content-column .text{
+	position: relative;
+	display: block;
+}
+
+.event-topics-tabs .content-column .text p{
+	position: relative;
+	display: block;
+	font-size: 15px;
+	line-height: 28px;
+	color: #707070;
+	font-weight: 400;
+	margin-bottom: 28px;
+}
+
+.event-topics-tabs .image-column{
+	position: relative;
+}
+
+.event-topics-tabs .image-column .inner-column{
+	position: relative;
+}
+
+.event-topics-tabs .image-column .image{
+	position: relative;
+	margin-bottom: 0;
+}
+
+.event-topics-tabs .image-column .image img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.anim-icons{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.anim-icons .icon{
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.auto-container{
+	position:static;
+	max-width:1200px;
+	padding:0px 15px;
+	margin:0 auto;
+}
+
+.sec-title h2{
+	position:relative;
+	font-size:40px;
+	line-height:1.2em;
+	color:#12114a;
+	font-weight:700;
+}
