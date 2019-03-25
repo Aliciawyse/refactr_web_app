@@ -686,7 +686,6 @@ export default () => (
                     </div*/}
             {/* /col end*/}
             <div className="col-lg-12 pl-0">
-              {/*was col-lg-8*/}
               {/*Google Map Start Here*/}
               <Map />
               {/*Google Map End Here*/}
