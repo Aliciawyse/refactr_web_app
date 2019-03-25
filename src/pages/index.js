@@ -7,7 +7,7 @@ import { SpeakerCardList } from "../components/SpeakerCardList";
 
 import workshopData from "./workshop-data";
 import speakerData from "./speaker-data";
-import { withPrefix } from "gatsby";
+import Map from "../components/GoogleMaps";
 
 export default () => (
   <div style={{ color: `purple` }}>
@@ -688,9 +688,7 @@ export default () => (
             <div className="col-lg-12 pl-0">
               {/*was col-lg-8*/}
               {/*Google Map Start Here*/}
-              <div className="gmap">
-                <div id="googlemap" />
-              </div>
+              <Map />
               {/*Google Map End Here*/}
             </div>
             {/* /col end*/}
