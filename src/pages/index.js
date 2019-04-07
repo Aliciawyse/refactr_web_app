@@ -112,6 +112,55 @@ export default () => (
             {/* /container end*/}
           </div>
           {/*Hero Banner Area End Here*/}
+
+{/* your code goes here */}
+{/*Counter Up Area Start Here*/}
+          <div className="counter-up-area pad100 bg-counter parallax">
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                  <div className="single-counter xs-mb40">
+                    <div className="count-content">
+                      <span className="count">3</span>
+                      <p>Days</p>
+                    </div>
+                  </div>
+                </div>
+                {/* /col end*/}
+                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                  <div className="single-counter xs-mb40">
+                    <div className="count-content">
+                      <span className="count">6</span>
+                      <p>Tracks</p>
+                    </div>
+                  </div>
+                </div>
+                {/* /col end*/}
+                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                  <div className="single-counter xs-mb40">
+                    <div className="count-content">
+                      <span className="count">70</span>
+                      <p>Speakers</p>
+                    </div>
+                  </div>
+                </div>
+                {/* /col end*/}
+                <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
+                  <div className="single-counter">
+                    <div className="count-content">
+                      <span className="count">500</span>
+                      <p>Attendees</p>
+                    </div>
+                  </div>
+                </div>
+                {/* /col end*/}
+              </div>
+              {/* /row end*/}
+            </div>
+            {/* /container end*/}
+          </div>
+          {/*Counter Up Area End Here*/}
+
           {/*Feature Area Start Here*/}
 
 {/* Topics Section */}
@@ -172,52 +221,7 @@ export default () => (
           </div>
           {/*Event Schedule Area Start Here*/}
           {/*Event Schedule Area End Here*/}
-          {/*Counter Up Area Start Here*/}
-          <div className="counter-up-area pad100 bg-counter parallax">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                  <div className="single-counter xs-mb40">
-                    <div className="count-content">
-                      <span className="count">3</span>
-                      <p>Days</p>
-                    </div>
-                  </div>
-                </div>
-                {/* /col end*/}
-                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                  <div className="single-counter xs-mb40">
-                    <div className="count-content">
-                      <span className="count">6</span>
-                      <p>Tracks</p>
-                    </div>
-                  </div>
-                </div>
-                {/* /col end*/}
-                <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                  <div className="single-counter xs-mb40">
-                    <div className="count-content">
-                      <span className="count">70</span>
-                      <p>Speakers</p>
-                    </div>
-                  </div>
-                </div>
-                {/* /col end*/}
-                <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
-                  <div className="single-counter">
-                    <div className="count-content">
-                      <span className="count">500</span>
-                      <p>Attendees</p>
-                    </div>
-                  </div>
-                </div>
-                {/* /col end*/}
-              </div>
-              {/* /row end*/}
-            </div>
-            {/* /container end*/}
-          </div>
-          {/*Counter Up Area End Here*/}
+          
 
 {/*Keynote Speaker Area Start Here*/}
       <div className="whos-speaking-area-two speakers bg-team parallax pad100">
