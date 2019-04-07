@@ -531,66 +531,7 @@ export default () => (
           </div>
           {/* /container end*/}
         </div>
-        {/*Our Sponsors Area End Here*/}
-        {/*Pricing Tables Area Start Here*/}
-        {/*Pricing Tables Area End Here*/}
-        {/*Counter Up Area Start Here*/}
-        {/*Counter Up Area End Here*/}
-        {/*Our Blog Area Start Here*/}
-        {/*Our Blog Area End Here*/}
-        {/*Contact Us Area Start Here*/}
-        <div className="contact-us-area-two pad-top100 bg-contact parallax no-attm">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>Location</h2>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-            <div className="row">
-              {/*div class="col-lg-4 pr-0">
-                        <div class="inner-box">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="text" placeholder="Name" required>
-                                    </div>
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="email" placeholder="Email" required>
-                                    </div>
-                                    <div class="col-lg-12 mb50">
-                                        <input class="form-control" type="text" placeholder="Subject" required>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <textarea class="form-control" name="message" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button class="btn-primary" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div*/}
-              {/* /col end*/}
-              <div className="col-lg-12 pl-0">{/*was col-lg-8*/}
-                {/*Google Map Start Here*/}
-                <div className="gmap">
-                  <div id="googlemap" />
-                </div>
-                {/*Google Map End Here*/}
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-          </div>
-          {/* /container end*/}
-        </div>
-        {/*Contact Us Area End Here*/}
+        
 
         {/*Main Container End Here*/}
         {/*All Js Here*/}
@@ -612,4 +553,10 @@ export default () => (
       </div>
     <Footer/>
   </div>
-)
+    )
+      
+    
+    
+    
+  
+  }}
