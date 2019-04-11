@@ -27,13 +27,6 @@ export default [{
         details: 'workshops.html#gatsby'
     },
     {
-        id: 5,
-        imageSource: '/img/workshops/a11y.png',
-        title: 'Rea11y Simple A11y: A Focused Accessibility Workshop',
-        description: 'Accessibility on the web is increasing in visibility, yet some web creators are still unfamiliar with how to create an amazing...',
-        details: 'workshops.html#a11y'
-    },
-    {
         id: 6,
         imageSource: '/img/workshops/flutter.png',
         title: 'Get Flapping With Flutter',
