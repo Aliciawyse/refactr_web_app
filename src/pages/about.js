@@ -1,7 +1,5 @@
 import React from "react"
-// import Header from "../components/header"
-// import Footer from "../components/footer"
-// import { Link } from "gatsby"
+import Footer from "../components/footer"
 
 export default () => (
   <div>
@@ -23,7 +21,7 @@ export default () => (
               <div className="row">
                 <div className="col-lg-2">
                   <div className="brand-logo">
-                    <a className="eventex-brand" href="/"><img src="assets/img/logo/logo-3.png?123" alt="logo" /></a>
+                    <a className="eventex-brand" href="/"><img src="/img/logo/logo-3.png?123" alt="logo" /></a>
                   </div>
                 </div>
                 {/* /col end*/}
@@ -274,61 +272,8 @@ export default () => (
           {/* Motivational Concepts	End Start Here*/}
           {/*Contact Us Area Start Here*/}
           {/*Contact Us Area End Here*/}
-          {/*Footer Area Start Here*/}
-          <div className="footer-area bg-footer parallax ptb">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-5">
-                  <div className="am">
-                    <div className="f-logo">
-                      <img src="assets/img/logo/logo-2.png?123" width={428} height={188} alt="logo" />
-                    </div>
-                    <div className="border-right" />
-                  </div>
-                </div>
-                {/* /col end*/}
-                <div className="col-lg-6 offset-1">
-                  <div id="mc_embed_signup" className="f-content">
-                    <div className="inner-content">
-                      <div className="f-icon">
-                        <i className="fa fa-map-marker" />
-                      </div>
-                      <span>40 Courtland St NE<br /> Atlanta, GA 30303</span>
-                    </div>
-                    <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
-                    <div id="mc_embed_signup_scroll" className="sub-btn">
-                      <form action="https://tech.us19.list-manage.com/subscribe/post?u=5ae8995a4bf065a3c7cd6ad50&id=e8f624f474" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-                        <input type="text" placeholder="Your email address " name="EMAIL" className="required email" id="mce-EMAIL" />
-                        <div id="mce-responses" className="clear">
-                          <div className="response" id="mce-error-response" style={{display: 'none'}} />
-                          <div className="response" id="mce-success-response" style={{display: 'none'}} />
-                        </div>    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
-                        <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_5ae8995a4bf065a3c7cd6ad50_e8f624f474" tabIndex={-1} defaultValue /></div>
-                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                      </form>
-                    </div>
-                    <div className="f-social">
-                      <ul>
-                        <li><a href="https://twitter.com/RefactrTech"><i className="fa fa-twitter" /></a></li>
-                        <li><a href="https://www.instagram.com/RefactrTech/"><i className="fa fa-instagram" /></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* /col end*/}
-              </div>
-              {/* /row end*/}
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="copyright">
-                    <p>©2018-2019 ConnectEvents.io &nbsp;&nbsp;&nbsp;&nbsp; <a href="privacy-policy.html">Privacy Policy</a>
-                    </p></div>
-                </div>
-              </div>
-            </div>
-            {/* /container end*/}
-          </div>
-          {/*Footer Area End Here*/}
+          <Footer/>
+
         </div>
         {/*Main Container End Here*/}
         {/*All Js Here*/}
