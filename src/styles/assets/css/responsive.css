@@ -153,11 +153,13 @@
     width: 100%;
   }
   .base-style-2 .navbar-nav li.active > a {
-    color: #fff !important;
+    color: black !important;
   }
+  
   .base-style-2 .navbar-nav .nav-link {
-    color: #fff;
+    color: white;
   }
+
   .hero-banner-area .banner-content {
     text-align: center;
     -webkit-box-align: center;
