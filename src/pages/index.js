@@ -8,6 +8,11 @@ import { SpeakerCardList } from "../components/SpeakerCardList";
 import workshopData from "./workshop-data";
 import speakerData from "./speaker-data";
 
+import "../../src/styles/assets/css/style.css"
+import "../../src/styles/assets/css/style2.css"
+import "../../src/styles/assets/css/responsive.css"
+import "../../src/styles/assets/css/responsive2.css"
+
 export default () => (
   <div style={{ color: `purple` }}>
     <div>
