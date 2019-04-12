@@ -2,6 +2,7 @@ import React from "react"
 import Footer from "../components/footer"
 import NavigationBar from "../components/NavigationBar";
 
+
 export default () => (
   <div>
     {/*Preloder*/}

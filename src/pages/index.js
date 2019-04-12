@@ -38,6 +38,7 @@ export default class Index extends React.Component {
     return (
 
       <div style={{ color: `purple` }}>
+
     <div>
       {/*Preloder*/}
       {/* <div className="loader">
@@ -54,7 +55,6 @@ export default class Index extends React.Component {
         {/*Header Start Here*/}
         <NavigationBar />
         {/*Header End Here*/}
-              
         {/*Header End Here*/}
         {/*Hero Banner Area Start Here*/}
         <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm">
@@ -560,34 +560,19 @@ export default class Index extends React.Component {
             </div>
             {/* /row end*/}
             <div className="row">
+
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50 xs-mb40">
                     <h2>Sponsor REFACTR.TECH</h2>
                     <p>Companies, are you looking for an opportunity to engage with hundreds of people from diverse backgrounds at our Exhibit Hall and Career Expo? Please take a few minutes to review the various ways to support REFACTR.TECH in our attached sponsorship prospectus</p>
+
                   </div>
                 </div>
               </div>
               {/* /col end*/}
             </div>
-            {/* /row end*/}
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50 xs-mb40">
-                    <h2>Sponsor REFACTR.TECH</h2>
-                    <p>
-                      Companies, are you looking for an opportunity to engage
-                      with hundreds of people from diverse backgrounds at our
-                      Exhibit Hall and Career Expo? Please take a few minutes to
-                      review the various ways to support REFACTR.TECH in our
-                      attached sponsorship prospectus
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
+
             <div className="col-lg-12">
               <div className="primary-btn text-center">
                 <a
@@ -615,3 +600,4 @@ export default class Index extends React.Component {
   </div>
     )
   }}
+
