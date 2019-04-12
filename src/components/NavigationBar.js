@@ -54,11 +54,10 @@ export default class NavigationBar extends Component {
                     <li className="nav-item">
                       <a
                         className="nav-link "
-                        href="https://cfp.connectevents.io/en/refactr2019/cfp/session/new"
+                        href="/speakers"
                         rel="noreferrer noopener"
-                        target="_blank"
                       >
-                        Call for Speakers
+                        Speakers
                       </a>
                     </li>
                     <li className="nav-item">

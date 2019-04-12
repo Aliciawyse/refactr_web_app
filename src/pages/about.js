@@ -297,14 +297,8 @@ export default () => (
             {/* /.col end*/}
           </div>
           {/*Conference Organizers Area Ends Here*/}
-          {/* Motivational Concepts	Area Start Here*/}
-          {/* Motivational Concepts	End Start Here*/}
-          {/*Contact Us Area Start Here*/}
-          {/*Contact Us Area End Here*/}
           <Footer/>
-
         </div>
-        {/* /container end*/}
       </div>
       {/*Footer Area End Here*/}
     </div>

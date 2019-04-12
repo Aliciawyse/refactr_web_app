@@ -8,7 +8,7 @@ export default () =>
             <div className="col-lg-5">
                 <div className="am">
                     <div className="f-logo">
-                        <img src="assets/img/logo/logo-2.png?123" width="428" height="188" alt=""/>
+                        <img src="/img/logo/logo-2.png?123" width="428" height="188" alt=""/>
                     </div>
                 <div className="border-right"></div>
             </div>

@@ -26,6 +26,7 @@ export default () => (
               <div className="about-content">
                 <div className="section-title text-center">
                   <h2>Privacy Policy</h2>
+
                 </div>
                 <ol className="breadcrumb">
                   <li>
