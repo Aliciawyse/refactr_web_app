@@ -2,12 +2,11 @@ import React from "react"
 import { SpeakerCard } from './SpeakerCard'
 
 export const FeaturedSpeakerCard = ({items}) => {
-    const featured =  items.filter(function(item) {
-        if (item.fields.featured === true){
-            return item
-        }
-      })
+    const featured = items.map(item => {
+        const speaker_data = item.node.data
+        return speaker_data
+    });
     return (
-        featured.map(item => <SpeakerCard key={item.fields} {...item.fields} />)
+        featured.map(item => <SpeakerCard key={item.fields} {...item} />)
     )
 }
