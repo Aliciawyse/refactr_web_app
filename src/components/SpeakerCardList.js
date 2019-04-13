@@ -2,11 +2,12 @@ import React from "react"
 import { SpeakerCard } from './SpeakerCard'
 
 export const SpeakerCardList = ({items}) => {
-    // if (!(items && items.length)) {
-    //     return <div>There are no Speakers!</div>
-    // }
+    const all_speakers = items.map(item => {
+        const speaker_data = item.node.data
+        return speaker_data
+    });
 
     return (
-        items.map(item => <SpeakerCard key={item.fields} {...item.fields} />)
+        all_speakers.map(item => <SpeakerCard key={item.fields} {...item} />)
     )
 }
