@@ -47,17 +47,19 @@ export default class NavigationBar extends Component {
                       </a>
                       </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/code-of-conduct">
-                        Code of Conduct
+                      <a 
+                        className="nav-link" 
+                        href="/speakers">
+                        Speakers
                       </a>
                     </li>
                     <li className="nav-item">
                       <a
                         className="nav-link "
-                        href="/speakers"
+                        href="/#call-for-sponsors"
                         rel="noreferrer noopener"
                       >
-                        Speakers
+                        Sponsors
                       </a>
                     </li>
                     <li className="nav-item">
