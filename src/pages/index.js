@@ -1,60 +1,24 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import Footer from "../components/footer"
 import { WorkshopCardList } from '../components/WorkshopCardList'
-// import { SpeakerCardList } from '../components/SpeakerCardList'
 import {FeaturedSpeakerCard} from '../components/FeaturedSpeakerCard'
-import NavigationBar from "../components/NavigationBar";
+import NavigationBar from "../components/NavigationBar"
+import workshopData from '../workshop-data'
 import "../../src/styles/assets/css/style.css"
 import "../../src/styles/assets/css/style2.css"
 import "../../src/styles/assets/css/responsive.css"
 import "../../src/styles/assets/css/responsive2.css"
 
+export default ({data}) => (
 
-import workshopData from './workshop-data'
-// import speakerData from './speaker-data'
-// import { withPrefix } from 'gatsby'
-
-export default class Index extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      speakers: [],
-    };
-  }
-  
-  componentDidMount() {
-    fetch('')
-    .then((resp) => resp.json())
-    .then(data => {
-       this.setState({ speakers: data.records });
-    }).catch(err => {
-      // Error 🙁
-    });
-  }
-
-  render() {
-
-    return (
-
-      <div style={{ color: `purple` }}>
+  <div style={{ color: `purple` }}>
 
     <div>
-      {/*Preloder*/}
-      {/* <div className="loader">
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--text" />
-        </div> */}
       {/*Main Container Start Here*/}
       <div className="main-container">
         {/*Header Start Here*/}
         <NavigationBar />
-        {/*Header End Here*/}
         {/*Header End Here*/}
         {/*Hero Banner Area Start Here*/}
         <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm">
@@ -66,7 +30,6 @@ export default class Index extends React.Component {
                     <span className="is-countdown"> </span>
                     <div data-countdown="2019/06/05" />
                   </div>
-                  {/*h3>Freelancers Conferences</h3*/}
                 </div>
               </div>
               {/* /col end*/}
@@ -77,7 +40,6 @@ export default class Index extends React.Component {
         </div>
         {/*Hero Banner Area End Here*/}
 
-        {/* your code goes here */}
         {/*Counter Up Area Start Here*/}
         <div className="counter-up-area pad100 bg-counter parallax">
           <div className="container">
@@ -124,8 +86,6 @@ export default class Index extends React.Component {
           {/* /container end*/}
         </div>
         {/*Counter Up Area End Here*/}
-
-        {/*Feature Area Start Here*/}
 
         {/* Topics Section */}
         <section className="topics-section-two">
@@ -193,8 +153,6 @@ export default class Index extends React.Component {
           </div>
           {/*Feature Area End Here*/}
         </div>
-        {/*Event Schedule Area Start Here*/}
-        {/*Event Schedule Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
         <div className="whos-speaking-area-two speakers bg-team parallax pad100">
@@ -315,12 +273,9 @@ export default class Index extends React.Component {
               
                 {/*Whos Speaking Area End Here*/}
 
-               <FeaturedSpeakerCard items={this.state.speakers}/>
+               <FeaturedSpeakerCard items={data.allAirtable.edges}/>
 
-            {/* <div className="row mb50">
-              {/*Whos Speaking Area End Here*/}
-              {/* <SpeakerCardList items={speakerData} /> */}
-            {/* </div> */}
+            
             {/* /row end*/}
           </div>
           {/* /container end*/}
@@ -528,7 +483,7 @@ export default class Index extends React.Component {
         {/* /container end*/}
       </div>
       {/*Pricing Tables Area End Here*/}
-
+    </div>
      {/*Our Sponsors Area Start Here*/}
      <a name="call-for-sponsors" />
         <div className="our-sponsers-area pad100 bg-color">
@@ -542,7 +497,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="single-sponsers">
                   <ul>
-                    <li className="col-lg-3"><a href="https://www.homedepot.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/the-home-depot.png" resizeMode="contain" /></a></li>
+                    <li className="col-lg-3"><a href="https://www.homedepot.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/the-home-depot.png"/></a></li>
                     <li className="col-lg-3"><a href="https://www.netflix.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/netflix.png" /></a></li>
                     <li className="col-lg-3"><a href="https://developer.microsoft.com/en-us/advocates/index.html" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/microsoft.png" /></a></li>
                     <li className="col-lg-3 mr-0"><a href="https://tech.aarons.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/aarons.png" /></a></li>
@@ -590,14 +545,31 @@ export default class Index extends React.Component {
           {/* /row end*/}
         </div>
         {/*Our Sponsors Area End Here*/}
-      
-    
-    </div>
     {/*Main Container End Here*/}
   </div>
   <Footer/>
   </div>
   </div>
-    )
-  }}
+)
 
+export const speakerPageQuery = graphql` 
+{
+  allAirtable(filter: {table: {eq: "Speakers"}, data: {featured: {eq: true}} }) {
+    edges {
+      node {
+        data {
+          speaker_name
+          role
+          company
+          twitter
+          headshot {
+            url
+          }
+          linkedIn
+          company_url
+        }
+      }
+    }
+  }
+}
+  `
