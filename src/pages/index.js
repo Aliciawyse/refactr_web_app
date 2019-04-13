@@ -485,7 +485,7 @@ export default ({data}) => (
       {/*Pricing Tables Area End Here*/}
     </div>
      {/*Our Sponsors Area Start Here*/}
-     <a name="call-for-sponsors" />
+     <a name="call-for-sponsors" ></a>
         <div className="our-sponsers-area pad100 bg-color">
           <div className="container">
             <div className="row">
@@ -502,12 +502,11 @@ export default ({data}) => (
                     <li className="col-lg-3"><a href="https://developer.microsoft.com/en-us/advocates/index.html" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/microsoft.png" /></a></li>
                     <li className="col-lg-3 mr-0"><a href="https://tech.aarons.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/aarons.png" /></a></li>
                   </ul>
-                </div>
-                <div className="single-sponsers">
                   <ul>
                     <li className="col-lg-3"><a href="https://www.ultimatesoftware.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/ultimate-software.png" /></a></li>
                     <li className="col-lg-3"><a href="https://www.terminus.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/terminus.png" /></a></li>
                     <li className="col-lg-3 mr-0"><a href="https://balsamiq.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/balsamiq.png" /></a></li>
+                    <li className="col-lg-3 mr-0"><a href="https://bignerdranch.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/bignerdranch.png"/></a></li>
                   </ul>
                 </div>
               </div>
