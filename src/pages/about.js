@@ -53,7 +53,7 @@ export default () => (
             <div className="col-lg-5 xs-mb40">
               <img
                 className="img-fluid"
-                src="assets/img/others/element.png?123"
+                src="/img/others/element.png?123"
                 alt="element"
               />
             </div>
@@ -141,165 +141,353 @@ export default () => (
         {/* /container end*/}
       </div>
       {/*Counter Up Area End Here*/}
-      {/*Conference Organizers Area Starts Here*/}
-      <div className="speakers-single-area pad100">
+      
+        {/*Whos Organizing Area End Here*/}
+      <div className="whos-speaking-area pad100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 col-md-12">
-              <div className="speakers-img">
-                <img
-                  className="img-fluid"
-                  src="assets/img/team/organizers/angel.jpg"
-                  alt="Angel"
-                  width={400}
-                  height={400}
-                />
-              </div>
-            </div>
-            {/* /.col end*/}
-            <div className="col-lg-7 col-md-12">
-              <div className="inner-content">
-                <h1>Angel Banks</h1>
-                <span>Product Designer, First Data</span>
-                <p>
-                  Angel Banks specializes in UX strategy and design for
-                  enterprise, finance, healthcare, and biotech applications. She
-                  has a background in front-end development, project management,
-                  and product management. Active in the Atlanta tech community,
-                  she is a Director of Women Who Code Atlanta, Women Techmakers
-                  Atlanta Lead, Curriculum Director of Girl Develop It Atlanta,
-                  and co-organizer of We RISE Tech, DevFest Atlanta, and
-                  ngAtlanta conferences.
-                </p>
-                <div className="social-icon">
-                  <ul>
-                    <li>
-                      <a href="https://www.linkedin.com/in/angelmbanks/">
-                        <i className="fa fa-linkedin" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/angelmbanks">
-                        <i className="fa fa-twitter" />
-                      </a>
-                    </li>
-                  </ul>
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>Meet the Organizers</h2>
                 </div>
               </div>
             </div>
-            {/* /.col end*/}
+            {/* /col end*/}
           </div>
-          {/* /.row end*/}
-          <div className="row pad100">
-            <div className="col-lg-5 col-md-12">
-              <div className="speakers-img">
-                <img
-                  className="img-fluid"
-                  src="assets/img/team/organizers/beth.jpg"
-                  alt="Beth Laing"
-                />
-              </div>
-            </div>
-            {/* /.col end*/}
-            <div className="col-lg-7 col-md-12">
-              <div className="inner-content">
-                <h1>Beth Laing</h1>
-                <span>Software Developer/Scrum Master, CNN/Turner</span>
-                <p>
-                  Beth grew-up in online journalism, working with newspaper
-                  companies in Atlanta, GA, San Jose, CA and Saint Paul, MN with
-                  a detour to work for an internet start-up, Infonautics, in
-                  Philadelphia, PA along the way. After leaving the world of
-                  newspapers, Beth worked as a project manager for organizations
-                  focused on news and technology.{" "}
-                </p>
-                <p className="mb-0">
-                  In 2015 she transitioned into software development with the
-                  help of a full immersion bootcamp. As one of the directors for
-                  Women Who Code's Atlanta chapter, Beth works to create great
-                  programming and build community for the amazing women in
-                  technology of Atlanta. She is passionate about making
-                  technology a welcoming community for everyone and breaking
-                  down barriers. Beth works at Turner in software development on
-                  a variety of internal projects. She spends a lot of time
-                  figuring out why things don't work and how to fix them!
-                </p>
-                <div className="social-icon">
+          {/* /.row  end*/}
+          <div className="row mb50">
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/organizers/angel.jpg" alt="trainer-img" />
                   <ul>
-                    <li>
-                      <a href="https://www.linkedin.com/in/bethlaing/">
-                        <i className="fa fa-linkedin" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/laingbeth">
-                        <i className="fa fa-twitter" />
-                      </a>
-                    </li>
+                    <li><a href="https://twitter.com/angelmbanks"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/angelmbanks/"><i className="fa fa-linkedin" /></a></li>
                   </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/angelmbanks" rel="noreferrer noopener" target="_blank">
+                    <h3>Angel Banks</h3>
+                  </a>
+                  <p>Product Manager</p>
+                  <h6>First Data</h6>
                 </div>
               </div>
             </div>
-            {/* /.col end*/}
-          </div>
-          {/* /.row end*/}
-          <div className="row">
-            <div className="col-lg-5 col-md-12">
-              <div className="speakers-img">
-                <img
-                  className="img-fluid"
-                  src="assets/img/team/organizers/erica.jpg"
-                  alt="Erica Stanley"
-                />
-              </div>
-            </div>
-            {/* /.col end*/}
-            <div className="col-lg-7 col-md-12">
-              <div className="inner-content">
-                <h1>Erica Stanley</h1>
-                <span>Engineering Manager, SalesLoft</span>
-                <p>
-                  Erica Stanley is a software engineer, entrepreneur and tech
-                  diversity &amp; inclusion advocate. She is a software
-                  engineering manager at SalesLoft – where she’s helping grow
-                  the product engineering team for the 4th fastest growing
-                  software company in North America and #1 best place to work in
-                  Atlanta. She’s worked with Fortune 500 companies, including
-                  Boeing, FOX Interactive Media, Turner Broadcasting, and
-                  Oracle, as well as early-stage and pre-acquisition startups.
-                </p>
-                <p className="mb-0">
-                  Erica is active in the Atlanta technology community. She helps
-                  develop and teach youth coding programs, speaks at local
-                  hackathons, conferences, and user groups and mentors
-                  entrepreneurs for various incubators and accelerators. She
-                  also founded the Atlanta network of Women Who Code, where she
-                  organizes conferences, hackathons, developer workshops,
-                  monthly tech talks and networking events for women
-                  technologists.{" "}
-                </p>
-                <div className="social-icon">
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="speakers">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/organizers/beth.jpg" alt="trainer-img" />
                   <ul>
-                    <li>
-                      <a href="https://www.linkedin.com/in/ericastanley/">
-                        <i className="fa fa-linkedin" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/ericastanley">
-                        <i className="fa fa-twitter" />
-                      </a>
-                    </li>
+                    <li><a href="https://twitter.com/laingbeth"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/bethlaing/"><i className="fa fa-linkedin" /></a></li>
                   </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/laingbeth" rel="noreferrer noopener" target="_blank">
+                    <h3>Beth Laing</h3>
+                  </a>
+                  <p>Engineering Manager</p> 
+                  <h6>CallRail</h6>
                 </div>
               </div>
             </div>
-            {/* /.col end*/}
+            {/* /col end*/}
+            <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/organizers/erica.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/ericastanley"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/ericastanley/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/ericastanley" rel="noreferrer noopener" target="_blank">
+                    <h3>Erica Stanley</h3>
+                  </a>
+                  <p>Engineering Manager</p> 
+                  <h6>SalesLoft</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
           </div>
-          {/*Conference Organizers Area Ends Here*/}
-          <Footer/>
+          {/* /row end*/}
         </div>
+        {/* /container end*/}
       </div>
+      {/*Whos Organizing Area End Here*/}
+      {/*Advisory Board Area End Here*/}
+      <div className="whos-speaking-area pad50">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>Advisory Board</h2>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /.row  end*/}
+          <div className="row mb50">
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/vincentMayers.jpeg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/vincentmayers"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/vincentmayers/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/vincentmayers" rel="noreferrer noopener" target="_blank">
+                    <h3>Vincent Mayers</h3>
+                  </a>
+                  <p>Organizer</p>
+                  <h6>ConnectEvents</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/Nadia%20Rahali.jpeg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/nadiarahali"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/nadiarahali/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/nadiarahali" rel="noreferrer noopener" target="_blank">
+                    <h3>Nadia Rahali</h3>
+                  </a>
+                  <p>General Manager</p> 
+                  <h6>The Loudermilk Center</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/Kim-Crayton.jpeg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/KimCrayton1"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/kimcrayton/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/KimCrayton1" rel="noreferrer noopener" target="_blank">
+                    <h3>Kim Crayton</h3>
+                  </a>
+                  <p>Chief Encouragement Officer</p> 
+                  <h6>for Underrepresented &amp; Marginalized in Tech</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/marcellus-haynes.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/isaahmarcellus"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcellus/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/isaahmarcellus" rel="noreferrer noopener" target="_blank">
+                    <h3>Marcellus Haynes</h3>
+                  </a>
+                  <p>Founder</p> 
+                  <h6>Technologists of Color</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/diana.png" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/cotufa82"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/nerdattack82/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/cotufa82" rel="noreferrer noopener" target="_blank">
+                    <h3>Diana Rodriguez</h3>
+                  </a>
+                  <p>Sr. DevOps/SRE &amp; Full Stack Dev</p>
+                  <h6>This Dot</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/todd-lewis.jpeg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/toddlew"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/thetoddlewis/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/toddlew" rel="noreferrer noopener" target="_blank">
+                    <h3>Todd Lewis</h3>
+                  </a>
+                  <p>Chair</p> 
+                  <h6>All Things Open</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/neha-batra.jpeg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/nerdneha"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/nbatra/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/nerdneha" rel="noreferrer noopener" target="_blank">
+                    <h3>Neha Batra</h3>
+                  </a>
+                  <p>Director</p> 
+                  <h6>Write/Speak/Code</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/chelseaBullock.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/chelsea_bullock"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/chelseabullock/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/chelsea_bullock" rel="noreferrer noopener" target="_blank">
+                    <h3>Chelsea Bullock</h3>
+                  </a>
+                  <p>Senior UX Researcher</p> 
+                  <h6>Mailchimp</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/liberty.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/i_am_liberty"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/nlibertywhite/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/i_am_liberty" rel="noreferrer noopener" target="_blank">
+                    <h3>Liberty White</h3>
+                  </a>
+                  <p>Creative Director + Video Marketing Strategist</p>
+                  <h6>CHOZEN MEDIA</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/Jamie2.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/jamieharrellmba"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/jamieharrellmba/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/jamieharrellmba" rel="noreferrer noopener" target="_blank">
+                    <h3>Jamie Harrell</h3>
+                  </a>
+                  <p>Bus. Intelligence &amp; Analytics Lead</p>
+                  <h6>Emory University</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/stephanie_jewett.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/StefanieJewett"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/stefaniejewett/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/StefanieJewett" rel="noreferrer noopener" target="_blank">
+                    <h3>Stefanie Jewett</h3>
+                  </a>
+                  <p>Founder, CEO</p> 
+                  <h6>Activvely</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/angeleenWilson.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/dappmom"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/angeleenwilson/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/dappmom" rel="noreferrer noopener" target="_blank">
+                    <h3>Angeleen Wilson</h3>
+                  </a>
+                  <p>Director</p>
+                  <h6>Georgia Blockchain Coalition</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  <img className="img-fluid" src="/img/team/advisors/jeremyLikness.jpg" alt="trainer-img" />
+                  <ul>
+                    <li><a href="https://twitter.com/JeremyLikness"><i className="fa fa-twitter" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/JeremyLikness/"><i className="fa fa-linkedin" /></a></li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="https://twitter.com/JeremyLikness" rel="noreferrer noopener" target="_blank">
+                    <h3>Jeremy Likness</h3>
+                  </a>
+                  <p>Cloud Developer Advocate</p>
+                  <h6>Microsoft</h6>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /row end*/}
+        </div>
+        {/* /container end*/}
+      </div>
+          <Footer/>
       {/*Footer Area End Here*/}
     </div>
     {/*Main Container End Here*/}
