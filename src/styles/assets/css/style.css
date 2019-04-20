@@ -617,7 +617,7 @@ a {
     top: -35px; }
   .header .brand-logo {
     margin-top: 18px; }
-  .header.white-color .navbar-nav li.active > a {
+  .header.white-color .navbar-nav a.active {
     color: #cf057c; }
     .header.white-color .navbar-nav li.active > a:before {
       position: absolute;
@@ -634,7 +634,7 @@ a {
   .header.white-color ul li.header-ticket a {
     color: #fff;
     border: 2px solid #fff; }
-  .header .navbar-nav li.active > a {
+  .header .navbar-nav a.active {
     color: #cf057c; }
     .header .navbar-nav li.active > a:before {
       position: absolute;
@@ -698,13 +698,15 @@ a {
 .base-style-2.no-p {
   position: inherit; }
 
-.base-style-2 .navbar-nav li.active > a {
+.base-style-2 .navbar-nav a.active {
   color: #cf057c; }
   .base-style-2 .navbar-nav li.active > a:before {
     background: #4125dd; }
 
 .base-style-2 .navbar-nav .nav-link {
-  color: black; }
+  color: black; 
+  font-weight: bold;
+}
 
 .base-style-2 ul li.header-ticket a {
   background: transparent;

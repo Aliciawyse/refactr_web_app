@@ -152,8 +152,8 @@
   .header .navbar-nav .dropdown-menu {
     width: 100%;
   }
-  .base-style-2 .navbar-nav li.active > a {
-    color: black !important;
+  .base-style-2 .navbar-nav a.active {
+    color: #cf057c;
   }
   
   .base-style-2 .navbar-nav .nav-link {

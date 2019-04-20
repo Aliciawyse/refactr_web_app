@@ -10,7 +10,7 @@ export default ({data}) => (
         {/*Main Container Start Here*/}
         <div className="main-container">
           {/*Header Start Here*/}
-          <NavigationBar />
+          <NavigationBar whiteText />
           {/*Header End Here*/}
           {/*Speaker Area Start Here*/}
           <div className="about-us-area pad-head bg-about">
