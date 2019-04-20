@@ -147,17 +147,19 @@
     color: #fff;
   }
   .header .navbar-nav .nav-link {
-    line-height: 45px;
+    padding: 5px !important;
+    line-height: 20px !important;
   }
   .header .navbar-nav .dropdown-menu {
     width: 100%;
   }
+
   .base-style-2 .navbar-nav a.active {
-    color: #cf057c;
+    color: #cf057c !important;
   }
   
   .base-style-2 .navbar-nav .nav-link {
-    color: white;
+    color: white !important;
   }
 
   .hero-banner-area .banner-content {
