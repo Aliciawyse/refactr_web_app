@@ -1,6 +1,6 @@
 import React from "react"
 
-export const SpeakerCard = ({speaker_name, company, role, headshot, linkedIn, twitter}) => (
+export const SpeakerCard = ({speaker_name, company, role, headshot, linkedIn, twitter, slug}) => (
     <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
         <div className="speakers xs-mb30">
             <div className="spk-img">
@@ -10,10 +10,8 @@ export const SpeakerCard = ({speaker_name, company, role, headshot, linkedIn, tw
                         <li><a href={linkedIn}><i className="fa fa-linkedin" /></a></li>
                     </ul>
                 </div>
-            <div className="spk-info">
-                <a  href={twitter} rel="noreferrer noopener" target="_blank">
-                    <h3>{speaker_name}</h3>
-                </a>
+            <div className="spk-info">                
+                <h3><a href={slug} rel="noreferrer noopener" target="_blank">{speaker_name}</a></h3>
                 <p>{role}</p>
                 <h6>{company}</h6>
             </div>
