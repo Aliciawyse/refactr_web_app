@@ -315,7 +315,7 @@ export default ({data}) => (
                     </ul>
                   </div>
                   <div className="bordered-btn" style={{ color: "red" }}>
-                    <a href>Sold Out</a>
+                    <a>Sold Out</a>
                   </div>
                 </div>
               </div>
@@ -408,7 +408,7 @@ export default ({data}) => (
                     </ul>
                   </div>
                   <div className="bordered-btn">
-                    <a href>Sold Out</a>
+                    <a>Sold Out</a>
                   </div>
                 </div>
               </div>
@@ -556,6 +556,9 @@ export const speakerPageQuery = graphql`
   allAirtable(filter: {table: {eq: "Speakers"}, data: {featured: {eq: true}} }) {
     edges {
       node {
+        fields {
+          slug
+        }
         data {
           speaker_name
           role
