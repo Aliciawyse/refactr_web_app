@@ -1,22 +1,21 @@
 import React, { Component } from "react";
-
+import { Link } from "gatsby";
 export default class NavigationBar extends Component {
   state = {
     openNav: false
-  }
+  };
 
   toggleNav = () => {
-    this.setState({ openNav: !this.state.openNav})
-  }
+    this.setState({ openNav: !this.state.openNav });
+  };
   render() {
     return (
-      <header className="header base-style-2">
+      <header className={this.props.whiteText ? "header base-style-2 white-color" : "header base-style-2"}>
         <div className="container">
           <div className="row">
             <div className="col-lg-2">
               <div className="brand-logo">
-                <a className="eventex-brand" href="index.html">
-                </a>
+                <a className="eventex-brand" to="index.html" />
               </div>
             </div>
             {/* /col end*/}
@@ -32,55 +31,58 @@ export default class NavigationBar extends Component {
                   </span>
                 </button>
                 <div
-                  className={this.state.openNav ? '' : 'collapse navbar-collapse'}
+                  className={
+                    this.state.openNav ? "" : "collapse navbar-collapse"
+                  }
                 >
-                  <ul className={'navbar-nav ml-auto'}>
+                  <ul className={"navbar-nav ml-auto"}>
                     <li className="nav-item">
-                      <a className="nav-link" href="/">
-                        Home 
+                      <Link className="nav-link" activeClassName="active" to="/">
+                        Home
                         <span className="sr-only">(current)</span>
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/about">
+                      <Link className="nav-link" activeClassName="active" to="/about">
                         About
-                      </a>
-                      </li>
-                    <li className="nav-item">
-                      <a 
-                        className="nav-link" 
-                        href="/speakers">
-                        Speakers
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
-                        className="nav-link "
-                        href="/#call-for-sponsors"
+                      <Link className="nav-link" activeClassName="active" to="/speakers">
+                        Speakers
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        activeClassName="active"
+                        to="/#call-for-sponsors"
                         rel="noreferrer noopener"
                       >
                         Sponsors
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <a
+                      <Link
                         className="nav-link"
-                        href="https://shop.refactr.tech"
+                        activeClassName="active"
+                        to="https://shop.refactr.tech"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         Shop
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item d-lg-none ">
-                      <a
+                      <Link
                         className="nav-link"
-                        href="https://tickets.connectevents.io/events/rtech2019/"
+                        activeClassName="active"
+                        to="https://tickets.connectevents.io/events/rtech2019/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         Tickets
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -90,12 +92,12 @@ export default class NavigationBar extends Component {
             <div className="col-lg-2 d-none d-lg-block">
               <ul>
                 <li className="header-ticket">
-                  <a
+                  <Link
                     className="pr-0"
-                    href="https://tickets.connectevents.io/events/rtech2019/"
+                    to="https://tickets.connectevents.io/events/rtech2019/"
                   >
                     Tickets
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -108,4 +110,3 @@ export default class NavigationBar extends Component {
     );
   }
 }
-
