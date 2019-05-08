@@ -13,7 +13,14 @@ module.exports = {
         tables: [
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
-            tableName: `Speakers`
+            tableName: `Speakers`,
+            queryName: `speakers`
+          }, 
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `Sessions`,
+            queryName: `sessions`,
+            tableLinks: ['Speakers']
           },
         ],
       },

@@ -42,7 +42,7 @@ export default ({ data }) => {
              {/* <a :name="speaker.fields.anchor" /> */}
              <div className="col-lg-5 col-md-12">
                <div style={{width: '250px', height: '100%'}} className="speakers-img">
-                 <img className="img-fluid" src={data.airtable.data.headshot[0].url} alt />
+                 <img className="img-fluid" src={data.airtable.data.headshot[0].url}  />
                </div>
              </div>
              {/* /.col end*/}
