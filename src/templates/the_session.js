@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
+import { Link } from "gatsby"
 
 export default ({ data }) => {
   return (
@@ -53,7 +54,7 @@ export default ({ data }) => {
                  <br />
                  <span>Speakers<br />
                    <a href rel="noreferrer noopener" target="_blank">{}</a><br />
-                   <a href={data.airtable.data.speaker_display_name} rel="noreferrer noopener" target="_blank">{data.airtable.data.speaker_display_name}</a><br />
+                   <Link to={`/speakers/${data.airtable.data.Speakers[0].data.anchor}`}>{data.airtable.data.speaker_display_name}</Link>
                  </span>
                  </div>
              </div>
@@ -75,6 +76,8 @@ export const query = graphql`
         Abstract
         speaker_display_name
         title
+        anchor
+        Speakers{data{anchor}}
       }
     }
   }
