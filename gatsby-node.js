@@ -17,7 +17,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `Airtable` && node.table === `Sessions`) {
     const slug =
       "/sessions/" + slugify(node.data.anchor_truncated, { lower: true });
-    console.log("THIS IS A SLUG", node.data.anchor_truncated)
     createNodeField({
       node,
       name: `slug`,
