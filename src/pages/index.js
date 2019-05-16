@@ -1,19 +1,17 @@
-import React from "react"
-import { graphql } from 'gatsby'
-import Footer from "../components/footer"
-import { WorkshopCardList } from '../components/WorkshopCardList'
-import {FeaturedSpeakerCard} from '../components/FeaturedSpeakerCard'
-import NavigationBar from "../components/NavigationBar"
-import workshopData from '../workshop-data'
-import "../../src/styles/assets/css/style.css"
-import "../../src/styles/assets/css/style2.css"
-import "../../src/styles/assets/css/responsive.css"
-import "../../src/styles/assets/css/responsive2.css"
+import React from "react";
+import { graphql } from "gatsby";
+import Footer from "../components/footer";
+import { WorkshopCardList } from "../components/WorkshopCardList";
+import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
+import NavigationBar from "../components/NavigationBar";
+import workshopData from "../workshop-data";
+import "../../src/styles/assets/css/style.css";
+import "../../src/styles/assets/css/style2.css";
+import "../../src/styles/assets/css/responsive.css";
+import "../../src/styles/assets/css/responsive2.css";
 
-export default ({data}) => (
-
+export default ({ data }) => (
   <div style={{ color: `purple` }}>
-
     <div>
       {/*Main Container Start Here*/}
       <div className="main-container">
@@ -106,9 +104,11 @@ export default ({data}) => (
                   <li data-tab="#tab1" className="tab-btn">
                     <div>Front-End Engineering</div>
                   </li>
-                  <li data-tab="#tab2" className="tab-btn">
-                    <div>Software Engineering</div>
-                  </li>
+                  <a href="/sessions#SoftwareEngineering">
+                    <li data-tab="#tab2" className="tab-btn">
+                      <div>Software Engineering</div>
+                    </li>
+                  </a>
                   <li data-tab="#tab3" className="tab-btn">
                     <div>Product &amp; UX</div>
                   </li>
@@ -270,222 +270,220 @@ export default ({data}) => (
               {/* /.row  end*/}
 
               <div className="row mb50">
-              
                 {/*Whos Speaking Area End Here*/}
 
-               <FeaturedSpeakerCard items={data.allAirtable.edges}/>
+                <FeaturedSpeakerCard items={data.allAirtable.edges} />
 
-            
-            {/* /row end*/}
+                {/* /row end*/}
+              </div>
+              {/* /container end*/}
+            </div>
+            {/*Whos Speaking Area End Here*/}
+
+            {/*Pricing Tables Area Start Here*/}
+            <div className="pricing-tables-area pad-b100">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb50">
+                        <h2>2-Day Conference Pricing</h2>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                </div>
+                {/* /row end*/}
+                <div className="row">
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 175
+                        </div>
+                      </div>
+                      <div className="pricing-title">Early Bird (Ended)</div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn" style={{ color: "red" }}>
+                        <a>Sold Out</a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 250
+                        </div>
+                      </div>
+                      <div className="pricing-title">Regular - Ends May 26</div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn">
+                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                          Buy Ticket
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 300
+                        </div>
+                      </div>
+                      <div className="pricing-title">Late</div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn">
+                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                          Buy Ticket
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                </div>
+                {/* /row end*/}
+                <div className="row mt60">
+                  <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb50">
+                        <h2>3-Day Conference + Workshop Pricing</h2>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                </div>
+                {/* /row end*/}
+                <div className="row">
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 275
+                        </div>
+                      </div>
+                      <div className="pricing-title">
+                        Early Bird + Workshop (Ended)
+                      </div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>
+                            Choice of 1 Full-Day{" "}
+                            <a href="workshops.html">Workshop</a>
+                          </li>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn">
+                        <a>Sold Out</a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 375
+                        </div>
+                      </div>
+                      <div className="pricing-title">
+                        Regular + Workshop - Ends May 26
+                      </div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>
+                            Choice of 1 Full-Day{" "}
+                            <a href="workshops.html">Workshop</a>
+                          </li>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <div className="bordered-btn">
+                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                          Buy Ticket
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div className="pricing-box bg-pricing xs-mb30">
+                      <div className="pricing-header">
+                        <div className="pricing-value">
+                          <span>$</span> 425
+                        </div>
+                      </div>
+                      <div className="pricing-title">Late + Workshop</div>
+                      <div className="pricing-content">
+                        <ul>
+                          <li>
+                            Choice of 1 Full-Day{" "}
+                            <a href="workshops.html">Workshop</a>
+                          </li>
+                          <li>Main Stage Keynotes</li>
+                          <li>Sessions in 6 Tracks</li>
+                          <li>Expo Hall</li>
+                          <li>Networking Opportunities</li>
+                          <li>Tons of Social Activities</li>
+                        </ul>
+                      </div>
+                      <br />
+                      <div className="bordered-btn">
+                        <a href="https://tickets.connectevents.io/events/rtech2019/">
+                          Buy Ticket
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* /col end*/}
+                </div>
+                {/* /row end*/}
+              </div>
+              {/* /container end*/}
+            </div>
+
+            {/* /container end*/}
           </div>
-          {/* /container end*/}
+          {/*Pricing Tables Area End Here*/}
         </div>
-        {/*Whos Speaking Area End Here*/}
-
-        {/*Pricing Tables Area Start Here*/}
-        <div className="pricing-tables-area pad-b100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>2-Day Conference Pricing</h2>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-            <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 175
-                    </div>
-                  </div>
-                  <div className="pricing-title">Early Bird (Ended)</div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <div className="bordered-btn" style={{ color: "red" }}>
-                    <a>Sold Out</a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 250
-                    </div>
-                  </div>
-                  <div className="pricing-title">Regular - Ends May 26</div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <div className="bordered-btn">
-                    <a href="https://tickets.connectevents.io/events/rtech2019/">
-                      Buy Ticket
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 300
-                    </div>
-                  </div>
-                  <div className="pricing-title">Late</div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <div className="bordered-btn">
-                    <a href="https://tickets.connectevents.io/events/rtech2019/">
-                      Buy Ticket
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-            <div className="row mt60">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>3-Day Conference + Workshop Pricing</h2>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-            <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 275
-                    </div>
-                  </div>
-                  <div className="pricing-title">
-                    Early Bird + Workshop (Ended)
-                  </div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>
-                        Choice of 1 Full-Day{" "}
-                        <a href="workshops.html">Workshop</a>
-                      </li>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <div className="bordered-btn">
-                    <a>Sold Out</a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 375
-                    </div>
-                  </div>
-                  <div className="pricing-title">
-                    Regular + Workshop - Ends May 26
-                  </div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>
-                        Choice of 1 Full-Day{" "}
-                        <a href="workshops.html">Workshop</a>
-                      </li>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <div className="bordered-btn">
-                    <a href="https://tickets.connectevents.io/events/rtech2019/">
-                      Buy Ticket
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span> 425
-                    </div>
-                  </div>
-                  <div className="pricing-title">Late + Workshop</div>
-                  <div className="pricing-content">
-                    <ul>
-                      <li>
-                        Choice of 1 Full-Day{" "}
-                        <a href="workshops.html">Workshop</a>
-                      </li>
-                      <li>Main Stage Keynotes</li>
-                      <li>Sessions in 6 Tracks</li>
-                      <li>Expo Hall</li>
-                      <li>Networking Opportunities</li>
-                      <li>Tons of Social Activities</li>
-                    </ul>
-                  </div>
-                  <br />
-                  <div className="bordered-btn">
-                    <a href="https://tickets.connectevents.io/events/rtech2019/">
-                      Buy Ticket
-                    </a>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /row end*/}
-          </div>
-          {/* /container end*/}
-        </div>
-
-        {/* /container end*/}
-      </div>
-      {/*Pricing Tables Area End Here*/}
-    </div>
-     {/*Our Sponsors Area Start Here*/}
-     <a name="call-for-sponsors" ></a>
+        {/*Our Sponsors Area Start Here*/}
+        <a name="call-for-sponsors" />
         <div className="our-sponsers-area pad100 bg-color">
           <div className="container">
             <div className="row">
@@ -497,16 +495,254 @@ export default ({data}) => (
                 </div>
                 <div className="single-sponsers">
                   <ul>
-                    <li className="col-lg-3"><a href="https://www.homedepot.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/the-home-depot.png"/></a></li>
-                    <li className="col-lg-3"><a href="https://www.netflix.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/netflix.png" /></a></li>
-                    <li className="col-lg-3"><a href="https://developer.microsoft.com/en-us/advocates/index.html" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/microsoft.png" /></a></li>
-                    <li className="col-lg-3 mr-0"><a href="https://tech.aarons.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/aarons.png" /></a></li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.salesloft.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/salesloft.png"
+                          alt="Sponsor: SalesLoft"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.homedepot.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/the-home-depot.png"
+                          alt="Sponsor: The Home Depot"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.netflix.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/netflix.png"
+                          alt="Sponsor: Netflix"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3  mr-0">
+                      <a
+                        href="https://google.com"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/google.png"
+                          alt="Sponsor: Google"
+                        />
+                      </a>
+                    </li>
                   </ul>
                   <ul>
-                    <li className="col-lg-3"><a href="https://www.ultimatesoftware.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/ultimate-software.png" /></a></li>
-                    <li className="col-lg-3"><a href="https://www.terminus.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/terminus.png" /></a></li>
-                    <li className="col-lg-3 mr-0"><a href="https://balsamiq.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/balsamiq.png" /></a></li>
-                    <li className="col-lg-3 mr-0"><a href="https://bignerdranch.com/" rel="noreferrer noopener" target="_blank"><img src="/img/sponsors/bignerdranch.png"/></a></li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://tech.aarons.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/aarons-tech.png"
+                          alt="Sponsor: Aaron's Tech"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.mailchimp.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/mailchimp.png"
+                          alt="Sponsor: Mailchimp"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.ultimatesoftware.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/ultimate-software.png"
+                          alt="Sponsor: Ultimate Software"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.terminus.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/terminus.png"
+                          alt="Sponsor: Terminus"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://balsamiq.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/balsamiq.png"
+                          alt="Sponsor: Balsamiq"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://bignerdranch.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/bignerdranch.png"
+                          alt="Sponsor: Big Nerd Ranch"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://callrail.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/callrail.png"
+                          alt="Sponsor: CallRail"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://auth0.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/auth0.png"
+                          alt="Sponsor: Auth0"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.deluxe.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/deluxe.png"
+                          alt="Sponsor: Deluxe Corporation"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.mozilla.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/mozilla.png"
+                          alt="Sponsor: Mozilla"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.samsara.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/samsara.png"
+                          alt="Sponsor: Samsara"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.axios.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/axios.png"
+                          alt="Sponsor: Axios"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://developer.microsoft.com/en-us/advocates/index.html"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/microsoft.png"
+                          alt="Sponsor: Microsoft"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.warnermediagroup.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/warner_media.png"
+                          alt="Sponsor: Warner Media"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.abstract.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/abstract.png"
+                          alt="Sponsor: Abstract"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.cloudinary.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/new_cloudinary_logo_square.png"
+                          alt="Sponsor: Cloudinary"
+                        />
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -514,13 +750,17 @@ export default ({data}) => (
             </div>
             {/* /row end*/}
             <div className="row">
-
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50 xs-mb40">
                     <h2>Sponsor REFACTR.TECH</h2>
-                    <p>Companies, are you looking for an opportunity to engage with hundreds of people from diverse backgrounds at our Exhibit Hall and Career Expo? Please take a few minutes to review the various ways to support REFACTR.TECH in our attached sponsorship prospectus</p>
-
+                    <p>
+                      Companies, are you looking for an opportunity to engage
+                      with hundreds of people from diverse backgrounds at our
+                      Exhibit Hall and Career Expo? Please take a few minutes to
+                      review the various ways to support REFACTR.TECH in our
+                      attached sponsorship prospectus
+                    </p>
                   </div>
                 </div>
               </div>
@@ -544,34 +784,36 @@ export default ({data}) => (
           {/* /row end*/}
         </div>
         {/*Our Sponsors Area End Here*/}
-    {/*Main Container End Here*/}
+        {/*Main Container End Here*/}
+      </div>
+      <Footer />
+    </div>
   </div>
-  <Footer/>
-  </div>
-  </div>
-)
+);
 
-export const speakerPageQuery = graphql` 
-{
-  allAirtable(filter: {table: {eq: "Speakers"}, data: {featured: {eq: true}} }) {
-    edges {
-      node {
-        fields {
-          slug
-        }
-        data {
-          speaker_name
-          role
-          company
-          twitter
-          headshot {
-            url
+export const speakerPageQuery = graphql`
+  {
+    allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
           }
-          linkedIn
-          company_url
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              url
+            }
+            linkedIn
+            company_url
+          }
         }
       }
     }
   }
-}
-  `
+`;

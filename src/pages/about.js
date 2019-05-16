@@ -5,17 +5,6 @@ import NavigationBar from "../components/NavigationBar";
 
 export default () => (
   <div>
-    {/*Preloder*/}
-    {/* <div className="loader">
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--text" />
-        </div> */}
-
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}

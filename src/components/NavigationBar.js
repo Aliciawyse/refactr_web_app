@@ -53,6 +53,11 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/schedule">
+                        Schedule
+                      </Link>
+                    </li>
+                    <li className="nav-item">
                       <Link
                         className="nav-link"
                         activeClassName="active"
@@ -70,6 +75,11 @@ export default class NavigationBar extends Component {
                         rel="noreferrer noopener"
                       >
                         Sponsors
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/travel">
+                        Travel
                       </Link>
                     </li>
                     <li className="nav-item">

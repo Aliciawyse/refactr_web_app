@@ -8,9 +8,10 @@ export const SessionCardList = ({ items }) => {
   const tracks = _.groupBy(sessions_data, "data.Track");
 
   return Object.keys(tracks).map(track => (
+
     <div className="speakers-single-area">
       <div id="vapp-swe-sessions" className="container">
-        <a name="swe-sessions" />
+        <a name={track.replace(/\s+/g, '')}></a>
         <div className="section-title">
           <div className="title-text pl mt30 mb30">
             <h2>{track}</h2>
