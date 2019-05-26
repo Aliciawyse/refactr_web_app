@@ -1,12 +1,11 @@
 const path = require(`path`);
-const slugify = require(`slugify`);
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
-
+  
   if (node.internal.type === `Airtable` && node.table === `Speakers`) {
     const slug =
-      "/speakers/" + slugify(node.data.speaker_name, { lower: true });
+      "/speakers/" + node.data.anchor
     createNodeField({
       node,
       name: `slug`,
@@ -16,7 +15,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === `Airtable` && node.table === `Sessions`) {
     const slug =
-      "/sessions/" + slugify(node.data.anchor_truncated, { lower: true });
+      "/sessions/" + node.data.anchor_truncated
     createNodeField({
       node,
       name: `slug`,
@@ -27,6 +26,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
+  // Go get the data that satisfy 
   return graphql(
     `
       query {
@@ -35,18 +35,6 @@ exports.createPages = ({ actions, graphql }) => {
             node {
               fields {
                 slug
-              }
-              data {
-                # speaker_name
-                role
-                company
-                twitter
-                headshot {
-                  url
-                }
-                linkedIn
-                company_url
-                
               }
             }
           }
@@ -57,36 +45,31 @@ exports.createPages = ({ actions, graphql }) => {
               fields {
                 slug
               }
-              data {
-                Abstract
-                start_time
-              }
             }
           }
         }
       }
     `
   ).then(result => {
+    // For each node of speaker data
     result.data.speakers.edges.forEach(({ node }) => {
       createPage({
+        // Use this path for the page
         path: node.fields.slug,
+        // The template to use for the created pages
         component: path.resolve(`./src/templates/the_speaker.js`),
+        // This allows us to access the variable `slug` in our individual speaker pages
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
-          // inject any variables we will need on the individual speaker page
           slug: node.fields.slug
         }
       });
     });
+    // Create page for each session
     result.data.sessions.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/the_session.js`),
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
-          // inject any variables we will need on the individual speaker page
           slug: node.fields.slug
         }
       });

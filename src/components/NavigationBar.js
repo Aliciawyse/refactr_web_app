@@ -61,16 +61,6 @@ export default class NavigationBar extends Component {
                       <Link
                         className="nav-link"
                         activeClassName="active"
-                        to="/sessions"
-                        rel="noreferrer noopener"
-                      >
-                        Sessions
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        className="nav-link"
-                        activeClassName="active"
                         to="/#call-for-sponsors"
                         rel="noreferrer noopener"
                       >

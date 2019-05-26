@@ -43,12 +43,52 @@ Author Email: ithemeslab@gmail.com */
 /*google fonts*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
 /* 1.1  global & override */
-body {
+/* body {
   font-family: "Poppins", sans-serif;
   color: #656565;
   font-size: 1em;
   line-height: 1.5em;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden; } */
+
+  .speaker-avatar{
+    width: 75px; 
+    height: auto; 
+    border-radius: 50%;
+    float:left; 
+    margin-right: 7px;
+  }
+
+  .speaker-header{
+    margin-bottom: 7px !important;
+    font-size: 18px !important;
+  }
+  
+  .mb40 {
+    margin-bottom: 40px; }
+
+  .m0{
+    margin: 0 !important;
+  }
+
+  .speaker-text{
+    margin-top: 13px !important;
+    margin-bottom: 0 !important;
+    color: #4125dd !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  
+  .speaker-text:hover{
+    color: #cf057c !important;
+  }
+
+  a.detail-view{
+    color: #4125DD !important;
+  }
+  
+  a.detail-view:hover{
+    color: #cf057c !important;
+  }
 
 ::-moz-selection {
   background: #4125dd;
@@ -357,7 +397,7 @@ html .ui-button.ui-state-disabled:active {
   color: #252525; }
 
 /* 1.2  Typography */
-h1, h2, h3, h4, h5, h6 {
+ h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin: 0; }
@@ -377,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ttu {
   text-transform: uppercase; }
-
+/* 
 a {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -388,7 +428,7 @@ a {
   a:focus {
     text-decoration: none;
     color: #252525;
-    outline: 0; }
+    outline: 0; } */
 
 /* 1.3 Margins & Paddings */
 .mb30 {
@@ -2409,7 +2449,7 @@ a {
 	margin-bottom: 30px;
 }
 
-.event-topics-tabs .tab-btns li div{
+/* .event-topics-tabs .tab-btns li div{
 	position: relative;
 	display: block;
 	margin-bottom: 12px;
@@ -2428,7 +2468,7 @@ a {
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
-}
+} */
 
 .event-topics-tabs .tab-btns li div:before{
 	position: absolute;

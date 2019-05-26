@@ -5,13 +5,15 @@ import { WorkshopCardList } from "../components/WorkshopCardList";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import NavigationBar from "../components/NavigationBar";
 import workshopData from "../workshop-data";
-import "../../src/styles/assets/css/style.css";
+import { Link } from "gatsby";
+
+// import "../../src/styles/assets/css/style.css";
 import "../../src/styles/assets/css/style2.css";
 import "../../src/styles/assets/css/responsive.css";
 import "../../src/styles/assets/css/responsive2.css";
 
 export default ({ data }) => (
-  <div style={{ color: `purple` }}>
+  <div>
     <div>
       {/*Main Container Start Here*/}
       <div className="main-container">
@@ -95,31 +97,88 @@ export default ({ data }) => (
           <div className="auto-container">
             <div className="sec-title">
               <h2>Tracks</h2>
+              <p>
+                <span style={{ color: "#C41579", fontWeight: "bold" }}>
+                  New!
+                </span>
+                &nbsp;&nbsp;Check out our sessions by track.
+              </p>
             </div>
+
             {/*Event Topics*/}
             <div className="event-topics-tabs">
               <div className="tabs-box">
                 {/*Tab Btns*/}
                 <ul className="tab-btns tab-buttons clearfix">
                   <li data-tab="#tab1" className="tab-btn">
-                    <div>Front-End Engineering</div>
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#Front-End"
+                        rel="noreferrer noopener"
+                      >
+                        Front-End Engineering
+                      </Link>
+                    </div>
                   </li>
-                  <a href="/sessions#SoftwareEngineering">
-                    <li data-tab="#tab2" className="tab-btn">
-                      <div>Software Engineering</div>
-                    </li>
-                  </a>
-                  <li data-tab="#tab3" className="tab-btn">
-                    <div>Product &amp; UX</div>
+                  <li data-tab="#tab1" className="tab-btn">
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#SoftwareEngineering"
+                        rel="noreferrer noopener"
+                      >
+                        Software Engineering
+                      </Link>
+                    </div>
                   </li>
-                  <li data-tab="#tab3" className="tab-btn">
-                    <div>Cool $h!t</div>
+
+                  <li data-tab="#tab1" className="tab-btn">
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#Product/UX/UI"
+                        rel="noreferrer noopener"
+                      >
+                        Product &amp; UX
+                      </Link>
+                    </div>
                   </li>
-                  <li data-tab="#tab4" className="tab-btn">
-                    <div>Career &amp; Leadership</div>
+
+                  <li data-tab="#tab1" className="tab-btn">
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#CoolShit"
+                        rel="noreferrer noopener"
+                      >
+                        Cool $h!t
+                      </Link>
+                    </div>
                   </li>
-                  <li data-tab="#tab3" className="tab-btn">
-                    <div>Social Impact</div>
+
+                  <li data-tab="#tab1" className="tab-btn">
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#Career&Leadership"
+                        rel="noreferrer noopener"
+                      >
+                        Career &amp; Leadership
+                      </Link>
+                    </div>
+                  </li>
+
+                  <li data-tab="#tab1" className="tab-btn">
+                    <div>
+                      <Link
+                        style={{ color: "#12114a" }}
+                        to="/sessions/#SocialImpact"
+                        rel="noreferrer noopener"
+                      >
+                        Social Impact
+                      </Link>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -214,7 +273,7 @@ export default ({ data }) => (
                       rel="noreferrer noopener"
                       target="_blank"
                     >
-                      <h3 style={{ color: "white" }}>Kortney Ziegler</h3>
+                      <h3 style={{ color: "white" }}>Dr. Kortney Ziegler</h3>
                     </a>
                     <h6 style={{ color: "#aaa" }}>
                       Director of Research and Design, ZaMLabs
@@ -312,7 +371,7 @@ export default ({ data }) => (
                           <li>Tons of Social Activities</li>
                         </ul>
                       </div>
-                      <div className="bordered-btn" style={{ color: "red" }}>
+                      <div className="bordered-btn">
                         <a>Sold Out</a>
                       </div>
                     </div>
@@ -490,12 +549,14 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50 xs-mb40">
-                    <h2>Featured Sponsors</h2>
+                    <h2>Sponsors</h2>
                   </div>
                 </div>
+                <hr />
+                <h2 className="text-center">Platinum</h2>
                 <div className="single-sponsers">
                   <ul>
-                    <li className="col-lg-3">
+                    <li className="col-lg-3 mr-0">
                       <a
                         href="https://www.salesloft.com/"
                         rel="noreferrer noopener"
@@ -507,6 +568,11 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
+                  </ul>
+                  <hr />
+
+                  <h2 className="text-center">Gold</h2>
+                  <ul>
                     <li className="col-lg-3">
                       <a
                         href="https://www.homedepot.com/"
@@ -519,7 +585,64 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://amp.dev/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img src="/img/sponsors/amp.png" alt="Sponsor: AMP" />
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul>
                     <li className="col-lg-3">
+                      <a
+                        href="https://callrail.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/callrail.png"
+                          alt="Sponsor: CallRail"
+                        />
+                      </a>
+                    </li>
+
+                    <li class="col-lg-3">
+                      <a
+                        href="https://www.honeywell.com"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/honeywell.png"
+                          alt="Sponsor: Honeywell"
+                        />
+                      </a>
+                    </li>
+
+                    <li class="col-lg-3 mr-0">
+                      <a
+                        href="https://rangle.io"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/rangle.png"
+                          alt="Sponsor: Rangle"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">VIP Reception</h2>
+
+                  <ul>
+                    <li className="col-lg-3 mr-0">
                       <a
                         href="https://www.netflix.com/"
                         rel="noreferrer noopener"
@@ -531,6 +654,13 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">Silver</h2>
+
+                  <ul>
                     <li className="col-lg-3  mr-0">
                       <a
                         href="https://google.com"
@@ -543,7 +673,34 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
+
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.mailchimp.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/mailchimp.png"
+                          alt="Sponsor: Mailchimp"
+                        />
+                      </a>
+                    </li>
+
+                    <li class="col-lg-3 mr-0">
+                      <a
+                        href="https://www.twilio.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/twilio.png"
+                          alt="Sponsor: Twilio"
+                        />
+                      </a>
+                    </li>
                   </ul>
+
                   <ul>
                     <li className="col-lg-3">
                       <a
@@ -557,18 +714,7 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.mailchimp.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/mailchimp.png"
-                          alt="Sponsor: Mailchimp"
-                        />
-                      </a>
-                    </li>
+
                     <li className="col-lg-3">
                       <a
                         href="https://www.ultimatesoftware.com/"
@@ -583,30 +729,152 @@ export default ({ data }) => (
                     </li>
                     <li className="col-lg-3 mr-0">
                       <a
-                        href="https://www.terminus.com/"
+                        href="https://www.abstract.com/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         <img
-                          src="/img/sponsors/terminus.png"
-                          alt="Sponsor: Terminus"
+                          src="/img/sponsors/abstract.png"
+                          alt="Sponsor: Abstract"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">Video & Accessibility</h2>
+
+                  <ul>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.samsara.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/samsara.png"
+                          alt="Sponsor: Samsara"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.mozilla.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/mozilla.png"
+                          alt="Sponsor: Mozilla"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">Lanyard & Name Badge</h2>
+
+                  <ul>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://auth0.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/auth0.png"
+                          alt="Sponsor: Auth0"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.homedepot.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/the-home-depot.png"
+                          alt="Sponsor: The Home Depot"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">Happy Hour</h2>
+                  <ul>
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.cloudinary.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/new_cloudinary_logo_square.png"
+                          alt="Sponsor: Cloudinary"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.warnermediagroup.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/warner_media.png"
+                          alt="Sponsor: Warner Media"
+                        />
+                      </a>
+                    </li>
+                    <li class="col-lg-3 mr-0">
+                      <a
+                        href="https://www.twilio.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/twilio.png"
+                          alt="Sponsor: Twilio"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <hr />
+
+                  <h2 className="text-center">Opportunity Grants</h2>
+                  <ul>
+                    <li className="col-lg-3">
+                      <a
+                        href="https://www.homedepot.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/the-home-depot.png"
+                          alt="Sponsor: The Home Depot"
+                        />
+                      </a>
+                    </li>
+
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.deluxe.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/deluxe.png"
+                          alt="Sponsor: Deluxe Corporation"
                         />
                       </a>
                     </li>
                   </ul>
                   <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://balsamiq.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/balsamiq.png"
-                          alt="Sponsor: Balsamiq"
-                        />
-                      </a>
-                    </li>
                     <li className="col-lg-3">
                       <a
                         href="https://bignerdranch.com/"
@@ -621,63 +889,13 @@ export default ({ data }) => (
                     </li>
                     <li className="col-lg-3">
                       <a
-                        href="https://callrail.com/"
+                        href="https://balsamiq.com/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         <img
-                          src="/img/sponsors/callrail.png"
-                          alt="Sponsor: CallRail"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://auth0.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/auth0.png"
-                          alt="Sponsor: Auth0"
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.deluxe.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/deluxe.png"
-                          alt="Sponsor: Deluxe Corporation"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.mozilla.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/mozilla.png"
-                          alt="Sponsor: Mozilla"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.samsara.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/samsara.png"
-                          alt="Sponsor: Samsara"
+                          src="/img/sponsors/balsamiq.png"
+                          alt="Sponsor: Balsamiq"
                         />
                       </a>
                     </li>
@@ -694,8 +912,26 @@ export default ({ data }) => (
                       </a>
                     </li>
                   </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">
+                    Speaker Lounge & Hacker Lounge
+                  </h2>
                   <ul>
-                    <li className="col-lg-3">
+                    <li className="col-lg-3 mr-0">
+                      <a
+                        href="https://www.terminus.com/"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        <img
+                          src="/img/sponsors/terminus.png"
+                          alt="Sponsor: Terminus"
+                        />
+                      </a>
+                    </li>
+                    <li className="col-lg-3 mr-0">
                       <a
                         href="https://developer.microsoft.com/en-us/advocates/index.html"
                         rel="noreferrer noopener"
@@ -707,39 +943,21 @@ export default ({ data }) => (
                         />
                       </a>
                     </li>
-                    <li className="col-lg-3">
+                  </ul>
+
+                  <hr />
+
+                  <h2 className="text-center">After Party</h2>
+                  <ul>
+                    <li class="col-lg-3 mr-0">
                       <a
-                        href="https://www.warnermediagroup.com/"
+                        href="https://www.cypress.io"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         <img
-                          src="/img/sponsors/warner_media.png"
-                          alt="Sponsor: Warner Media"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3">
-                      <a
-                        href="https://www.abstract.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/abstract.png"
-                          alt="Sponsor: Abstract"
-                        />
-                      </a>
-                    </li>
-                    <li className="col-lg-3 mr-0">
-                      <a
-                        href="https://www.cloudinary.com/"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        <img
-                          src="/img/sponsors/new_cloudinary_logo_square.png"
-                          alt="Sponsor: Cloudinary"
+                          src="/img/sponsors/cypress.png"
+                          alt="Sponsor: Cypress.io"
                         />
                       </a>
                     </li>

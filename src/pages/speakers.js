@@ -16,6 +16,15 @@ export default ({ data }) => (
                 <div className="section-title text-center">
                   <h2>Speakers</h2>
                 </div>
+                <ol className="breadcrumb">
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>|</li>
+                  <li>
+                    Speakers
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
@@ -31,7 +40,6 @@ export default ({ data }) => (
         </div>
       </div>
       {/*Whos Speaking Area End Here*/}
-
     </div>
     <Footer />
   </div>
