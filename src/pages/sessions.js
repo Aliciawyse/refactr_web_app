@@ -83,9 +83,9 @@ export const all_sessions = graphql`
             Speakers {
               data {
                 anchor
-                headshot {
-                  url
-                }
+                headshot {localFiles{childImageSharp{fluid(maxWidth: 512){
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  }}}}
                 role
                 company
               }

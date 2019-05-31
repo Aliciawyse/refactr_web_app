@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
+import Img from "gatsby-image";
 
 export default ({ data }) => {
   return (
@@ -47,11 +48,12 @@ export default ({ data }) => {
                   style={{ width: "250px", height: "100%" }}
                   className="speakers-img"
                 >
-                  <img
-                    className="img-fluid"
-                    src={data.airtable.data.headshot[0].url}
-                    alt
-                  />
+                  {data.airtable.data.headshot.localFiles && (
+                    <Img
+                      alt="Speaker"
+                      fluid={data.airtable.data.headshot.localFiles[0].childImageSharp.fluid}
+                    />
+                  )}
                 </div>
               </div>
               {/* /.col end*/}
@@ -59,8 +61,8 @@ export default ({ data }) => {
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
                   <br />
-                  
-                 <p>{data.airtable.data.bio}</p>
+
+                  <p>{data.airtable.data.bio}</p>
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
@@ -94,10 +96,7 @@ export default ({ data }) => {
         </div>
         {/* /container end*/}
       </div>
-      {/*Privacy Policy Content Area End Here*/}
-      {/*Footer Area Start Here*/}
       <Footer />
-      {/*Footer Area End Here*/}
     </div>
   );
 };
@@ -114,7 +113,13 @@ export const query = graphql`
         company
         twitter
         headshot {
-          url
+          localFiles {
+            childImageSharp {
+              fluid(maxWidth: 512) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
+          }
         }
         linkedIn
         company_url

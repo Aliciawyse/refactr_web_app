@@ -4,7 +4,11 @@ import { SpeakerCardList } from "../components/SpeakerCardList";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 
-export default ({ data }) => (
+export default ({ data }) => {
+
+  console.log(data)
+  
+  return (
   <div>
     <div className="main-container">
       <NavigationBar whiteText/>
@@ -43,7 +47,7 @@ export default ({ data }) => (
     </div>
     <Footer />
   </div>
-);
+)};
 
 export const speakerPageQuery = graphql`
   {
@@ -58,9 +62,9 @@ export const speakerPageQuery = graphql`
             role
             company
             twitter
-            headshot {
-              url
-            }
+            headshot {localFiles{childImageSharp{fluid(maxWidth: 512){
+              ...GatsbyImageSharpFluid_tracedSVG
+              }}}}
             linkedIn
             company_url
           }

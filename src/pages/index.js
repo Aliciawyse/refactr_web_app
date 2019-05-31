@@ -1024,9 +1024,9 @@ export const speakerPageQuery = graphql`
             role
             company
             twitter
-            headshot {
-              url
-            }
+            headshot {localFiles{childImageSharp{fluid(maxWidth: 512){
+              ...GatsbyImageSharpFluid_tracedSVG
+              }}}}
             linkedIn
             company_url
           }
