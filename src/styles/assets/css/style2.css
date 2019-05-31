@@ -115,6 +115,10 @@ Last Change:    30/1/2018
   ***/
  
  body {
+    font-family: "Poppins", sans-serif;
+    color: #656565;
+    font-size: 1em;
+    line-height: 1.5em;
      font-size:14px;
      color:#777777;
      line-height:1.7em;
@@ -159,7 +163,9 @@ Last Change:    30/1/2018
  
  p{
      position:relative;
-     line-height:1.8em;	
+     line-height:1.5em;	
+     font-family: "Poppins", sans-serif;
+     font-size: 1.1em;
  }
  
  .auto-container{
