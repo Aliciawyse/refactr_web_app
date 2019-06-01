@@ -1,18 +1,19 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
+import { Helmet } from "react-helmet";
 
 export default () => (
   <div>
-    {/*Preloder*/}
-    {/* <div className="loader">
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--dot" />
-          <div className="loader--text" />
-        </div> */}
+    <Helmet>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Privacy Policy | REFACTR.TECH</title>
+      <meta name="author" content="iThemesLab" />
+      <meta name="description" content="" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    </Helmet>
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}
@@ -26,7 +27,6 @@ export default () => (
               <div className="about-content">
                 <div className="section-title text-center">
                   <h2>Privacy Policy</h2>
-
                 </div>
                 <ol className="breadcrumb">
                   <li>

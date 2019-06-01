@@ -16,29 +16,56 @@ import "../../src/styles/assets/css/responsive2.css";
 export default ({ data }) => (
   <div>
     <Helmet>
-    <title>REFACTR.TECH 2019 - Atlanta June 5 - 7</title>
-    <meta name="description" content="The multi-track tech conference with a focus on inclusion. " />
-    <meta name="robots" content="" />
+      <title>REFACTR.TECH 2019 - Atlanta June 5 - 7</title>
+      <meta
+        name="description"
+        content="The multi-track tech conference with a focus on inclusion. "
+      />
+      <meta name="robots" content="" />
 
-    {/* <!-- Open Graph data --> */}
-    <meta property="og:site_name" content="REFACTR.TECH" />
-    <meta property="og:url" content="https://www.refactr.tech/" />
-    <meta property="og:title" content="REFACTR.TECH 2019 - Atlanta June 5 - 7" />
-    <meta property="og:description" content="The multi-track tech conference with a focus on inclusion." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://refactr.tech/assets/img/marketing/General_Marketing.png" />
+      {/* <!-- Open Graph data --> */}
+      <meta property="og:site_name" content="REFACTR.TECH" />
+      <meta property="og:url" content="https://www.refactr.tech/" />
+      <meta
+        property="og:title"
+        content="REFACTR.TECH 2019 - Atlanta June 5 - 7"
+      />
+      <meta
+        property="og:description"
+        content="The multi-track tech conference with a focus on inclusion."
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:image"
+        content="https://refactr.tech/assets/img/marketing/General_Marketing.png"
+      />
 
-    {/* <!-- Social sharing meta --> */}
-    <meta name="twitter:site" content="@RefactrTech" />
-    <meta name="twitter:title" content="REFACTR.TECH 2019 - Atlanta June 5 - 7" />
-    <meta name="twitter:description" content="The multi-track tech conference with a focus on inclusion." />
-    <meta name="twitter:image" content="https://refactr.tech/assets/img/marketing/General_Marketing.png" />
+      {/* <!-- Social sharing meta --> */}
+      <meta name="twitter:site" content="@RefactrTech" />
+      <meta
+        name="twitter:title"
+        content="REFACTR.TECH 2019 - Atlanta June 5 - 7"
+      />
+      <meta
+        name="twitter:description"
+        content="The multi-track tech conference with a focus on inclusion."
+      />
+      <meta
+        name="twitter:image"
+        content="https://refactr.tech/assets/img/marketing/General_Marketing.png"
+      />
 
-    {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="REFACTR.TECH 2019" />
-    <meta itemprop="description" content="The multi-track tech conference with a focus on inclusion." />
-    <meta itemprop="image" content="/marketing/General_Marketing.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      {/* <!-- Schema.org markup for Google+ --> */}
+      <meta itemprop="name" content="REFACTR.TECH 2019" />
+      <meta
+        itemprop="description"
+        content="The multi-track tech conference with a focus on inclusion."
+      />
+      <meta itemprop="image" content="/marketing/General_Marketing.png" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
     </Helmet>
     <div>
       {/*Main Container Start Here*/}

@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { SessionCardList } from "../components/SessionCardList";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import "../../src/styles/assets/css/style.css";
 import "../../src/styles/assets/css/style2.css";
 import "../../src/styles/assets/css/style.css?23";
@@ -10,6 +11,16 @@ import "../../src/styles/assets/css/responsive.css";
 
 export default ({ data }) => (
   <div>
+    <Helmet>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Sessions | REFACTR.TECH</title>
+      <meta name="author" content="iThemesLab" />
+      <meta name="description" content="" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    </Helmet>
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}
@@ -83,9 +94,15 @@ export const all_sessions = graphql`
             Speakers {
               data {
                 anchor
-                headshot {localFiles{childImageSharp{fluid(maxWidth: 512){
-                  ...GatsbyImageSharpFluid_tracedSVG
-                  }}}}
+                headshot {
+                  localFiles {
+                    childImageSharp {
+                      fluid(maxWidth: 512) {
+                        ...GatsbyImageSharpFluid_tracedSVG
+                      }
+                    }
+                  }
+                }
                 role
                 company
               }
