@@ -93,6 +93,7 @@ export const all_sessions = graphql`
             }
             Speakers {
               data {
+                speaker_name
                 anchor
                 headshot {
                   localFiles {

@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
+import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
 const divStyle = {
   fontFamily: "Poppins",
@@ -59,7 +60,7 @@ export default ({ data }) => {
                   <div>
                     <a name="frontend-sessions" />
                     <p className="session-title">
-                      <span class="m0">{data.airtable.data.title}</span>
+                      <span className="m0">{data.airtable.data.title}</span>
                     </p>
 
                     <p>
@@ -75,32 +76,8 @@ export default ({ data }) => {
 
                     <span className="speaker-header">Speakers</span>
 
-                    <div className="mb40">
-                      <Link
-                        className="detail-view"
-                        to={`/speakers/${
-                          data.airtable.data.Speakers[0].data.anchor
-                        }`}
-                      >
-                        <img
-                          className="img-fluid speaker-avatar"
-                          src={
-                            data.airtable.data.speaker_pic[0].thumbnails.large
-                              .url
-                          }
-                        />
-                        <p className="m0">
-                          <span className="speaker-text">
-                            {data.airtable.data.speaker_display_name}
-                          </span>
-                          <p>
-                            {data.airtable.data.Speakers[0].data.role},{" "}
-                            {data.airtable.data.Speakers[0].data.company}
-                          </p>
-                        </p>
-                        <p style={{ clear: "left" }} />
-                      </Link>
-                    </div>
+                    <SessionSpeakerList speakers={data.airtable.data.Speakers}/>
+
                   </div>
                 </div>
               </div>
@@ -136,6 +113,16 @@ export const query = graphql`
         }
         Speakers {
           data {
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            speaker_name
             role
             company
             anchor

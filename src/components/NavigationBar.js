@@ -75,7 +75,6 @@ export default class NavigationBar extends Component {
                     <li className="nav-item">
                       <a
                         className="nav-link"
-                        activeClassName="active"
                         href="https://shop.refactr.tech"
                         rel="noreferrer noopener"
                         target="_blank"
@@ -86,7 +85,6 @@ export default class NavigationBar extends Component {
                     <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"
-                        activeClassName="active"
                         href="https://tickets.connectevents.io/events/rtech2019/"
                         rel="noreferrer noopener"
                         target="_blank"

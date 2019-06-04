@@ -2,6 +2,7 @@ import React from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
 export const SessionCardList = ({ items }) => {
   const sessions_data = items.map(edge => edge.node);
@@ -27,7 +28,7 @@ export const SessionCardList = ({ items }) => {
                 <div>
                   <a name="frontend-sessions" />
                   <p className="session-title">
-                    <span class="m0">{session.data.title}</span>
+                    <span className="m0">{session.data.title}</span>
                   </p>
 
                   <p>
@@ -42,32 +43,8 @@ export const SessionCardList = ({ items }) => {
 
                   <span className="speaker-header">Speakers</span>
 
-                  <div className="mb40">
-                    <Link
-                      className="detail-view"
-                      to={`/speakers/${session.data.Speakers[0].data.anchor}`}
-                    >
-                      {/* <img
-                        className="img-fluid speaker-avatar"
-                        src={session.data.speaker_pic[0].thumbnails.large.url}
-                      /> */}
-                      <Img
-                      alt="Speaker"
-                      className="img-fluid speaker-avatar"
-                      fluid={session.data.Speakers[0].data.headshot.localFiles[0].childImageSharp.fluid}
-                    />
-                      <p className="m0">
-                        <span className="speaker-text">
-                          {session.data.speaker_display_name}
-                        </span>
-                        <p>
-                          {session.data.Speakers[0].data.role},{" "}
-                          {session.data.Speakers[0].data.company}
-                        </p>
-                      </p>
-                      <p style={{ clear: "left" }} />
-                    </Link>
-                  </div>
+                  <SessionSpeakerList speakers={session.data.Speakers}/>
+
                   <hr />
                 </div>
               ))}
