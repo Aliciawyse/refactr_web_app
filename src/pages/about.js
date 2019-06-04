@@ -186,7 +186,7 @@ export default () => (
                     <h3>Angel Banks</h3>
                   </a>
                   <p>Product Manager</p>
-                  <h6>First Data</h6>
+                  <h6 style={{fontWeight: '700'}}>First Data</h6>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default () => (
                     <h3>Beth Laing</h3>
                   </a>
                   <p>Engineering Manager</p>
-                  <h6>CallRail</h6>
+                  <h6 style={{fontWeight: '700'}}>CallRail</h6>
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default () => (
                     <h3>Erica Stanley</h3>
                   </a>
                   <p>Engineering Manager</p>
-                  <h6>SalesLoft</h6>
+                  <h6 style={{fontWeight: '700'}}>SalesLoft</h6>
                 </div>
               </div>
             </div>
@@ -312,7 +312,7 @@ export default () => (
                     <h3>Vincent Mayers</h3>
                   </a>
                   <p>Organizer</p>
-                  <h6>ConnectEvents</h6>
+                  <h6 style={{fontWeight: '700'}}>ConnectEvents</h6>
                 </div>
               </div>
             </div>
@@ -347,7 +347,7 @@ export default () => (
                     <h3>Nadia Rahali</h3>
                   </a>
                   <p>General Manager</p>
-                  <h6>The Loudermilk Center</h6>
+                  <h6 style={{fontWeight: '700'}}>The Loudermilk Center</h6>
                 </div>
               </div>
             </div>
@@ -382,7 +382,7 @@ export default () => (
                     <h3>Kim Crayton</h3>
                   </a>
                   <p>Chief Encouragement Officer</p>
-                  <h6>for Underrepresented &amp; Marginalized in Tech</h6>
+                  <h6 style={{fontWeight: '700'}}>for Underrepresented &amp; Marginalized in Tech</h6>
                 </div>
               </div>
             </div>
@@ -417,7 +417,7 @@ export default () => (
                     <h3>Marcellus Haynes</h3>
                   </a>
                   <p>Founder</p>
-                  <h6>Technologists of Color</h6>
+                  <h6 style={{fontWeight: '700'}}>Technologists of Color</h6>
                 </div>
               </div>
             </div>
@@ -452,7 +452,7 @@ export default () => (
                     <h3>Diana Rodriguez</h3>
                   </a>
                   <p>Sr. DevOps/SRE &amp; Full Stack Dev</p>
-                  <h6>This Dot</h6>
+                  <h6 style={{fontWeight: '700'}}>This Dot</h6>
                 </div>
               </div>
             </div>
@@ -487,7 +487,7 @@ export default () => (
                     <h3>Todd Lewis</h3>
                   </a>
                   <p>Chair</p>
-                  <h6>All Things Open</h6>
+                  <h6 style={{fontWeight: '700'}}>All Things Open</h6>
                 </div>
               </div>
             </div>
@@ -522,7 +522,7 @@ export default () => (
                     <h3>Neha Batra</h3>
                   </a>
                   <p>Director</p>
-                  <h6>Write/Speak/Code</h6>
+                  <h6 style={{fontWeight: '700'}}>Write/Speak/Code</h6>
                 </div>
               </div>
             </div>
@@ -557,7 +557,7 @@ export default () => (
                     <h3>Chelsea Bullock</h3>
                   </a>
                   <p>Senior UX Researcher</p>
-                  <h6>Mailchimp</h6>
+                  <h6 style={{fontWeight: '700'}}>Mailchimp</h6>
                 </div>
               </div>
             </div>
@@ -592,7 +592,7 @@ export default () => (
                     <h3>Liberty White</h3>
                   </a>
                   <p>Creative Director + Video Marketing Strategist</p>
-                  <h6>CHOZEN MEDIA</h6>
+                  <h6 style={{fontWeight: '700'}}>CHOZEN MEDIA</h6>
                 </div>
               </div>
             </div>
@@ -627,7 +627,7 @@ export default () => (
                     <h3>Jamie Harrell</h3>
                   </a>
                   <p>Bus. Intelligence &amp; Analytics Lead</p>
-                  <h6>Emory University</h6>
+                  <h6 style={{fontWeight: '700'}}>Emory University</h6>
                 </div>
               </div>
             </div>
@@ -662,7 +662,7 @@ export default () => (
                     <h3>Stefanie Jewett</h3>
                   </a>
                   <p>Founder, CEO</p>
-                  <h6>Activvely</h6>
+                  <h6 style={{fontWeight: '700'}}>Activvely</h6>
                 </div>
               </div>
             </div>
@@ -697,7 +697,7 @@ export default () => (
                     <h3>Angeleen Wilson</h3>
                   </a>
                   <p>Director</p>
-                  <h6>Georgia Blockchain Coalition</h6>
+                  <h6 style={{fontWeight: '700'}}>Georgia Blockchain Coalition</h6>
                 </div>
               </div>
             </div>
@@ -732,7 +732,7 @@ export default () => (
                     <h3>Jeremy Likness</h3>
                   </a>
                   <p>Cloud Developer Advocate</p>
-                  <h6>Microsoft</h6>
+                  <h6 style={{fontWeight: '700'}}>Microsoft</h6>
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ export default () => (
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}
-      <NavigationBar />
+      <NavigationBar whiteText/>
       {/*Header End Here*/}
       {/*About Us Area Start Here*/}
       <div className="about-us-area pad-head bg-about">

@@ -8,10 +8,10 @@ import workshopData from "../workshop-data";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
-// import "../../src/styles/assets/css/style.css";
-import "../../src/styles/assets/css/style2.css";
-import "../../src/styles/assets/css/responsive.css";
-import "../../src/styles/assets/css/responsive2.css";
+import "../styles/assets/css/responsive2.css";
+import "../styles/assets/css/style.css";
+import "../styles/assets/css/style2.css";
+import "../styles/assets/css/responsive.css";
 
 export default ({ data }) => (
   <div>
@@ -385,7 +385,13 @@ export default ({ data }) => (
                 {/*Whos Speaking Area End Here*/}
 
                 <FeaturedSpeakerCard items={data.allAirtable.edges} />
-
+                
+                <div className="col-lg-12">
+                  <a style={{textAlign: 'center', color: '#f20487', fontWeight: 'normal'}} href="/speakers">
+                    <h3>See All Confirmed Speakers</h3>
+                  </a>
+                  <p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>
+                </div>
                 {/* /row end*/}
               </div>
               {/* /container end*/}
@@ -860,7 +866,7 @@ export default ({ data }) => (
 
                   <h2 className="text-center">Happy Hour</h2>
                   <ul>
-                    <li className="col-lg-3 mr-0">
+                    <li className="col-lg-3">
                       <a
                         href="https://www.cloudinary.com/"
                         rel="noreferrer noopener"

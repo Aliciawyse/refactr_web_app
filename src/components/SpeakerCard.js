@@ -13,12 +13,12 @@ export const SpeakerCard = ({
   <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
     <div className="speakers xs-mb30">
       <div className="spk-img">
-        
-      {headshot.localFiles && <Img
-          alt="Speaker"
-          fluid={headshot.localFiles[0].childImageSharp.fluid}
-        />}
-
+        {headshot.localFiles && (
+          <Img
+            alt="Speaker"
+            fluid={headshot.localFiles[0].childImageSharp.fluid}
+          />
+        )}
         {/* <img className="img-fluid" alt="trainer-img" src={headshot[0].url}/> */}
         <ul>
           <li>

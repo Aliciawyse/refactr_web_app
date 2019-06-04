@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "My Site"
+    title: "REFACTR.TECH"
   },
   plugins: [
     {

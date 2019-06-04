@@ -2438,21 +2438,21 @@ a {
 	top: 65px;
 }
 
-.event-topics-tabs{
+/* .event-topics-tabs{
 	position: relative;
-}
+} */
 
-.event-topics-tabs .tab-btns{
+/* .event-topics-tabs .tab-btns{
 	position: relative;
 	margin: 0 -15px;
-}
+} */
 
-.event-topics-tabs .tab-btns li{
+/* .event-topics-tabs .tab-btns li{
 	float: left;
 	width: 25%;
 	padding: 0 15px;
 	margin-bottom: 30px;
-}
+} */
 
 /* .event-topics-tabs .tab-btns li div{
 	position: relative;
@@ -2595,12 +2595,12 @@ a {
 	background-position: center;
 }
 
-.auto-container{
+/* .auto-container{
 	position:static;
 	max-width:1200px;
 	padding:0px 15px;
 	margin:0 auto;
-}
+} */
 
 .sec-title h2{
 	position:relative;

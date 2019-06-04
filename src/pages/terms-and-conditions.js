@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import { Helmet } from "react-helmet";
+import Footer from "../components/footer";
 
 export default () => (
   <div>
@@ -10,7 +11,7 @@ export default () => (
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}
-      <NavigationBar />
+      <NavigationBar whiteText />
       {/*Header End Here*/}
       {/*About Us Area Start Here*/}
       <div className="about-us-area pad-head bg-about">
@@ -502,6 +503,7 @@ export default () => (
         {/* /container end*/}
       </div>
       {/*Code of Conduct Content Area End Here*/}
+      <Footer/>
     </div>
     {/*Main Container End Here*/}
     {/*All Js Here*/}
