@@ -76,7 +76,7 @@ export default ({ data }) => (
                   <strong>PARKING</strong>
                 </p>
                 REFACTR.TECH Attendees should park in the parking garage
-                connected to the Loudermilk Conference Center. Cost is $5 per
+                connected to the Loudermilk Conference Center. Cost is $8 per
                 day. Please bring your parking pass with you to have it
                 validated at the Help Desk on the first floor -- payment is only
                 available via card (credit or debit). Please remember that if
@@ -98,7 +98,7 @@ export default ({ data }) => (
             <div className="col-lg-7">
               <div className="inner-content">
                 <p />
-                <h4>HOTEL BLOCK at THE ELLIS HOTEL</h4>
+                <h4>OFFICIAL CONFERENCE HOTEL - THE ELLIS HOTEL</h4>
                 REFACTR.TECH has a hotel block at The Ellis Hotel, located in
                 downtown Altanta only .4 miles from the Loudermilk Conference
                 Center.{" "}

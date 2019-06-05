@@ -239,7 +239,7 @@ export default ({ data }) => (
                 <p>Vue Vixens is an initiative that aims to create workshops to teach Vue.js in a cool and fun way to foxy people who identify as women. It is based on the successful model pioneered by ng-Girls, Rails Bridge and Django Girls initiatives. The format is a self-driven code lab completed in a workshop format in groups with mentoring by conference-goers and speakers who volunteer to help. The goal of the program is to familiarize women and those who identify as such in a supportive and inclusive location with Vue.js and general web and mobile programming concepts. Welcome to the skulk!
                 </p>
                 <span>Speakers<br />
-                  <a href="https://vuevixens.org/" rel="noreferrer noopener" target="_blank">Vue Vixens</a><br />
+                  <a href="/speakers/marina-mosti/" rel="noreferrer noopener" target="_blank">Marina Mosti</a><br />
                   <span className="primary-btn"><a className="btn-primary" href>Sold Out!</a></span>
                 </span>
               </div>

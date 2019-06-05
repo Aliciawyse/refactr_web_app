@@ -684,7 +684,7 @@ export default ({ data }) => (
 
                     <li class="col-lg-3 mr-0">
                       <a
-                        href="https://rangle.io"
+                        href="https://rangle.io/?utm_source=refactr&utm_medium=website&utm_campaign=event"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
