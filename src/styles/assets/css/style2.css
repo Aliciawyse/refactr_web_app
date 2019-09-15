@@ -131,8 +131,13 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #4125dd;
+  color: #12114a;
 }
+
+Link:hover {
+  color:red;
+}
+
 
 button {
   cursor: pointer;
@@ -9200,4 +9205,9 @@ a.ui-button:active,
 .sign-up-form .image-column .image img {
   width: 100%;
   height: auto;
+}
+
+
+Link:hover {
+  color:red;
 }

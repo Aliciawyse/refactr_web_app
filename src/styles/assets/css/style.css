@@ -50,6 +50,9 @@ Author Email: ithemeslab@gmail.com */
   line-height: 1.5em;
   -webkit-backface-visibility: hidden; } */
 
+li:hover {
+    color:white;
+  }
   .session-title{
     font-weight:500 !important; 
     margin-bottom: 3px !important;

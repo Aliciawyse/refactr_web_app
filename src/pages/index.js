@@ -7,11 +7,17 @@ import NavigationBar from "../components/NavigationBar";
 import workshopData from "../workshop-data";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
+import styled from "styled-components";
 
 import "../styles/assets/css/responsive2.css";
 import "../styles/assets/css/style.css";
 import "../styles/assets/css/style2.css";
 import "../styles/assets/css/responsive.css";
+
+const Topic = styled.a`${Link}:hover & {
+  color: white;
+}
+`
 
 export default ({ data }) => (
   <div>
@@ -164,20 +170,22 @@ export default ({ data }) => (
                 {/*Tab Btns*/}
                 <ul className="tab-btns tab-buttons clearfix">
                   <li data-tab="#tab1" className="tab-btn">
-                    <div>
+                  <div>
+                    
                       <Link
-                        style={{ color: "#12114a" }}
+                        id="test"
                         to="/sessions/#Front-End"
                         rel="noreferrer noopener"
+                        className="test"
                       >
                         Front-End Engineering
                       </Link>
+                        
                     </div>
                   </li>
                   <li data-tab="#tab1" className="tab-btn">
                     <div>
                       <Link
-                        style={{ color: "#12114a" }}
                         to="/sessions/#SoftwareEngineering"
                         rel="noreferrer noopener"
                       >
@@ -189,7 +197,7 @@ export default ({ data }) => (
                   <li data-tab="#tab1" className="tab-btn">
                     <div>
                       <Link
-                        style={{ color: "#12114a" }}
+                        className="topic"
                         to="/sessions/#Product/UX/UI"
                         rel="noreferrer noopener"
                       >
@@ -201,7 +209,7 @@ export default ({ data }) => (
                   <li data-tab="#tab1" className="tab-btn">
                     <div>
                       <Link
-                        style={{ color: "#12114a" }}
+                       
                         to="/sessions/#CoolShit"
                         rel="noreferrer noopener"
                       >
@@ -213,7 +221,7 @@ export default ({ data }) => (
                   <li data-tab="#tab1" className="tab-btn">
                     <div>
                       <Link
-                        style={{ color: "#12114a" }}
+                    
                         to="/sessions/#Career&Leadership"
                         rel="noreferrer noopener"
                       >
@@ -225,7 +233,7 @@ export default ({ data }) => (
                   <li data-tab="#tab1" className="tab-btn">
                     <div>
                       <Link
-                        style={{ color: "#12114a" }}
+                       
                         to="/sessions/#SocialImpact"
                         rel="noreferrer noopener"
                       >
