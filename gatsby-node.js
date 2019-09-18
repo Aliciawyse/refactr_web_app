@@ -1,4 +1,7 @@
 const path = require(`path`);
+const sharp = require('sharp');
+sharp.simd(false)
+sharp.cache(false)
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
