@@ -58,7 +58,9 @@ export default ({ data }) => {
 
 export const speakerPageQuery = graphql`
   {
-    allAirtable(filter: { table: { eq: "Speakers" } }) {
+    allAirtable(
+      filter: { table: { eq: "Speakers" } }
+    ) {
       edges {
         node {
           fields {
@@ -80,6 +82,7 @@ export const speakerPageQuery = graphql`
             }
             linkedIn
             company_url
+            pronouns
           }
         }
       }

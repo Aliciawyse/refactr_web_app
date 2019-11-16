@@ -1102,6 +1102,7 @@ export const speakerPageQuery = graphql`
             }
             linkedIn
             company_url
+            pronouns
           }
         }
       }

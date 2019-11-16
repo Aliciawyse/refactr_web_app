@@ -8,7 +8,8 @@ export const SpeakerCard = ({
   headshot,
   linkedIn,
   twitter,
-  slug
+  slug,
+  pronouns
 }) => (
   <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
     <div className="speakers xs-mb30">
@@ -39,6 +40,7 @@ export const SpeakerCard = ({
             {speaker_name}
           </a>
         </h3>
+        <span>{pronouns}</span>
         <p>{role}</p>
         <h6>{company}</h6>
       </div>
