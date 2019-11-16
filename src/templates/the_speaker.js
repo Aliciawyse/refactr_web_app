@@ -60,6 +60,7 @@ export default ({ data }) => {
               <div className="col-lg-7 col-md-12">
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
+                  <span>{data.airtable.data.pronouns}</span>
                   <br />
 
                   <p>{data.airtable.data.bio}</p>
@@ -127,6 +128,7 @@ export const query = graphql`
         session_url
         session_title
         session_anchor
+        pronouns
       }
     }
   }
