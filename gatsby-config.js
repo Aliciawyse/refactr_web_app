@@ -19,7 +19,6 @@ module.exports = {
       options: {
         apiKey: process.env.GATSBY_AIRTABLE_API_KEY,
         tables: [
-          
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
             tableName: `Speakers`,
@@ -31,6 +30,12 @@ module.exports = {
             tableName: `Sessions`,
             queryName: `sessions`,
             tableLinks: ["Speakers"]
+          },
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `Sponsors`,
+            queryName: `sponsors`,
+            tableLinks: ["Sponsors"]
           }
         ]
       }
