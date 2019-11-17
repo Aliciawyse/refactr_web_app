@@ -85,7 +85,7 @@ export default class NavigationBar extends Component {
                     <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"
-                        href="https://tickets.connectevents.io/events/rtech2019/"
+                        href="http://reg.connectevents.io/ConnectEvents/rtech2020/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
@@ -102,7 +102,7 @@ export default class NavigationBar extends Component {
                 <li className="header-ticket">
                   <a
                     className="pr-0"
-                    href="https://tickets.connectevents.io/events/rtech2019/"
+                    href="http://reg.connectevents.io/ConnectEvents/rtech2020/"
                     target="_blank"
                   >
                     Tickets
