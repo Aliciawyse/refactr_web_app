@@ -45,7 +45,7 @@ export default ({ data }) => {
               {/* <a :name="speaker.fields.anchor" /> */}
               <div className="col-lg-5 col-md-12">
                 <div
-                  style={{ width: "250px", height: "100%" }}
+                  style={{ width: "400px", height: "100%" }}
                   className="speakers-img"
                 >
                   {data.airtable.data.headshot.localFiles && (
