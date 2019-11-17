@@ -30,14 +30,14 @@ export const SessionCardList = ({ items }) => {
                   <p className="session-title">
                     <span className="m0">{session.data.title}</span>
                   </p>
-
-                  <p>
+                  <br/>
+                  {/*<p>
                     <a className="detail-view">
                       {" "}
                       {session.data.Day} {session.data.date_friendly},{" "}
                       {session.data.Time} (45 min)
                     </a>
-                  </p>
+                  </p>*/}
 
                   <p>{session.data.Abstract}</p>
 
