@@ -124,7 +124,7 @@ export default ({ data }) => (
               <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">70</span>
+                    <span className="count">60</span>
                     <p>Speakers</p>
                   </div>
                 </div>
