@@ -98,7 +98,7 @@ export const all_sessions = graphql`
                 headshot {
                   localFiles {
                     childImageSharp {
-                      fluid(maxWidth: 512) {
+                      fluid(maxWidth: 512, maxHeight:512) {
                         ...GatsbyImageSharpFluid_tracedSVG
                       }
                     }
