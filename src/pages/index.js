@@ -146,33 +146,6 @@ export default ({ data }) => (
         </div>
         {/*Counter Up Area End Here*/}
 
-        
-        <div className="our-blog-area  pad100">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>Workshops</h2>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-            </div>
-            {/* /.row  end*/}
-            <div className="inner-blog">
-              <div>
-                <div className="row">
-                  <WorkshopCardList items={workshopData} />
-                </div>
-              </div>
-              {/* /row end*/}
-            </div>
-            {/* /container end*/}
-          </div>
-          {/*Feature Area End Here*/}
-        </div>
-
         {/*Keynote Speaker Area Start Here*/}
         <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
