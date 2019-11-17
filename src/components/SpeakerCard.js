@@ -36,7 +36,7 @@ export const SpeakerCard = ({
       </div>
       <div className="spk-info">
         <h3>
-          <a href={slug} rel="noreferrer noopener" target="_blank">
+          <a href={slug}>
             {speaker_name}
           </a>
         </h3>
