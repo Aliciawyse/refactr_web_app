@@ -63,14 +63,14 @@ export default ({ data }) => {
                       <span className="m0">{data.airtable.data.title}</span>
                     </p>
 
-                    <p>
+                    {/*<p>
                       <a className="detail-view">
                         {" "}
                         {data.airtable.data.Day}{" "}
                         {data.airtable.data.date_friendly},{" "}
                         {data.airtable.data.Time} (45 min)
                       </a>
-                    </p>
+                    </p>*/}
 
                     <p style={abstractStyle}>{data.airtable.data.Abstract}</p>
 
@@ -116,7 +116,7 @@ export const query = graphql`
             headshot {
               localFiles {
                 childImageSharp {
-                  fluid(maxWidth: 512) {
+                  fluid(maxWidth: 512, maxHeight: 512) {
                     ...GatsbyImageSharpFluid_tracedSVG
                   }
                 }
