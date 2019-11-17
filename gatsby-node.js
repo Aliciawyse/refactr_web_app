@@ -5,7 +5,7 @@ sharp.cache(false)
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
-  
+
   if (node.internal.type === `Airtable` && node.table === `Speakers`) {
     const slug =
       "/speakers/" + node.data.anchor
@@ -29,7 +29,7 @@ exports.onCreateNode = ({ node, actions }) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
-  // Go get the data that satisfy 
+  // Go get the data that satisfy
   return graphql(
     `
       query {
@@ -43,6 +43,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
         sessions: allAirtable(filter: { table: { eq: "Sessions" } }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        sponsors: allAirtable(filter: { table: { eq: "Sponsors" } }) {
           edges {
             node {
               fields {
@@ -72,6 +81,16 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/the_session.js`),
+        context: {
+          slug: node.fields.slug
+        }
+      });
+    });
+    // Create page for each sponsor
+    result.data.sponsors.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/the_sponsor.js`),
         context: {
           slug: node.fields.slug
         }
