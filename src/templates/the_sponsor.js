@@ -76,10 +76,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query Sponsor($slug: String!) {
-    airtable(table: { eq: "Sponsors" }, fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
+    airtable(table: { eq: "Sponsors" }) {
       data {
         company_name
         url
