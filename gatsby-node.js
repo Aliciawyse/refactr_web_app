@@ -86,15 +86,5 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
     });
-    // Create page for each sponsor
-    result.data.sponsors.edges.forEach(({ node }) => {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve(`./src/templates/the_sponsor.js`),
-        context: {
-          slug: node.fields.slug
-        }
-      });
-    });
   });
 };
