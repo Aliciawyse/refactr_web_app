@@ -87,22 +87,25 @@ export default ({ data }) => (
               </div>
             </div>
           </div>
+
+
           <div className="row">
             <div className="col-lg-5 xs-mb40">
               <img
                 className="img-fluid mt30"
-                src="/img/others/The.Ellis_.Hotel_.010.jpg"
-                alt="The Ellis Hotel"
+                src="/img/others/westinHotel.jpg"
+                alt="Westin Peachtree Hotel"
               />
             </div>
             <div className="col-lg-7">
               <div className="inner-content">
                 <p />
-                <h4>OFFICIAL CONFERENCE HOTEL - THE ELLIS HOTEL</h4>
-                REFACTR.TECH has a hotel block at The Ellis Hotel, located in
-                downtown Altanta only .4 miles from the Loudermilk Conference
-                Center.{" "}
-                <a href="https://www.ellishotel.com/">The Ellis Hotel </a>is
+                <h4>OFFICIAL CONFERENCE HOTEL - WESTIN PEACHTREE PLAZA HOTEL</h4>
+                Book your room for the REFACTR.TECH room block at the Westin Peachtree
+                Plaza hotel in downtown Atlanta. Special conference rate of $185.00/night
+                + taxes must be booked by March 12, 2020.{" "}
+                <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/" target="_blank">
+                  The Westin Peachtree Plaza Hotel </a>is
                 located at 176 Peachtree Street NW, Atlanta, GA 30303. The
                 REFACTR.TECH discounted rate is available until May 6.{" "}
                 <strong>Our special rate is $155/night</strong>
@@ -111,14 +114,10 @@ export default ({ data }) => (
                   {" "}
                   For RESERVATIONS:
                   <br />
-                  <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1557170981465&key=GRP&app=resvlink">
+                  <a href="https://book.passkey.com/event/50009558/owner/324/home" target="_blank">
                     {" "}
                     online reservations{" "}
                   </a>
-                </p>
-                <p>
-                  The reservations number is 407-536-2724 and use reservation
-                  code CONN0619 or simply reference REFACTR.TECH{" "}
                 </p>
               </div>
             </div>
