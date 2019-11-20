@@ -6,7 +6,7 @@ export const SponsorTier = ({data}) => {
             <h2 className="text-center mt50">{data.title}</h2>
             <div className="row">
                 {data.sponsors.map((sponsor) => (
-                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3" key={sponsor.company_name}>
                         <a href={sponsor.url} rel="noreferrer noopener" target="_blank">
                             <img
                                 src={sponsor.logo}
