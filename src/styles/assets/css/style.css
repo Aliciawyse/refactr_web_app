@@ -544,7 +544,7 @@ a {
   background-image: url(../img/slide/1.jpg); }
 
 .hero-bg-2 {
-  background-image: url(../img/bg/skyline-bg.png?1234);
+  background-image: url(../img/bg/homeLogo.png?1234);
 }
 
 .hero-bg-3 {
@@ -767,7 +767,8 @@ a {
 
 /*3.1 Hero Banner Area*/
 .hero-banner-area {
-  height: 100vh; }
+  height: calc(100vh - 90px);
+  margin-top: 90px}
   .hero-banner-area .banner-content {
     display: flex;
     -webkit-box-orient: vertical;
