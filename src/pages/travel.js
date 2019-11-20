@@ -75,14 +75,11 @@ export default ({ data }) => (
                 <p>
                   <strong>PARKING</strong>
                 </p>
-                REFACTR.TECH Attendees should park in the parking garage
-                connected to the Loudermilk Conference Center. Cost is $8 per
-                day. Please bring your parking pass with you to have it
-                validated at the Help Desk on the first floor -- payment is only
-                available via card (credit or debit). Please remember that if
-                you leave and re-enter it will be an additional $5. If this area
-                fills up feel free to park at the many nearby public parking
-                options.
+                REFACTR.TECH Attendees should park in the parking garage connected
+                to the Loudermilk Conference Center. Please bring your parking pass
+                with you to have it validated for FREE at the Help Desk on the first
+                floor. If this area fills up feel free to park at the many nearby
+                public parking options.
                 <p />
               </div>
             </div>
@@ -99,33 +96,20 @@ export default ({ data }) => (
             </div>
             <div className="col-lg-7">
               <div className="inner-content">
-                <p />
                 <h4>OFFICIAL CONFERENCE HOTEL - WESTIN PEACHTREE PLAZA HOTEL</h4>
-                Book your room for the REFACTR.TECH room block at the Westin Peachtree
-                Plaza hotel in downtown Atlanta. Special conference rate of $185.00/night
-                + taxes must be booked by March 12, 2020.{" "}
-                <a
-                    href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                  The Westin Peachtree Plaza Hotel </a>is
-                located at 176 Peachtree Street NW, Atlanta, GA 30303. The
-                REFACTR.TECH discounted rate is available until May 6.{" "}
-                <strong>Our special rate is $155/night</strong>
-                <p />
-                <p>
-                  {" "}
-                  For RESERVATIONS:
-                  <br />
-                  <a href="https://book.passkey.com/event/50009558/owner/324/home"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                    {" "}
-                    online reservations{" "}
-                  </a>
-                </p>
+                REFACTR.TECH has a hotel block at &nbsp;
+                <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                Westin Peachtree Plaza Hotel</a> located
+                in Downtown Atlanta, only 0.5 miles from the Loudermilk Conference Center.
+                The &nbsp;
+                <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
+                   target="_blank"
+                   rel="noopener noreferrer">Westin Peachtree Plaza Hotel</a> &nbsp;
+                is located at 210 Peachtree St. NW, Atlanta,
+                GA 30303. The special conference rate is $185.00/night + taxes and must be
+                booked by March 12, 2020. <a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>
               </div>
             </div>
             {/* /col end*/}
