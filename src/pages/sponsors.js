@@ -4,9 +4,56 @@ import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { Helmet } from "react-helmet";
-import { SponsorCardList } from "../components/SponsorCardList";
+import { SponsorsFiltered } from "../components/SponsorsFiltered";
+
+const filterSponsorsByTier = (data) => {
+    const allData = data.allAirtable.edges;
+    let filteredData = [
+        {
+            tier: 'Platinum',
+            title: 'Platinum',
+            sponsors: []
+        },
+        {
+            tier: 'Gold',
+            title: 'Gold',
+            sponsors: []
+        },
+        {
+            tier: 'Silver',
+            title: 'Silver',
+            sponsors: []
+        },
+        {
+            tier: 'Lanyard',
+            title: 'Lanyard',
+            sponsors: []
+        },
+        {
+            tier: 'opp_grant',
+            title: 'Opportunity Grant',
+            sponsors: []
+        }
+    ];
+    allData.forEach(sponsor => {
+        let idx = filteredData.find(item =>
+            item.tier.toLowerCase() === sponsor.node.data.tier[0].toLowerCase()
+        );
+        let addSponsor = {
+            company_name: sponsor.node.data.company_name,
+            url: sponsor.node.data.url,
+            logo: sponsor.node.data.logo[0].url
+        };
+        idx.sponsors.push(addSponsor);
+    });
+    // remove any tier that does not have any sponsors
+    filteredData = filteredData.filter(item => item.sponsors.length > 0);
+    return filteredData;
+};
 
 export default ({ data }) => {
+    const filteredSponsors = filterSponsorsByTier(data);
+
   return (
     <div>
       <Helmet>
@@ -64,7 +111,7 @@ export default ({ data }) => {
                         </div>
                         <hr />
                         <div className="single-sponsers">
-                            <SponsorCardList items={data.allAirtable.edges}/>
+                            <SponsorsFiltered items={filteredSponsors} />
                         </div>
                     </div>
                 </div>
@@ -95,7 +142,8 @@ export const sponsorPageQuery = graphql`
             url
             tier
             logo {
-              filename
+              filename,
+              url
             }
           }
         }
