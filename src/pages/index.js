@@ -1,23 +1,16 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Footer from "../components/footer";
-import { WorkshopCardList } from "../components/WorkshopCardList";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import NavigationBar from "../components/NavigationBar";
-import workshopData from "../workshop-data";
-import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
 
 import "../styles/assets/css/responsive2.css";
 import "../styles/assets/css/style.css";
 import "../styles/assets/css/style2.css";
 import "../styles/assets/css/responsive.css";
 
-const Topic = styled.a`${Link}:hover & {
-  color: white;
-}
-`
+
 
 export default ({ data }) => (
   <div>
@@ -311,7 +304,7 @@ export default ({ data }) => (
                         </ul>
                       </div>
                       <div className="bordered-btn">
-                        <a>Sold Out</a>
+                        <span style={{border: '1px solid #ccc', padding: '10px 25px', borderRadius: '28px'}}>Sold Out</span>
                       </div>
                     </div>
                   </div>
@@ -404,7 +397,7 @@ export default ({ data }) => (
                         </ul>
                       </div>
                       <div className="bordered-btn">
-                        <a>Sold Out</a>
+                        <span style={{border: '1px solid #ccc', padding: '10px 25px', borderRadius: '28px'}}>Sold Out</span>
                       </div>
                     </div>
                   </div>

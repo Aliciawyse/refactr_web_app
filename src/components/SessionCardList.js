@@ -1,7 +1,5 @@
 import React from "react";
 import _ from "lodash";
-import { Link } from "gatsby";
-import Img from "gatsby-image";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
 export const SessionCardList = ({ items }) => {

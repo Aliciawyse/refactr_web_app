@@ -104,7 +104,11 @@ export default ({ data }) => (
                 Book your room for the REFACTR.TECH room block at the Westin Peachtree
                 Plaza hotel in downtown Atlanta. Special conference rate of $185.00/night
                 + taxes must be booked by March 12, 2020.{" "}
-                <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/" target="_blank">
+                <a
+                    href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                   The Westin Peachtree Plaza Hotel </a>is
                 located at 176 Peachtree Street NW, Atlanta, GA 30303. The
                 REFACTR.TECH discounted rate is available until May 6.{" "}
@@ -114,7 +118,10 @@ export default ({ data }) => (
                   {" "}
                   For RESERVATIONS:
                   <br />
-                  <a href="https://book.passkey.com/event/50009558/owner/324/home" target="_blank">
+                  <a href="https://book.passkey.com/event/50009558/owner/324/home"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
                     {" "}
                     online reservations{" "}
                   </a>
