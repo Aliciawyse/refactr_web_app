@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
-import { Link } from "gatsby";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
 const divStyle = {

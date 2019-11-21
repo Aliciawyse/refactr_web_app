@@ -60,6 +60,10 @@ export default ({ data }) => {
               <div className="col-lg-7 col-md-12">
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
+                  <p>
+                    {data.airtable.data.role},{" "}
+                    {data.airtable.data.company}
+                  </p>
                   <span>{data.airtable.data.pronouns}</span>
                   <br />
 
