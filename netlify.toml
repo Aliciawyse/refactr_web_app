@@ -1,0 +1,36 @@
+# Production context:
+# All deploys from the main repository branch
+# will inherit these settings.
+[context.production]
+  command = "gatsby build"
+  [context.production.environment]
+    GATSBY_AIRTABLE_BASE_KEY=appGelPHqfMO3hYm2
+
+# Deploy Preview context:
+# All deploys generated from a pull/merge request
+# will inherit these settings.
+    command = "gatsby develop"
+    [context.deploy-preview.environment]
+        GATSBY_AIRTABLE_BASE_KEY=appGelPHqfMO3hYm2
+
+# Branch deploy context:
+# All deploys that are not from a pull/merge request
+# or from the production branch will inherit these settings.
+[context.branch-deploy]
+  command = "gatsby develop"
+  
+
+# Specific branch context:
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.stage]
+  command = "gatsby build"
+  [context.stage.environment]
+    GATSBY_AIRTABLE_BASE_KEY=appGelPHqfMO3hYm2
+
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context.2019]
+  command = "gatsby build"
+  [context.2019.environment]
+    GATSBY_AIRTABLE_BASE_KEY=appMtowu35JQdxcF9
