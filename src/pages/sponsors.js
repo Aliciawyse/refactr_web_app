@@ -142,7 +142,7 @@ export const sponsorPageQuery = graphql`
             url
             tier
             logo {
-              filename,
+              filename
               url
             }
           }
