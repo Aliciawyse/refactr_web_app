@@ -13,9 +13,7 @@
 
 # Branch deploy context:
 # All deploys that are not from a pull/merge request
-# or from the production branch will inherit these settings.
-[context.branch-deploy]
-  
+# or from the production branch will inherit these settings.  
 
 # Specific branch context:
 # Deploys from this branch will take these settings
