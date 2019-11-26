@@ -33,7 +33,12 @@ const filterSponsorsByTier = (data) => {
             tier: 'opp_grant',
             title: 'Opportunity Grant',
             sponsors: []
-        }
+        },
+        {
+          tier: 'community',
+          title: 'Supporters and Community Partners',
+          sponsors: []
+      }
     ];
     allData.forEach(sponsor => {
         let idx = filteredData.find(item =>
