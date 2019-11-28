@@ -9,7 +9,12 @@ import { SponsorsFiltered } from "../components/SponsorsFiltered";
 const filterSponsorsByTier = (data) => {
     const allData = data.allAirtable.edges;
     let filteredData = [
-        {
+      {
+        tier: 'unobtainium',
+        title: 'Unobtainium',
+        sponsors: []
+      },
+      {
             tier: 'Platinum',
             title: 'Platinum',
             sponsors: []
