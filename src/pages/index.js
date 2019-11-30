@@ -257,7 +257,7 @@ export default ({ data }) => (
               <div className="row mb50">
                 {/*Whos Speaking Area End Here*/}
 
-                <FeaturedSpeakerCard items={data.allAirtable.edges} />
+                <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
 
                 <div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#f20487', fontWeight: 'normal'}} href="/speakers">
@@ -388,7 +388,36 @@ export default ({ data }) => (
 
 export const speakerPageQuery = graphql`
   {
-    allAirtable(
+    keynoteSpeakers: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynote" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            linkedIn
+            company_url
+            pronouns
+          }
+        }
+      }
+    }
+    featuredSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
     ) {
       edges {
