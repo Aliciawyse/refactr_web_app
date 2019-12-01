@@ -16,7 +16,7 @@ export const SpeakerCard = ({
       <div className="spk-img">
         {headshot.localFiles && (
           <Img
-            alt="Speaker"
+            alt={"Speaker - "+ speaker_name}
             fluid={headshot.localFiles[0].childImageSharp.fluid}
           />
         )}
