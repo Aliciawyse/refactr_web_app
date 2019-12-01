@@ -2589,3 +2589,31 @@ a {
 	color:#12114a;
 	font-weight:700;
 }
+
+.Countdown{
+  margin: 30% auto 30% auto;
+  padding-bottom: 20px;
+}
+
+.Countdown-col{
+  display: inline-block;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #C418A3;
+}
+
+.Countdown-col-element strong{
+  font-size: 8em;
+}
+
+.Countdown-col-element span{
+  font-size: 1.6em;
+  text-align: center;
+  margin-top:50px;
+  font-weight: 500;
+}

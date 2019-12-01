@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import NavigationBar from "../components/NavigationBar";
+import Countdown from "../components/Countdown";
 import { Helmet } from "react-helmet";
 
 import "../styles/assets/css/responsive2.css";
@@ -91,7 +92,7 @@ export default ({ data }) => (
                   </div>
 
                   <div className="row justify-content-center" style={{marginTop: '30px'}}>
-                    <div className="col-lg-6">
+                    <div className="col-lg-7">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr2020-header-slogan.svg"
@@ -100,19 +101,29 @@ export default ({ data }) => (
                     </div>
                   </div>
 
+                  <div className="row justify-content-center">
+                      <span style={{color: '#C418A3', 'font-size':'2em', 'font-weight': '500', marginTop: '20px'}}>APRIL 22nd - 24th</span>
+                  </div>
+
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
                     <div data-countdown="2019/06/05" /> 
                   </div>*/}
 
-                  <div className="row justify-content-end">
-                    <div className="col-lg-5 col-md-5 col-sm-5 col-5">
+                  <div className="row justify-content-center">
+                        <Countdown date={`2020-04-22T12:00:00`} />
+                        
+                  </div>
+                  
+
+                  {/* <div className="row justify-content-end" style={{marginTop: '-30px', marginBottom: '0'}}>
+                    <div className="col-sm-5 col-5">
                         <img
                         src="/img/logo/refactr2020-header-location.svg"
                         alt="Diversity.Inclusion.Tech"
                       />
                     </div>
-                  </div>
+                </div> */}
 
               
 
