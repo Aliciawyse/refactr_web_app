@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
+import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import NavigationBar from "../components/NavigationBar";
 import { Helmet } from "react-helmet";
 
@@ -154,85 +155,9 @@ export default ({ data }) => (
             </div>
             {/* /.row  end*/}
             <div className="row">
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/tracy-lee.jpeg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/ladyleet"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Tracy Lee</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>Co-founder, This Dot Labs</h6>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/kortney-ziegler.jpg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                            <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/fakerapper"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Dr. Kortney Ziegler</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>
-                      Director of Research and Design, ZaMLabs
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-md-4 col-sm-12">
-                <div className="speakers xs-mb30">
-                  <div className="spk-img">
-                    <img
-                      className="img-fluid"
-                      src="img/speakers/alex-castillo-headshot-square.jpg"
-                      alt="trainer-img"
-                    />
-                    {/*ul>
-                                                <li><a href="https://twitter.com/ladyleet"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="https://www.linkedin.com/in/tracyslee/"><i class="fa fa-linkedin"></i></a></li>
-                                            </ul*/}
-                  </div>
-                  <div className="spk-info">
-                    <a
-                      href="https://twitter.com/castillo__io"
-                      rel="noreferrer noopener"
-                      target="_blank"
-                    >
-                      <h3 style={{ color: "white" }}>Alex Castillo</h3>
-                    </a>
-                    <h6 style={{ color: "#aaa" }}>Co-Founder, Neurosity</h6>
-                  </div>
-                </div>
-              </div>
+              
+            <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
+
             </div>
             {/* /row end*/}
           </div>
