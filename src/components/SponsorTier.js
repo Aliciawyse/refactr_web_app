@@ -15,7 +15,7 @@ export const SponsorTier = ({data}) => {
                                     width: '100%',
                                     height: 'auto'
                                 }}
-                                alt={`Sponsor: ${sponsor.company_name}`}
+                                alt={`${sponsor.tier} Sponsor: ${sponsor.company_name}`}
                             />
                         </a>
                     </div>

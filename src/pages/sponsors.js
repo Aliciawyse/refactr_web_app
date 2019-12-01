@@ -52,7 +52,8 @@ const filterSponsorsByTier = (data) => {
         let addSponsor = {
             company_name: sponsor.node.data.company_name,
             url: sponsor.node.data.url,
-            logo: sponsor.node.data.logo[0].url
+            logo: sponsor.node.data.logo[0].url,
+            tier: sponsor.node.data.tier
         };
         idx.sponsors.push(addSponsor);
     });
