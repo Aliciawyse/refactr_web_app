@@ -16,7 +16,7 @@ export const SessionSpeakerDetail = ({speaker_name, role, company, anchor, heads
       {headshot.localFiles && (
           <Img
             className="img-fluid speaker-avatar"
-            alt="Speaker"
+            alt={"Speaker - "+ speaker_name}
             fluid={headshot.localFiles[0].childImageSharp.fluid}
           />
         )}
