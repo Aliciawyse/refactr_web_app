@@ -315,6 +315,7 @@ export const speakerPageQuery = graphql`
   {
     keynoteSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynote" } } }
+      sort: { fields: data___speaker_name }
     ) {
       edges {
         node {
@@ -344,6 +345,7 @@ export const speakerPageQuery = graphql`
     }
     featuredSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
+      sort: { fields: data___speaker_name }
     ) {
       edges {
         node {

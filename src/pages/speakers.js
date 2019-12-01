@@ -60,6 +60,7 @@ export const speakerPageQuery = graphql`
   {
     allAirtable(
       filter: { table: { eq: "Speakers" } }
+      sort: { fields: data___speaker_name }
     ) {
       edges {
         node {
