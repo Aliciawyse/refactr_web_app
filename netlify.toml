@@ -3,7 +3,7 @@
 # will inherit these settings.
 [context.production]
   [context.production.environment]
-    GATSBY_AIRTABLE_BASE_KEY="appMtowu35JQdxcF9"
+    GATSBY_AIRTABLE_BASE_KEY="appGelPHqfMO3hYm2"
 
 # Deploy Preview context:
 # All deploys generated from a pull/merge request
