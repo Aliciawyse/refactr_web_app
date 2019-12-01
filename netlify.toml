@@ -24,6 +24,6 @@
 
 # Deploys from this branch will take these settings
 # and override their current ones.
-[context.2019]
-  [context.2019.environment]
+[context."2019"]
+  [context."2019".environment]
     GATSBY_AIRTABLE_BASE_KEY="appMtowu35JQdxcF9"
