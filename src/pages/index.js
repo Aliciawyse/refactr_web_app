@@ -92,17 +92,35 @@ export default ({ data }) => (
                   </div>
 
                   <div className="row justify-content-center" style={{marginTop: '30px'}}>
-                    <div className="col-lg-7">
+                    <div className="col-lg-6">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr2020-header-slogan.svg"
-                        alt="Diversity.Inclusion.Tech"
+                        alt="Conference slogan: Diversity.Inclusion.Tech"
                       />
                     </div>
                   </div>
 
                   <div className="row justify-content-center">
-                      <span style={{color: '#C418A3', 'font-size':'2em', 'font-weight': '500', marginTop: '20px'}}>APRIL 22nd - 24th</span>
+                    <div className="col-lg-6">
+                    <img
+                    className="img-fluid"
+                    style={{marginTop: '35px'}}
+                    src="/img/logo/refactr2020-date.png"
+                    alt="Conference dates:  April 22 - 24, 2020"
+                  />
+                    </div>
+                  </div>
+
+                  <div className="row justify-content-center">
+                    <div className="col-lg-4 col-md-4 col-sm-5 col-6">
+                    <img
+                    className="img-fluid"
+                    style={{marginTop: '25px'}}
+                    src="/img/logo/refactr2020-location-simple.png"
+                    alt="Conference location: Atlanta"
+                  />
+                    </div>
                   </div>
 
                   {/*<div className="upcoming">
