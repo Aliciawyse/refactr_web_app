@@ -17,10 +17,10 @@ import "../styles/assets/css/responsive.css";
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2019 - Atlanta June 5 - 7</title>
+      <title>REFACTR.TECH 2020 - Atlanta April 22 - 24</title>
       <meta
         name="description"
-        content="The multi-track tech conference with a focus on inclusion. "
+        content="The Southeast's premier multi-track tech conference with a focus on inclusion. "
       />
       <meta name="robots" content="" />
 
@@ -29,11 +29,11 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2020 - Atlanta June 5 - 7"
+        content="REFACTR.TECH 2020 - Atlanta April 22 - 24"
       />
       <meta
         property="og:description"
-        content="The multi-track tech conference with a focus on inclusion."
+        content="The Southeast's premier multi-track tech conference with a focus on inclusion."
       />
       <meta property="og:type" content="website" />
       <meta
@@ -45,7 +45,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2019 - Atlanta June 5 - 7"
+        content="REFACTR.TECH 2020 - Atlanta April 22 - 24"
       />
       <meta
         name="twitter:description"
@@ -53,16 +53,16 @@ export default ({ data }) => (
       />
       <meta
         name="twitter:image"
-        content="https://refactr.tech/assets/img/marketing/General_Marketing.png"
+        content="https://refactr.tech/img/conference/marketing_header.png"
       />
 
       {/* <!-- Schema.org markup for Google+ --> */}
-      <meta itemprop="name" content="REFACTR.TECH 2019" />
+      <meta itemprop="name" content="REFACTR.TECH 2020" />
       <meta
         itemprop="description"
         content="The multi-track tech conference with a focus on inclusion."
       />
-      <meta itemprop="image" content="/marketing/General_Marketing.png" />
+      <meta itemprop="image" content="/img/conference/marketing_header.png" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
