@@ -185,8 +185,8 @@ export default () => (
                   >
                     <h3>Angel Banks</h3>
                   </a>
-                  <p>Product Manager</p>
-                  <h6 style={{fontWeight: '700'}}>First Data</h6>
+                  <p>Technical Expert</p>
+                  <h6 style={{fontWeight: '700'}}>Thinkful</h6>
                 </div>
               </div>
             </div>
@@ -255,8 +255,8 @@ export default () => (
                   >
                     <h3>Erica Stanley</h3>
                   </a>
-                  <p>Engineering Manager</p>
-                  <h6 style={{fontWeight: '700'}}>SalesLoft</h6>
+                  <p>Sr. Engineering Manager</p>
+                  <h6 style={{fontWeight: '700'}}>Mozilla</h6>
                 </div>
               </div>
             </div>
