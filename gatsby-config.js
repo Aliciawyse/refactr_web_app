@@ -15,6 +15,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: `https://tech.us19.list-manage.com/subscribe/post?u=5ae8995a4bf065a3c7cd6ad50&amp;id=e8f624f474`
+      }
+    },
+    {
       resolve: `gatsby-source-airtable`,
       options: {
         apiKey: process.env.GATSBY_AIRTABLE_API_KEY,

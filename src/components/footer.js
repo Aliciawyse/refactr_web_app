@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import MailChimpEmbeddedForm from "../components/MailChimpEmbeddedForm.js";
 
 export default () => 
 
@@ -23,15 +24,11 @@ export default () =>
                     <span>40 Courtland St NE<br/> Atlanta, GA 30303</span>
                 </div>
                 <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
-                <div id="mc_embed_signup_scroll" className="sub-btn">
-                    <form id="mc-embedded-subscribe-form" className="validate">
-                        <input type="text" placeholder="Your email address " name="EMAIL" className="required email" id="mce-EMAIL"/>
-                          
-                        <div style={{position: "absolute", left: "-5000px", ariaHidden: "true"}}><input type="text" tabIndex="-1" /></div>
-            
-                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                    </form>
-                </div>
+                {/* mailchimp embed form component starts here */}
+                
+                <MailChimpEmbeddedForm />
+
+                {/* mailchimp embed form component ends here */}
                 <div className="f-social">
                     <ul>
                         <li><a href="https://twitter.com/RefactrTech"><i className="fa fa-twitter"></i></a></li>
