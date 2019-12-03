@@ -29,6 +29,7 @@ module.exports = {
             baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
             tableName: `Speakers`,
             queryName: `speakers`,
+            tableLinks: ["Sessions"],
             mapping: { headshot: `fileNode` }
           },
           {

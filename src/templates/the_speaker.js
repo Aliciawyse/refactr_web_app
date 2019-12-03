@@ -4,6 +4,8 @@ import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
+import { SpeakerSessionList } from "../components/SpeakerSessionList";
+
 
 export default ({ data }) => {
   return (
@@ -86,11 +88,7 @@ export default ({ data }) => {
                   <span>
                     Sessions&nbsp;
                     <br />
-                    <Link
-                      to={`/sessions/${data.airtable.data.session_anchor[0]}`}
-                    >
-                      {data.airtable.data.session_title}
-                    </Link>
+                      <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
                     <br />
                   </span>
                 </div>
@@ -124,6 +122,12 @@ export const query = graphql`
                 ...GatsbyImageSharpFluid_tracedSVG
               }
             }
+          }
+        }
+        Sessions {
+          data {
+            title
+            anchor_truncated
           }
         }
         linkedIn
