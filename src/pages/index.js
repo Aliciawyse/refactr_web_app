@@ -6,12 +6,16 @@ import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import NavigationBar from "../components/NavigationBar";
 import Countdown from "../components/Countdown";
 import { Helmet } from "react-helmet";
+import { toast } from 'react-toastify';
+
 
 import "../styles/assets/css/responsive2.css";
 import "../styles/assets/css/style.css";
 import "../styles/assets/css/style2.css";
 import "../styles/assets/css/responsive.css";
+import 'react-toastify/dist/ReactToastify.css';
 
+toast.configure();
 
 
 export default ({ data }) => (
