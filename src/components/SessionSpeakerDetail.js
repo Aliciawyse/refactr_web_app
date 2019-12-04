@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 
 export const SessionSpeakerDetail = ({speaker_name, role, company, anchor, headshot}) => (
-  <li style={{flexGrow: "1"}} className="mb40">
+  <li style={{flexGrow: "1"}}>
     <Link
       className="detail-view"
       to={`/speakers/${anchor}`}

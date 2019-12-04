@@ -2,7 +2,7 @@ import React from "react";
 import _ from "lodash";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
-export const SessionCardList = ({ items }) => {
+export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
   const sessions_data = items.map(edge => edge.node);
   const tracks = _.groupBy(sessions_data, "data.Track");
 
@@ -43,7 +43,11 @@ export const SessionCardList = ({ items }) => {
 
                   <SessionSpeakerList speakers={session.data.Speakers}/>
 
-                  <hr />
+                  <div style={{display: showBuyTickets ? 'block':'none', textAlign: 'center' }}>
+                    {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href="http://reg.connectevents.io/ConnectEvents/rtech2020/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>}
+                  </div>
+
+                  <hr/>
                 </div>
               ))}
             </div>

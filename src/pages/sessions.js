@@ -56,7 +56,7 @@ export default ({ data }) => (
       </div>
       {/*About Us Area End Here*/}
 
-      <SessionCardList items={data.allAirtable.edges} />
+      <SessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
 
       {/*Footer Area Start Here*/}
       <Footer />

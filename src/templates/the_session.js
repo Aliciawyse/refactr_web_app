@@ -77,6 +77,10 @@ export default ({ data }) => {
 
                     <SessionSpeakerList speakers={data.airtable.data.Speakers}/>
 
+                    <div style={{textAlign: 'center'}}>
+                      <span className="primary-btn"><a className="btn-primary" href="http://reg.connectevents.io/ConnectEvents/rtech2020/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>
+                    </div>
+
                   </div>
                 </div>
               </div>
