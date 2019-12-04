@@ -59,7 +59,7 @@ export default ({ data }) => {
                   <div>
                     <a name="frontend-sessions" />
                     <p className="session-title">
-                      <span className="m0">{data.airtable.data.title}</span>
+                      <span>{data.airtable.data.title}</span>
                     </p>
 
                     {/*<p>
