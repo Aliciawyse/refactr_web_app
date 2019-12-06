@@ -405,7 +405,7 @@ html .ui-button.ui-state-disabled:active {
 /* 1.2  Typography */
  h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0; }
 
 .text-left {
@@ -645,7 +645,8 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  }
   .header ul {
     list-style: outside none none;
   }
@@ -743,7 +744,8 @@ a {
         border-color: #CF057C; }
 
 .base-style-2.no-p {
-  position: inherit; }
+  position: inherit; 
+  background: #4E29D1;}
 
 .base-style-2 .navbar-nav a.active {
   color: #cf057c; }
@@ -1278,6 +1280,7 @@ a {
     .whos-speaking-area .speakers .spk-info h3 {
       color: #4125DD;
       font-size: 20px;
+      font-weight: 600;
       line-height: 20px;
       margin-bottom: 5px;
       -webkit-transition: all 0.4s;
