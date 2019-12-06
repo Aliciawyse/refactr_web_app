@@ -264,6 +264,7 @@ export default ({ data }) => (
             {/*Whos Speaking Area End Here*/}
 
             {/*Pricing Tables Area Start Here*/}
+            <a name="pricing"/>
             <div className="pricing-tables-area pad-b100">
               <div className="container">
                 <div className="row">
@@ -298,8 +299,8 @@ export default ({ data }) => (
                         </ul>
                       </div>
                       <div className="bordered-btn">
-                        <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
-                          Buy Ticket
+                        <a href="/#pricing">
+                          Sold Out!
                         </a>
                       </div>
                     </div>
