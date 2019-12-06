@@ -43,6 +43,12 @@ module.exports = {
             tableName: `Sponsors`,
             queryName: `sponsors`,
             tableLinks: ["Sponsors"]
+          },
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `Team`,
+            queryName: `team`,
+            mapping: { member_headshot: `fileNode` }          
           }
         ]
       }

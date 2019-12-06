@@ -1,9 +1,13 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
+import { TeamCardList } from "../components/TeamCardList";
 import { Helmet } from "react-helmet";
 
-export default () => (
+
+export default ({ data }) => {
+  return(
   <div>
     <Helmet>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -142,7 +146,7 @@ export default () => (
       {/*Counter Up Area End Here*/}
 
       {/*Whos Organizing Area End Here*/}
-      <div className="whos-speaking-area pad100">
+      <div className="whos-speaking-area pad50 mt100">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -267,7 +271,33 @@ export default () => (
         {/* /container end*/}
       </div>
       {/*Whos Organizing Area End Here*/}
-      {/*Advisory Board Area End Here*/}
+
+      {/*Team Area Starts Here*/}
+      <div className="whos-speaking-area pad25">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>Team</h2>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+          </div>
+          {/* /.row  end*/}
+          <div className="row mb50">
+
+            <TeamCardList items={data.allAirtable.edges} />
+
+          </div>
+          {/* /row end*/}
+        </div>
+        {/* /container end*/}
+      </div>
+      {/*Team Area Ends Here*/}       
+
+      {/*Advisory Board Area Starts Here*/}
       <div className="whos-speaking-area pad50">
         <div className="container">
           <div className="row">
@@ -322,7 +352,7 @@ export default () => (
                 <div className="spk-img">
                   <img
                     className="img-fluid"
-                    src="/img/team/advisors/Nadia%20Rahali.jpeg"
+                    src="/img/team/advisors/nadia-large-square.jpg"
                     alt="trainer-img"
                   />
                   <ul>
@@ -357,7 +387,7 @@ export default () => (
                 <div className="spk-img">
                   <img
                     className="img-fluid"
-                    src="/img/team/advisors/Kim-Crayton.jpeg"
+                    src="/img/team/advisors/kim-crayton-400-square.png"
                     alt="trainer-img"
                   />
                   <ul>
@@ -451,8 +481,8 @@ export default () => (
                   >
                     <h3>Diana Rodriguez</h3>
                   </a>
-                  <p>Sr. DevOps/SRE &amp; Full Stack Dev</p>
-                  <h6 style={{fontWeight: '700'}}>This Dot</h6>
+                  <p>Chief DevOps Architect</p>
+                  <h6 style={{fontWeight: '700'}}>Voicethread</h6>
                 </div>
               </div>
             </div>
@@ -556,7 +586,7 @@ export default () => (
                   >
                     <h3>Chelsea Bullock</h3>
                   </a>
-                  <p>Senior UX Researcher</p>
+                  <p>Product Manager</p>
                   <h6 style={{fontWeight: '700'}}>Mailchimp</h6>
                 </div>
               </div>
@@ -731,7 +761,7 @@ export default () => (
                   >
                     <h3>Jeremy Likness</h3>
                   </a>
-                  <p>Cloud Developer Advocate</p>
+                  <p>Sr. Cloud Developer Advocate</p>
                   <h6 style={{fontWeight: '700'}}>Microsoft</h6>
                 </div>
               </div>
@@ -761,4 +791,37 @@ export default () => (
     {/*Plugins Js*/}
     {/* template main js file */}
   </div>
-);
+  );
+};
+export const aboutPageQuery = graphql`
+  {
+    allAirtable(
+      filter: { table: { eq: "Team" } }
+      sort: { fields: data___name }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            name
+            member_headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            member_role
+            member_twitter
+            member_linkedIn
+          }
+        }
+      }
+    }
+  }
+`;
+
