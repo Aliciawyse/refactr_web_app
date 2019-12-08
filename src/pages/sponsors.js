@@ -135,17 +135,17 @@ export default ({ data }) => {
                         <div className="title-text mb30 xs-mb40">
                             <h2>Sponsor REFACTR.TECH 2020</h2>
                         <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of people from diverse backgrounds at our Exhibit Hall and Career Expo? Please take a few minutes to review the various ways to support REFACTR.TECH in our attached sponsorship prospectus</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className="row">
-        <div className="col-lg-12">
-            <div className="primary-btn text-center">
-                <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
 
           </div>
         </div>
