@@ -10,7 +10,8 @@ export default class NavigationBar extends Component {
   };
   render() {
     return (
-      <header className={this.props.whiteText ? "header base-style-2 white-color" : "header base-style-2"}>
+      <header className={this.props.whiteText ? "header base-style-2 white-color" : "header base-style-2"}
+              style={{backgroundColor: this.props.homepage ? "#4E29D1": "transparent"}}>
         <div className="container">
           <div className="row">
             <div className="col-lg-2">
