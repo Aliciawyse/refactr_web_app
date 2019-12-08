@@ -265,7 +265,7 @@ export default ({ data }) => (
 
             {/*Pricing Tables Area Start Here*/}
             <a name="pricing"/>
-            <div className="pricing-tables-area pad-b100">
+            <div className="pricing-tables-area pad-b50">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
@@ -371,6 +371,28 @@ export default ({ data }) => (
           {/*Pricing Tables Area End Here*/}
         </div>
 
+        <div className="our-sponsors-area ptb50 bg-color">
+          <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                        <div className="title-text mb30 xs-mb40">
+                            <h2>Ways to Attend</h2>
+                        <p style={{marginTop: "15px"}}>At REFACTR.TECH you'll have the opportunity to highlight your company while meeting amazing people. The conference provides content valuable to a wide range of experience levels and interests. Technical topics of interest from intermediate to senior developers, alongside beginner-friendly sessions and workshops, are all part of the event. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="/convince-your-boss" class="btn-primary">Convince Your Boss</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
 
         {/*Main Container End Here*/}
       </div>
