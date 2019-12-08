@@ -34,6 +34,7 @@ export default () =>
                         <li><a href="https://twitter.com/RefactrTech"><i className="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.instagram.com/RefactrTech/"><i className="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A"><i className="fa fa-youtube"></i></a></li>
+                        <li><a href="mailto:hello@refactr.tech"><i className="fa fa-envelope-square"></i></a></li>
                     </ul>
                 </div>
             </div>
