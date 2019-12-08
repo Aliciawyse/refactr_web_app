@@ -393,6 +393,32 @@ export default ({ data }) => (
           </div>
         </div>
         
+        <div className="counter-up-area ptb60 bg-counter parallax">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="single-counter xs-mb40">
+                  <div className="count-content" style={{ textAlign: "center"}}>
+                    <span className="count" style={{ fontSize: "3.1em"}}>Recap REFACTR 2019</span>
+                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Couldn't make it to REFACTR.TECH 2019? Or just want to relive the vibe from this year's conference?</p>
+                      <div className="row">
+                        <div className="col-md-6 col-sm-12">
+                          <div className="primary-btn text-center mt30">
+                              <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a>
+                          </div>
+                        </div>
+                        <div className="col-md-6 col-sm-12">
+                          <div className="primary-btn text-center mt30">
+                              <a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Videos</a>
+                          </div>
+                        </div>   
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/*Main Container End Here*/}
       </div>
