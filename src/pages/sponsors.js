@@ -25,6 +25,11 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
+            tier: 'vip',
+            title: 'VIP Reception',
+            sponsors: []
+        },
+        {
             tier: 'Silver',
             title: 'Silver',
             sponsors: []
