@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { SessionCardList } from "../components/SessionCardList";
 import { graphql } from "gatsby";
+import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import "../../src/styles/assets/css/style.css";
 import "../../src/styles/assets/css/style2.css";
@@ -99,7 +100,7 @@ export default ({ data }) => (
                 </div>
                 <ol className="breadcrumb">
                   <li>
-                    <a href="./index">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>|</li>
                   <li>
@@ -118,6 +119,141 @@ export default ({ data }) => (
       </div>
       {/*About Us Area End Here*/}
 
+
+      {/* Topics Section */}
+      <section className="topics-section-two">
+      {/* <span className="float-text">Session Topics</span> */}
+      <div className="anim-icons">
+        <span className="icon icon-circle-3" />
+        <span className="icon icon-circle-5" />
+      </div>
+      <div className="auto-container">
+        <div className="sec-title">
+          <h2>Tracks</h2>
+          <p>
+            <span style={{ color: "#C41579", fontWeight: "bold" }}>
+              New!
+            </span>
+            &nbsp;&nbsp;Check out our sessions by track.
+          </p>
+        </div>
+
+        {/*Event Topics*/}
+        <div className="event-topics-tabs">
+          <div className="tabs-box">
+            {/*Tab Btns*/}
+            <ul className="tab-btns tab-buttons clearfix">
+
+              <Link
+              id="test"
+              to="/sessions/#FrontendEngineering"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab1" className="tab-btn">
+                <div>
+                      Front-End Engineering
+                  </div>
+                </li>
+              </Link>
+
+
+              <Link
+              id="test"
+              to="/sessions/#SoftwareEngineering"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab1" className="tab-btn">
+                <div>
+                      Software Engineering
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+              id="test"
+              to="/sessions/#Product&UX"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab1" className="tab-btn">
+                <div>
+                        Product &amp; UX
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+              id="test"
+              to="/sessions/#Cool$h!t"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab1" className="tab-btn">
+                <div>
+                      Cool $h!t
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+                    to="/sessions/#Career/Leadership"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab1" className="tab-btn">
+                  <div>
+                      Career &amp; Leadership
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+                    to="/sessions/#SocialImpact"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab1" className="tab-btn">
+                  <div>
+                      Social Impact
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+                    to="/sessions/#Full-dayWorkshops"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab1" className="tab-btn">
+                  <div>
+                  Full-day Workshops
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+                    to="/sessions/#Keynotes"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab1" className="tab-btn">
+                  <div>
+                  Keynotes
+                  </div>
+                </li>
+              </Link>
+
+
+            </ul>
+          </div>
+        </div>
+        {/*End Product Info Tabs*/}
+      </div>
+    </section>
+
+
+
+
+
+
       <SessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
 
       {/*Footer Area Start Here*/}
@@ -129,7 +265,10 @@ export default ({ data }) => (
 
 export const all_sessions = graphql`
   {
-    allAirtable(filter: { table: { eq: "Sessions" } }) {
+    allAirtable(
+      filter: { table: { eq: "Sessions" } }
+      sort: { fields: data___Track }
+      ) {
       edges {
         node {
           fields {

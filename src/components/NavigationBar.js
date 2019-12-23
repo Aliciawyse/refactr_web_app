@@ -53,7 +53,11 @@ export default class NavigationBar extends Component {
                         Workshops
                       </Link>
                     </li>
-                    
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/sessions">
+                        Sessions
+                      </Link>
+                    </li>
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/speakers">
                         Speakers
@@ -70,16 +74,7 @@ export default class NavigationBar extends Component {
                         Travel
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="https://shop.refactr.tech"
-                        rel="noreferrer noopener"
-                        target="_blank"
-                      >
-                        Shop
-                      </a>
-                    </li>
+                    
                     <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"

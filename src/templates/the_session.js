@@ -106,7 +106,7 @@ export default ({ data }) => {
                   </div>
                   <ol className="breadcrumb">
                     <li>
-                      <a href="../index.html">Home</a>
+                      <a href="/">Home</a>
                     </li>
                     <li>|</li>
                     <li>

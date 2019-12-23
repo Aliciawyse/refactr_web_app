@@ -24,7 +24,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
               {/* Details of each session within the given track*/}
               {tracks[track].map(session => (
                 <div>
-                  <a name="frontend-sessions" />
+                  {/* <a name="frontend-sessions" /> */}
                   <p className="session-title">
                     <span className="m0">{session.data.title}</span>
                   </p>

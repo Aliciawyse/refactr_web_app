@@ -449,7 +449,7 @@ export default ({ data }) => (
 export const speakerPageQuery = graphql`
   {
     keynoteSpeakers: allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynote" } } }
+      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynotes" } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {

@@ -99,12 +99,12 @@ export default ({ data }) => (
                 </div>
                 <ol className="breadcrumb">
                   <li>
-                    <a href="../index.html">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>|</li>
                   <li>Workshops</li>
-                  {/*<li>|</li>
-                  <li><a href="/sessions">Sessions</a></li>*/}
+                  <li>|</li>
+                  <li><a href="/sessions">Sessions</a></li>
                 </ol>
               </div>
             </div>
