@@ -9,16 +9,78 @@ import { Helmet } from "react-helmet";
 export default ({ data }) => {
   return(
   <div>
-    <Helmet>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>About | REFACTR.TECH</title>
-      <meta name="author" content="iThemesLab" />
-      <meta name="description" content="" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-    </Helmet>
+  <Helmet>
+    <title>About | REFACTR.TECH 2020</title>
+    <meta
+      name="description"
+      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+    />
+    <meta name="robots" content="noindex,follow" />
+
+    {/* <!-- Open Graph data --> */}
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="REFACTR.TECH" />
+    <meta property="og:url" content="https://www.refactr.tech/" />
+    <meta
+      property="og:title"
+      content="About | REFACTR.TECH 2020"
+    />
+    <meta
+      property="og:description"
+      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+    />
+    <meta 
+        name="keywords" 
+        content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+    />
+
+    <meta
+      property="og:image"
+      content="https://refactr.tech/img/conference/marketing_header.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://refactr.tech/img/conference/marketing_header.png"
+    />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="260" />
+
+    <meta name="msapplication-TileImage" content="https://refactr.tech/img/conference/2020-tile.png"/>
+
+    {/* <!-- Social sharing meta --> */}
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@RefactrTech" />
+    <meta
+      name="twitter:title"
+      content="About | REFACTR.TECH 2020"
+    />
+    <meta
+      name="twitter:description"
+      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+    />
+    <meta name="twitter:domain" content="https://refactr.tech" />
+    <meta
+      name="twitter:image"
+      content="https://refactr.tech/img/conference/marketing_header.png"
+    />
+    <meta name="twitter:label1" content="Date" />
+    <meta name="twitter:data1" content="April 22-24" />
+    <meta name="twitter:label2" content="Location" />
+    <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+
+    {/* <!-- Schema.org markup for Google+ --> */}
+    <meta itemprop="name" content="About | REFACTR.TECH 2020" />
+    <meta
+      itemprop="description"
+      content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
+    />
+    <meta itemprop="image" content="/img/conference/marketing_header.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+</Helmet>
     {/*Main Container Start Here*/}
     <div className="main-container">
       {/*Header Start Here*/}

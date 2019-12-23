@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
+import { Helmet } from "react-helmet";
 
 const divStyle = {
   fontFamily: "Poppins",
@@ -16,6 +17,79 @@ const abstractStyle = {
 export default ({ data }) => {
   return (
     <div style={divStyle}>
+      <Helmet>
+      <title>{data.airtable.data.title + " | REFACTR.TECH 2020"}</title>
+      <meta
+        name="description"
+        content={data.airtable.data.Abstract}
+      />
+      <meta name="robots" content="noindex,follow" />
+    
+      {/* <!-- Open Graph data --> */}
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="REFACTR.TECH" />
+      <meta property="og:url" content="https://www.refactr.tech/" />
+      <meta
+        property="og:title"
+        content={data.airtable.data.title + " | REFACTR.TECH 2020"}
+      />
+      <meta
+        property="og:description"
+        content={data.airtable.data.Abstract}
+      />
+      <meta 
+          name="keywords" 
+          content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+      />
+    
+      <meta
+        property="og:image"
+        content={data.airtable.data.meta_image[0].thumbnails.large.url}
+      />
+      <meta
+        property="og:image:secure_url"
+        content={data.airtable.data.meta_image[0].thumbnails.large.url}
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="544" />
+    
+      <meta name="msapplication-TileImage" content="https://refactr.tech/img/conference/2020-tile.png"/>
+    
+      {/* <!-- Social sharing meta --> */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@RefactrTech" />
+      <meta
+        name="twitter:title"
+        content={data.airtable.data.title + " | REFACTR.TECH 2020"}
+      />
+      <meta
+        name="twitter:description"
+        content={data.airtable.data.Abstract}
+      />
+      <meta name="twitter:domain" content="https://refactr.tech" />
+      <meta
+        name="twitter:image"
+        content={data.airtable.data.meta_image[0].thumbnails.large.url}
+      />
+      <meta name="twitter:label1" content="Date" />
+      <meta name="twitter:data1" content="April 22-24" />
+      <meta name="twitter:label2" content="Location" />
+      <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+    
+      {/* <!-- Schema.org markup for Google+ --> */}
+      <meta itemprop="name" content={data.airtable.data.title + " | REFACTR.TECH 2020"} />
+      <meta
+        itemprop="description"
+        content={data.airtable.data.Abstract}
+      />
+      <meta itemprop="image" content={data.airtable.data.meta_image[0].thumbnails.large.url} />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+    </Helmet>
+
       {/*Main Container Start Here*/}
       <div className="main-container">
         {/*Header Start Here*/}
@@ -114,6 +188,13 @@ export const query = graphql`
             }
           }
         }
+        meta_image{
+          thumbnails {
+            large {
+              url
+            }
+          }
+        }
         Speakers {
           data {
             headshot {
@@ -129,6 +210,7 @@ export const query = graphql`
             role
             company
             anchor
+            
           }
         }
       }
