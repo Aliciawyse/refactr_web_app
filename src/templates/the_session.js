@@ -21,7 +21,7 @@ export default ({ data }) => {
       <title>{data.airtable.data.title + " | REFACTR.TECH 2020"}</title>
       <meta
         name="description"
-        content={data.airtable.data.Abstract}
+        content={data.airtable.data.meta_description}
       />
       <meta name="robots" content="noindex,follow" />
     
@@ -36,7 +36,7 @@ export default ({ data }) => {
       />
       <meta
         property="og:description"
-        content={data.airtable.data.Abstract}
+        content={data.airtable.data.meta_description}
       />
       <meta 
           name="keywords" 
@@ -65,7 +65,7 @@ export default ({ data }) => {
       />
       <meta
         name="twitter:description"
-        content={data.airtable.data.Abstract}
+        content={data.airtable.data.meta_description}
       />
       <meta name="twitter:domain" content="https://refactr.tech" />
       <meta
@@ -81,7 +81,7 @@ export default ({ data }) => {
       <meta itemprop="name" content={data.airtable.data.title + " | REFACTR.TECH 2020"} />
       <meta
         itemprop="description"
-        content={data.airtable.data.Abstract}
+        content={data.airtable.data.meta_description}
       />
       <meta itemprop="image" content={data.airtable.data.meta_image[0].thumbnails.large.url} />
       <meta
@@ -181,6 +181,7 @@ export const query = graphql`
         Day
         date_friendly
         Time
+        meta_description
         speaker_pic {
           thumbnails {
             large {
@@ -210,7 +211,6 @@ export const query = graphql`
             role
             company
             anchor
-            
           }
         }
       }
