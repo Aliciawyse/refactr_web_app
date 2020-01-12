@@ -419,7 +419,7 @@ export default ({ data }) => (
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Recap REFACTR 2019</span>
-                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Couldn't make it to REFACTR.TECH 2019? Or just want to relive the vibe from this year's conference?</p>
+                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Couldn't make it to REFACTR.TECH 2019? Or just want to relive the vibe from last year's conference?</p>
                       <div className="row">
                         <div className="col-md-6 col-sm-12">
                           <div className="primary-btn text-center mt30">
