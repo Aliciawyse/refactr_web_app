@@ -228,7 +228,7 @@ export default ({ data }) => {
                   <img
                     className="img-fluid"
                     src="/img/team/organizers/angel.jpg"
-                    alt="trainer-img"
+                    alt="Organizer - Angel Banks"
                   />
                   <ul>
                     <li>
@@ -263,7 +263,7 @@ export default ({ data }) => {
                   <img
                     className="img-fluid"
                     src="/img/team/organizers/beth.jpg"
-                    alt="trainer-img"
+                    alt="Organizer - Beth Laing"
                   />
                   <ul>
                     <li>
@@ -298,7 +298,7 @@ export default ({ data }) => {
                   <img
                     className="img-fluid"
                     src="/img/team/organizers/erica.jpg"
-                    alt="trainer-img"
+                    alt="Organizer - Erica Stanley"
                   />
                   <ul>
                     <li>
