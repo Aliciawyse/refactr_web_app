@@ -53,7 +53,15 @@ export default () => (
             <div className="col-lg-12">
               <div className="inner-content" style={{ fontSize: "1.15em"}}>
                 
-              <h2>Trying to convince your boss to buy you a ticket to REFACTR.TECH?</h2> <h4>Let us help!</h4>
+              <center><h2>Trying to convince your boss to buy you a ticket to REFACTR.TECH?</h2> 
+              <br></br>
+              <img
+                  className="img-fluid"
+                  src="/img/conference/400867961-11778.jpg"
+                  alt="Bill Lumbergh from the movie Office Space"
+                /></center>
+                <br></br>
+                <h4>Let us help!</h4>
 
               <ol>
                 <li style={{ listStyle: "decimal inside", padding: "10px", color: "#777", fontSize: "1.1em", fontFamily: "'Poppins', sans-serif"}}>Check with your manager to see if there is a 2019 training budget you can use, or if there are funds that will become available in 2020.
