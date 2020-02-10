@@ -159,10 +159,16 @@ export default ({ data }) => {
                     </ul>
                   </div>
                   <br />
-                  <span>
+                  <span style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
                     Sessions&nbsp;
                     <br />
                       <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
+                    <br />
+                  </span>
+                  <span style={{display: data.airtable.data.company =='Activvely' ? 'block':'none' }}>
+                    <strong>Role&nbsp;</strong>
+                    <br />
+                      Emcee
                     <br />
                   </span>
                 </div>
