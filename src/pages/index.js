@@ -335,7 +335,7 @@ export default ({ data }) => (
                       <div className="pricing-title">Regular</div>
                       <div className="pricing-content">
                         <ul>
-                          <li>&nbsp;</li>
+                        <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end April 10th!</span></li>
                           <li>Main Stage Keynotes</li>
                           <li>Sessions in 6 Tracks</li>
                           <li>Expo Hall</li>
