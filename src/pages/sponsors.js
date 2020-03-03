@@ -50,6 +50,11 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
+            tier: 'premium_opp_grant',
+            title: 'Premium Opportunity Grant',
+            sponsors: []
+        },
+        {
             tier: 'lanyard_name_badge',
             title: 'Lanyard & Name Badge',
             sponsors: []
