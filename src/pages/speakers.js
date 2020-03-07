@@ -64,7 +64,7 @@ export default ({ data }) => {
       content="https://refactr.tech/img/conference/marketing_header.png"
     />
     <meta name="twitter:label1" content="Date" />
-    <meta name="twitter:data1" content="April 22-24" />
+    <meta name="twitter:data1" content="August 12-14" />
     <meta name="twitter:label2" content="Location" />
     <meta name="twitter:data2" content="Downtown Atlanta, GA" />
   

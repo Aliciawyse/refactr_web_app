@@ -21,7 +21,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2020 - Atlanta April 22 - 24</title>
+      <title>REFACTR.TECH 2020 - Atlanta August 12 - 14</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -35,7 +35,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2020 - Atlanta April 22 - 24"
+        content="REFACTR.TECH 2020 - Atlanta August 12 - 14"
       />
       <meta
         property="og:description"
@@ -63,7 +63,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2020 - Atlanta April 22 - 24"
+        content="REFACTR.TECH 2020 - Atlanta August 12 - 14"
       />
       <meta
         name="twitter:description"
@@ -75,7 +75,7 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="April 22-24" />
+      <meta name="twitter:data1" content="August 12 - 14" />
       <meta name="twitter:label2" content="Location" />
       <meta name="twitter:data2" content="Downtown Atlanta, GA" />
 
@@ -129,8 +129,8 @@ export default ({ data }) => (
                     <img
                     className="img-fluid"
                     style={{marginTop: '35px'}}
-                    src="/img/logo/refactr2020-date.png"
-                    alt="Conference dates:  April 22 - 24, 2020"
+                    src="/img/logo/refactr2020-date.svg"
+                    alt="Conference dates:  August 12 - 14, 2020"
                   />
                     </div>
                   </div>
@@ -152,7 +152,7 @@ export default ({ data }) => (
                   </div>*/}
 
                   <div className="row justify-content-center">
-                        <Countdown date={`2020-04-22T12:00:00`} />
+                        <Countdown date={`2020-08-12T12:00:00`} />
                         
                   </div>
                   
@@ -335,7 +335,7 @@ export default ({ data }) => (
                       <div className="pricing-title">Regular</div>
                       <div className="pricing-content">
                         <ul>
-                        <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end April 10th!</span></li>
+                        <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end July 24th!</span></li>
                           <li>Main Stage Keynotes</li>
                           <li>Sessions in 6 Tracks</li>
                           <li>Expo Hall</li>
