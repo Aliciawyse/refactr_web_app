@@ -96,25 +96,59 @@ export default ({ data }) => (
             </div>
             <div className="col-lg-7">
               <div className="inner-content">
-                <h4>OFFICIAL CONFERENCE HOTEL - WESTIN PEACHTREE PLAZA HOTEL</h4>
+                <h4>OFFICIAL CONFERENCE HOTELS - WESTIN PEACHTREE PLAZA HOTEL</h4>
                 REFACTR.TECH has a hotel block at &nbsp;
                 <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
                    target="_blank"
                    rel="noopener noreferrer">
                 Westin Peachtree Plaza Hotel</a> located
                 in Downtown Atlanta, only 0.5 miles from the Loudermilk Conference Center.
-                The &nbsp;
+                {/*The &nbsp;
                 <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
                    target="_blank"
                    rel="noopener noreferrer">Westin Peachtree Plaza Hotel</a> &nbsp;
                 is located at 210 Peachtree St. NW, Atlanta,
                 GA 30303. The special conference rate is $185.00/night + taxes and must be
-                booked by March 12, 2020. <a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>
+                booked by March 12, 2020.*/}
+                {/*<a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>*/}
               </div>
             </div>
             {/* /col end*/}
           </div>
           {/* /row end*/}
+
+
+          <div className="row">
+          <div className="col-lg-5 xs-mb40">
+            <img
+              className="img-fluid mt30"
+              src="/img/others/Sheraton-Atlanta-Hotel-Exterior-Skyline-Terrace-1600x900.jpg"
+              alt="Sheraton Atlanta Hotel"
+            />
+          </div>
+          <div className="col-lg-7">
+            <div className="inner-content">
+              <h4>OFFICIAL CONFERENCE HOTELS - SHERATON ATLANTA </h4>
+              REFACTR.TECH has an additional hotel block at &nbsp;
+              <a href="https://www.marriott.com/hotels/travel/atlxs-sheraton-atlanta-hotel/"
+                 target="_blank"
+                 rel="noopener noreferrer">
+              Sheraton Atlanta</a> located
+              in Downtown Atlanta, only 3 blocks from the Loudermilk Conference Center.
+              {/*The &nbsp;
+              <a href="https://www.marriott.com/hotels/travel/atlxs-sheraton-atlanta-hotel/"
+                 target="_blank"
+                 rel="noopener noreferrer">Sheraton Atlanta</a> &nbsp;
+              is located at 210 Peachtree St. NW, Atlanta,
+              GA 30303. The special conference rate is $185.00/night + taxes and must be
+              booked by March 12, 2020.*/}
+              {/*<a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>*/}
+            </div>
+          </div>
+          {/* /col end*/}
+        </div>
+        {/* /row end*/}
+
         </div>
         {/* /container end*/}
       </div>
