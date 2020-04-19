@@ -97,8 +97,35 @@ export default ({ data }) => (
         {/*Header Start Here*/}
         <NavigationBar />
         {/*Header End Here*/}
+
+        <div className="counter-up-area ptb20 bg-about parallax" style={{marginTop: "90px"}}>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="single-counter xs-mb40">
+                <div className="count-content" style={{ textAlign: "center"}}>
+                  <span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Our COVID-19 Response</span>
+                    <div className="row">
+                      <div className="col-md-6 col-sm-12">
+                        <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
+                            <a href="https://medium.com/@RefactrTech/covid-19-updates-for-refactr-tech-2020-72a1d8c9494a" class="btn-accent" style={{border: "2px solid #fff"}}>New Dates</a>
+                        </div>
+                      </div>
+                      <div className="col-md-6 col-sm-12">
+                        <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
+                            <a href="https://medium.com/@RefactrTech/buy-your-tickets-to-refactr-tech-2020-with-confidence-a2d1a52bdec3" class="btn-accent" style={{border: "2px solid #fff"}}>COVID-19 Update</a>
+                        </div>
+                      </div>   
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm">
+        <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm" style={{marginTop: "0"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -178,6 +205,11 @@ export default ({ data }) => (
           {/* /container end*/}
         </div>
         {/*Hero Banner Area End Here*/}
+
+
+      
+
+
 
         {/*Counter Up Area Start Here*/}
         <div className="counter-up-area pad100 bg-counter parallax">
@@ -449,7 +481,7 @@ export default ({ data }) => (
 export const speakerPageQuery = graphql`
   {
     keynoteSpeakers: allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Keynotes" } } }
+      filter: { table: { eq: "Speakers" }, data: { keynotes: { eq: true } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {
