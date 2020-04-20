@@ -125,7 +125,7 @@ export default ({ data }) => (
       </div>
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm" style={{marginTop: "0"}}>
+        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "0"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
