@@ -614,6 +614,12 @@ a {
 .bg-about {
   background-image: url(../img/bg/9.jpg); }
 
+.bg-blm {
+    background-image: url(../img/bg/Black-Lives-Matter.jpg); 
+    background-position: right bottom;
+    background-size: cover; }
+    
+
 /* .bg-error {
   background-image: url(../img/bg/404.jpg); } */
 
