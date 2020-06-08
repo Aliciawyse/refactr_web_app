@@ -3,7 +3,7 @@ import _ from "lodash";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 
 export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
-  const sessions_data = items.map(edge => edge.node);
+  const sessions_data = items.filter(edge => edge.node.data.Status === 'Reconfirmed');
   const tracks = _.groupBy(sessions_data, "data.Track");
 
   return Object.keys(tracks).map(track => (

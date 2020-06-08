@@ -21,7 +21,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2020 - Atlanta August 12 - 14</title>
+      <title>REFACTR.TECH 2021 - Atlanta September 15 - 17</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -35,7 +35,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2020 - Atlanta August 12 - 14"
+        content="REFACTR.TECH 2021 - Atlanta September 15 - 17"
       />
       <meta
         property="og:description"
@@ -63,7 +63,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2020 - Atlanta August 12 - 14"
+        content="REFACTR.TECH 2021 - Atlanta September 15 - 17"
       />
       <meta
         name="twitter:description"
@@ -75,12 +75,12 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="August 12 - 14" />
+      <meta name="twitter:data1" content="September 15 - 17" />
       <meta name="twitter:label2" content="Location" />
       <meta name="twitter:data2" content="Downtown Atlanta, GA" />
 
       {/* <!-- Schema.org markup for Google+ --> */}
-      <meta itemprop="name" content="REFACTR.TECH 2020" />
+      <meta itemprop="name" content="REFACTR.TECH 2021" />
       <meta
         itemprop="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -104,16 +104,16 @@ export default ({ data }) => (
             <div className="col-sm-12">
               <div className="single-counter xs-mb40">
                 <div className="count-content" style={{ textAlign: "center"}}>
-                  <span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Our COVID-19 Response</span>
+                  <span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Important Articles</span>
                     <div className="row">
                       <div className="col-md-6 col-sm-12">
                         <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
-                            <a href="https://medium.com/@RefactrTech/covid-19-updates-for-refactr-tech-2020-72a1d8c9494a" class="btn-accent" style={{border: "2px solid #fff"}}>New Dates</a>
+                            <a href="/blacklivesmatter" class="btn-accent" style={{border: "2px solid #fff"}}>Black Lives Matter</a>
                         </div>
                       </div>
                       <div className="col-md-6 col-sm-12">
                         <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
-                            <a href="https://medium.com/@RefactrTech/buy-your-tickets-to-refactr-tech-2020-with-confidence-a2d1a52bdec3" class="btn-accent" style={{border: "2px solid #fff"}}>COVID-19 Update</a>
+                            <a href="/CovidUpdate" class="btn-accent" style={{border: "2px solid #fff"}}>COVID-19 Update</a>
                         </div>
                       </div>   
                     </div>
@@ -156,8 +156,8 @@ export default ({ data }) => (
                     <img
                     className="img-fluid"
                     style={{marginTop: '35px'}}
-                    src="/img/logo/refactr2020-date.svg"
-                    alt="Conference dates:  August 12 - 14, 2020"
+                    src="/img/logo/refactr2021-date.svg"
+                    alt="Conference dates:  September 15 - 17, 2021"
                   />
                     </div>
                   </div>
@@ -178,10 +178,10 @@ export default ({ data }) => (
                     <div data-countdown="2019/06/05" /> 
                   </div>*/}
 
-                  <div className="row justify-content-center">
+                   {/*<div className="row justify-content-center">
                         <Countdown date={`2020-08-12T12:00:00`} />
                         
-                  </div>
+                </div>*/}
                   
 
                   {/* <div className="row justify-content-end" style={{marginTop: '-30px', marginBottom: '0'}}>
@@ -259,7 +259,7 @@ export default ({ data }) => (
         {/*Counter Up Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
-        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -269,18 +269,18 @@ export default ({ data }) => (
                   </div>
                 </div>
               </div>
-              {/* /col end*/}
+              
             </div>
-            {/* /.row  end*/}
+            
             <div className="row">
               
             <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
 
             </div>
-            {/* /row end*/}
+           
           </div>
-          {/* /container end*/}
-        </div>
+          
+              </div>*/}
         {/*Keynote Speakers Area End Here*/}
 
         {/*Whos Speaking Area Start Here*/}
@@ -290,7 +290,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Speakers</h2>
+                    <h2>Featured Past Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -302,12 +302,12 @@ export default ({ data }) => (
 
                 <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
 
-                <div className="col-lg-12">
+                {/*<div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#f20487', fontWeight: 'normal'}} href="/speakers">
                     <h3>See All Confirmed Speakers</h3>
                   </a>
                   <p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>
-                </div>
+            </div>*/}
                 {/* /row end*/}
               </div>
               {/* /container end*/}
@@ -315,7 +315,7 @@ export default ({ data }) => (
             {/*Whos Speaking Area End Here*/}
 
             {/*Pricing Tables Area Start Here*/}
-            <a name="pricing"/>
+            {/*<a name="pricing"/>
             <div className="pricing-tables-area pad-b50">
               <div className="container">
                 <div className="row">
@@ -326,9 +326,9 @@ export default ({ data }) => (
                       </div>
                     </div>
                   </div>
-                  {/* /col end*/}
+                  
                 </div>
-                {/* /row end*/}
+                
                 <div className="row">
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div className="pricing-box bg-pricing xs-mb30">
@@ -356,7 +356,7 @@ export default ({ data }) => (
                       </div>
                     </div>
                   </div>
-                  {/* /col end*/}
+                  
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
@@ -383,7 +383,7 @@ export default ({ data }) => (
                       </div>
                     </div>
                   </div>
-                  {/* /col end*/}
+                  
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
@@ -410,19 +410,19 @@ export default ({ data }) => (
                       </div>
                     </div>
                   </div>
-                  {/* /col end*/}
+                  
                 </div>
-                {/* /row end*/}
+                
               </div>
-              {/* /container end*/}
-            </div>
-
-            {/* /container end*/}
+              
+            </div>*/}
+            {/*Pricing Tables Area End Here*/}
+            
           </div>
-          {/*Pricing Tables Area End Here*/}
+          
         </div>
 
-        <div className="our-sponsors-area ptb50 bg-color">
+        {/*<div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
             <div className="row">
                 <div className="col-lg-12">
@@ -442,7 +442,7 @@ export default ({ data }) => (
                 </div>
             </div>
           </div>
-        </div>
+          </div>*/}
         
         <div className="counter-up-area ptb60 bg-counter parallax">
           <div className="container">

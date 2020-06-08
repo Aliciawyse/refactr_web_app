@@ -12,7 +12,7 @@ import "../../src/styles/assets/css/responsive.css";
 export default ({ data }) => (
   <div>
   <Helmet>
-  <title>Workshops | REFACTR.TECH 2020</title>
+  <title>Workshops | REFACTR.TECH 2021</title>
   <meta
     name="description"
     content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
@@ -26,7 +26,7 @@ export default ({ data }) => (
   <meta property="og:url" content="https://www.refactr.tech/" />
   <meta
     property="og:title"
-    content="Workshops | REFACTR.TECH 2020"
+    content="Workshops | REFACTR.TECH 2021"
   />
   <meta
     property="og:description"
@@ -55,7 +55,7 @@ export default ({ data }) => (
   <meta name="twitter:site" content="@RefactrTech" />
   <meta
     name="twitter:title"
-    content="Workshops | REFACTR.TECH 2020"
+    content="Workshops | REFACTR.TECH 2021"
   />
   <meta
     name="twitter:description"
@@ -67,12 +67,12 @@ export default ({ data }) => (
     content="https://refactr.tech/img/conference/marketing_header.png"
   />
   <meta name="twitter:label1" content="Date" />
-  <meta name="twitter:data1" content="August 12-14" />
+  <meta name="twitter:data1" content="September 15-17" />
   <meta name="twitter:label2" content="Location" />
   <meta name="twitter:data2" content="Downtown Atlanta, GA" />
 
   {/* <!-- Schema.org markup for Google+ --> */}
-  <meta itemprop="name" content="Workshops | REFACTR.TECH 2020" />
+  <meta itemprop="name" content="Workshops | REFACTR.TECH 2021" />
   <meta
     itemprop="description"
     content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."

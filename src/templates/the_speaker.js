@@ -11,7 +11,7 @@ export default ({ data }) => {
   return (
     <div>
         <Helmet>
-        <title>{data.airtable.data.speaker_name + " | REFACTR.TECH 2020"}</title>
+        <title>{data.airtable.data.speaker_name + " | REFACTR.TECH 2021"}</title>
         <meta
           name="description"
           content={data.airtable.data.role +" at "+ data.airtable.data.company}
@@ -25,7 +25,7 @@ export default ({ data }) => {
         <meta property="og:url" content="https://www.refactr.tech/" />
         <meta
           property="og:title"
-          content={data.airtable.data.speaker_name + " | REFACTR.TECH 2020"}
+          content={data.airtable.data.speaker_name + " | REFACTR.TECH 2021"}
         />
         <meta
           property="og:description"
@@ -54,7 +54,7 @@ export default ({ data }) => {
         <meta name="twitter:site" content="@RefactrTech" />
         <meta
           name="twitter:title"
-          content={data.airtable.data.speaker_name + " | REFACTR.TECH 2020"}
+          content={data.airtable.data.speaker_name + " | REFACTR.TECH 2021"}
         />
         <meta
           name="twitter:description"
@@ -66,12 +66,12 @@ export default ({ data }) => {
           content={data.airtable.data.meta_image[0].thumbnails.large.url}
         />
         <meta name="twitter:label1" content="Date" />
-        <meta name="twitter:data1" content="August 12-14" />
+        <meta name="twitter:data1" content="September 15-17" />
         <meta name="twitter:label2" content="Location" />
         <meta name="twitter:data2" content="Downtown Atlanta, GA" />
       
         {/* <!-- Schema.org markup for Google+ --> */}
-        <meta itemprop="name" content={data.airtable.data.speaker_name + " | REFACTR.TECH 2020"} />
+        <meta itemprop="name" content={data.airtable.data.speaker_name + " | REFACTR.TECH 2021"} />
         <meta
           itemprop="description"
           content={data.airtable.data.role +" at "+ data.airtable.data.company}
