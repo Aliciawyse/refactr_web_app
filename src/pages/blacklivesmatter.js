@@ -45,9 +45,9 @@ export default ({ data }) => (
                 <h2>Black Lives Matter.</h2>
               </div>
             </div>
-            <p style={{color:'#333'}}>By <a href="https://twitter.com/ericastanley">ERICA STANLEY</a><br />
+            <p style={{color:'#444'}}>By <a href="https://twitter.com/ericastanley">ERICA STANLEY</a><br />
                June 1, 2020 | 9:17 PM</p>
-            <p style={{fontSize: '1.4em', color:'#333'}}>
+            <p style={{fontSize: '1.4em', color:'#444'}}>
             We at REFACTR.TECH stand unequivocally with Black people, #BlackLivesMatter protestors and those advocating for justice for Black people. 
             In the wake of a seemingly incessant stream of tragic events over a span of weeks — weeks that saw a long-delayed response to 
             Ahmaud Arbery’s murder, Breonna Taylor’s killing in her home at the hands of police, MPD’s use of excessive force in the killing of 
@@ -59,10 +59,10 @@ export default ({ data }) => (
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
 
-            <p style={{fontSize: '1.4em', color:'#333'}}>My father grew up during the ‘50s and ‘60s. His was the first generation of Black students to integrate schools in the South. He was a teenager when Malcolm X was assassinated. He was a young adult when Martin Luther King Jr. was assassinated. He protested. His family and community leaders marched in pursuit of Civil Rights. Heartbroken over recent events, he told me they did that then so their children and grandchildren wouldn’t have to. And yet here we are, in 2020, fighting to just be, to exist without fear of becoming the next hashtag. If a “riot is the language of the unheard <sup>1</sup>,” know that we hear you and we amplify your voices.
+            <p style={{fontSize: '1.4em', color:'#444'}}>My father grew up during the ‘50s and ‘60s. His was the first generation of Black students to integrate schools in the South. He was a teenager when Malcolm X was assassinated. He was a young adult when Martin Luther King Jr. was assassinated. He protested. His family and community leaders marched in pursuit of Civil Rights. Heartbroken over recent events, he told me they did that then so their children and grandchildren wouldn’t have to. And yet here we are, in 2020, fighting to just be, to exist without fear of becoming the next hashtag. If a “riot is the language of the unheard <sup>1</sup>,” know that we hear you and we amplify your voices.
             </p>
 
-            <p style={{fontSize: '1.4em', color:'#333'}}>We know that protests and civic unrest can bring about change. The founding of our country was built on such unrest. As we begin Pride Month, I’m reminded of how the Stonewall riots, led primarily by Black and Latinx youth, ushered in a new era in the fight for LGBTQ+ rights. So as you demand justice in the streets across America, we ask that you do your best to preserve your health and your safety. 
+            <p style={{fontSize: '1.4em', color:'#444'}}>We know that protests and civic unrest can bring about change. The founding of our country was built on such unrest. As we begin Pride Month, I’m reminded of how the Stonewall riots, led primarily by Black and Latinx youth, ushered in a new era in the fight for LGBTQ+ rights. So as you demand justice in the streets across America, we ask that you do your best to preserve your health and your safety. 
             </p>
             
             <p className="text-center">
@@ -74,13 +74,13 @@ export default ({ data }) => (
               height="600"
             />
           </p>
-            <p style={{fontSize: '1.4em', color:'#333'}}>For those of you who may not be able to join the many protests happening throughout the country, there’s still plenty more work to be done. Check out the “Additional Reading” list below for ideas on how you can contribute to this moment.
+            <p style={{fontSize: '1.4em', color:'#444'}}>For those of you who may not be able to join the many protests happening throughout the country, there’s still plenty more work to be done. Check out the “Additional Reading” list below for ideas on how you can contribute to this moment.
             </p>
 
-            <p style={{fontSize: '1.4em', color:'#333'}}>REFACTR.TECH has, in our minds, always been more than a tech conference. It has been our way of fostering a tech industry that doesn’t exist yet—a tech industry that is inclusive, at all levels, of the wide range of diversity we see in the people who use the products we build. It has been our way to protest the tech companies, communities and events that pay little more than lip service to inclusion and intersectionality. It has been our way to highlight those who would typically be relegated to the margins and lift up their voices—to show the tech industry who we could be together. Showing our unwavering, uncompromising support for Black people, not only at this crucial juncture, but at all times, is who we are. 
+            <p style={{fontSize: '1.4em', color:'#444'}}>REFACTR.TECH has, in our minds, always been more than a tech conference. It has been our way of fostering a tech industry that doesn’t exist yet—a tech industry that is inclusive, at all levels, of the wide range of diversity we see in the people who use the products we build. It has been our way to protest the tech companies, communities and events that pay little more than lip service to inclusion and intersectionality. It has been our way to highlight those who would typically be relegated to the margins and lift up their voices—to show the tech industry who we could be together. Showing our unwavering, uncompromising support for Black people, not only at this crucial juncture, but at all times, is who we are. 
             </p> 
 
-            <p style={{color:'#333'}}>
+            <p style={{color:'#444'}}>
             <h3>Additional Reading</h3>
 
             <p style={{fontSize: '1.4em'}}>
