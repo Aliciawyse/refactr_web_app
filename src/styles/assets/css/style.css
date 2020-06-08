@@ -618,6 +618,11 @@ a {
     background-image: url(../img/bg/Black-Lives-Matter.jpg); 
     background-position: right bottom;
     background-size: cover; }
+
+.bg-covid {
+  background-image: url(../img/bg/Covid19.jpg); 
+  background-position: right bottom;
+  background-size: cover; }
     
 
 /* .bg-error {
