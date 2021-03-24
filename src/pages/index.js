@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
+//import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
 import Countdown from "../components/Countdown";
 import { Helmet } from "react-helmet";
@@ -113,7 +114,7 @@ export default ({ data }) => (
                       </div>
                       <div className="col-md-6 col-sm-12">
                         <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
-                            <a href="/CovidUpdate" class="btn-accent" style={{border: "2px solid #fff"}}>COVID-19 Update</a>
+                            <a href="/stopasianhate" class="btn-accent" style={{border: "2px solid #fff"}}>Stop Asian Hate</a>
                         </div>
                       </div>   
                     </div>
@@ -296,6 +297,12 @@ export default ({ data }) => (
               </div>
 
               {/* /.row  end*/}
+
+              <div className="row mb50">
+              
+                {/*<OnlineSchedule />*/}
+              
+              </div>
 
               <div className="row mb50">
                 {/*Whos Speaking Area End Here*/}

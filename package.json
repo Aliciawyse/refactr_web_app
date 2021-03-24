@@ -12,25 +12,26 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.15.15",
-    "gatsby-cli": "^2.7.47",
-    "gatsby-image": "^2.2.19",
-    "gatsby-plugin-mailchimp": "^5.1.2",
-    "gatsby-plugin-manifest": "^2.2.16",
-    "gatsby-plugin-offline": "^3.0.7",
-    "gatsby-plugin-react-helmet": "^3.1.7",
-    "gatsby-plugin-sass": "^2.1.14",
-    "gatsby-plugin-sharp": "^2.2.23",
-    "gatsby-plugin-styled-components": "^3.1.5",
-    "gatsby-source-airtable": "^2.0.9",
-    "gatsby-source-filesystem": "^2.1.22",
-    "gatsby-transformer-sharp": "^2.2.14",
-    "node-sass": "^4.12.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "gatsby": "^2.32.11",
+    "gatsby-cli": "^2.19.2",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
+    "gatsby-plugin-manifest": "^2.12.1",
+    "gatsby-plugin-offline": "^3.10.2",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-plugin-styled-components": "^3.10.0",
+    "gatsby-source-airtable": "^2.1.1",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-sharp": "^2.12.1",
+    "node-sass": "^4.14.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "react-toastify": "^5.4.1",
+    "react-table": "^7.6.3",
+    "react-toastify": "^5.5.0",
     "styled-components": "^4.3.2"
   },
   "repository": {
@@ -41,7 +42,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "devDependencies": {
-    "sass": "^1.22.12"
+    "sass": "^1.32.8"
   },
   "resolutions": {
     "sharp": "0.22.1"
