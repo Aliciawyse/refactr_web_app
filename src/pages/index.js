@@ -99,13 +99,13 @@ export default ({ data }) => (
         <NavigationBar />
         {/*Header End Here*/}
 
-        <div className="counter-up-area ptb20 bg-about parallax" style={{marginTop: "90px"}}>
+        {/*<div className="counter-up-area ptb20 bg-about parallax" style={{marginTop: "90px"}}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
               <div className="single-counter xs-mb40">
                 <div className="count-content" style={{ textAlign: "center"}}>
-                  <span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Important Articles</span>
+                  {/*<span className="count" style={{ fontSize: "3.1em", marginTop: "0", marginBottom: "0"}}>Important Articles</span>
                     <div className="row">
                       <div className="col-md-6 col-sm-12">
                         <div className="accent-btn text-center mt10" style={{marginBottom: "10px"}}>
@@ -117,16 +117,16 @@ export default ({ data }) => (
                             <a href="/stopasianhate" class="btn-accent" style={{border: "2px solid #fff"}}>Stop Asian Hate</a>
                         </div>
                       </div>   
-                    </div>
+                    </div>*
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "0"}}>
+        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "90px"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
