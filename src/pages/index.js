@@ -126,23 +126,23 @@ export default ({ data }) => (
       </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "90px"}}>
+        <div className="hero-banner-area home-2 hero-bg-5 parallax" style={{marginTop: "90px"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-lg-7 align-self-start">
+                    <div className="col-md-12 col-lg-9 align-self-start">
                         <img
                         className="img-fluid"
-                        src="/img/logo/refactr-logo.svg"
+                        src="/img/logo/refactr2021-logo.svg"
                         alt="REFACTR.TECH Conference"
                       />
                     </div>
                   </div>
 
-                  <div className="row justify-content-center" style={{marginTop: '30px'}}>
+                  {/*<div className="row justify-content-center" style={{marginTop: '30px'}}>
                     <div className="col-lg-6">
                         <img
                         className="img-fluid"
@@ -172,7 +172,7 @@ export default ({ data }) => (
                     alt="Conference location: Atlanta"
                   />
                     </div>
-                  </div>
+              </div>*/}
 
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
