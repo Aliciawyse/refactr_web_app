@@ -524,6 +524,9 @@ a {
 .pad-top100 {
   padding-top: 100px; }
 
+  .pad-bot30 {
+    padding-bottom: 30px; }
+
 .xs-mt50 {
   margin-top: 50px; }
 

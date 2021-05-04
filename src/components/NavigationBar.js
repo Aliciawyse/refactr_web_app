@@ -53,6 +53,11 @@ export default class NavigationBar extends Component {
                         Code of Conduct
                       </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/updates">
+                        Updates
+                      </Link>
+                    </li>
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">
                         Workshops
