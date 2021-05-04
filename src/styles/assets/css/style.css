@@ -592,7 +592,8 @@ a {
   background-position: top right; }
 
 .bg-footer {
-  background-image: url(../img/bg/footer.jpg); }
+  /*background-image: url(../img/bg/footer.jpg); }*/
+  background: black;}
 
 /* .bg-8 {
   background-image: url(../img/bg/4.jpg); } */
@@ -620,7 +621,7 @@ a {
     background-size: cover; }
 
 .bg-sah {
-      background-image: url(../img/bg/Stop-Asian-Hate-cropped.jpg); 
+      background-image: url(../img/bg/Stop-Asian-Hate.jpg); 
       background-position: right bottom;
       background-size: cover; }
 

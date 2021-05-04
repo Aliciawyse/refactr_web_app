@@ -43,7 +43,7 @@ export default () =>
     <div className="row">
         <div className="col-lg-12">
             <div className="copyright">
-                <p>©2018-2020 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>©2018-2021 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/terms-and-conditions"> Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/code-of-conduct">Code of Conduct</a>

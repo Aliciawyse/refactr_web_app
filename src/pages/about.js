@@ -251,8 +251,8 @@ export default ({ data }) => {
                   >
                     <h3>Angel Banks</h3>
                   </a>
-                  <p>Technical Expert</p>
-                  <h6 style={{fontWeight: '700'}}>Thinkful</h6>
+                  <p>Program Manager</p>
+                  <h6 style={{fontWeight: '700'}}>Microsoft</h6>
                 </div>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default ({ data }) => {
                   >
                     <h3>Beth Laing</h3>
                   </a>
-                  <p>Engineering Manager</p>
+                  <p>Director of Engineering</p>
                   <h6 style={{fontWeight: '700'}}>CallRail</h6>
                 </div>
               </div>
@@ -321,8 +321,8 @@ export default ({ data }) => {
                   >
                     <h3>Erica Stanley</h3>
                   </a>
-                  <p>Sr. Engineering Manager</p>
-                  <h6 style={{fontWeight: '700'}}>Mozilla</h6>
+                  <p>Director of Engineering</p>
+                  <h6 style={{fontWeight: '700'}}>Google</h6>
                 </div>
               </div>
             </div>

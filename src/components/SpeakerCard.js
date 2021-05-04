@@ -11,7 +11,7 @@ export const SpeakerCard = ({
   slug,
   pronouns
 }) => (
-  <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+  <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
     <div className="speakers xs-mb30">
       <div className="spk-img">
         {headshot.localFiles && (

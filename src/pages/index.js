@@ -291,7 +291,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Past Speakers</h2>
+                    <h2>Featured Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -322,7 +322,7 @@ export default ({ data }) => (
             {/*Whos Speaking Area End Here*/}
 
             {/*Pricing Tables Area Start Here*/}
-            {/*<a name="pricing"/>
+            <a name="pricing"/>
             <div className="pricing-tables-area pad-b50">
               <div className="container">
                 <div className="row">
@@ -341,24 +341,24 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>199
+                          FREE
                         </div>
                       </div>
-                      <div className="pricing-title">Early Bird</div>
+                      <div className="pricing-title">Career Fair</div>
                       <div className="pricing-content">
                         <ul>
-                          <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
+                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
+                          <li>Meet companies hiring now!</li>
+                          <li>Talk directly with hiring team</li>
+                          <li>Exclusive interactive sessions</li>
+                          <li>Review our job board</li>
+                          <li>Share your resume</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
                         </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="/#pricing">
-                          Sold Out!
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -368,24 +368,24 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>275
+                          <span>$</span>30
                         </div>
                       </div>
-                      <div className="pricing-title">Regular</div>
+                      <div className="pricing-title">Conference</div>
                       <div className="pricing-content">
                         <ul>
-                        <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end July 24th!</span></li>
+                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
                           <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
+                          <li>Sessions in 3 Tracks</li>
+                          <li>World Renowned Speakers</li>
                           <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
-                        </ul>
+                          <li>Social Activities</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
+                          </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
-                          Buy Ticket
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -395,24 +395,23 @@ export default ({ data }) => (
                     <div className="pricing-box bg-pricing xs-mb30">
                       <div className="pricing-header">
                         <div className="pricing-value">
-                          <span>$</span>350
+                          <span>$</span>20
                         </div>
                       </div>
-                      <div className="pricing-title">Late</div>
+                      <div className="pricing-title">Workshops</div>
                       <div className="pricing-content">
                         <ul>
-                          <li>&nbsp;</li>
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 6 Tracks</li>
-                          <li>Expo Hall</li>
-                          <li>Networking Opportunities</li>
-                          <li>Tons of Social Activities</li>
-                          <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>
-                        </ul>
+                          <li>Instructors from Top Companies</li>
+                          <li>Learn from the Experts</li>
+                          <li>4-hour Deep Dive</li>
+                          <li>Convenient Scheduling</li>
+                          <li>Verified Certificate</li>
+                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
+                          </ul>
                       </div>
                       <div className="bordered-btn">
                         <a href="http://reg.connectevents.io/ConnectEvents/rtech2020/">
-                          Buy Ticket
+                          Coming Soon!
                         </a>
                       </div>
                     </div>
@@ -422,7 +421,7 @@ export default ({ data }) => (
                 
               </div>
               
-            </div>*/}
+            </div>
             {/*Pricing Tables Area End Here*/}
             
           </div>
