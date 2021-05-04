@@ -133,7 +133,7 @@ export default ({ data }) => (
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-md-12 col-lg-9 align-self-start">
+                    <div className="col-md-10 col-lg-9 align-self-start">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr2021-logo.svg"
@@ -213,41 +213,42 @@ export default ({ data }) => (
 
 
         {/*Counter Up Area Start Here*/}
-        <div className="counter-up-area pad100 bg-counter parallax">
+        <div className="counter-up-area pad100 bg-tricolor parallax">
           <div className="container">
-            <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+            <div className="row ml150">
+              
+              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-6">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">3</span>
-                    <p>Days</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/workshops-August-14.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>
               {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
-                    <span className="count">6</span>
-                    <p>Tracks</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/conference-August-18-20.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>
               {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 col-md-4 col-sm-3">
-                <div className="single-counter xs-mb40">
+              <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-6">
+                <div className="single-counter ">
                   <div className="count-content">
-                    <span className="count">60</span>
-                    <p>Speakers</p>
-                  </div>
-                </div>
-              </div>
-              {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
-                <div className="single-counter">
-                  <div className="count-content">
-                    <span className="count">500</span>
-                    <p>Attendees</p>
+                  <img
+                  className="img-fluid"
+                  src="/img/logo/career-fair-August 17.svg"
+                  alt="REFACTR.TECH Workshops - August 14th"
+                />
                   </div>
                 </div>
               </div>

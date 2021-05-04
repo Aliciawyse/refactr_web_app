@@ -494,6 +494,18 @@ a {
 .mt100 {
   margin: 100px 0 0; }
 
+.ml150 {
+  margin-left: 150px;}
+
+.ml100 {
+  margin-left: 100px;}
+
+  .ml50 {
+    margin-left: 50px;}
+
+    .ml20 {
+      margin-left: 20px;}
+
 .padtb {
   padding: 60px 0 100px; }
 
@@ -617,11 +629,16 @@ a {
 .bg-counter {
   background-image: url(../img/bg/5.jpg); }
 
+.bg-tricolor {
+  background-image: url(../img/bg/tri-color-bg.png?123); }
+
 .bg-contact {
   background-image: url(../img/bg/6.jpg); }
 
 .bg-about {
-  background-image: url(../img/bg/9.jpg); }
+  /* background-image: url(../img/bg/9.jpg);  */
+  background:black;
+}
 
 .bg-blm {
     background-image: url(../img/bg/Black-Lives-Matter.jpg); 
