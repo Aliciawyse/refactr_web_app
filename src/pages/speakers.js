@@ -121,7 +121,7 @@ export default ({ data }) => {
 export const speakerPageQuery = graphql`
   {
     allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { Status: { eq: "Reconfirmed" } } }
+      filter: { table: { eq: "Speakers" }, data: { Status: { eq: "Confirmed" } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {

@@ -144,7 +144,7 @@ export default ({ data }) => (
             {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
-              <Link
+              {/*<Link
               id="test"
               to="/sessions/#FrontendEngineering"
               rel="noreferrer noopener"
@@ -155,7 +155,7 @@ export default ({ data }) => (
                       Front-End Engineering
                   </div>
                 </li>
-              </Link>
+              </Link>*/}
 
 
               <Link
@@ -173,18 +173,18 @@ export default ({ data }) => (
 
               <Link
               id="test"
-              to="/sessions/#Product&UX"
+              to="/sessions/UX&Accessibility"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab1" className="tab-btn">
                 <div>
-                        Product &amp; UX
+                        UX &amp; Accessibility
                   </div>
                 </li>
               </Link>
 
-              <Link
+              {/*<Link
               id="test"
               to="/sessions/#Cool$h!t"
               rel="noreferrer noopener"
@@ -195,7 +195,7 @@ export default ({ data }) => (
                       Cool $h!t
                   </div>
                 </li>
-              </Link>
+              </Link>*/}
 
               <Link
                     to="/sessions/#Career/Leadership"
@@ -208,7 +208,7 @@ export default ({ data }) => (
                 </li>
               </Link>
 
-              <Link
+              {/*<Link
                     to="/sessions/#SocialImpact"
                     rel="noreferrer noopener"
                   >
@@ -217,9 +217,9 @@ export default ({ data }) => (
                       Social Impact
                   </div>
                 </li>
-              </Link>
+              </Link>*/}
 
-              <Link
+              {/*<Link
                     to="/sessions/#Full-dayWorkshops"
                     rel="noreferrer noopener"
                   >
@@ -228,7 +228,7 @@ export default ({ data }) => (
                   Full-day Workshops
                   </div>
                 </li>
-              </Link>
+              </Link>*/}
 
               <Link
                     to="/sessions/#Keynotes"
