@@ -49,8 +49,8 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/code-of-conduct">
-                        Code of Conduct
+                      <Link className="nav-link" activeClassName="active" to="/speakers">
+                        Speakers
                       </Link>
                     </li>
                     <li className="nav-item">
@@ -58,6 +58,12 @@ export default class NavigationBar extends Component {
                         Updates
                       </Link>
                     </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/code-of-conduct">
+                        Code of Conduct
+                      </Link>
+                    </li>
+                    
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">
                         Workshops
@@ -67,12 +73,8 @@ export default class NavigationBar extends Component {
                       <Link className="nav-link" activeClassName="active" to="/sessions">
                         Sessions
                       </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/speakers">
-                        Speakers
-                      </Link>
                     </li>*/}
+                    
                     
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
