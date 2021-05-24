@@ -160,7 +160,7 @@ export default ({ data }) => (
 
               <Link
               id="test"
-              to="/sessions/#SoftwareEngineering"
+              to="#SoftwareEngineering"
               rel="noreferrer noopener"
               className="test"
               >
@@ -173,7 +173,7 @@ export default ({ data }) => (
 
               <Link
               id="test"
-              to="/sessions/UX&Accessibility"
+              to="/sessions/#UX&Accessibility"
               rel="noreferrer noopener"
               className="test"
               >

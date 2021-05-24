@@ -9,7 +9,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
 
   return Object.keys(tracks).map(track => (
     <div className="speakers-single-area">
-      <div id="vapp-swe-sessions" className="container">
+      <div id={track.replace(/\s+/g, "")} className="container">
         <a name={track.replace(/\s+/g, "")} />
 
         {/* A track title */}
