@@ -22,7 +22,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2021 - Atlanta August 18 - 20</title>
+      <title>REFACTR.TECH 2021 - Online August 18 - 20</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -36,7 +36,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
+        content="REFACTR.TECH 2021 - Online August 18 - 20"
       />
       <meta
         property="og:description"
@@ -44,7 +44,7 @@ export default ({ data }) => (
       />
       <meta 
         name="keywords" 
-        content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+        content="Atlanta, online, virtual, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
       />
 
       <meta
