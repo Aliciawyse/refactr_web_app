@@ -78,7 +78,7 @@ export default () => (
               
               <p>Hello [boss&rsquo;s name here],</p>
               
-              <p>I&rsquo;m reaching out to request your help to attend an amazing conference, <a href="/index">REFACTR.TECH</a> in Atlanta, GA on September 16 - 17, 2020 <i>[September 15 - 17, 2020 if you want to include a workshop]</i>. The 2nd annual <a href="/index">REFACTR.TECH</a> is a tech conference that focuses on creating an inclusive environment, featuring marginalized people, and allies doing amazing work.</p>
+              <p>I&rsquo;m reaching out to request your help to attend an amazing conference, <a href="/index">REFACTR.TECH</a> in Atlanta, GA on August 16 - 17, 2020 <i>[August 18 - 20, 2020 if you want to include a workshop]</i>. The 2nd annual <a href="/index">REFACTR.TECH</a> is a tech conference that focuses on creating an inclusive environment, featuring marginalized people, and allies doing amazing work.</p>
               
               <p>The conference provides content valuable to a wide range of experience levels and interests. Technical topics of interest from intermediate to senior developers, alongside beginner-friendly sessions and workshops, are all part of the event. It includes a combination of 3 <a href="/workshops">workshops</a>, 4 keynote sessions, and 50 track <a href="/speakers">sessions</a> to expand knowledge, hone technical skills, and make important connections.</p>
               

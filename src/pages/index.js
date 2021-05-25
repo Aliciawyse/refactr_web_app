@@ -64,7 +64,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2021 - Atlanta August 18 - 20"
+        content="REFACTR.TECH 2021 - Online August 18 - 20"
       />
       <meta
         name="twitter:description"
@@ -158,7 +158,7 @@ export default ({ data }) => (
                     className="img-fluid"
                     style={{marginTop: '35px'}}
                     src="/img/logo/refactr2021-date.svg"
-                    alt="Conference dates:  September 15 - 17, 2021"
+                    alt="Conference dates:  August 18 - 20, 2021"
                   />
                     </div>
                   </div>

@@ -50,7 +50,7 @@ export default ({ data }) => (
             <p style={{fontSize: '1.4em', color:'#444'}}>
             We hold the health and safety of our community above everything. At this time, we don’t believe we can offer a space for our attendees, 
             speakers, and sponsors to responsibly socially distance, so with the continued uncertainty around COVID-19, we’ve decided to move our 
-            conference to next year, <strong>September 15-17, 2021</strong>. We greatly appreciate your patience and understanding and look forward to seeing you 
+            conference to next year, <strong>August 18-20, 2021</strong>. We greatly appreciate your patience and understanding and look forward to seeing you 
             when we can all safely meet together again.
             </p>
 
