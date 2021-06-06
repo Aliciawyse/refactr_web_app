@@ -277,7 +277,7 @@ export default ({ data }) => (
         {/*Counter Up Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
-        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -298,7 +298,7 @@ export default ({ data }) => (
            
           </div>
           
-              </div>*/}
+              </div>
         {/*Keynote Speakers Area End Here*/}
 
         {/*Whos Speaking Area Start Here*/}
