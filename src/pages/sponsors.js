@@ -9,16 +9,6 @@ import { SponsorsFiltered } from "../components/SponsorsFiltered";
 const filterSponsorsByTier = (data) => {
     const allData = data.allAirtable.edges;
     let filteredData = [
-      {
-        tier: 'unobtainium',
-        title: 'Unobtainium',
-        sponsors: []
-      },
-      {
-            tier: 'Platinum',
-            title: 'Platinum',
-            sponsors: []
-        },
         {
             tier: 'Gold',
             title: 'Gold',
@@ -30,43 +20,23 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
-            tier: 'happy_hour',
-            title: 'Happy Hour',
-            sponsors: []
-        },
-        {
             tier: 'Silver',
             title: 'Silver',
             sponsors: []
         },
         {
-            tier: 'video',
-            title: 'Video',
+            tier: 'bronze',
+            title: 'Bronze',
             sponsors: []
         },
         {
-            tier: 'accessibility',
-            title: 'Accessibility',
-            sponsors: []
-        },
-        {
-            tier: 'premium_opp_grant',
-            title: 'Premium Opportunity Grant',
-            sponsors: []
-        },
-        {
-            tier: 'lanyard_name_badge',
-            title: 'Lanyard & Name Badge',
-            sponsors: []
+          tier: 'in_kind_partners',
+          title: 'In-kind Partners',
+          sponsors: []
         },
         {
             tier: 'opp_grant',
             title: 'Opportunity Grant',
-            sponsors: []
-        },
-        {
-            tier: 'after_party',
-            title: 'After Party',
             sponsors: []
         },
         {
@@ -148,7 +118,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb50 xs-mb40">
-                            <h2>2020 Sponsors</h2>
+                            <h2>2021 Sponsors</h2>
                         </div>
                         <hr />
                         <div className="single-sponsers">
