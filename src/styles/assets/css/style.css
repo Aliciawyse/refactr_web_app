@@ -2210,6 +2210,10 @@ a {
   margin-bottom: 0;
   font-weight: 500; }
 
+  .whos-speaking-area-two .speakers .spk-info a h3{
+    font-size: 1.5em;
+  }
+
 /*5.5.2 Speakers Single*/
 .speakers-single-area .inner-content h1, .speakers-single-area .inner-content h2, .speakers-single-area .inner-content h3, .speakers-single-area .inner-content h4, .speakers-single-area .inner-content h5, .speakers-single-area .inner-content h6 {
   color: #252525;
