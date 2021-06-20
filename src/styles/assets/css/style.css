@@ -654,7 +654,11 @@ a {
   background-image: url(../img/bg/Covid19.jpg); 
   background-position: right bottom;
   background-size: cover; }
-    
+
+.bg-career {
+  background-image: url(../img/bg/career.jpg); 
+  background-position: right bottom;
+  background-size: cover; }  
 
 /* .bg-error {
   background-image: url(../img/bg/404.jpg); } */
