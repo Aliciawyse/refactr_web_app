@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql } from "gatsby";
+import { ExhibitorCard } from "../components/ExhibitorCard";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
@@ -18,16 +20,20 @@ export default ({ data }) => (
       />
     </Helmet>
     <div className="main-container">
-      <NavigationBar/>
-      <div className="about-us-area pad-head bg-career parallax" style={{marginTop: "90px"}}>
+      <NavigationBar whiteText/>
+      <div className="about-us-area pad-head bg-about">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="about-content">
                 <div className="section-title text-center">
-                  
+                  <h2>Career Fair</h2>
                 </div>
-                
+                <ol className="breadcrumb">
+                  <li><a href="/">Home</a></li>
+                  <li>|</li>
+                  <li>Career Fair</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -35,28 +41,46 @@ export default ({ data }) => (
       </div>
 
       {/*Conference Synopsis Area Start Here*/}
-      <div className="conference-synopsis-area about pad80">
+      <div className="our-blog-area pad100">
         <div className="container">
           <div className="row">
-          <div className="col-lg-1"></div>
-          <div className="col-lg-10">
-            <div className="inner-content">
-            <div className="section-title">
-              <div className="title-text pl text-center">
-                <h2>Career Fair.</h2>
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50">
+                  <h2>Career Fair</h2>
+                </div>
               </div>
             </div>
-            <p style={{fontSize: '1.4em', color:'#444'}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+          </div>
+          <div className="inner-blog">
+            <div>
+              <div className="row">
+                {data.allAirtable.nodes.map((item, index) => <ExhibitorCard key={index} {...item.data} /> )}
               </div>
             </div>
-            <div className="col-lg-1"></div>
           </div>
         </div>
-        {/* /container end*/}
       </div>
-    </div>
     <Footer />
   </div>
+</div>
 );
+
+export const query = graphql`
+  {
+    allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}}) {
+      nodes {
+        fields {
+          slug
+        }
+        data {
+          company_name
+          exhibitor
+          logo {
+            url
+          }
+        }
+      }
+    }
+  }
+`;
