@@ -15,11 +15,6 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
-            tier: 'vip',
-            title: 'VIP Reception',
-            sponsors: []
-        },
-        {
             tier: 'Silver',
             title: 'Silver',
             sponsors: []
@@ -37,6 +32,11 @@ const filterSponsorsByTier = (data) => {
         {
           tier: 'in_kind_partners',
           title: 'In-kind Partners',
+          sponsors: []
+        },
+        {
+          tier: 'career_fair',
+          title: 'Career Fair',
           sponsors: []
         },
         {
