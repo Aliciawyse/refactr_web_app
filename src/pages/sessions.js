@@ -98,7 +98,7 @@ export default ({ data }) => (
                 <div className="section-title text-center">
                   <h2>Events</h2>
                 </div>
-                {/*<ol className="breadcrumb">
+                <ol className="breadcrumb">
                   <li>
                     <a href="/">Home</a>
                   </li>
@@ -108,7 +108,7 @@ export default ({ data }) => (
                   </li>
                   <li>|</li>
                   <li>Sessions</li>
-                </ol>*/}
+                </ol>
               </div>
             </div>
             {/* /col*/}
@@ -219,16 +219,16 @@ export default ({ data }) => (
                 </li>
               </Link>*/}
 
-              {/*<Link
-                    to="/sessions/#Full-dayWorkshops"
+              <Link
+                    to="/sessions/#Workshops"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
                   <div>
-                  Full-day Workshops
+                  Workshops
                   </div>
                 </li>
-              </Link>*/}
+              </Link>
 
               <Link
                     to="/sessions/#Keynotes"

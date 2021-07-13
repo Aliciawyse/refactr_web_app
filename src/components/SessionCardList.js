@@ -45,7 +45,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
                   <SessionSpeakerList speakers={session.data.Speakers}/>
 
                   <div style={{display: showBuyTickets ? 'block':'none', textAlign: 'center' }}>
-                    {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href="http://reg.connectevents.io/ConnectEvents/rtech2020/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>}
+                    {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>}
                   </div>
 
                   <hr/>

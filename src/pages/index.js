@@ -373,9 +373,10 @@ export default ({ data }) => (
                           {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
                         </ul>
                       </div>
-                      <div className="bordered-btn">
-                        <a href="/#pricing">
-                          Coming Soon!
+                      <br/>
+                      <div className="primary-btn">
+                        <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/">
+                          Get Tickets!
                         </a>
                       </div>
                     </div>
@@ -426,9 +427,10 @@ export default ({ data }) => (
                           <li>Verified Certificate</li>
                         </ul>
                       </div>
-                      <div className="bordered-btn">
-                        <a href="/#pricing">
-                          Coming Soon!
+                      <br/>
+                      <div className="primary-btn">
+                        <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/">
+                          Get Tickets!
                         </a>
                       </div>
                     </div>
