@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
+import { SpeakerCardList } from "../components/SpeakerCardList";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 //import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
@@ -301,9 +302,39 @@ export default ({ data }) => (
               </div>
         {/*Keynote Speakers Area End Here*/}
 
+
+
+        
+
+
+
         {/*Whos Speaking Area Start Here*/}
         <div className="whos-speaking-area pad100">
           <div className="container">
+
+          <div>
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <div className="title-text mb50">
+                    <h2>Workshop Instructors</h2>
+                  </div>
+                </div>
+              </div>
+
+              {/* /.row  end*/}
+
+              <div className="row mb50 " style={{justifyContent: 'center'}}>
+                {/*Whos Speaking Area End Here*/}
+
+               <SpeakerCardList items={data.workshopInstructors.edges} />
+
+                {/* /row end*/}
+              </div>
+              {/* /container end*/}
+            </div>
+
+
+
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-title text-center">
@@ -337,6 +368,8 @@ export default ({ data }) => (
               {/* /container end*/}
             </div>
             {/*Whos Speaking Area End Here*/}
+
+
 
             {/*Pricing Tables Area Start Here*/}
             <a name="pricing"/>
@@ -561,6 +594,38 @@ export const speakerPageQuery = graphql`
         }
       }
     }
+
+    workshopInstructors: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Workshops" } } }
+      sort: { fields: data___speaker_name }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            linkedIn
+            company_url
+            pronouns
+          }
+        }
+      }
+    }
+
     featuredSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
       sort: { fields: data___speaker_name }
