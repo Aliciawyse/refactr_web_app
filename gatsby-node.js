@@ -25,6 +25,15 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug
     });
   }
+  if (node.internal.type === `Airtable` && node.table === `Sponsors`) {
+    const slug =
+      "/sponsors/" + node.data.company_name
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+  }
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -81,6 +90,15 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/the_session.js`),
+        context: {
+          slug: node.fields.slug
+        }
+      });
+    });
+    result.data.sponsors.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/the_exhibitor.js`),
         context: {
           slug: node.fields.slug
         }

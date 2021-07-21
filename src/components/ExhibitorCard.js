@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby";
 
-export const ExhibitorCard = ({company_name, logo}) => (
+export const ExhibitorCard = ({company_name, logo, slug}) => (
   <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
     <div className="single-blog mb30 pad-bot30">
       <div className="blog-img" style={{borderBottom: ".5px solid #80808029"}}>
@@ -14,7 +14,7 @@ export const ExhibitorCard = ({company_name, logo}) => (
 
         <p>
           <span className="float-right primary-btn bordered-btn">
-            <Link className="btn-primary" to={"/"}> Read more</Link>
+            <Link className="btn-primary" to={slug}>See Company</Link>
           </span>
         </p>
 

@@ -55,7 +55,7 @@ export default ({ data }) => (
           <div className="inner-blog">
             <div>
               <div className="row">
-                {data.allAirtable.nodes.map((item, index) => <ExhibitorCard key={index} {...item.data} /> )}
+                {data.allAirtable.nodes.map((item, index) => <ExhibitorCard key={index} {...item.data} slug={item.fields.slug}/> )}
               </div>
             </div>
           </div>
