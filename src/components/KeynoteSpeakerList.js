@@ -1,8 +1,8 @@
-import React from "react"
+import React, { Children } from "react"
 import { KeynoteSpeakerCard } from './KeynoteSpeakerCard'
 
-export const KeynoteSpeakerList = ({items}) => {
+export const KeynoteSpeakerList = ({ items }) => {
     return (
-        items.map(item => <KeynoteSpeakerCard {...item.node.data} slug={item.node.fields.slug}/>)
+        Children.toArray(items.map(item => <KeynoteSpeakerCard {...item.node.data} slug={item.node.fields.slug} />))
     )
 }
