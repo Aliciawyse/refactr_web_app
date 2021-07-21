@@ -14,13 +14,13 @@ export default class NavigationBar extends Component {
               style={{backgroundColor: this.props.homepage ? "#4E29D1": "transparent"}}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-2">
+            <div className="col-lg-1">
               {/*<div className="brand-logo">*/}
               {/*  <a className="eventex-brand" to="index.html" />*/}
               {/*</div>*/}
             </div>
             {/* /col end*/}
-            <div className="col-lg-8">
+            <div className="col-lg-9">
               <nav className="navbar navbar-expand-lg">
                 <button
                   className="navbar-toggler"
