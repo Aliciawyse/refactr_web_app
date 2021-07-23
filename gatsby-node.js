@@ -25,6 +25,7 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug
     });
   }
+
   if (node.internal.type === `Airtable` && node.table === `Sponsors`) {
     const slug =
       "/sponsors/" + node.data.company_name
@@ -34,6 +35,17 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug
     });
   }
+
+  if (node.internal.type === `Airtable` && node.table === `Job_Board`) {
+    const slug =
+      "/jobs/" + node.data.anchor
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+  }
+
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -61,6 +73,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
         sponsors: allAirtable(filter: { table: { eq: "Sponsors" } }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        jobs: allAirtable(filter: { table: { eq: "Job_Board" } }) {
           edges {
             node {
               fields {
@@ -104,5 +125,16 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
     });
+
+    result.data.jobs.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/the_job.js`),
+        context: {
+          slug: node.fields.slug
+        }
+      });
+    });
+
   });
 };

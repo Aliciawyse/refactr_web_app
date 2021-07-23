@@ -49,6 +49,20 @@ module.exports = {
             tableName: `Team`,
             queryName: `team`,
             mapping: { member_headshot: `fileNode` }          
+          },
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `Company_Profile`,
+            queryName: `company_profile`,
+            tableLinks: ["Sponsors", "Job_Board"],
+            mapping: { logo: `fileNode` }          
+          },
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `Job_Board`,
+            queryName: `jobs`,
+            tableLinks: ["Sponsors", "Company_Profile"],
+            mapping: { logo: `fileNode` } 
           }
         ]
       }
