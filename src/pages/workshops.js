@@ -140,7 +140,6 @@ export const all_sessions = graphql`
             url
             Track
             title
-            anchor
             speaker_url
             date_friendly
             Day
@@ -155,7 +154,6 @@ export const all_sessions = graphql`
             Speakers {
               data {
                 speaker_name
-                anchor
                 headshot {
                   localFiles {
                     childImageSharp {

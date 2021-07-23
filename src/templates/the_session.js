@@ -177,7 +177,6 @@ export const query = graphql`
         Abstract
         speaker_display_name
         title
-        anchor
         Day
         date_friendly
         Time
@@ -210,7 +209,6 @@ export const query = graphql`
             speaker_name
             role
             company
-            anchor
           }
         }
       }
