@@ -1,5 +1,4 @@
 import React, { Children } from "react"
-import { findById } from '../utils/AirtableHelper'
 import { JobCard } from './JobCard'
 
 export const JobCardList = ({ items, searchedItems, query }) => {
