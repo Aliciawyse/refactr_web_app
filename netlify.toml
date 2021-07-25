@@ -27,3 +27,6 @@
 [context."2019"]
   [context."2019".environment]
     GATSBY_AIRTABLE_BASE_KEY="appMtowu35JQdxcF9"
+
+[build]
+  functions = "functions"

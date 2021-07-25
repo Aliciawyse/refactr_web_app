@@ -30,9 +30,12 @@ exports.handler = async function (event) {
     AIRTABLE_BASE_ID
   );
 
-  const results = await base(AIRTABLE_TABLE_NAME)
+
+  const jobData = await base(AIRTABLE_TABLE_NAME)
     .select({
       pageSize: AIRTABLE_PAGE_SIZE,
+      maxRecords: 3,
+      view: "Grid view",
       // TODO: Update to use your field names.
       filterByFormula: `
       OR(
@@ -42,25 +45,35 @@ exports.handler = async function (event) {
         SEARCH("${query.toLowerCase()}", LOWER({locations}))
       )
     `,
-    })
-    .firstPage()
-    .catch((error) => {
-      console.log(`Search error from Airtable API: ${error.message}`);
-      return null;
-    });
+    }).firstPage()
 
-    const noResults = !Array.isArray(results) || results.length === 0;
+  const fullResults = Array.from(jobData).map(async record => {
+    const job = record._rawJson.fields
+    const sponsId = record._rawJson.fields.Sponsors[0]
 
-    if (noResults) {
-      return {
-        statusCode: 404,
-        body: JSON.stringify({ error: 'No results.' }),
-      };
-    }
+    const spons = await base('Sponsors').find(sponsId);
 
     return {
-      statusCode: 200,
-      headers: RESPONSE_HEADERS,
-      body: JSON.stringify({ results }),
+      ...job,
+      sponsors: spons._rawJson.fields
+    }
+  })
+
+  const results = await Promise.all(fullResults)
+
+
+  const noResults = !Array.isArray(results) || results.length === 0;
+
+  if (noResults) {
+    return {
+      statusCode: 404,
+      body: JSON.stringify({ error: 'No results.' }),
     };
+  }
+
+  return {
+    statusCode: 200,
+    headers: RESPONSE_HEADERS,
+    body: JSON.stringify({ results }),
+  };
 };
