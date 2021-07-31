@@ -101,7 +101,7 @@ export default ({ data }) => {
               <div className="col-lg-12">
                 <div className="about-content">
                   <div className="section-title text-center">
-                    <h2>Exhibitor Details for {data.airtable.data.company_name}</h2>  
+                    {/* <h2>Exhibitor Details for {data.airtable.data.company_name}</h2>   */}
                   </div>
                   {/*<ol className="breadcrumb">
                     <li>
