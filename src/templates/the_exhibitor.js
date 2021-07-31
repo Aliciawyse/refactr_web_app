@@ -102,7 +102,6 @@ export default ({ data }) => {
                 <div className="about-content">
                   <div className="section-title text-center">
                     <h2>Exhibitor Details for {data.airtable.data.company_name}</h2>  
-                    {console.log(data.airtable.data.company_name)}
                   </div>
                   {/*<ol className="breadcrumb">
                     <li>
@@ -129,25 +128,6 @@ export default ({ data }) => {
 
   );
 };
-
-// export const query = graphql`
-// query Speaker($slug: String!) {
-//     allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}, fields: { slug: { eq: $slug } }}) {
-//       nodes {
-//         fields {
-//           slug
-//         }
-//         data {
-//           company_name
-//           exhibitor
-//           logo {
-//             url
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export const query = graphql`
   query Sponsor($slug: String!) {
