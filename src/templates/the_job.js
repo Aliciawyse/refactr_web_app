@@ -134,11 +134,11 @@ export default ({ data }) => {
                 <div className="inner-content">
                   <h1>{data.airtable.data.job_title}</h1>
                   <p>
-                    {data.airtable.data.Sponsors[0].data.company_name}
+                    {/*{data.airtable.data.Sponsors[0].data.company_name}*/}
                   </p>
                   <br />
 
-                  <span><h2> We are {data.airtable.data.Sponsors[0].data.company_name}.</h2></span>
+                  {/*<span><h2> We are {data.airtable.data.Sponsors[0].data.company_name}.</h2></span>*/}
                   <p>
                   {data.airtable.data.Company_Profile[0].data.description}</p>
                   <div className="social-icon">
