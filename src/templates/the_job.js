@@ -139,8 +139,8 @@ export default ({ data }) => {
                   <br />
 
                   {/*<span><h2> We are {data.airtable.data.Sponsors[0].data.company_name}.</h2></span>*/}
-                  <p>
-                  {data.airtable.data.Company_Profile[0].data.description}</p>
+                  {/*<p>
+                  {data.airtable.data.Company_Profile[0].data.description}</p>*/}
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
@@ -158,8 +158,8 @@ export default ({ data }) => {
                   <br />
 
                   <span><h2>Why Join?</h2></span>
-                  <p>
-                  {data.airtable.data.Company_Profile[0].data.why_work_here}</p>
+                  {/*<p>
+                  {data.airtable.data.Company_Profile[0].data.why_work_here}</p>*/}
 
 
                   <span><h2>About this role</h2></span>
