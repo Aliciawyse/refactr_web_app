@@ -102,6 +102,8 @@ export default ({ data }) => {
                 <div className="about-content">
                   <div className="section-title text-center">
                     {/* <h2>Exhibitor Details for {data.airtable.data.company_name}</h2>   */}
+                    {console.log("====hello====")}
+                    {console.log(data)}
                   </div>
                   {/*<ol className="breadcrumb">
                     <li>
