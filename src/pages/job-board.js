@@ -5,6 +5,7 @@ import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 import { useSearchQuery } from '../hooks/useSearchQuery'
 import { useDebounce } from '../hooks/useDebounce'
+import { Input } from '../reusable_components'
 import { Helmet } from "react-helmet";
 
 export default ({ data }) => {
@@ -18,6 +19,10 @@ export default ({ data }) => {
     if (searchQuery) setQuery(searchQuery);
   }, []);
 
+  const handleInput = (e) => {
+    const sanitizedValue = e.target.value.replace(/[^A-Za-z]/ig, '').toLowerCase()
+    setQuery(sanitizedValue)
+  }
 
 
   return (
@@ -114,7 +119,7 @@ export default ({ data }) => {
                 </div>
               </div>
             </div>
-            <> <input type='text' value={query} onChange={(e) => setQuery(e.target.value)} /> </>
+
           </div>
         </div>
 
@@ -122,7 +127,16 @@ export default ({ data }) => {
 
         {/*Whos Speaking Area Start Here*/}
         <div>
+
+          <Input
+            name='search'
+            onChange={handleInput}
+            placeholder='Search for your job here...'
+            domID='search'
+          />
+
           <div className="container">
+
             <div className="row mt60">
 
               {/*<SpeakerCardList items={data.allAirtable.edges} />*/}
