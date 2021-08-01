@@ -34,18 +34,23 @@ exports.handler = async function (event) {
   const jobData = await base(AIRTABLE_TABLE_NAME)
     .select({
       pageSize: AIRTABLE_PAGE_SIZE,
-      maxRecords: 3,
+      maxRecords: 50,
       view: "Grid view",
       // TODO: Update to use your field names.
       filterByFormula: `
       OR(
-        SEARCH("${query.toLowerCase()}", LOWER({role_description})),
-        SEARCH("${query.toLowerCase()}", LOWER({interview_process})),
-        SEARCH("${query.toLowerCase()}", LOWER({apply_url})),
-        SEARCH("${query.toLowerCase()}", LOWER({locations}))
+        FIND("${query}", LOWER({role_description})),
+        FIND("${query}", LOWER({job_title})),
+        SEARCH("${query}", LOWER({interview_process})),
+        SEARCH("${query}", LOWER({apply_url})),
+        SEARCH("${query}", LOWER({locations}))
       )
     `,
     }).firstPage()
+    .catch((error) => {
+      console.log(`Search error from Airtable API: ${error.message}`);
+      return null;
+    });
 
   const fullResults = Array.from(jobData).map(async record => {
     const job = record._rawJson.fields

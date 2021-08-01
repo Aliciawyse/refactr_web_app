@@ -4,6 +4,7 @@ const search = async (query) => {
     if (!query) {
         return
     }
+
     const searchUrl = `${SEARCH_API_ENDPOINT}?query=${encodeURIComponent(query)}`
 
     return fetch(
