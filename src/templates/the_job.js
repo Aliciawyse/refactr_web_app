@@ -120,14 +120,14 @@ export default ({ data }) => {
             <div className="row mt50">
               {/* <a :name="speaker.fields.anchor" /> */}
               <div className="col-lg-3 col-md-12">
-                <div
+                {/*<div
                   style={{ width: "275px", height: "100%" }}
                   className="speakers-img"
                 >
                   {data.airtable.data.Sponsors[0].data.logo[0].url && (
                     <img className="img-fluid" src={data.airtable.data.Sponsors[0].data.logo[0].url} alt={data.airtable.data.Sponsors[0].data.company_name} />  
                   )}
-                </div>
+                  </div>*/}
               </div>
               {/* /.col end*/}
               <div className="col-lg-9 col-md-12">
