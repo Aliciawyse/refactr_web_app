@@ -2247,6 +2247,13 @@ a {
   margin: 20px 0 20px;
   display: inline-block; }
 
+  .speakers-single-area .inner-content span h2{
+  color: #252525;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  }
+
 .speakers-single-area .inner-content .social-icon {
   margin-top: 30px; }
   .speakers-single-area .inner-content .social-icon ul {
