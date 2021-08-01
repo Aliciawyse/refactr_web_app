@@ -16,7 +16,7 @@ export const TextInput = styled.input`
   border-color: inherit;
   border-radius: 3px;
   font: inherit;
-  margin: 0.5em 0;
+  margin: 1.5em 0;
   padding: 0.75em;
   transition: border-color 0.2s ease 0s;
   &:hover {

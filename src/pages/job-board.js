@@ -131,6 +131,7 @@ export default ({ data }) => {
           <Input
             name='search'
             onChange={handleInput}
+            placeholder='Search for your job here...'
             domID='search'
           />
 
