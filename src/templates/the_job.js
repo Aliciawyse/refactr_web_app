@@ -129,7 +129,6 @@ export default ({ data }) => {
                   )}
                 </div>
               </div>
-              {console.log("logo?", data.airtable.data.Sponsors[0].data.logo[0].url)}
               {/* /.col end*/}
               <div className="col-lg-9 col-md-12">
                 <div className="inner-content">
@@ -138,7 +137,6 @@ export default ({ data }) => {
                     {data.airtable.data.Sponsors[0].data.company_name}
                   </p>
                   <br />
-                  {console.log("company", data.airtable.data.Sponsors[0].data.company_name)}
 
                   <span><h2> We are {data.airtable.data.Sponsors[0].data.company_name}.</h2></span>
                   <p>
