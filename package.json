@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "airtable": "^0.8.1",
-    "netlify-cli": "^5.2.3",
+    "netlify-cli": "^5.4.0",
     "sass": "^1.32.8"
   },
   "resolutions": {
