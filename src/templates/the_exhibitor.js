@@ -101,19 +101,21 @@ export default ({ data }) => {
               <div className="col-lg-12">
                 <div className="about-content">
                   <div className="section-title text-center">
-                    {/* <h2>Exhibitor Details for {data.airtable.data.company_name}</h2>   */}
+                    <h2>{data.airtable.data.company_name}</h2>
                   </div>
-                  {/*<ol className="breadcrumb">
+                  <ol className="breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
                     <li>|</li>
+                    <li>Company Details</li>
+                    <li>|</li>
                     <li>
-                      <a href="/workshops">Workshops</a>
+                    <a href="/careerfair"> &larr; Career Fair</a>
                     </li>
                     <li>|</li>
-                    <li>Sessions</li>
-                  </ol>*/}
+                    <li>Upload Resume</li>
+                  </ol>
                 </div>
               </div>
               {/* /col*/}
@@ -129,6 +131,7 @@ export default ({ data }) => {
   );
 };
 
+
 export const query = graphql`
   query Sponsor($slug: String!) {
     airtable(table: { eq: "Sponsors" }, data: {exhibitor: {eq: true}}, fields: { slug: { eq: $slug } }) {
@@ -137,8 +140,16 @@ export const query = graphql`
       }
       data {
         company_name
+        Company_Profile{
+          data{
+            description
+            description_truncated
+            why_work_here
+            has_dei_info
+            DEI_URL
+          }
+        }
       }
     }
   }
 `;
-

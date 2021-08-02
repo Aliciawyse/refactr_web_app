@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { ExhibitorCard } from "../components/ExhibitorCard";
+import { ExhibitorCardList } from "../components/ExhibitorCardList";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
@@ -55,7 +55,7 @@ export default ({ data }) => (
           <div className="inner-blog">
             <div>
               <div className="row">
-                {data.allAirtable.nodes.map((item, index) => <ExhibitorCard key={index} {...item.data} slug={item.fields.slug}/> )}
+               <ExhibitorCardList items={data.allAirtable.nodes} />
               </div>
             </div>
           </div>
@@ -78,6 +78,15 @@ export const query = graphql`
           exhibitor
           logo {
             url
+          }
+          Company_Profile{
+            data{
+              description
+              description_truncated
+              why_work_here
+              has_dei_info
+              DEI_URL
+            }
           }
         }
       }

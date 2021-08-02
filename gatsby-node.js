@@ -46,6 +46,15 @@ exports.onCreateNode = ({ node, actions }) => {
     });
   }
 
+  if (node.internal.type === `Airtable` && node.table === `Company_Profile`) {
+    const slug =
+      "/company_profile/" + node.data.company_name
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    });
+  }
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -82,6 +91,15 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
         jobs: allAirtable(filter: { table: { eq: "Job_Board" } }) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        company: allAirtable(filter: { table: { eq: "Company_Profile" } }) {
           edges {
             node {
               fields {
