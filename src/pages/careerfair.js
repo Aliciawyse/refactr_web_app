@@ -68,7 +68,9 @@ export default ({ data }) => (
 
 export const query = graphql`
   {
-    allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}}) {
+    allAirtable(filter: {table: {eq: "Sponsors"}, data: {exhibitor: {eq: true}}}
+    sort: { fields: data___profile_status}
+    ) {
       nodes {
         fields {
           slug
