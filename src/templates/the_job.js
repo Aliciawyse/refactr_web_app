@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
+import {decode} from 'html-entities';
 import Img from "gatsby-image";
 import { Helmet } from "react-helmet";
 
@@ -163,8 +164,8 @@ export default ({ data }) => {
 
 
                   <span><h2>About this role</h2></span>
-                  <p>
-                  {data.airtable.data.role_description}</p>
+                  
+                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.role_description) }} />
 
                   <div className="primary-btn mb40">
                     <a className="btn-primary" href={data.airtable.data.apply_url}>
