@@ -28,7 +28,7 @@ exports.onCreateNode = ({ node, actions }) => {
 
   if (node.internal.type === `Airtable` && node.table === `Sponsors`) {
     const slug =
-      "/sponsors/" + node.data.company_name
+      "/company/" + node.data.company_name
     createNodeField({
       node,
       name: `slug`,
