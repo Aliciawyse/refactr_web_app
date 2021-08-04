@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, actions }) => {
 
   if (node.internal.type === `Airtable` && node.table === `Speakers`) {
     const slug =
-      "/speakers/" + node.data.anchor
+      "/speakers/" + node.data.speaker_anchor
     createNodeField({
       node,
       name: `slug`,

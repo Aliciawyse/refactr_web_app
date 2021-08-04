@@ -11,6 +11,7 @@ import "../../src/styles/assets/css/style.css?23";
 import "../../src/styles/assets/css/responsive.css";
 
 export default ({ data }) => (
+
   <div>
   <Helmet>
   <title>Sessions | REFACTR.TECH 2021</title>
@@ -305,6 +306,7 @@ export const all_sessions = graphql`
                 }
                 role
                 company
+                speaker_anchor
               }
             }
           }

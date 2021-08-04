@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 
-export const SessionSpeakerDetail = ({speaker_name, role, company, anchor, headshot}) => (
+export const SessionSpeakerDetail = ({speaker_name, role, company, speaker_anchor, headshot}) => (
   <li style={{flexGrow: "1"}} className='col-lg-5 col-md-6'>
     <Link
       className="detail-view"
-      to={`/speakers/${anchor}`}
+      to={`/speakers/${speaker_anchor}`}
     >
       {/* <img
         className="img-fluid speaker-avatar"
