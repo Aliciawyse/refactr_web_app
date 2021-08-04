@@ -103,7 +103,16 @@ export default ({ data }) => {
                     <li>Job Details</li>
                     <li>|</li>
                     <li>
-                      <a href="/job-board"> &larr; All Jobs</a>
+                      <a href="/jobs"> &larr; All Jobs</a>
+                    </li>
+                    <li>|</li>
+                    
+                    <li>
+                      <a href="/careerfair">Career Fair</a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
                     </li>
                   </ol>
                 </div>
@@ -197,13 +206,11 @@ export const query = graphql`
       data {
         job_title
         role_description
-        interview_process
         apply_url
         post_date
         time_since_post
         locations
         remote_allowed
-        experience_levels
         
         Sponsors{
           data{
