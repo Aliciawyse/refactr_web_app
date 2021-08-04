@@ -33,6 +33,14 @@ export default ({ data }) => (
                   <li><a href="/">Home</a></li>
                   <li>|</li>
                   <li>Career Fair</li>
+                  <li>|</li>
+                  <li>
+                      <a href="/jobs">All Jobs</a>
+                  </li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
+                    </li>
                 </ol>
               </div>
             </div>
