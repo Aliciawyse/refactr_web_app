@@ -4,6 +4,7 @@ import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
+import {decode} from 'html-entities';
 
 const divStyle = {
   fontFamily: "Poppins",
@@ -112,10 +113,16 @@ export default ({ data }) => {
                     <li>Company Details</li>
                     <li>|</li>
                     <li>
-                    <a href="/careerfair"> &larr; Career Fair</a>
+                      <a href="/careerfair"> &larr; Career Fair</a>
                     </li>
                     <li>|</li>
-                    <li>Upload Resume</li>
+                  <li>
+                      <a href="/jobs">All Jobs</a>
+                  </li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
+                    </li>
                   </ol>
                   </div>
 
@@ -148,17 +155,19 @@ export default ({ data }) => {
                   
                   <br />
 
-                  <p>
-                  {data.airtable.data.Company_Profile[0].data.description}</p>
+                  {/*<p>
+                  {data.airtable.data.Company_Profile[0].data.description}</p>*/}
+
+                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.description_htmltext) }} />
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
-                        <a href="">
+                        <a href={data.airtable.data.Company_Profile[0].data.company_linkedIn}>
                           <i className="fa fa-linkedin" />
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href={data.airtable.data.Company_Profile[0].data.company_twitter}>
                           <i className="fa fa-twitter" />
                         </a>
                       </li>
@@ -173,11 +182,9 @@ export default ({ data }) => {
 
                   { data.airtable.data.Company_Profile[0].data.DEI_URL !== null ?
                     <p><Link to={data.airtable.data.Company_Profile[0].data.DEI_URL}>Learn more here</Link></p> : ''}
-
-                  <br></br>
               
                   { data.airtable.data.Company_Profile[0].data.DEI_description !== null ?
-                    <p>{data.airtable.data.Company_Profile[0].data.DEI_description}</p> : ''}
+                    <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.DEI_description) }} /> : ''}
                 
                   <br></br>
                   
@@ -209,16 +216,34 @@ export const query = graphql`
         logo{
           url
         }
+
         Company_Profile{
           data{
             description
+            description_htmltext
             description_truncated
             why_work_here
             has_dei_info
             DEI_URL
             DEI_description
+            company_linkedIn
+            company_twitter
           }
         }
+
+        Job_Board{
+          data{
+            job_title
+            role_description
+            apply_url
+            post_date
+            time_since_post
+            locations
+            remote_allowed
+          }
+        }
+
+
       }
     }
   }
