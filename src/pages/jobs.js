@@ -160,7 +160,7 @@ export const jobsPageQuery = graphql`
   {
     allAirtable(
       filter: { table: { eq: "Job_Board" }, data: { status: { eq: "approved" } } }
-      sort: { fields: data___post_date, order: DESC }
+      sort: { fields: data___department }
     ) {
       edges {
         node {
