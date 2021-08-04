@@ -209,6 +209,7 @@ export const query = graphql`
             speaker_name
             role
             company
+            speaker_anchor
           }
         }
       }
