@@ -157,17 +157,17 @@ export default ({ data }) => {
 
                   {/*<p>
                   {data.airtable.data.Company_Profile[0].data.description}</p>*/}
-
-                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.description_htmltext) }} />
+                  { data.airtable.data.Company_Profile ?
+                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.description_htmltext) }} />: ""}
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
-                        <a href={data.airtable.data.Company_Profile[0].data.company_linkedIn}>
+                        <a href={data.airtable.data.Company_Profile? data.airtable.data.Company_Profile[0].data.company_linkedIn:""}>
                           <i className="fa fa-linkedin" />
                         </a>
                       </li>
                       <li>
-                        <a href={data.airtable.data.Company_Profile[0].data.company_twitter}>
+                        <a href={data.airtable.data.Company_Profile? data.airtable.data.Company_Profile[0].data.company_twitter:""}>
                           <i className="fa fa-twitter" />
                         </a>
                       </li>
@@ -175,15 +175,15 @@ export default ({ data }) => {
                   </div>
                   <br />
                   
-                  { data.airtable.data.Company_Profile[0].data.has_dei_info ? <span>
+                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.has_dei_info ? <span>
                     <h2>Diversity, Equity and Inclusion at {data.airtable.data.company_name}</h2>
                   </span> : ''}
                   {/*<p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.role_description) }} />*/}
 
-                  { data.airtable.data.Company_Profile[0].data.DEI_URL !== null ?
+                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.DEI_URL !== null ?
                     <p><Link to={data.airtable.data.Company_Profile[0].data.DEI_URL}>Learn more here</Link></p> : ''}
               
-                  { data.airtable.data.Company_Profile[0].data.DEI_description !== null ?
+                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.DEI_description !== null ?
                     <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.DEI_description) }} /> : ''}
                 
                   <br></br>
