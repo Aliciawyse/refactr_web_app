@@ -37,12 +37,13 @@ export default class NavigationBar extends Component {
                   }
                 >
                   <ul className={"navbar-nav ml-auto"}>
-                    <li className="nav-item">
+
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/">
                         Home
                         <span className="sr-only">(current)</span>
                       </Link>
-                    </li>
+                </li>*/}
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/about">
                         About
@@ -55,26 +56,29 @@ export default class NavigationBar extends Component {
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/sessions">
-                        Sessions
-                      </Link>
-                    </li>
-
-                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">
                         Workshops
                       </Link>
                     </li>
+
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
                         Sponsors
                       </Link>
                     </li>
-                    {/*<li className="nav-item">
+
+                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/careerfair">
                         Career Fair
                       </Link>
-                </li>*/}
+                    </li>
+
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/jobs">
+                        Jobs
+                      </Link>
+                    </li>
+
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/updates">
                         Updates
