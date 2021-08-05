@@ -149,17 +149,16 @@ export default ({ data }) => {
                   <br />
 
                   <span><h2> We are {data.airtable.data.Sponsors[0].data.company_name}.</h2></span>
-                  <p>
-                  {data.airtable.data.Company_Profile[0].data.description}</p>
+                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.description_htmltext) }} />
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
-                        <a href="">
+                        <a href={data.airtable.data.Company_Profile[0].data.company_linkedIn}>
                           <i className="fa fa-linkedin" />
                         </a>
                       </li>
                       <li>
-                        <a href="">
+                        <a href={data.airtable.data.Company_Profile[0].data.company_twitter}>
                           <i className="fa fa-twitter" />
                         </a>
                       </li>
@@ -224,9 +223,12 @@ export const query = graphql`
         Company_Profile{
           data{
             description
+            description_htmltext
             why_work_here
             has_dei_info
             DEI_URL
+            company_twitter
+            company_linkedIn
           }
         }
         
