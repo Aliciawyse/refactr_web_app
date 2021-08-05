@@ -173,7 +173,7 @@ export default ({ data }) => {
                   <br />
                   
                   { data.airtable.data.has_dei_info ? <span>
-                    <h2>Diversity, Equity and Inclusion at {data.airtable.data.Sponsors[0].company_name}</h2>
+                    <h2>Diversity, Equity and Inclusion at {data.airtable.data.Sponsors[0].data.company_name}</h2>
                   </span> : ''}
 
                   { data.airtable.data.DEI_URL !== null ?

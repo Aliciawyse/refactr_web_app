@@ -144,7 +144,7 @@ export default ({ data }) => {
                 <div className="inner-content">
                   <h1>{data.airtable.data.job_title}</h1>
                   <p>
-                    {data.airtable.data.Sponsors[0].data.company_name}
+                    {data.airtable.data.department}
                   </p>
                   <br />
 
@@ -210,6 +210,7 @@ export const query = graphql`
         time_since_post
         locations
         remote_allowed
+        department
         
         Sponsors{
           data{

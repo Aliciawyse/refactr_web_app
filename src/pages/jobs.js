@@ -179,6 +179,7 @@ export const jobsPageQuery = graphql`
             job_title
             role_description
             time_since_post
+            department
             Sponsors {
               data {
                 company_name
