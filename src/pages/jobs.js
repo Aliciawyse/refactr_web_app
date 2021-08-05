@@ -31,7 +31,7 @@ export default ({ data }) => {
         <title>Job Board | REFACTR.TECH 2021</title>
         <meta
           name="description"
-          content="REFACTR.TECH features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+          content="REFACTR.TECH Online features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
         />
         <meta name="robots" content="noindex,follow" />
 
@@ -46,7 +46,7 @@ export default ({ data }) => {
         />
         <meta
           property="og:description"
-          content="REFACTR.TECH features over 50 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+          content="REFACTR.TECH Online features over 20 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
         />
         <meta
           name="keywords"
@@ -88,7 +88,7 @@ export default ({ data }) => {
         <meta name="twitter:data2" content="Online" />
 
         {/* <!-- Schema.org markup for Google+ --> */}
-        <meta itemprop="name" content="Speakers | REFACTR.TECH 2021" />
+        <meta itemprop="name" content="Job Board | REFACTR.TECH 2021" />
         <meta
           itemprop="description"
           content="REFACTR.TECH features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
@@ -115,6 +115,14 @@ export default ({ data }) => {
                     </li>
                     <li>|</li>
                     <li>Job Board</li>
+                    <li>|</li>
+                    <li>
+                      <a href="/careerfair">Career Fair</a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
+                    </li>
                   </ol>
                 </div>
               </div>

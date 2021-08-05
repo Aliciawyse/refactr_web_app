@@ -25,11 +25,11 @@ export default ({ data }) => (
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="Workshops | REFACTR.TECH 2021"
+      content="Updates | REFACTR.TECH 2021"
     />
     <meta
       property="og:description"
-      content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+      content="REFACTR.TECH Online features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
     />
     <meta 
         name="keywords" 
@@ -54,11 +54,11 @@ export default ({ data }) => (
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="Workshops | REFACTR.TECH 2021"
+      content="Updates | REFACTR.TECH 2021"
     />
     <meta
       name="twitter:description"
-      content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+      content="REFACTR.TECH Online features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
     />
     <meta name="twitter:domain" content="https://refactr.tech" />
     <meta
@@ -71,10 +71,10 @@ export default ({ data }) => (
     <meta name="twitter:data2" content="Online" />
   
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="Workshops | REFACTR.TECH 2021" />
+    <meta itemprop="name" content="Updates | REFACTR.TECH 2021" />
     <meta
       itemprop="description"
-      content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+      content="REFACTR.TECH Online features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
     />
     <meta itemprop="image" content="/img/conference/marketing_header.png" />
     <meta
