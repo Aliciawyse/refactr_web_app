@@ -11,7 +11,7 @@ import styled from "styled-components";
 export default ({ data }) => (
     <div>
     <Helmet>
-    <title>Workshops | REFACTR.TECH 2021</title>
+    <title>Updates | REFACTR.TECH 2021</title>
     <meta
       name="description"
       content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
