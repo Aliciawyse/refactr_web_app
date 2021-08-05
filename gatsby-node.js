@@ -26,9 +26,9 @@ exports.onCreateNode = ({ node, actions }) => {
     });
   }
 
-  if (node.internal.type === `Airtable` && node.table === `Sponsors`) {
+  if (node.internal.type === `Airtable` && node.table === `Company_Profile`) {
     const slug =
-      "/company/" + node.data.company_name
+      "/company/" + node.data.company_anchor
     createNodeField({
       node,
       name: `slug`,
@@ -49,6 +49,12 @@ exports.onCreateNode = ({ node, actions }) => {
 };
 
 exports.createPages = ({ actions, graphql }) => {
+
+
+  function companyHasProfile(item){
+    return item.data.Company_Profile
+  }
+
   const { createPage } = actions;
   // Go get the data that satisfy
   return graphql(
@@ -72,15 +78,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-        sponsors: allAirtable(filter: { table: { eq: "Sponsors" } }) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
+        
         jobs: allAirtable(filter: { table: { eq: "Job_Board" } }) {
           edges {
             node {
@@ -90,7 +88,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
-        company: allAirtable(filter: { table: { eq: "Company_Profile" } }) {
+        companies: allAirtable(filter: { table: { eq: "Company_Profile" } }) {
           edges {
             node {
               fields {
@@ -125,7 +123,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
     });
-    result.data.sponsors.edges.forEach(({ node }) => {
+    result.data.companies.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/the_exhibitor.js`),

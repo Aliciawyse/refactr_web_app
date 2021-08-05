@@ -91,6 +91,7 @@ export const query = graphql`
           }
           Company_Profile{
             data{
+              company_anchor
               description
               description_truncated
               why_work_here

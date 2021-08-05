@@ -8,6 +8,6 @@ export const ExhibitorCardList = ({items}) => {
     }
 
     return (
-        items.map((item, index) => <ExhibitorCard key={index} {...item.data} slug={item.fields.slug}/>)
+        items.map((item, index) => <ExhibitorCard key={index} {...item.data}/>)
     )
 }

@@ -103,7 +103,7 @@ export default ({ data }) => {
               <div className="col-lg-12">
                 <div className="about-content">
                   <div className="section-title text-center">
-                    <h2>{data.airtable.data.company_name}</h2>
+                    <h2>{data.airtable.data.Sponsors[0].data.company_name}</h2>
                   </div>
                   <ol className="breadcrumb">
                     <li>
@@ -143,31 +143,28 @@ export default ({ data }) => {
                   style={{ width: "275px", height: "100%" }}
                   className="speakers-img"
                 >
-                  {data.airtable.data.logo[0].url && (
-                    <img className="img-fluid" src={data.airtable.data.logo[0].url} alt={data.airtable.data.company_name} />  
+                  {data.airtable.data.Sponsors[0].data.logo[0].url && (
+                    <img className="img-fluid" src={data.airtable.data.Sponsors[0].data.logo[0].url} alt={data.airtable.data.Sponsors[0].data.company_name} />  
                   )}
                   </div>
               </div>
               {/* /.col end*/}
               <div className="col-lg-8 col-md-12">
                 <div className="inner-content">
-                  <h1>About {data.airtable.data.company_name}</h1>
+                  <h1>About {data.airtable.data.Sponsors[0].data.company_name}</h1>
                   
                   <br />
-
-                  {/*<p>
-                  {data.airtable.data.Company_Profile[0].data.description}</p>*/}
-                  { data.airtable.data.Company_Profile ?
-                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.description_htmltext) }} />: ""}
+                  
+                  <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.description_htmltext) }} />
                   <div className="social-icon">
                     <ul style={{ listStyleType: "none" }}>
                       <li>
-                        <a href={data.airtable.data.Company_Profile? data.airtable.data.Company_Profile[0].data.company_linkedIn:""}>
+                        <a href={data.airtable.data.company_linkedIn}>
                           <i className="fa fa-linkedin" />
                         </a>
                       </li>
                       <li>
-                        <a href={data.airtable.data.Company_Profile? data.airtable.data.Company_Profile[0].data.company_twitter:""}>
+                        <a href={data.airtable.data.company_twitter}>
                           <i className="fa fa-twitter" />
                         </a>
                       </li>
@@ -175,16 +172,15 @@ export default ({ data }) => {
                   </div>
                   <br />
                   
-                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.has_dei_info ? <span>
-                    <h2>Diversity, Equity and Inclusion at {data.airtable.data.company_name}</h2>
+                  { data.airtable.data.has_dei_info ? <span>
+                    <h2>Diversity, Equity and Inclusion at {data.airtable.data.Sponsors[0].company_name}</h2>
                   </span> : ''}
-                  {/*<p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.role_description) }} />*/}
 
-                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.DEI_URL !== null ?
-                    <p><Link to={data.airtable.data.Company_Profile[0].data.DEI_URL}>Learn more here</Link></p> : ''}
+                  { data.airtable.data.DEI_URL !== null ?
+                    <p><Link to={data.airtable.data.DEI_URL}>Learn more here</Link></p> : ''}
               
-                  { data.airtable.data.Company_Profile && data.airtable.data.Company_Profile[0].data.DEI_description !== null ?
-                    <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.Company_Profile[0].data.DEI_description) }} /> : ''}
+                  { data.airtable.data.DEI_description !== null ?
+                    <p dangerouslySetInnerHTML={{ __html: decode(data.airtable.data.DEI_description) }} /> : ''}
                 
                   <br></br>
                   
@@ -207,27 +203,27 @@ export default ({ data }) => {
 
 export const query = graphql`
   query Sponsor($slug: String!) {
-    airtable(table: { eq: "Sponsors" }, data: {exhibitor: {eq: true}}, fields: { slug: { eq: $slug } }) {
+    airtable(table: { eq: "Company_Profile" }, fields: { slug: { eq: $slug } }) {
       fields {
         slug
       }
       data {
-        company_name
-        logo{
-          url
-        }
+        description
+        description_htmltext
+        description_truncated
+        why_work_here
+        has_dei_info
+        DEI_URL
+        DEI_description
+        company_linkedIn
+        company_twitter
 
-        Company_Profile{
-          data{
-            description
-            description_htmltext
-            description_truncated
-            why_work_here
-            has_dei_info
-            DEI_URL
-            DEI_description
-            company_linkedIn
-            company_twitter
+        Sponsors{
+          data {
+            company_name
+            logo{
+              url
+            }
           }
         }
 
