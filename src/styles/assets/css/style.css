@@ -2235,8 +2235,8 @@ a {
 /*5.5.2 Speakers Single*/
 .speakers-single-area .inner-content h1, .speakers-single-area .inner-content h2, .speakers-single-area .inner-content h3, .speakers-single-area .inner-content h4, .speakers-single-area .inner-content h5, .speakers-single-area .inner-content h6 {
   color: #252525;
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 600;
   /* margin-top: 20px; */
   text-transform: capitalize; }
