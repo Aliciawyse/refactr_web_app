@@ -102,7 +102,11 @@ export default ({ data }) => (
                     <a href="/">Home</a>
                   </li>
                   <li>|</li>
+                  <li><a href="/schedule">Schedule</a></li>
+                  <li>|</li>
                   <li>Workshops</li>
+                  <li>|</li>
+                  <li><a href="/careerfair">Career Fair</a></li>
                   <li>|</li>
                   <li><a href="/sessions">Sessions</a></li>
                 </ol>

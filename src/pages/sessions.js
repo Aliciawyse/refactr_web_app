@@ -104,9 +104,11 @@ export default ({ data }) => (
                     <a href="/">Home</a>
                   </li>
                   <li>|</li>
-                  <li>
-                    <a href="/workshops">Workshops</a>
-                  </li>
+                  <li><a href="/schedule">Schedule</a></li>
+                  <li>|</li>
+                  <li><a href="/workshops">Workshops</a></li>
+                  <li>|</li>
+                  <li><a href="/careerfair">Career Fair</a></li>
                   <li>|</li>
                   <li>Sessions</li>
                 </ol>
