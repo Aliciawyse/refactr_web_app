@@ -140,7 +140,7 @@ export default ({ data }) => {
                   </div>
               </div>
               {/* /.col end*/}
-              <div className="col-lg-9 col-md-12">
+              <div className="col-lg-9 col-md-12" style={{ paddingLeft: "30px" }}>
                 <div className="inner-content">
                   <h1>{data.airtable.data.job_title}</h1>
                   <p>
@@ -177,7 +177,7 @@ export default ({ data }) => {
 
                   <div className="primary-btn mb40">
                     <a className="btn-primary" href={data.airtable.data.apply_url}>
-                      Apply Here!
+                      Apply Here&nbsp;&nbsp;<i className="fa fa-external-link" />
                     </a>
                   </div>
                   

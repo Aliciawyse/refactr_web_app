@@ -151,7 +151,7 @@ export default ({ data }) => {
               {/* /.col end*/}
               <div className="col-lg-8 col-md-12">
                 <div className="inner-content">
-                  <h1>About {data.airtable.data.Sponsors[0].data.company_name}</h1>
+                  <span><h3>About {data.airtable.data.Sponsors[0].data.company_name}</h3></span>
                   
                   <br />
                   
@@ -173,7 +173,7 @@ export default ({ data }) => {
                   <br />
                   
                   { data.airtable.data.has_dei_info ? <span>
-                    <h2>Diversity, Equity and Inclusion at {data.airtable.data.Sponsors[0].data.company_name}</h2>
+                    <h3>Diversity, Equity &amp; Inclusion at {data.airtable.data.Sponsors[0].data.company_name}</h3>
                   </span> : ''}
 
                   { data.airtable.data.DEI_URL !== null ?

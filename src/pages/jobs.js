@@ -180,6 +180,7 @@ export const jobsPageQuery = graphql`
             role_description
             time_since_post
             department
+            
             Sponsors {
               data {
                 company_name
