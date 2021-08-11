@@ -10,7 +10,7 @@ export default () => (
       <title>Upload Your Resume | REFACTR.TECH Career Fair | August 17, 2021</title>
       <meta
         name="description"
-        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
       <meta name="robots" content="noindex,follow" />
 
@@ -25,7 +25,7 @@ export default () => (
       />
       <meta
         property="og:description"
-        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
       <meta 
         name="keywords" 
@@ -53,7 +53,7 @@ export default () => (
       />
       <meta
         name="twitter:description"
-        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
       <meta name="twitter:domain" content="https://refactr.tech" />
       <meta
@@ -69,7 +69,7 @@ export default () => (
       <meta itemprop="name" content="REFACTR.TECH 2021 Career Fair - August 17" />
       <meta
         itemprop="description"
-        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
       <meta itemprop="image" content="/img/conference/marketing_header.png" />
       <meta
