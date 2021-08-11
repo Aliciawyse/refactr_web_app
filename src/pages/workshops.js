@@ -158,6 +158,7 @@ export const all_sessions = graphql`
             Speakers {
               data {
                 speaker_name
+                speaker_anchor
                 headshot {
                   localFiles {
                     childImageSharp {
