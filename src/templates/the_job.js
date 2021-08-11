@@ -16,7 +16,6 @@ export default ({ data }) => {
           name="description"
           content={data.airtable.data.role_description}
         />
-        <meta name="robots" content="noindex,follow" />
       
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />

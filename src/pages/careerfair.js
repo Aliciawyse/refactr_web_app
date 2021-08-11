@@ -16,7 +16,7 @@ export default ({ data }) => (
         name="description"
         content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
-      <meta name="robots" content="noindex,follow" />
+      
 
       {/* <!-- Open Graph data --> */}
       <meta property="og:locale" content="en_US" />

@@ -28,7 +28,7 @@ export default ({ data }) => (
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
       />
-      <meta name="robots" content="noindex,follow" />
+      
 
       {/* <!-- Open Graph data --> */}
       <meta property="og:locale" content="en_US" />

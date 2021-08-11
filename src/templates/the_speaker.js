@@ -16,7 +16,6 @@ export default ({ data }) => {
           name="description"
           content={data.airtable.data.role +" at "+ data.airtable.data.company}
         />
-        <meta name="robots" content="noindex,follow" />
       
         {/* <!-- Open Graph data --> */}
         <meta property="og:locale" content="en_US" />

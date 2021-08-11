@@ -19,7 +19,6 @@ export default ({ data }) => (
     name="description"
     content="REFACTR.TECH features over 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
   />
-  <meta name="robots" content="noindex,follow" />
 
   {/* <!-- Open Graph data --> */}
   <meta property="og:locale" content="en_US" />

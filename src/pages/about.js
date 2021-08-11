@@ -15,7 +15,6 @@ export default ({ data }) => {
       name="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
     />
-    <meta name="robots" content="noindex,follow" />
 
     {/* <!-- Open Graph data --> */}
     <meta property="og:locale" content="en_US" />

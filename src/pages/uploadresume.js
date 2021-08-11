@@ -12,7 +12,7 @@ export default () => (
         name="description"
         content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
       />
-      <meta name="robots" content="noindex,follow" />
+      
 
       {/* <!-- Open Graph data --> */}
       <meta property="og:locale" content="en_US" />
@@ -123,7 +123,10 @@ export default () => (
           <div className="row">
             <div className="col-lg-12">
               <div className="inner-content">
-                
+
+              <br/>
+              <p>Share your resume with all our <a href="/careerfair">Career Fair companies</a> at one time. Connect with hiring manager and recruiters who are looking to engage with you! And don't forget to grab your <a href="https://reg.connectevents.io/ConnectEvents/rtech2021/">FREE ticket to our Career Fair</a>!</p>
+              
               <p><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrH36aqGA7Vw9fr0?backgroundColor=pink" frameborder="0" onmousewheel="" width="100%" height="2010" style={{background: "transparent"}}></iframe></p>
 
 

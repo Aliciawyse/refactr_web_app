@@ -9,6 +9,8 @@ export default ({ data }) => (
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title>Travel | REFACTR.TECH</title>
+      <meta name="robots" content="noindex,follow" />
+
       <meta name="author" content="iThemesLab" />
       <meta name="description" content="" />
       <meta

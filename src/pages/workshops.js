@@ -17,7 +17,7 @@ export default ({ data }) => (
     name="description"
     content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
   />
-  <meta name="robots" content="noindex,follow" />
+  
 
   {/* <!-- Open Graph data --> */}
   <meta property="og:locale" content="en_US" />
