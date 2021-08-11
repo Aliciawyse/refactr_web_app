@@ -10,7 +10,7 @@ export default () => (
       <title>Upload Your Resume | REFACTR.TECH Career Fair | August 17, 2021</title>
       <meta
         name="description"
-        content="The Southeast's premier multi-track tech conference and career fair with a focus on inclusion."
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
       />
       <meta name="robots" content="noindex,follow" />
 
@@ -25,7 +25,7 @@ export default () => (
       />
       <meta
         property="og:description"
-        content="The Southeast's premier multi-track tech conference and career fair with a focus on inclusion."
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
       />
       <meta 
         name="keywords" 
@@ -53,7 +53,7 @@ export default () => (
       />
       <meta
         name="twitter:description"
-        content="The Southeast's premier multi-track tech conference and career fair with a focus on inclusion."
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
       />
       <meta name="twitter:domain" content="https://refactr.tech" />
       <meta
@@ -69,7 +69,7 @@ export default () => (
       <meta itemprop="name" content="REFACTR.TECH 2021 Career Fair - August 17" />
       <meta
         itemprop="description"
-        content="The Southeast's premier multi-track tech conference and career fair with a focus on inclusion."
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mailchimp and more!"
       />
       <meta itemprop="image" content="/img/conference/marketing_header.png" />
       <meta
