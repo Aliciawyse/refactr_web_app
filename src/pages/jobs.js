@@ -28,76 +28,75 @@ export default ({ data }) => {
   return (
     <div>
       <Helmet>
-        <title>Job Board | REFACTR.TECH 2021</title>
-        <meta
-          name="description"
-          content="REFACTR.TECH Online features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
-        />
-        <meta name="robots" content="noindex,follow" />
+      <title>Job Board | REFACTR.TECH Career Fair | August 17, 2021</title>
+      <meta
+        name="description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more! Check out their open jobs now!"
+      />
+      <meta name="robots" content="noindex,follow" />
 
-        {/* <!-- Open Graph data --> */}
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="REFACTR.TECH" />
-        <meta property="og:url" content="https://www.refactr.tech/" />
-        <meta
-          property="og:title"
-          content="Job Board | REFACTR.TECH 2021"
-        />
-        <meta
-          property="og:description"
-          content="REFACTR.TECH Online features over 20 speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
-        />
-        <meta
-          name="keywords"
-          content="Atlanta, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact"
-        />
+      {/* <!-- Open Graph data --> */}
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="REFACTR.TECH" />
+      <meta property="og:url" content="https://www.refactr.tech/" />
+      <meta
+        property="og:title"
+        content="Job Board | REFACTR.TECH Career Fair | August 17, 2021"
+      />
+      <meta
+        property="og:description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more! Check out their open jobs now!"
+      />
+      <meta 
+        name="keywords" 
+        content="Atlanta, online, virtual, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+      />
 
-        <meta
-          property="og:image"
-          content="https://refactr.tech/img/conference/marketing_header.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://refactr.tech/img/conference/marketing_header.png"
-        />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="260" />
+      <meta
+        property="og:image"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:height" content="260" />
 
-        <meta name="msapplication-TileImage" content="https://refactr.tech/img/conference/2020-tile.png" />
+      <meta name="msapplication-TileImage" content="https://refactr.tech/img/conference/2020-tile.png"/>
 
-        {/* <!-- Social sharing meta --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@RefactrTech" />
-        <meta
-          name="twitter:title"
-          content="Job Board | REFACTR.TECH 2021"
-        />
-        <meta
-          name="twitter:description"
-          content="REFACTR.TECH features over 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
-        />
-        <meta name="twitter:domain" content="https://refactr.tech" />
-        <meta
-          name="twitter:image"
-          content="https://refactr.tech/img/conference/marketing_header.png"
-        />
-        <meta name="twitter:label1" content="Date" />
-        <meta name="twitter:data1" content="August 18-20" />
-        <meta name="twitter:label2" content="Location" />
-        <meta name="twitter:data2" content="Online" />
+      {/* <!-- Social sharing meta --> */}
+      <meta name="twitter:site" content="@RefactrTech" />
+      <meta
+        name="twitter:title"
+        content="Job Board | REFACTR.TECH Career Fair | August 17, 2021"
+      />
+      <meta
+        name="twitter:description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more! Check out their open jobs now!"
+      />
+      <meta name="twitter:domain" content="https://refactr.tech" />
+      <meta
+        name="twitter:image"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta name="twitter:label1" content="Date" />
+      <meta name="twitter:data1" content="August 17" />
+      <meta name="twitter:label2" content="Location" />
+      <meta name="twitter:data2" content="Online" />
 
-        {/* <!-- Schema.org markup for Google+ --> */}
-        <meta itemprop="name" content="Job Board | REFACTR.TECH 2021" />
-        <meta
-          itemprop="description"
-          content="REFACTR.TECH features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."
-        />
-        <meta itemprop="image" content="/img/conference/marketing_header.png" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+      {/* <!-- Schema.org markup for Google+ --> */}
+      <meta itemprop="name" content="Job Board | REFACTR.TECH Career Fair | August 17, 2021" />
+      <meta
+        itemprop="description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more! Check out their open jobs now!"
+      />
+      <meta itemprop="image" content="/img/conference/marketing_header.png" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
       </Helmet>
       <div className="main-container">
         <NavigationBar whiteText />

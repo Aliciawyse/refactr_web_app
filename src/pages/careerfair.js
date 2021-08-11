@@ -11,9 +11,71 @@ export default ({ data }) => (
     <Helmet>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>Career Fair | REFACTR.TECH</title>
-      <meta name="author" content="iThemesLab" />
-      <meta name="description" content="" />
+      <title>Career Fair | REFACTR.TECH | August 17, 2021</title>
+      <meta
+        name="description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
+      />
+      <meta name="robots" content="noindex,follow" />
+
+      {/* <!-- Open Graph data --> */}
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="REFACTR.TECH" />
+      <meta property="og:url" content="https://www.refactr.tech/" />
+      <meta
+        property="og:title"
+        content="REFACTR.TECH 2021 Career Fair - August 17"
+      />
+      <meta
+        property="og:description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
+      />
+      <meta 
+        name="keywords" 
+        content="Atlanta, online, virtual, technology, conference, diversity, inclusion, accessibility, software, frontend, fullstack, web development, leadership, career, javascript, react, angular, serverless, machine learning, product, ux, ui, design, social impact" 
+      />
+
+      <meta
+        property="og:image"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta
+        property="og:image:secure_url"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:height" content="260" />
+
+      <meta name="msapplication-TileImage" content="https://refactr.tech/img/conference/2020-tile.png"/>
+
+      {/* <!-- Social sharing meta --> */}
+      <meta name="twitter:site" content="@RefactrTech" />
+      <meta
+        name="twitter:title"
+        content="REFACTR.TECH 2021 Career Fair - August 17"
+      />
+      <meta
+        name="twitter:description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
+      />
+      <meta name="twitter:domain" content="https://refactr.tech" />
+      <meta
+        name="twitter:image"
+        content="https://refactr.tech/img/conference/career-fair-header.jpeg"
+      />
+      <meta name="twitter:label1" content="Date" />
+      <meta name="twitter:data1" content="August 17" />
+      <meta name="twitter:label2" content="Location" />
+      <meta name="twitter:data2" content="Online" />
+
+      {/* <!-- Schema.org markup for Google+ --> */}
+      <meta itemprop="name" content="REFACTR.TECH 2021 Career Fair - August 17" />
+      <meta
+        itemprop="description"
+        content="Meet hiring managers from top tech companies like Microsoft, CallRail, Google, SalesLoft, Cloudinary, Mozilla, Mailchimp and more!"
+      />
+      <meta itemprop="image" content="/img/conference/marketing_header.png" />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
