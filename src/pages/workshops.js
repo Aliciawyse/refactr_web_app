@@ -147,7 +147,7 @@ export const all_sessions = graphql`
             speaker_url
             date_friendly
             Day
-            Time
+            Duration
             speaker_pic {
               thumbnails {
                 large {
