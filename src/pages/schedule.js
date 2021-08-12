@@ -1097,6 +1097,50 @@ export default ({ data }) => (
                       </td>
                     </tr>
 
+                    <tr className="inner-box border-bottom-0">
+                      
+                      <td>
+                        <div className="event-img">
+                          <img src="https://dl.airtable.com/.attachmentThumbnails/ac71fa194dd192257f377543a6276c48/6ba48ae4" alt />
+                        </div>
+                      </td>
+                      <td>
+                        <div className="event-wrap">
+                          <h3>
+                            <a href="/sessions/Algorithmic-Bias-3A-Data-as-a-Weapon
+
+                            ">Algorithmic Bias: Data as a Weapon
+                            </a>
+                          </h3>
+                          <div className="meta">
+                            <div className="organizers">
+                              <a href="/speakers/ayodele-odubela
+                              ">Ayodele Odubela
+                              </a>
+                            </div>
+                            <div className="categories">
+                            <a href="/sessions/#Keynotes">Keynotes</a>
+                            </div>
+                            <div className="time">
+                              <span>04:30 PM ET - 05:00 PM 0h 30'</span>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      <div className="event-img">
+                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      </div>
+                      </td>
+                      <td>
+                        <div className="primary-btn">
+                          <a className="btn-primary" href="/sessions/Algorithmic-Bias-3A-Data-as-a-Weapon">
+                            Read More
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div>
