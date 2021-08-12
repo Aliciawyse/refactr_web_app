@@ -58,6 +58,7 @@ export default ({ data }) => (
           <div className="section-title text-center">
             <div className="title-text">
               <h2>Schedule</h2>
+              <p><a href="/schedule_mobile">See mobile version</a></p>
             </div>
             {/*<p>
               In ludus latine mea, eos paulo quaestio an. Meis possit ea sit.

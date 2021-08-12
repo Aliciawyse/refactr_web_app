@@ -1,29 +1,29 @@
 import React from "react";
 import _ from "lodash";
-import { SessionSpeakerList } from "../components/SessionSpeakerList";
+import { SessionSpeakerList } from "./SessionSpeakerList";
 
-export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
+export const ScheduleSessionCardList = ({ items, showBuyTickets, soldOut }) => {
   const sessions_data = items.map(edge => edge.node);
   //const sessions_data = items.filter(edge => edge.node.data.Status === 'Confirmed');
-  const tracks = _.groupBy(sessions_data, "data.Track");
+  const days = _.groupBy(sessions_data, "data.Day");
 
-  return Object.keys(tracks).map(track => (
+  return Object.keys(days).map(day => (
     <div className="speakers-single-area">
-      <div id={track.replace(/\s+/g, "")} className="container">
-        <a name={track.replace(/\s+/g, "")} />
+      <div id={day.replace(/\s+/g, "")} className="container">
+        <a name={day.replace(/\s+/g, "")} />
 
-        {/* A track title */}
+        {/* A day title */}
         <div className="section-title mt40 mb30">
           <div className="title-text pl mt30 mb30">
-            <h2>{track}</h2>
+            <h2>{day}</h2>
           </div>
         </div>
 
         <div className="row mt15">
           <div className="col-md-12">
             <div className="inner-content">
-              {/* Details of each session within the given track*/}
-              {tracks[track].map(session => (
+              {/* Details of each session within the given day*/}
+              {days[day].map(session => (
                 <div>
                   {/* <a name="frontend-sessions" /> */}
                   <p className="session-title">

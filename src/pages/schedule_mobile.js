@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
-import { SessionCardList } from "../components/SessionCardList";
+import { ScheduleSessionCardList } from "../components/ScheduleSessionCardList";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -14,7 +14,7 @@ export default ({ data }) => (
 
   <div>
   <Helmet>
-  <title>Sessions | REFACTR.TECH 2021</title>
+  <title>Session Schedule | REFACTR.TECH 2021</title>
   <meta
     name="description"
     content="REFACTR.TECH features over 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
@@ -31,7 +31,7 @@ export default ({ data }) => (
   />
   <meta
     property="og:description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="REFACTR.TECH features 20+ sessions and 3 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
   />
   <meta 
       name="keywords" 
@@ -60,7 +60,7 @@ export default ({ data }) => (
   />
   <meta
     name="twitter:description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="REFACTR.TECH features 20+ sessions and 3 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
   />
   <meta name="twitter:domain" content="https://refactr.tech" />
   <meta
@@ -76,7 +76,7 @@ export default ({ data }) => (
   <meta itemprop="name" content="Sessions | REFACTR.TECH 2021" />
   <meta
     itemprop="description"
-    content="REFACTR.TECH features 50 sessions and 4 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
+    content="REFACTR.TECH features 20+ sessions and 3 keynotes, with topics from Gatsby.js to Machine Learning to Engineering Leadership."
   />
   <meta itemprop="image" content="/img/conference/marketing_header.png" />
   <meta
@@ -131,13 +131,15 @@ export default ({ data }) => (
       </div>
       <div className="auto-container">
         <div className="sec-title">
-          <h2>Tracks</h2>
+          <h2>Schedule</h2>
           <p>
             <span style={{ color: "#C41579", fontWeight: "bold" }}>
               New!
             </span>
-            &nbsp;&nbsp;Check out our sessions by track.
+            &nbsp;&nbsp;Check out our sessions in our mobile-friendly schedule.
           </p>
+
+          <p><a href="/schedule">See desktop version</a></p>
         </div>
 
         {/*Event Topics*/}
@@ -146,99 +148,64 @@ export default ({ data }) => (
             {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
-              {/*<Link
-              id="test"
-              to="/sessions/#FrontendEngineering"
-              rel="noreferrer noopener"
-              className="test"
-              >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                      Front-End Engineering
-                  </div>
-                </li>
-              </Link>*/}
 
 
               <Link
               id="test"
-              to="#SoftwareEngineering"
+              to="/schedule_mobile/#Saturday"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab1" className="tab-btn">
                 <div>
-                      Software Engineering
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-              id="test"
-              to="/sessions/#UX&Accessibility"
-              rel="noreferrer noopener"
-              className="test"
-              >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                        UX &amp; Accessibility
+                      August 14
                   </div>
                 </li>
               </Link>
 
               {/*<Link
               id="test"
-              to="/sessions/#Cool$h!t"
+              to="/sessions/#Tuesday"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab1" className="tab-btn">
                 <div>
-                      Cool $h!t
+                        Tuesday
                   </div>
                 </li>
               </Link>*/}
 
               <Link
-                    to="/sessions/#Career/Leadership"
+                    to="/schedule_mobile/#Wednesday"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
                   <div>
-                      Career &amp; Leadership
+                      August 18
                   </div>
                 </li>
               </Link>
 
-              {/*<Link
-                    to="/sessions/#SocialImpact"
-                    rel="noreferrer noopener"
-                  >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                      Social Impact
-                  </div>
-                </li>
-              </Link>*/}
 
               <Link
-                    to="/sessions/#Workshops"
+                    to="/schedule_mobile/#Thursday"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
                   <div>
-                  Workshops
+                  August 19
                   </div>
                 </li>
               </Link>
 
               <Link
-                    to="/sessions/#Keynotes"
+                    to="/schedule_mobile/#Friday"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
                   <div>
-                  Keynotes
+                   August 20
                   </div>
                 </li>
               </Link>
@@ -256,7 +223,7 @@ export default ({ data }) => (
 
 
 
-      <SessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
+      <ScheduleSessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
 
       {/*Footer Area Start Here*/}
       <Footer />
@@ -269,7 +236,7 @@ export const all_sessions = graphql`
   {
     allAirtable(
       filter: { table: { eq: "Sessions" } }
-      sort: { fields: data___Track }
+      sort: { fields: data___start_time }
       ) {
       edges {
         node {
