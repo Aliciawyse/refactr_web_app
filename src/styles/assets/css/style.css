@@ -1449,6 +1449,20 @@ a {
   .whos-speaking-area-two .speakers:hover .social-icons {
     left: 27px; }
 
+
+    .inner-content p ul, .inner-content p li, .inner-content p ul:hover, .inner-content p li:hover{
+      list-style-type: disc;
+      color: #777;
+      font-size: 18px;
+    }
+
+    .inner-content p, .inner-content span{
+      color: #656565;
+      font-size: 18px;
+      margin: 20px 0 20px;
+      display: inline-block;
+    }
+
 /*3.5 Pricing Table Area*/
 .pricing-tables-area .pricing-bg {
   position: relative;
