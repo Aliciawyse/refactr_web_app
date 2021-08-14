@@ -186,7 +186,10 @@ export default ({ data }) => (
                       </td>
                       <td>
                         <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                          <a href="https://refactrtech-workshop1.eulerr.app/">
+                            <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                          </a>
+                            <p><a href="https://refactrtech-workshop1.eulerr.app/">Join Workshop</a></p>
                         </div>
                       </td>
                       <td>
@@ -223,9 +226,12 @@ export default ({ data }) => (
                         </div>
                       </td>
                       <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                        </div>
+                      <div className="event-img">
+                      <a href="https://refactrtech-workshop3.eulerr.app/">
+                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      </a>
+                        <p><a href="https://refactrtech-workshop3.eulerr.app/">Join Workshop</a></p>
+                    </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -262,8 +268,11 @@ export default ({ data }) => (
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                      </div>
+                          <a href="https://refactrtech-workshop2.eulerr.app/">
+                            <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                          </a>
+                            <p><a href="https://refactrtech-workshop2.eulerr.app/">Join Workshop</a></p>
+                        </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -380,10 +389,10 @@ export default ({ data }) => (
                         </div>
                       </td>
                       <td>
-                      <div className="event-img">
-                        <img src="/img/learn-tv-square.png" alt />
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                      </div>
+                        <div className="event-img">
+                          <img src="/img/learn-tv-square.png" alt />
+                          <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                        </div>
                       </td>
                       <td>
                         <div className="primary-btn">
