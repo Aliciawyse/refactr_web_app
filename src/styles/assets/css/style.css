@@ -660,6 +660,11 @@ a {
   background-position: right bottom;
   background-size: cover; }  
 
+  .bg-90s {
+    background-image: url(../img/bg/the90s.jpg); 
+    background-position: right bottom;
+    background-size: cover; }
+
 /* .bg-error {
   background-image: url(../img/bg/404.jpg); } */
 

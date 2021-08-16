@@ -1,6 +1,16 @@
 export default [
     {
         id: 1,
+        imageSource: '/img/bg/the90s.jpg',
+        date: 'August 16, 2021',
+        title: 'Paying Homage to the Rad, Rebellious 90s',
+        description: 'Some of you might be wondering what’s up with the 90’s theme for this year’s conference. Here at REFACTR.TECH we love a good theme, and this one is a lot of fun...',
+        details: 'the-rad-rebellious-90s',
+        soldOut: false,
+        page: "/the-rad-rebellious-90s"
+    },
+    {
+        id: 2,
         imageSource: '/img/bg/Covid19.jpg',
         date: 'April 27, 2021',
         title: 'April 2021 Covid Update',
@@ -10,7 +20,7 @@ export default [
         page: "/covidupdateapril2021"
     },
     {
-        id: 2,
+        id: 3,
         imageSource: '/img/bg/Stop-Asian-Hate-cropped.jpg',
         date: 'March 23, 2021',
         title: 'Stop Asian Hate',
@@ -30,7 +40,7 @@ export default [
         page: "/CovidUpdate"
     },
     {
-        id: 3,
+        id: 5,
         imageSource: '/img/bg/Black-Lives-Matter.jpg',
         date: 'June 1, 2020',
         title: 'Black Lives Matter',
@@ -39,4 +49,5 @@ export default [
         soldOut: false,
         page: "/blacklivesmatter"
     }
+    
 ]
