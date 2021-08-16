@@ -3,8 +3,8 @@ export default [
         id: 1,
         imageSource: '/img/bg/the90s.jpg',
         date: 'August 16, 2021',
-        title: 'Paying Homage to the Rad, Rebellious 90s',
-        description: 'Some of you might be wondering what’s up with the 90’s theme for this year’s conference. Here at REFACTR.TECH we love a good theme, and this one is a lot of fun...',
+        title: 'The Rad, Rebellious 90s',
+        description: 'Some of you might be wondering what’s up with the 90’s theme for this year’s conference. Here at REFACTR.TECH we love a good them...',
         details: 'the-rad-rebellious-90s',
         soldOut: false,
         page: "/the-rad-rebellious-90s"
