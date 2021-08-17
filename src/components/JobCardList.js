@@ -13,7 +13,7 @@ export const JobCardList = ({ items, searchedItems, query }) => {
                     company_name: job.sponsors.company_name,
                     department: job.department,
                     url: job.sponsors.logo[0].url,
-                    slug: `/job/${job.anchor}`
+                    slug: `/jobs/${job.anchor}`
                 }
             })
         }

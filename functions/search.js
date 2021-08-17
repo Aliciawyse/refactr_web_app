@@ -43,6 +43,7 @@ exports.handler = async function (event) {
         FIND("${query}", LOWER({job_title})),
         SEARCH("${query}", LOWER({interview_process})),
         SEARCH("${query}", LOWER({apply_url})),
+        SEARCH("${query}", LOWER({department})),
         SEARCH("${query}", LOWER({locations}))
       )
     `,

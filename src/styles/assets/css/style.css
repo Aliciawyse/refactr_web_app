@@ -665,6 +665,11 @@ a {
     background-position: right bottom;
     background-size: cover; }
 
+  .bg-90s {
+    background-image: url(../img/bg/we-rise-career-fair.png); 
+    background-position: right bottom;
+    background-size: cover; }
+
 /* .bg-error {
   background-image: url(../img/bg/404.jpg); } */
 
