@@ -498,7 +498,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>01:04 PM ET - 01:42 PM ET 0h 30'</span>
+                              <span>01:04 PM ET - 01:42 PM ET 0h 38'</span>
                             </div>
                           </div>
                         </div>
@@ -539,7 +539,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>02:00 PM ET - 02:27 PM ET 0h 3027'</span>
+                              <span>02:00 PM ET - 02:27 PM ET 0h 27'</span>
                             </div>
                           </div>
                         </div>
@@ -664,7 +664,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>04:30 PM ET- 05:00 PM ET 0h 30'</span>
+                              <span>04:30 PM ET- 05:09 PM ET 0h 39'</span>
                             </div>
                           </div>
                         </div>
@@ -724,7 +724,7 @@ export default ({ data }) => (
                           <a href="/">Conference</a>
                         </div>
                         <div className="time">
-                          <span>12:05 PM ET - 12:10 PM ET 0h 10'</span>
+                          <span>12:05 PM ET - 12:10 PM ET 0h 05'</span>
                         </div>
                       </div>
                     </div>
@@ -1027,7 +1027,7 @@ export default ({ data }) => (
                           <a href="/">Conference</a>
                         </div>
                         <div className="time">
-                          <span>12:05 PM ET - 12:10 PM ET 0h 10'</span>
+                          <span>12:05 PM ET - 12:10 PM ET 0h 05'</span>
                         </div>
                       </div>
                     </div>
