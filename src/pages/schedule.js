@@ -361,6 +361,41 @@ export default ({ data }) => (
                     </tr>
                   </thead>
                   <tbody>
+                  <tr className="inner-box">
+                      
+                  <td>
+                    <div className="event-img">
+                      <img src="/img/team/organizers/erica.jpg" alt />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-wrap">
+                      <h3>
+                        <a href="#">Welcome
+                        </a>
+                      </h3>
+                      <div className="meta">
+                        <div className="organizers">
+                          <a href="/about">Erica Stanley, Organizer</a>
+                        </div>
+                        <div className="categories">
+                          <a href="/">Conference</a>
+                        </div>
+                        <div className="time">
+                          <span>12:05 PM ET - 12:15 PM ET 0h 10'</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-img">
+                      <img src="/img/zoom-logo.svg" alt />
+                    </div>
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
                     <tr className="inner-box">
                       
                       <td>
@@ -377,13 +412,13 @@ export default ({ data }) => (
                           <div className="meta">
                             <div className="organizers">
                               <a href="/speakers/lara-hogan
-                              ">Lara Hogan</a>
+                              ">Lara Hogan, </a>
                             </div>
                             <div className="categories">
                               <a href="/sessions/#Keynotes">Keynotes</a>
                             </div>
                             <div className="time">
-                              <span>12:10 PM ET - 12:40 PM ET 0h 30'</span>
+                              <span>12:15 PM ET - 12:43 PM ET 0h 28'</span>
                             </div>
                           </div>
                         </div>
@@ -391,7 +426,7 @@ export default ({ data }) => (
                       <td>
                         <div className="event-img">
                           <img src="/img/learn-tv-square.png" alt />
-                          <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                          <img src="/img/zoom-logo.svg" alt />
                         </div>
                       </td>
                       <td>
@@ -402,6 +437,46 @@ export default ({ data }) => (
                         </div>
                       </td>
                     </tr>
+
+                    <tr className="inner-box">
+                      
+                      <td>
+                        <div className="event-img">
+                          <img src="https://dl.airtable.com/.attachmentThumbnails/5a1d4e007b0c0e5ebfdf5fd1218c3784/70ff1a61" alt />
+                          <img src="/img/team/organizers/erica.jpg" alt />
+                        </div>
+                      </td>
+                      <td>
+                        <div className="event-wrap">
+                          <h3>
+                            <a href="#">Live Q &amp; A
+                            </a>
+                          </h3>
+                          <div className="meta">
+                            <div className="organizers">
+                              <a href="/speakers/lara-hogan">Lara Hogan,&nbsp;</a>
+                              <a href="/about">Erica Stanley</a>
+                            </div>
+                            <div className="categories">
+                              <a href="/sessions/#Keynotes">Keynotes</a>
+                            </div>
+                            <div className="time">
+                              <span>12:43 PM ET - 1:03 PM ET 0h 20'</span>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="event-img">
+                          <img src="/img/zoom-logo.svg" alt />
+                        </div>
+                      </td>
+                      <td>
+
+                      </td>
+                    </tr>
+
+
                     <tr className="inner-box">
                       
                       <td>
@@ -423,7 +498,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>01:15 PM ET - 01:45 PM ET 0h 30'</span>
+                              <span>01:04 PM ET - 01:42 PM ET 0h 30'</span>
                             </div>
                           </div>
                         </div>
@@ -431,8 +506,7 @@ export default ({ data }) => (
                       <td>
                       <div className="event-img">
                       <img src="/img/learn-tv-square.png" alt />
-                      <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                    </div>
+                      <img src="/img/zoom-logo.svg" alt />                    </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -465,7 +539,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>02:00 PM ET - 02:00 PM ET 0h 30'</span>
+                              <span>02:00 PM ET - 02:27 PM ET 0h 3027'</span>
                             </div>
                           </div>
                         </div>
@@ -473,8 +547,7 @@ export default ({ data }) => (
                       <td>
                       <div className="event-img">
                       <img src="/img/learn-tv-square.png" alt />
-                      <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                    </div>
+                      <img src="/img/zoom-logo.svg" alt />                    </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -507,7 +580,7 @@ export default ({ data }) => (
                               <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
                             </div>
                             <div className="time">
-                              <span>02:45 PM ET - 03:15 PM ET 0h 30'</span>
+                              <span>02:45 PM ET - 03:22 PM ET 0h 37'</span>
                             </div>
                           </div>
                         </div>
@@ -515,8 +588,7 @@ export default ({ data }) => (
                       <td>
                       <div className="event-img">
                       <img src="/img/learn-tv-square.png" alt />
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                      </div>
+                      <img src="/img/zoom-logo.svg" alt />                      </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -558,8 +630,7 @@ export default ({ data }) => (
                       <td>
                       <div className="event-img">
                         <img src="/img/learn-tv-square.png" alt />
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                      </div>
+                        <img src="/img/zoom-logo.svg" alt />                      </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -600,7 +671,7 @@ export default ({ data }) => (
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                        <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -632,6 +703,42 @@ export default ({ data }) => (
                     </tr>
                   </thead>
                   <tbody>
+
+                  <tr className="inner-box">
+                      
+                  <td>
+                    <div className="event-img">
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-wrap">
+                      <h3>
+                        <a href="#">Welcome
+                        </a>
+                      </h3>
+                      <div className="meta">
+                        <div className="organizers">
+                          <a href="/about">REFACTR.TECH Organizers</a>
+                        </div>
+                        <div className="categories">
+                          <a href="/">Conference</a>
+                        </div>
+                        <div className="time">
+                          <span>12:05 PM ET - 12:10 PM ET 0h 10'</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-img">
+                      <img src="/img/zoom-logo.svg" alt />
+                    </div>
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+
                     <tr className="inner-box">
                       
                       <td>
@@ -655,14 +762,14 @@ export default ({ data }) => (
                             <a href="/sessions/#Keynotes">Keynotes</a>
                             </div>
                             <div className="time">
-                              <span>12:10 PM ET - 12:55P PM ET 0h 45'</span>
+                              <span>12:10 PM ET - 12:54P PM ET 0h 44'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                        <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -696,15 +803,15 @@ export default ({ data }) => (
                               <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
                             </div>
                             <div className="time">
-                              <span>01:15 PM ET - 01:45 PM 0h 30'</span>
+                              <span>01:15 PM ET - 01:47 PM 0h 32'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                      <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                    </div>
+                      <img src="/img/zoom-logo.svg" alt />                      
+                      </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -737,14 +844,14 @@ export default ({ data }) => (
                             <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
                             </div>
                             <div className="time">
-                              <span>02:00 PM ET - 02:30 PM ET 0h 30'</span>
+                              <span>02:00 PM ET - 02:29 PM ET 0h 29'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -778,14 +885,14 @@ export default ({ data }) => (
                             <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
                             </div>
                             <div className="time">
-                              <span>02:45 PM ET - 03:15 PM ET 0h 30'</span>
+                              <span>02:45 PM ET - 03:20 PM ET 0h 35'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -818,15 +925,15 @@ export default ({ data }) => (
                             <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
                             </div>
                             <div className="time">
-                              <span>03:45 PM ET - 04:15 PM ET 0h 30'</span>
+                              <span>03:45 PM ET - 04:17 PM ET 0h 32'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                      <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                    </div>
+                      <img src="/img/zoom-logo.svg" alt />                      
+                      </div>
                       </td>
                       <td>
                         <div className="primary-btn">
@@ -859,14 +966,14 @@ export default ({ data }) => (
                             <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
                             </div>
                             <div className="time">
-                              <span>04:30 PM ET - 05:00 PM ET 0h 30'</span>
+                              <span>04:30 PM ET - 05:06 PM ET 0h 36'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -898,6 +1005,82 @@ export default ({ data }) => (
                     </tr>
                   </thead>
                   <tbody>
+
+                  <tr className="inner-box">
+                      
+                  <td>
+                    <div className="event-img">
+                      <img src="/img/team/organizers/beth.jpg" alt />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-wrap">
+                      <h3>
+                        <a href="#">Welcome
+                        </a>
+                      </h3>
+                      <div className="meta">
+                        <div className="organizers">
+                          <a href="/about">Beth Laing, Organizer</a>
+                        </div>
+                        <div className="categories">
+                          <a href="/">Conference</a>
+                        </div>
+                        <div className="time">
+                          <span>12:05 PM ET - 12:10 PM ET 0h 10'</span>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="event-img">
+                      <img src="/img/zoom-logo.svg" alt />
+                    </div>
+                  </td>
+                  <td>
+                    
+                  </td>
+                </tr>
+
+                  <tr className="inner-box">
+                      
+                      <td>
+                        <div className="event-img">
+                          <img src="/img/speakers/chloe_condon.jpeg" alt />
+                          <img src="/img/team/organizers/beth.jpg" alt />
+                        </div>
+                      </td>
+                      <td>
+                        <div className="event-wrap">
+                          <h3>
+                            <a href="#">Special Guest Q &amp; A
+                            </a>
+                          </h3>
+                          <div className="meta">
+                            <div className="organizers">
+                              <a href="https://2019.refactr.tech/speakers/chloe-condon">Chloe Condon&nbsp;</a>
+                              <a href="/about">Beth Laing</a>
+                            </div>
+                            <div className="categories">
+                              <a href="/sessions/#Keynotes">Keynotes</a>
+                            </div>
+                            <div className="time">
+                              <span>12:10 PM ET - 12:20 PM ET 0h 10'</span>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div className="event-img">
+                          <img src="/img/zoom-logo.svg" alt />
+                        </div>
+                      </td>
+                      <td>
+
+                      </td>
+                    </tr>
+
+
                     <tr className="inner-box">
                       
                       <td>
@@ -921,14 +1104,14 @@ export default ({ data }) => (
                               <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
                             </div>
                             <div className="time">
-                              <span>12:25 PM ET - 12:55 PM ET 0h 30'</span>
+                              <span>12:20 PM ET - 12:55 PM ET 0h 35'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -969,7 +1152,7 @@ export default ({ data }) => (
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                        <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -1003,14 +1186,14 @@ export default ({ data }) => (
                             <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
                             </div>
                             <div className="time">
-                              <span>01:55 PM ET - 02:25 PM ET 0h 30'</span>
+                              <span>01:55 PM ET - 02:26 PM ET 0h 31'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -1045,14 +1228,14 @@ export default ({ data }) => (
                             <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
                             </div>
                             <div className="time">
-                              <span>02:40 PM ET - 03:10 PM ET 0h 30'</span>
+                              <span>02:40 PM ET - 03:17 PM ET 0h 37'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -1088,14 +1271,14 @@ export default ({ data }) => (
                             <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
                             </div>
                             <div className="time">
-                              <span>03:40 PM ET - 04:10 PM 0h 30'</span>
+                              <span>03:40 PM ET - 04:14 PM 0h 34'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
@@ -1132,14 +1315,14 @@ export default ({ data }) => (
                             <a href="/sessions/#Keynotes">Keynotes</a>
                             </div>
                             <div className="time">
-                              <span>04:30 PM ET - 05:00 PM 0h 30'</span>
+                              <span>04:26 PM ET - 4:54 PM 0h 28'</span>
                             </div>
                           </div>
                         </div>
                       </td>
                       <td>
                       <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
+                      <img src="/img/zoom-logo.svg" alt />                      
                       </div>
                       </td>
                       <td>
