@@ -23,7 +23,7 @@ toast.configure();
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2021 - Online August 18 - 20</title>
+      <title>REFACTR.TECH 2022 - Online September 14 -16</title>
       <meta
         name="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -37,7 +37,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2021 - Online August 18 - 20"
+        content="REFACTR.TECH 2022 - Online September 14 -16"
       />
       <meta
         property="og:description"
@@ -65,7 +65,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2021 - Online August 18 - 20"
+        content="REFACTR.TECH 2022 - Online September 14 -16"
       />
       <meta
         name="twitter:description"
@@ -77,12 +77,12 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="August 18 - 20" />
+      <meta name="twitter:data1" content="September 14 -16" />
       <meta name="twitter:label2" content="Location" />
       <meta name="twitter:data2" content="Online" />
 
       {/* <!-- Schema.org markup for Google+ --> */}
-      <meta itemprop="name" content="REFACTR.TECH 2021" />
+      <meta itemprop="name" content="REFACTR.TECH 2022" />
       <meta
         itemprop="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
