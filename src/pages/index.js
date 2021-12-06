@@ -127,7 +127,7 @@ export default ({ data }) => (
       </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-5 parallax" style={{marginTop: "90px"}}>
+        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "90px"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -137,13 +137,13 @@ export default ({ data }) => (
                     <div className="col-md-10 col-lg-9 align-self-start">
                         <img
                         className="img-fluid"
-                        src="/img/logo/refactr2021-logo.svg"
+                        src="/img/logo/refactr-logo.svg"
                         alt="REFACTR.TECH Conference"
                       />
                     </div>
-                  </div>
+                    </div>
 
-                  {/*<div className="row justify-content-center" style={{marginTop: '30px'}}>
+                  <div className="row justify-content-center" style={{marginTop: '30px'}}>
                     <div className="col-lg-6">
                         <img
                         className="img-fluid"
@@ -158,8 +158,8 @@ export default ({ data }) => (
                     <img
                     className="img-fluid"
                     style={{marginTop: '35px'}}
-                    src="/img/logo/refactr2021-date.svg"
-                    alt="Conference dates:  August 18 - 20, 2021"
+                    src="/img/logo/conference-September-14-16.svg"
+                    alt="Conference dates:  September 14 - 16, 2022"
                   />
                     </div>
                   </div>
@@ -173,7 +173,7 @@ export default ({ data }) => (
                     alt="Conference location: Atlanta"
                   />
                     </div>
-              </div>*/}
+              </div>
 
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
@@ -214,7 +214,7 @@ export default ({ data }) => (
 
 
         {/*Counter Up Area Start Here*/}
-        <div className="counter-up-area pad100 bg-tricolor parallax">
+       {/* <div className="counter-up-area pad100 bg-tricolor parallax">
           <div className="container">
             <div className="row ">
               
@@ -228,17 +228,17 @@ export default ({ data }) => (
                 />
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* /col end*/}
-              <div className="col-xl-1 col-lg-1 col-md-1 col-sm-1">
+              {/* <div className="col-xl-1 col-lg-1 col-md-1 col-sm-1">
                 <div className="single-counter xs-mb40">
                 <div className="count-content">
                 
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* /col end*/}
-              <div className="col-xl-4 col-lg-4 col-md-3 	.d-md-none">
+              {/*<div className="col-xl-4 col-lg-4 col-md-3 	.d-md-none">
                 <div className="single-counter xs-mb40">
                   <div className="count-content">
                   <img
@@ -255,10 +255,10 @@ export default ({ data }) => (
                 
                 </div>
               </div>
-            </div>
+          </div> */}
             {/* /col end*/}
               {/* /col end*/}
-              <div className="col-xl-3 col-lg-3 col-md-3 .d-md-none">
+              {/*<div className="col-xl-3 col-lg-3 col-md-3 .d-md-none">
                 <div className="single-counter ">
                   <div className="count-content">
                   <img
@@ -268,17 +268,17 @@ export default ({ data }) => (
                 />
                   </div>
                 </div>
-              </div>
+                  </div> */}
               {/* /col end*/}
-            </div>
+               {/* </div> */}
             {/* /row end*/}
-          </div>
+               {/* </div> */}
           {/* /container end*/}
-        </div>
+                {/* </div> */}
         {/*Counter Up Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
-        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -299,12 +299,38 @@ export default ({ data }) => (
            
           </div>
           
-              </div>
+              </div>*/}
         {/*Keynote Speakers Area End Here*/}
 
 
 
-        
+        <div className="counter-up-area ptb60 bg-counter parallax">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="single-counter xs-mb40">
+                <div className="count-content" style={{ textAlign: "center"}}>
+                  <span className="count" style={{ fontSize: "3.1em"}}>Don't Miss a Thing</span>
+                  <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Stay in the know! Find the latest REFACTR news by subscribing to our newsletter & checking for updates.</p>
+                    <div className="row">
+                      <div className="col-md-6 col-sm-12">
+                        <div className="primary-btn text-center mt30">
+                            {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
+                            <a href="https://tech.us19.list-manage.com/subscribe?u=5ae8995a4bf065a3c7cd6ad50&id=e8f624f474" class="btn-primary" style={{border: "2px solid #fff"}}>Subscribe &nbsp;&nbsp;<i className="fa fa-external-link"/></a> 
+                        </div>
+                      </div>
+                      <div className="col-md-6 col-sm-12">
+                        <div className="primary-btn text-center mt30">
+                            <a href="/updates" class="btn-primary" style={{border: "2px solid #fff"}}>Updates</a>
+                        </div>
+                      </div>   
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -312,7 +338,7 @@ export default ({ data }) => (
         <div className="whos-speaking-area pad100">
           <div className="container">
 
-          <div>
+          {/*<div>
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
@@ -321,17 +347,13 @@ export default ({ data }) => (
                 </div>
               </div>
 
-              {/* /.row  end*/}
 
               <div className="row mb50 " style={{justifyContent: 'center'}}>
-                {/*Whos Speaking Area End Here*/}
 
                <SpeakerCardList items={data.workshopInstructors.edges} />
 
-                {/* /row end*/}
               </div>
-              {/* /container end*/}
-            </div>
+          </div>*/}
 
 
 
@@ -339,7 +361,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Speakers</h2>
+                    <h2>Featured Past Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -368,113 +390,6 @@ export default ({ data }) => (
               {/* /container end*/}
             </div>
             {/*Whos Speaking Area End Here*/}
-
-
-
-            {/*Pricing Tables Area Start Here*/}
-            <a name="pricing"/>
-            <div className="pricing-tables-area pad-b50">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb50">
-                        <h2>Conference Pricing</h2>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-                <div className="row">
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                        <span>FREE</span>
-                        </div>
-                      </div>
-                      <div className="pricing-title">Career Fair</div>
-                      <div className="pricing-content">
-                        <ul>
-                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
-                          <li>Meet companies hiring now!</li>
-                          <li>Talk directly with hiring team</li>
-                          <li>Exclusive interactive sessions</li>
-                          <li>Review our job board</li>
-                          <li>Share your resume</li>
-                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
-                        </ul>
-                      </div>
-                      <br/>
-                      <div className="primary-btn">
-                        <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/">
-                          Get Tickets!
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span>30
-                        </div>
-                      </div>
-                      <div className="pricing-title">Conference</div>
-                      <div className="pricing-content">
-                        <ul>
-                          {/*<li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Limited! Get yours while tickets   last!</span></li>*/}
-                          <li>Main Stage Keynotes</li>
-                          <li>Sessions in 3 Tracks</li>
-                          <li>World Renowned Speakers</li>
-                          <li style={{ color: '#F20688', fontWeight: 'bold' }}>*Career Fair Ticket Included*</li>
-                          <li>Social Activities &amp; Networking</li>
-                          {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $125</a></li>*/}
-                          </ul>
-                      </div>
-                      <br/>
-                      <div className="primary-btn">
-                        <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/">
-                          Get Tickets!
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <div className="pricing-box bg-pricing xs-mb30">
-                      <div className="pricing-header">
-                        <div className="pricing-value">
-                          <span>$</span>20
-                        </div>
-                      </div>
-                      <div className="pricing-title">Workshops</div>
-                      <div className="pricing-content">
-                        <ul>
-                          <li>Instructors from Top Companies</li>
-                          <li>Learn from the Experts</li>
-                          <li>4-hour Deep Dive</li>
-                          <li>Convenient Scheduling</li>
-                          <li>Verified Certificate</li>
-                        </ul>
-                      </div>
-                      <br/>
-                      <div className="primary-btn">
-                        <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/">
-                          Get Tickets!
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-              </div>
-              
-            </div>
-            {/*Pricing Tables Area End Here*/}
             
           </div>
           
@@ -510,7 +425,7 @@ export default ({ data }) => (
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb30 xs-mb40">
-                            <h2>Sponsor REFACTR.TECH 2021</h2>
+                            <h2>Sponsor REFACTR.TECH 2022</h2>
                         <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of people from diverse backgrounds at our Exhibit Hall and Career Expo? Please take a few minutes to review the various ways to support REFACTR.TECH in our attached sponsorship prospectus</p>
                         </div>
                     </div>
@@ -534,12 +449,13 @@ export default ({ data }) => (
               <div className="col-sm-12">
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
-                    <span className="count" style={{ fontSize: "3.1em"}}>Recap REFACTR 2019</span>
-                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Missed REFACTR.TECH 2019? Or just want to relive the vibe from our physical conference?</p>
+                    <span className="count" style={{ fontSize: "3.1em"}}>Recap Past REFACTR Events</span>
+                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Missed the last REFACTR.TECH? Or just want to relive the vibes from our previous conferences?</p>
                       <div className="row">
                         <div className="col-md-6 col-sm-12">
                           <div className="primary-btn text-center mt30">
-                              <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a>
+                              {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
+                              <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4a2S2DAIsLRCj1dus_TGnIn" class="btn-primary" style={{border: "2px solid #fff"}}>2021 Videos</a> 
                           </div>
                         </div>
                         <div className="col-md-6 col-sm-12">

@@ -57,17 +57,17 @@ export default class NavigationBar extends Component {
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
-                        Sponsors
+                        2021 Sponsors
                       </Link>
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/schedule">
-                        Schedule
+                      <Link className="nav-link" activeClassName="active" to="/sessions">
+                        2021 Sessions
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">
                         Workshops
                       </Link>
@@ -83,7 +83,7 @@ export default class NavigationBar extends Component {
                       <Link className="nav-link" activeClassName="active" to="/jobs">
                         Jobs
                       </Link>
-                    </li>
+                    </li>*/}
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/updates">
@@ -119,7 +119,7 @@ export default class NavigationBar extends Component {
                       </Link>
                       </li>*/}
                     
-                    <li className="nav-item d-lg-none ">
+                    {/* <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"
                         href="https://reg.connectevents.io/ConnectEvents/rtech2021/"
@@ -128,13 +128,13 @@ export default class NavigationBar extends Component {
                       >
                         Tickets
                       </a>
-                </li>
+                    </li> */}
                   </ul>
                 </div>
               </nav>
             </div>
             {/* /col end*/}
-            <div className="col-lg-2 d-none d-lg-block">
+           {/*} <div className="col-lg-2 d-none d-lg-block">
               <ul>
                 <li className="header-ticket">
                   <a
@@ -147,7 +147,7 @@ export default class NavigationBar extends Component {
                   </a>
                 </li>
               </ul>
-            </div>
+                    </div>*/}
             {/* /col end*/}
           </div>
           {/* /row end*/}
