@@ -50,9 +50,14 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/speakers">
-                        Speakers
-                      </Link>
+                      <a
+                        className="nav-link"
+                        href="https://airtable.com/shr1yqXStSRLmUCDq"
+                        rel="noreferrer noopener"
+                        target="_blank"
+                      >
+                        Call for Speakers
+                      </a>
                     </li>
 
                     <li className="nav-item">

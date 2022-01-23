@@ -1,6 +1,10 @@
 # Production context:
 # All deploys from the main repository branch
 # will inherit these settings.
+[context.development]
+  [context.development.environment]
+    GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+
 [context.production]
   [context.production.environment]
     GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
@@ -20,7 +24,8 @@
 # and override their current ones.
 [context.stage]
   [context.stage.environment]
-    GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+#    GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+    GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
 
 # Deploys from this branch will take these settings
 # and override their current ones.

@@ -650,6 +650,11 @@ a {
       background-position: right bottom;
       background-size: cover; }
 
+.bg-2019panel {
+  background-image: url(../img/bg/Refactr2019_panel.jpg); 
+  background-position: right bottom;
+  background-size: cover; }
+
 .bg-covid {
   background-image: url(../img/bg/Covid19.jpg); 
   background-position: right bottom;
