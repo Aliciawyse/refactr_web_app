@@ -91,6 +91,12 @@ export default class NavigationBar extends Component {
                     </li>*/}
 
                     <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/covid-policy">
+                        COVID-19 Policy
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/updates">
                         Updates
                       </Link>
