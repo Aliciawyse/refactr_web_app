@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import { SpeakerCardList } from "../components/SpeakerCardList";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
+import { FeaturedSponsorsList } from "../components/FeaturedSponsorsList";
 //import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
 import Countdown from "../components/Countdown";
@@ -335,7 +336,7 @@ export default ({ data }) => (
 
 
         {/*Whos Speaking Area Start Here*/}
-        <div className="whos-speaking-area pad100">
+        <div className="whos-speaking-area ptb50">
           <div className="container">
 
           {/*<div>
@@ -374,7 +375,7 @@ export default ({ data }) => (
               
               </div>
 
-              <div className="row mb50">
+              <div className="row mb30">
                 {/*Whos Speaking Area End Here*/}
 
                 <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
@@ -420,6 +421,18 @@ export default ({ data }) => (
         {/*Sponsors CTA Starts Here*/}
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
+
+              <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Featured Past Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            <FeaturedSponsorsList data={data.featuredSponsors.edges} />
 
             <div className="row">
                 <div className="col-lg-12">
@@ -572,5 +585,27 @@ export const speakerPageQuery = graphql`
         }
       }
     }
+
+    featuredSponsors: allAirtable(
+      filter: { table: { eq: "PastSponsors" }, data: { featurePastSponsor: { eq: true } } }
+      sort: { fields: data___list_order }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            pastSponsor_name
+            pastSponsor_logo {
+              filename
+              url
+            }
+            pastSponsor_url
+          }
+        }
+      }
+    }
+
   }
 `;

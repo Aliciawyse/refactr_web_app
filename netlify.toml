@@ -7,13 +7,15 @@
 
 [context.production]
   [context.production.environment]
-    GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+  #  GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+  GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
 
 # Deploy Preview context:
 # All deploys generated from a pull/merge request
 # will inherit these settings.
     [context.deploy-preview.environment]
-        GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+     #   GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+     GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
 
 # Branch deploy context:
 # All deploys that are not from a pull/merge request

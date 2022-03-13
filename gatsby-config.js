@@ -63,6 +63,12 @@ module.exports = {
             queryName: `jobs`,
             tableLinks: ["Sponsors", "Company_Profile"],
             mapping: { logo: `fileNode` } 
+          },
+          {
+            baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
+            tableName: `PastSponsors`,
+            queryName: `pastSponsors`,
+            mapping: { sponsor_logo: `fileNode` }          
           }
         ]
       }
