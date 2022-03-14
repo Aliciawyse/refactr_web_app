@@ -439,7 +439,7 @@ export default ({ data }) => (
                     <div className="section-title text-center">
                         <div className="title-text mb30 xs-mb40">
                             <h2>Sponsor REFACTR.TECH 2022</h2>
-                        <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of people from diverse backgrounds at our Exhibit Hall and Career Expo? Please take a few minutes to review the various ways to support REFACTR.TECH in our attached sponsorship prospectus</p>
+                        <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                         </div>
                     </div>
                 </div>
