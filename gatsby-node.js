@@ -79,15 +79,6 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
         
-        jobs: allAirtable(filter: { table: { eq: "Job_Board" } }) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
         companies: allAirtable(filter: { table: { eq: "Company_Profile" } }) {
           edges {
             node {
