@@ -36,8 +36,6 @@ export default ({ data }) => (
               <li>|</li>
               <li><a href="/workshops">Workshops</a></li>
               <li>|</li>
-              <li><a href="/careerfair">Career Fair</a></li>
-              <li>|</li>
               <li><a href="/sessions">Sessions</a></li>
             </ol>
                 
@@ -313,12 +311,12 @@ export default ({ data }) => (
                       <td>
                         <div className="event-wrap">
                           <h3>
-                            <a href="/careerfair">Virtual Career Fair</a>
+                            <a href="">Virtual Career Fair</a>
                           </h3>
                           <div className="meta">
                             
                             <div className="categories">
-                              <a href="/jobs">Jobs</a>
+                              <a href="">Jobs</a>
                             </div>
                             <div className="time">
                               <span>11:00 AM ET - 02:00 PM ET 3h</span>
