@@ -35,11 +35,11 @@ export const SpeakerCard = ({
         </ul>
       </div>
       <div className="spk-info">
-        <a href={slug}>
+        {/*<a href={slug}>*/}
           <h3>
             {speaker_name}
           </h3>
-        </a>
+        {/*</a>*/}
         <span>{pronouns}</span>
         <p>{role}</p>
         <h6>{company}</h6>

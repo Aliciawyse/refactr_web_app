@@ -10,7 +10,7 @@ export const KeynoteSpeakerCard = ({
   session_track,
   pronouns
 }) => (
-  <div className="col-md-3 col-sm-12">
+  <div className="col-md-4 col-sm-12">
     <div className="speakers xs-mb30">
       <div className="spk-img">
       {headshot.localFiles && (
@@ -22,13 +22,13 @@ export const KeynoteSpeakerCard = ({
         
       </div>
       <div className="spk-info">
-        <a
+        {/*<a
           href={slug}
           rel="noreferrer noopener"
           target="_blank"
-        >
+        >*/}
           <h3 style={{ color: "white" }}>{speaker_name}</h3>
-        </a>
+        {/*</a>*/}
         <span style={{ color: "#aaa" }}>
           {pronouns}
         </span>

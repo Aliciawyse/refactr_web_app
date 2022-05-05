@@ -5,6 +5,8 @@ import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import { SpeakerCardList } from "../components/SpeakerCardList";
 import { KeynoteSpeakerList } from "../components/KeynoteSpeakerList";
 import { FeaturedSponsorsList } from "../components/FeaturedSponsorsList";
+import { CurrentSponsorsList } from "../components/CurrentSponsorsList";
+
 //import { OnlineSchedule } from "../components/OnlineSchedule";
 import NavigationBar from "../components/NavigationBar";
 import Countdown from "../components/Countdown";
@@ -128,7 +130,7 @@ export default ({ data }) => (
       </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 hero-bg-2 parallax" style={{marginTop: "90px"}}>
+        <div className="hero-banner-area home-2 parallax" style={{marginTop: "90px" , backgroundColor: "#000"}}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -279,7 +281,7 @@ export default ({ data }) => (
         {/*Counter Up Area End Here*/}
 
         {/*Keynote Speaker Area Start Here*/}
-        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -300,7 +302,7 @@ export default ({ data }) => (
            
           </div>
           
-              </div>*/}
+              </div>
         {/*Keynote Speakers Area End Here*/}
 
 
@@ -339,7 +341,7 @@ export default ({ data }) => (
         <div className="whos-speaking-area ptb50">
           <div className="container">
 
-          {/*<div>
+          <div>
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
@@ -354,7 +356,7 @@ export default ({ data }) => (
                <SpeakerCardList items={data.workshopInstructors.edges} />
 
               </div>
-          </div>*/}
+          </div>
 
 
 
@@ -362,7 +364,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Past Speakers</h2>
+                    <h2>Featured Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -418,11 +420,154 @@ export default ({ data }) => (
           </div>
           </div>*/}
 
+
+        {/*Pricing Tables Area Start Here*/}
+        <a name="pricing"/>
+        <div className="pricing-tables-area ptb50">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <div className="title-text mb50">
+                    <h2>Conference Pricing</h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="row">
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                    <span>$</span>149
+                    </div>
+                  </div>
+                  <div className="pricing-title">Early Bird</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end May 23!</span></li>
+                  <li>Main Stage Keynotes</li>
+                  <li>Sessions in 5 Tracks</li>
+                  <li>Expo Hall</li>
+                  <li>Networking Opportunities</li>
+                  <li>Tons of Social Activities</li>
+                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn">
+                    <a className="btn-primary" href="">
+                    Coming Soon!
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                      <span>$</span>199
+                    </div>
+                  </div>
+                  <div className="pricing-title">Regular</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 5 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                    <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                  </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn">
+                    <a className="btn-primary" href="">
+                    Coming Soon!
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                      <span>$</span>299
+                    </div>
+                  </div>
+                  <div className="pricing-title">Late</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li>&nbsp;</li>
+                  <li>Main Stage Keynotes</li>
+                  <li>Sessions in 5 Tracks</li>
+                  <li>Expo Hall</li>
+                  <li>Networking Opportunities</li>
+                  <li>Tons of Social Activities</li>
+                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn disabled">
+                    <a className="btn-primary " href="">
+                      Coming Soon!
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        {/*Pricing Tables Area End Here*/}
+
+
+
         {/*Sponsors CTA Starts Here*/}
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
 
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                      <div className="title-text mb30 xs-mb40">
+                          <h2>Sponsor REFACTR.TECH 2022</h2>
+                      <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="row pad-bot30">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
               <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>2022 Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            <CurrentSponsorsList data={data.currentSponsors.edges} />
+
+            <div className="row">
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                       <div className="title-text mb30">
@@ -434,23 +579,8 @@ export default ({ data }) => (
 
             <FeaturedSponsorsList data={data.featuredSponsors.edges} />
 
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                        <div className="title-text mb30 xs-mb40">
-                            <h2>Sponsor REFACTR.TECH 2022</h2>
-                        <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="primary-btn text-center">
-                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
-                    </div>
-                </div>
-            </div>
+            
+      
 
           </div>
         </div>
@@ -602,6 +732,27 @@ export const speakerPageQuery = graphql`
               url
             }
             pastSponsor_url
+          }
+        }
+      }
+    }
+
+    currentSponsors: allAirtable(
+      filter: { table: { eq: "Sponsors" } }
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            company_name
+            url
+            tier
+            logo {
+              filename
+              url
+            }
           }
         }
       }

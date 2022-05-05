@@ -875,7 +875,8 @@ a {
       font-size: 64px;
       color: #fff;
       line-height: 64px;
-      text-transform: capitalize; }
+      text-transform: capitalize; 
+      background-color: black;}
     .hero-banner-area .banner-content h2 {
       font-size: 64px;
       line-height: 1.8em;
