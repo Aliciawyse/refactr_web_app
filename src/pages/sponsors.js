@@ -133,7 +133,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb50 xs-mb40">
-                            <h2>2021 Sponsors</h2>
+                            <h2>2022 Sponsors</h2>
                         </div>
                         <hr />
                         <div className="single-sponsers">
