@@ -41,8 +41,7 @@ module.exports = {
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,
             tableName: `Sponsors`,
-            queryName: `sponsors`,
-            //tableLinks: ["Company_Profile"]
+            queryName: `sponsors`
           },
           {
             baseId: process.env.GATSBY_AIRTABLE_BASE_KEY,

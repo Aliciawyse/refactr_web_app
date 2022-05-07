@@ -10,12 +10,17 @@ const filterSponsorsByTier = (data) => {
     const allData = data.allAirtable.edges;
     let filteredData = [
         {
-            tier: 'Gold',
+          tier: 'platinum',
+          title: 'Platinum',
+          sponsors: []
+        },
+        {
+            tier: 'gold',
             title: 'Gold',
             sponsors: []
         },
         {
-            tier: 'Silver',
+            tier: 'silver',
             title: 'Silver',
             sponsors: []
         },
@@ -32,6 +37,11 @@ const filterSponsorsByTier = (data) => {
         {
           tier: 'in_kind_partners',
           title: 'In-kind Partners',
+          sponsors: []
+        },
+        {
+          tier: 'accessibility',
+          title: 'Accessibility',
           sponsors: []
         },
         {
