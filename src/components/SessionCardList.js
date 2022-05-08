@@ -33,7 +33,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
                   <p>
                     <a className="detail-view">
                       {" "}
-                      {session.data.Day} {session.data.date_friendly}{" ET "}({ (session.data.Duration/ 60) > 59? (session.data.Duration/ 3600) : (session.data.Duration/ 60) } {session.data.Duration < 3600 ? "min" : "hrs"})
+                      {/*{session.data.Day} {session.data.date_friendly}{" ET "}({ (session.data.Duration/ 60) > 59? (session.data.Duration/ 3600) : (session.data.Duration/ 60) } {session.data.Duration < 3600 ? "min" : "hrs"})*/}
                     </a>
                   </p>
 
@@ -43,7 +43,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
 
                   <SessionSpeakerList speakers={session.data.Speakers}/>
 
-                  <div style={{display: showBuyTickets ? 'block':'none', textAlign: 'center' }}>
+                  <div className="no-pad no-margin" style={{display: showBuyTickets ? 'block':'none', textAlign: 'center'}}>
                     {soldOut ? <span className="primary-btn"><a className="btn-primary" href="" rel="noreferrer noopener" target="_blank">Sold Out</a></span>: <span className="primary-btn"><a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2021/" rel="noreferrer noopener" target="_blank">Buy Tickets</a></span>}
                   </div>
 

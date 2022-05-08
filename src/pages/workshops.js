@@ -12,10 +12,10 @@ import "../../src/styles/assets/css/responsive.css";
 export default ({ data }) => (
   <div>
   <Helmet>
-  <title>Workshops | REFACTR.TECH 2021</title>
+  <title>Workshops | REFACTR.TECH 2022</title>
   <meta
     name="description"
-    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Machine Learning or Web Performance."
   />
   
 
@@ -26,11 +26,11 @@ export default ({ data }) => (
   <meta property="og:url" content="https://www.refactr.tech/" />
   <meta
     property="og:title"
-    content="Workshops | REFACTR.TECH 2021"
+    content="Workshops | REFACTR.TECH 2022"
   />
   <meta
     property="og:description"
-    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, , Machine Learning or Web Performance."
   />
   <meta 
       name="keywords" 
@@ -55,11 +55,11 @@ export default ({ data }) => (
   <meta name="twitter:site" content="@RefactrTech" />
   <meta
     name="twitter:title"
-    content="Workshops | REFACTR.TECH 2021"
+    content="Workshops | REFACTR.TECH 2022"
   />
   <meta
     name="twitter:description"
-    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Machine Learning or Web Performance."
   />
   <meta name="twitter:domain" content="https://refactr.tech" />
   <meta
@@ -67,15 +67,15 @@ export default ({ data }) => (
     content="https://refactr.tech/img/conference/marketing_header.png"
   />
   <meta name="twitter:label1" content="Date" />
-  <meta name="twitter:data1" content="August 18-20" />
+  <meta name="twitter:data1" content="September 14-16" />
   <meta name="twitter:label2" content="Location" />
-  <meta name="twitter:data2" content="Online" />
+  <meta name="twitter:data2" content="Downtown, Atlanta, GA" />
 
   {/* <!-- Schema.org markup for Google+ --> */}
-  <meta itemprop="name" content="Workshops | REFACTR.TECH 2021" />
+  <meta itemprop="name" content="Workshops | REFACTR.TECH 2022" />
   <meta
     itemprop="description"
-    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
+    content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Machine Learning or Web Performance."
   />
   <meta itemprop="image" content="/img/conference/marketing_header.png" />
   <meta
@@ -101,14 +101,14 @@ export default ({ data }) => (
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>|</li>
-                  <li><a href="/schedule">Schedule</a></li>
+                  {/*<li>|</li>
+                  <li><a href="/schedule">Schedule</a></li>*/}
                   <li>|</li>
                   <li>Workshops</li>
-                  <li>|</li>
+                  {/*<li>|</li>
                   <li><a href="/careerfair">Career Fair</a></li>
                   <li>|</li>
-                  <li><a href="/sessions">Sessions</a></li>
+                  <li><a href="/sessions">Sessions</a></li>*/}
                 </ol>
               </div>
             </div>
