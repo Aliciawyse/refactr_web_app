@@ -133,27 +133,27 @@ export default class NavigationBar extends Component {
                       </Link>
                       </li>*/}
                     
-                    {/* <li className="nav-item d-lg-none ">
+                    <li className="nav-item d-lg-none ">
                       <a
                         className="nav-link"
-                        href="https://reg.connectevents.io/ConnectEvents/rtech2021/"
+                        href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         Tickets
                       </a>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </nav>
             </div>
             {/* /col end*/}
-           {/*} <div className="col-lg-2 d-none d-lg-block">
+           <div className="col-lg-2 d-none d-lg-block">
               <ul>
                 <li className="header-ticket">
                   <a
                     className="pr-0"
-                    href="https://reg.connectevents.io/ConnectEvents/rtech2021/"
+                    href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -161,7 +161,7 @@ export default class NavigationBar extends Component {
                   </a>
                 </li>
               </ul>
-                    </div>*/}
+                    </div>
             {/* /col end*/}
           </div>
           {/* /row end*/}

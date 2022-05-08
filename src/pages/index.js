@@ -458,8 +458,8 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <a className="btn-primary" href="">
-                    Coming Soon!
+                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/">
+                    Buy Tickets!
                     </a>
                   </div>
                 </div>
@@ -477,7 +477,7 @@ export default ({ data }) => (
                   <ul>
                   <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
                     <li>Main Stage Keynotes</li>
-                    <li>Sessions in 5 Tracks</li>
+                    <li>Sessions in 7 Tracks</li>
                     <li>Expo Hall</li>
                     <li>Networking Opportunities</li>
                     <li>Tons of Social Activities</li>
@@ -487,7 +487,7 @@ export default ({ data }) => (
                   <br/>
                   <div className="primary-btn">
                     <a className="btn-primary" href="">
-                    Coming Soon!
+                    Sales start 5/24
                     </a>
                   </div>
                 </div>
@@ -515,7 +515,7 @@ export default ({ data }) => (
                   <br/>
                   <div className="primary-btn disabled">
                     <a className="btn-primary " href="">
-                      Coming Soon!
+                      Sales start 8/30
                     </a>
                   </div>
                 </div>
