@@ -345,7 +345,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Workshop Instructors</h2>
+                    <h2>Workshops</h2>
                   </div>
                 </div>
               </div>
@@ -458,7 +458,8 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/">
+                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank"
+                    rel="noopener noreferrer">
                     Buy Tickets!
                     </a>
                   </div>
@@ -534,10 +535,36 @@ export default ({ data }) => (
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
 
-          <div className="row">
+              <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>2022 Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+            <CurrentSponsorsList data={data.currentSponsors.edges} />
+
+            <hr />
+
+            {/*<div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Featured Past Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <FeaturedSponsorsList data={data.featuredSponsors.edges} />*/} 
+
+        <div className="row">
               <div className="col-lg-12">
                   <div className="section-title text-center">
-                      <div className="title-text mb30 xs-mb40">
+                      <div className="title-text mtb30 xs-mb40">
                           <h2>Sponsor REFACTR.TECH 2022</h2>
                       <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                       </div>
@@ -552,32 +579,6 @@ export default ({ data }) => (
                     </div>
                 </div>
             </div>
-
-            <hr />
-
-              <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>2022 Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-            <CurrentSponsorsList data={data.currentSponsors.edges} />
-
-            <div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>Featured Past Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-            <FeaturedSponsorsList data={data.featuredSponsors.edges} />
 
             
       
