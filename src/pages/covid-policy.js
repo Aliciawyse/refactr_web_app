@@ -59,26 +59,8 @@ export default () => (
               To ensure the health and safety of all attendees, staff, speakers, and sponsors, REFACTR.TECH 2022 is following this COVID-19 policy. We can offer a refund up to 2 weeks before the conference. If you cancel within two weeks of the event, we cannot offer a refund, but we can transfer your registration to another attendee.
               </p>
 
-              <p><h2>Mask Requirement</h2>
-              Based on recent data available from the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">CDC</a>, face coverings will be required of everyone inside the conference venue at REFACTR.TECH.
-              </p>
-
-              <p>Exceptions:
-              <ul>
-                <li>Outdoor spaces</li>
-                <li>Indoors while consuming food and while socially distanced from other participants</li>
-                <li>While necessary for communicating with someone who is hearing impaired when the ability to see the mouth is essential for communication</li>
-                <li>Speakers while presenting</li>
-              </ul>
-              </p>
-
-              <p>
-              Masks must be worn over the nose and mouth and must be made of a tight-knit, non-permeable material. <strong>KN95</strong> or <strong>N95</strong> masks are recommended. Cloth masks are permitted, but must fit tightly around the nose and face and have at least 2 layers. Speakers will not be required to wear masks while presenting.
-              </p>
-
-              <p>
-                <i>Alternatives to face coverings such as face shields, loose gaiters, scarves, bandanas, surgical masks alone, and face coverings with ventilation are not permitted.
-                </i>
+              <p><h2>Face Covering Policy</h2>
+              Based on recent data, guidelines, and policies from the <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/about-face-coverings.html">CDC</a>, face coverings will be optional, but not required. Even though face coverings aren’t required you may prefer to wear one, and we encourage you to do so if that makes you more comfortable.  This policy is subject to change should the CDC update their guidelines prior to the conference.
               </p>
 
               <p><h2>Vaccinations</h2>
