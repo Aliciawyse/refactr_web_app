@@ -10,7 +10,7 @@ export default ({ data }) => {
   return(
   <div>
   <Helmet>
-    <title>About | REFACTR.TECH 2021</title>
+    <title>About | REFACTR.TECH 2022</title>
     <meta
       name="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
@@ -23,7 +23,7 @@ export default ({ data }) => {
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="About | REFACTR.TECH 2021"
+      content="About | REFACTR.TECH 2022"
     />
     <meta
       property="og:description"
@@ -52,7 +52,7 @@ export default ({ data }) => {
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="About | REFACTR.TECH 2021"
+      content="About | REFACTR.TECH 2022"
     />
     <meta
       name="twitter:description"
@@ -64,12 +64,12 @@ export default ({ data }) => {
       content="https://refactr.tech/img/conference/marketing_header.png"
     />
     <meta name="twitter:label1" content="Date" />
-    <meta name="twitter:data1" content="August 18-20" />
+    <meta name="twitter:data1" content="September 14 -16" />
     <meta name="twitter:label2" content="Location" />
-    <meta name="twitter:data2" content="Online" />
+    <meta name="twitter:data2" content="Downtown Atlanta, GA" />
 
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="About | REFACTR.TECH 2021" />
+    <meta itemprop="name" content="About | REFACTR.TECH 2022" />
     <meta
       itemprop="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
