@@ -130,23 +130,30 @@ export default ({ data }) => (
       </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 parallax" style={{marginTop: "90px" , backgroundColor: "#000"}}>
+        <div className="hero-banner-area home-2 video-wrapper parallax" style={{marginTop: "90px" , backgroundColor: "#55C5FF"}}>
+
+        <video playsInline autoPlay muted loop playbackRate="0.1" poster="img/bg/cloud-bg-poster.png">
+          <source src="img/bg/cloud-bg-0.5x.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+
+
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-md-10 col-lg-9 align-self-start">
+                    <div className="col-md-10 col-lg-7 align-self-start">
                         <img
                         className="img-fluid"
-                        src="/img/logo/refactr-logo.svg"
-                        alt="REFACTR.TECH Conference"
+                        src="/img/logo/refactr-logo-2022.svg"
+                        alt="REFACTR.TECH Conference theme: Carnival!"
                       />
                     </div>
                     </div>
 
-                  <div className="row justify-content-center" style={{marginTop: '30px'}}>
+                  {/*<div className="row justify-content-center" style={{marginTop: '30px'}}>
                     <div className="col-lg-6">
                         <img
                         className="img-fluid"
@@ -154,25 +161,25 @@ export default ({ data }) => (
                         alt="Conference slogan: Diversity.Inclusion.Tech"
                       />
                     </div>
-                  </div>
+                  </div>*/}
 
                   <div className="row justify-content-center">
                     <div className="col-lg-6">
                     <img
                     className="img-fluid"
-                    style={{marginTop: '35px'}}
-                    src="/img/logo/conference-September-14-16.svg"
+                    style={{marginTop: '80px'}}
+                    src="/img/logo/dates-2022.svg"
                     alt="Conference dates:  September 14 - 16, 2022"
                   />
                     </div>
                   </div>
 
                   <div className="row justify-content-center">
-                    <div className="col-lg-4 col-md-4 col-sm-5 col-6">
+                    <div className="col-lg-6 col-md-4 col-sm-5 col-6">
                     <img
                     className="img-fluid"
-                    style={{marginTop: '25px'}}
-                    src="/img/logo/refactr2020-location-simple.png"
+                    style={{marginTop: '20px'}}
+                    src="/img/logo/location-2022.svg"
                     alt="Conference location: Atlanta"
                   />
                     </div>
