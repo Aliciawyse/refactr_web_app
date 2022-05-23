@@ -135,11 +135,12 @@ export default ({ data }) => {
               <div className="col-lg-7 col-md-12">
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
+                  <span>{data.airtable.data.pronouns}&nbsp; | &nbsp;</span>
                   <p>
                     {data.airtable.data.role},{" "}
-                    {data.airtable.data.company}
+                    {data.airtable.data.company}&nbsp;
                   </p>
-                  <span>{data.airtable.data.pronouns}</span>
+                  
                   <br />
 
                   <p>{data.airtable.data.bio}</p>
@@ -158,7 +159,7 @@ export default ({ data }) => {
                     </ul>
                   </div>
                   <br />
-                  <span style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
+                  {/*<span style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
                     Sessions&nbsp;
                     <br />
                       <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
@@ -169,7 +170,7 @@ export default ({ data }) => {
                     <br />
                       Emcee
                     <br />
-                  </span>
+                  </span>*/}
                 </div>
               </div>
               {/* /.col end*/}

@@ -22,13 +22,13 @@ export const KeynoteSpeakerCard = ({
         
       </div>
       <div className="spk-info">
-        {/*<a
+        <a
           href={slug}
           rel="noreferrer noopener"
           target="_blank"
-        >*/}
+        >
           <h3 style={{ color: "white" }}>{speaker_name}</h3>
-        {/*</a>*/}
+        </a>
         <span style={{ color: "#aaa" }}>
           {pronouns}
         </span>
