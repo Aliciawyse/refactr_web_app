@@ -464,10 +464,10 @@ export default ({ data }) => (
                 </ul>
                   </div>
                   <br/>
-                  <div className="primary-btn">
-                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank"
+                  <div className="primary-btn disabled">
+                    <a className="btn-primary disabled" href=""
                     rel="noopener noreferrer">
-                    Buy Tickets!
+                    Sold Out
                     </a>
                   </div>
                 </div>
@@ -494,7 +494,7 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <a className="btn-primary" href="">
+                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
                     Sales start 5/24
                     </a>
                   </div>
