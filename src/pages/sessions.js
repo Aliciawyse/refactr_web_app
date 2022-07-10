@@ -107,8 +107,6 @@ export default ({ data }) => (
                   <li>|</li>
                   <li><a href="/workshops">Workshops</a></li>
                   <li>|</li>
-                  <li><a href="/careerfair">Career Fair</a></li>
-                  <li>|</li>
                   <li>Sessions</li>
                 </ol>
               </div>
@@ -146,19 +144,6 @@ export default ({ data }) => (
             {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
-              {/*<Link
-              id="test"
-              to="/sessions/#FrontendEngineering"
-              rel="noreferrer noopener"
-              className="test"
-              >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                      Front-End Engineering
-                  </div>
-                </li>
-              </Link>*/}
-
 
               <Link
               id="test"
@@ -175,18 +160,31 @@ export default ({ data }) => (
 
               <Link
               id="test"
-              to="/sessions/#UX&Accessibility"
+              to="/sessions/#FrontendEngineering"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab1" className="tab-btn">
                 <div>
-                        UX &amp; Accessibility
+                    Frontend &amp; Engineering
                   </div>
                 </li>
               </Link>
 
-              {/*<Link
+              <Link
+              id="test"
+              to="/sessions/#Community&Accessibility"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab1" className="tab-btn">
+                <div>
+                        Community &amp; Accessibility
+                  </div>
+                </li>
+              </Link>
+
+              <Link
               id="test"
               to="/sessions/#Cool$h!t"
               rel="noreferrer noopener"
@@ -197,10 +195,10 @@ export default ({ data }) => (
                       Cool $h!t
                   </div>
                 </li>
-              </Link>*/}
+              </Link>
 
               <Link
-                    to="/sessions/#Career/Leadership"
+                    to="/sessions/#Career&Leadership"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
@@ -210,16 +208,27 @@ export default ({ data }) => (
                 </li>
               </Link>
 
-              {/*<Link
-                    to="/sessions/#SocialImpact"
+              <Link
+                    to="/sessions/#Culture"
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab1" className="tab-btn">
                   <div>
-                      Social Impact
+                      Culture
                   </div>
                 </li>
-              </Link>*/}
+              </Link>
+
+              <Link
+                    to="/sessions/#Data"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab1" className="tab-btn">
+                  <div>
+                      Data
+                  </div>
+                </li>
+              </Link>
 
               <Link
                     to="/sessions/#Workshops"
