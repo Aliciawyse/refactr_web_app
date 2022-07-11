@@ -15,7 +15,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
         {/* A track title */}
         <div className="section-title mt40 mb30">
           <div className="title-text pl mt30 mb30">
-            <h2>{track}</h2>
+            <h2 className={"track-title-"+track.replace(/[\s&$!]+/g, "")}>{track}</h2>
           </div>
         </div>
 

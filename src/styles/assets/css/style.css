@@ -191,6 +191,43 @@ ul {
     width: 50px;
     background: #4125dd; }
 
+
+    h2.track-title-CareerLeadership:before{ 
+      background: #FCB400 !important;
+    }
+
+    h2.track-title-CommunityAccessibility:before{ 
+      background: #B2158B !important;
+    }
+
+    h2.track-title-Coolht:before{ 
+      background: #338A17 !important;
+    }
+
+    h2.track-title-Culture:before{ 
+      background: #BA1E45 !important;
+    }
+
+    h2.track-title-Data:before{ 
+      background: #6B1CB0 !important;
+    }
+
+    h2.track-title-FrontendEngineering:before{ 
+      background: #0B76B7 !important;
+    }
+
+    h2.track-title-Keynotes:before{ 
+      background: #444 !important;
+    }
+
+    h2.track-title-SoftwareEngineering:before{ 
+      background: #06A09B !important;
+    }
+
+    h2.track-title-Workshops:before{ 
+      background: #2750AE !important;
+    }
+
 /*price-slider*/
 .ui-widget.ui-widget-content {
   background: #b7b7b7 none repeat scroll 0 0;
@@ -1513,7 +1550,14 @@ a {
       font-size: 18px;
     }
 
-    .inner-content p, .inner-content span{
+    /*.inner-content p, .inner-content span{
+      color: #656565;
+      font-size: 18px;
+      margin: 20px 0 20px;
+      display: inline-block;
+    }*/
+
+    .inner-content span{
       color: #656565;
       font-size: 18px;
       margin: 20px 0 20px;
@@ -2634,6 +2678,7 @@ a {
 	line-height: 24px;
 	color: #12114a;
 	font-weight: 700;
+  
 	counter-increment: count;
     content: "0" counter(count);
     -webkit-transition: all 300ms ease;
@@ -2649,9 +2694,46 @@ a {
 
 .event-topics-tabs .tab-btns li.active-btn div,
 .event-topics-tabs .tab-btns li:hover div{
-	background-color:#4b1ece;
 	color: #ffffff;
 }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-career{
+    background-color:#FCB400;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-comm{
+    background-color:#B2158B;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-coolshit{
+    background-color:#338A17;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-culture{
+    background-color:#BA1E45;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-data{
+    background-color:#6B1CB0;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-frontend{
+    background-color:#0B76B7;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-keynotes{
+    background-color:#444;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-swe{
+    background-color:#06A09B;
+  }
+
+  .event-topics-tabs .tab-btns li:hover .track-bdr-workshops{
+    background-color:#2750AE;
+  }
+
+
 
 .event-topics-tabs .tabs-content{
 	position: relative;
@@ -2727,6 +2809,42 @@ a {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+.track-bdr-career{
+  border-left: 6px solid #FCB400;
+}
+
+.track-bdr-comm{
+  border-left: 6px solid #B2158B;
+}
+
+.track-bdr-coolshit{
+  border-left: 6px solid #338A17;
+}
+
+.track-bdr-culture{
+  border-left: 6px solid #BA1E45;
+}
+
+.track-bdr-data{
+  border-left: 6px solid #6B1CB0;
+}
+
+.track-bdr-frontend{
+  border-left: 6px solid #0B76B7;
+}
+
+.track-bdr-keynotes{
+  border-left: 6px solid #444;
+}
+
+.track-bdr-swe{
+  border-left: 6px solid #06A09B;
+}
+
+.track-bdr-workshops{
+  border-left: 6px solid #2750AE;
 }
 
 .anim-icons{

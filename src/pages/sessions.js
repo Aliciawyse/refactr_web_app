@@ -134,7 +134,7 @@ export default ({ data }) => (
             <span style={{ color: "#C41579", fontWeight: "bold" }}>
               New!
             </span>
-            &nbsp;&nbsp;Check out our sessions by track.
+            &nbsp;&nbsp;Check out this year's sessions by track.
           </p>
         </div>
 
@@ -144,16 +144,59 @@ export default ({ data }) => (
             {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
-
-              <Link
+            <Link
+                  to="/sessions/#Career&Leadership"
+                  rel="noreferrer noopener"
+                >
+              <li data-tab="#tab1" className="tab-btn">
+                <div className="track-bdr-career">
+                    Career &amp; Leadership
+                </div>
+              </li>
+            </Link>
+              
+            <Link
               id="test"
-              to="#SoftwareEngineering"
+              to="/sessions/#Community&Accessibility"
               rel="noreferrer noopener"
               className="test"
               >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                      Software Engineering
+                <li data-tab="#tab2" className="tab-btn">
+                <div className="track-bdr-comm">
+                        Community &amp; Accessibility
+                  </div>
+                </li>
+              </Link>
+
+              <Link
+                  to="/sessions/#Cool$h!t"
+                  rel="noreferrer noopener"
+                >
+              <li data-tab="#tab1" className="tab-btn">
+                <div className="track-bdr-coolshit">
+                    Cool Sh!t
+                </div>
+              </li>
+            </Link>
+
+              <Link
+                    to="/sessions/#Culture"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab3" className="tab-btn">
+                  <div className="track-bdr-culture">
+                  Culture
+                  </div>
+                </li>
+              </Link>
+            
+              <Link
+                    to="/sessions/#Data"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab4" className="tab-btn">
+                  <div className="track-bdr-data">
+                      Data
                   </div>
                 </li>
               </Link>
@@ -164,79 +207,9 @@ export default ({ data }) => (
               rel="noreferrer noopener"
               className="test"
               >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
+                <li data-tab="#tab5" className="tab-btn">
+                <div className="track-bdr-frontend">
                     Frontend &amp; Engineering
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-              id="test"
-              to="/sessions/#Community&Accessibility"
-              rel="noreferrer noopener"
-              className="test"
-              >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                        Community &amp; Accessibility
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-              id="test"
-              to="/sessions/#Cool$h!t"
-              rel="noreferrer noopener"
-              className="test"
-              >
-                <li data-tab="#tab1" className="tab-btn">
-                <div>
-                      Cool $h!t
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-                    to="/sessions/#Career&Leadership"
-                    rel="noreferrer noopener"
-                  >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                      Career &amp; Leadership
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-                    to="/sessions/#Culture"
-                    rel="noreferrer noopener"
-                  >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                      Culture
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-                    to="/sessions/#Data"
-                    rel="noreferrer noopener"
-                  >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                      Data
-                  </div>
-                </li>
-              </Link>
-
-              <Link
-                    to="/sessions/#Workshops"
-                    rel="noreferrer noopener"
-                  >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
-                  Workshops
                   </div>
                 </li>
               </Link>
@@ -245,12 +218,39 @@ export default ({ data }) => (
                     to="/sessions/#Keynotes"
                     rel="noreferrer noopener"
                   >
-                <li data-tab="#tab1" className="tab-btn">
-                  <div>
+                <li data-tab="#tab6" className="tab-btn">
+                  <div className="track-bdr-keynotes">
                   Keynotes
                   </div>
                 </li>
               </Link>
+            
+              <Link
+              id="test"
+              to="#SoftwareEngineering"
+              rel="noreferrer noopener"
+              className="test"
+              >
+                <li data-tab="#tab7" className="tab-btn">
+                <div className="track-bdr-swe">
+                      Software Engineering
+                  </div>
+                </li>
+              </Link>
+     
+
+              <Link
+                    to="/sessions/#Workshops"
+                    rel="noreferrer noopener"
+                  >
+                <li data-tab="#tab8" className="tab-btn">
+                  <div className="track-bdr-workshops">
+                  Workshops
+                  </div>
+                </li>
+              </Link>
+
+              
 
 
             </ul>
