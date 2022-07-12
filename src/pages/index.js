@@ -389,12 +389,12 @@ export default ({ data }) => (
 
                 <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
 
-                {/*<div className="col-lg-12">
-                  <a style={{textAlign: 'center', color: '#f20487', fontWeight: 'normal'}} href="/speakers">
+                <div className="col-lg-12">
+                  <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/speakers">
                     <h3>See All Confirmed Speakers</h3>
                   </a>
-                  <p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>
-            </div>*/}
+                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
+                </div>
                 {/* /row end*/}
               </div>
               {/* /container end*/}

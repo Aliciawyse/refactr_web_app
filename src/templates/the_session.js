@@ -132,6 +132,7 @@ export default ({ data }) => {
                     <a name="frontend-sessions" />
                     
                     <Link className={`pill `+`track-${data.airtable.data.Track}`.replace(/[\s&$!]+/g, "")}
+                      title={`See more ${data.airtable.data.Track} sessions`}
                       to={`/sessions/#${data.airtable.data.Track}`.replace(/\s+/g, "")}>
                       {data.airtable.data.Track}
                     </Link>
