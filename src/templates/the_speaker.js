@@ -102,6 +102,8 @@ export default ({ data }) => {
                       <a href="/">Home</a>
                     </li>
                     <li>|</li>
+                    <li><a href="/speakers">Speakers</a></li>
+                    <li>|</li>
                     <li>Speaker Details</li>
                   </ol>
                 </div>
@@ -135,11 +137,11 @@ export default ({ data }) => {
               <div className="col-lg-7 col-md-12">
                 <div className="inner-content">
                   <h1>{data.airtable.data.speaker_name}</h1>
-                  <span>{data.airtable.data.pronouns}&nbsp; | &nbsp;</span>
-                  <p>
+                  <span>({data.airtable.data.pronouns}) &nbsp;
+                  
                     {data.airtable.data.role},{" "}
                     {data.airtable.data.company}&nbsp;
-                  </p>
+                  </span>
                   
                   <br />
 
@@ -159,9 +161,10 @@ export default ({ data }) => {
                     </ul>
                   </div>
                   <br />
-                  {/*<span style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
+                  <h5 style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
                     Sessions&nbsp;
-                    <br />
+                  </h5>
+                  <span>
                       <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
                     <br />
                   </span>
@@ -170,7 +173,7 @@ export default ({ data }) => {
                     <br />
                       Emcee
                     <br />
-                  </span>*/}
+                  </span>
                 </div>
               </div>
               {/* /.col end*/}
@@ -208,6 +211,7 @@ export const query = graphql`
           data {
             title
             anchor_truncated
+            Track
           }
         }
         linkedIn

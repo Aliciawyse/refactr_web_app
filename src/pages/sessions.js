@@ -102,8 +102,8 @@ export default ({ data }) => (
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>|</li>
-                  <li><a href="/schedule">Schedule</a></li>
+                  {/*<li>|</li>
+                  <li><a href="/schedule">Schedule</a></li>*/}
                   <li>|</li>
                   <li><a href="/workshops">Workshops</a></li>
                   <li>|</li>
@@ -156,7 +156,6 @@ export default ({ data }) => (
             </Link>
               
             <Link
-              id="test"
               to="/sessions/#Community&Accessibility"
               rel="noreferrer noopener"
               className="test"
@@ -202,7 +201,6 @@ export default ({ data }) => (
               </Link>
 
               <Link
-              id="test"
               to="/sessions/#FrontendEngineering"
               rel="noreferrer noopener"
               className="test"

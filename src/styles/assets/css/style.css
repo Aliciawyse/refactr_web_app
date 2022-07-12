@@ -228,6 +228,62 @@ ul {
       background: #2750AE !important;
     }
 
+
+.pill {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.3em 1em;
+  margin: 0.25em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  background: #4125dd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pill:hover{
+  color: #fff;
+}
+    
+    .track-CareerLeadership{ 
+      background: #FCB400 !important;
+    }
+
+    .track-CommunityAccessibility{ 
+      background: #B2158B !important;
+    }
+
+    .track-Coolht{ 
+      background: #338A17 !important;
+    }
+
+    .track-Culture{ 
+      background: #BA1E45 !important;
+    }
+
+    .track-Data{ 
+      background: #6B1CB0 !important;
+    }
+
+    .track-FrontendEngineering{ 
+      background: #0B76B7 !important;
+    }
+
+    .track-Keynotes{ 
+      background: #444 !important;
+    }
+
+    .track-SoftwareEngineering{ 
+      background: #06A09B !important;
+    }
+
+    .track-Workshops{ 
+      background: #2750AE !important;
+    }
+
+
+
 /*price-slider*/
 .ui-widget.ui-widget-content {
   background: #b7b7b7 none repeat scroll 0 0;

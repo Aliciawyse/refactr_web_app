@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/footer";
 import NavigationBar from "../components/NavigationBar";
 import { graphql } from "gatsby";
+import { Link } from "gatsby";
 import { SessionSpeakerList } from "../components/SessionSpeakerList";
 import { Helmet } from "react-helmet";
 
@@ -103,17 +104,15 @@ export default ({ data }) => {
                   <div className="section-title text-center">
                     <h2>Events</h2>
                   </div>
-                  {/*<ol className="breadcrumb">
+                  <ol className="breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
                     <li>|</li>
-                    <li>
-                      <a href="/workshops">Workshops</a>
-                    </li>
+                    <li><a href="/sessions">Sessions</a></li>
                     <li>|</li>
-                    <li>Sessions</li>
-                  </ol>*/}
+                    <li>Session Details</li>
+                  </ol>
                 </div>
               </div>
               {/* /col*/}
@@ -131,6 +130,12 @@ export default ({ data }) => {
                 <div className="inner-content">
                   <div>
                     <a name="frontend-sessions" />
+                    
+                    <Link className={`pill `+`track-${data.airtable.data.Track}`.replace(/[\s&$!]+/g, "")}
+                      to={`/sessions/#${data.airtable.data.Track}`.replace(/\s+/g, "")}>
+                      {data.airtable.data.Track}
+                    </Link>
+
                     <p className="session-title">
                       <span>{data.airtable.data.title}</span>
                     </p>
@@ -175,6 +180,7 @@ export const query = graphql`
       data {
         Abstract
         speaker_display_name
+        Track
         title
         Day
         date_friendly
