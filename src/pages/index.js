@@ -746,7 +746,7 @@ export const speakerPageQuery = graphql`
     }
 
     currentSponsors: allAirtable(
-      filter: { table: { eq: "Sponsors" } }
+      filter: { table: { eq: "Sponsors" }, data: { featureOnIndex: { eq: true } } }
       ) {
       edges {
         node {

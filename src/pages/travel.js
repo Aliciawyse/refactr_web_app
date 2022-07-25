@@ -61,7 +61,7 @@ export default ({ data }) => (
                 </div>
                 <h4>The Loundermilk Conference Center</h4>
                 {/* <img class="img-fluid" src="/img/others/loudermilk.png" alt="Loudermilk"> </p> */}
-                40 Courtland Street North East Atlanta, Georgia 30303 Located in
+                <p>40 Courtland Street North East Atlanta, Georgia 30303 Located in
                 the heart of downtown Atlanta, Georgia, The Loudermilk Center is
                 conveniently accessed from all points in Metro Atlanta via I-75
                 and I-20. Loudermilk Center is within close proximity to the
@@ -73,22 +73,23 @@ export default ({ data }) => (
                 Atlanta's rapid rail and bus system is walking distance away.
                 Hartsfield International Airport is less than 15 miles from The
                 Loudermilk Center.
-                <p />
+                </p>
                 <p>
                   <strong>PARKING</strong>
                 </p>
+                <p>
                 REFACTR.TECH Attendees should park in the parking garage connected
                 to the Loudermilk Conference Center. Please bring your parking pass
                 with you to have it validated for FREE at the Help Desk on the first
                 floor. If this area fills up feel free to park at the many nearby
                 public parking options.
-                <p />
+                </p>
               </div>
             </div>
           </div>
 
 
-          <div className="row">
+          {/*<div className="row">
             <div className="col-lg-5 xs-mb40">
               <img
                 className="img-fluid mt30"
@@ -111,11 +112,10 @@ export default ({ data }) => (
                    rel="noopener noreferrer">Westin Peachtree Plaza Hotel</a> &nbsp;
                 is located at 210 Peachtree St. NW, Atlanta,
                 GA 30303. The special conference rate is $185.00/night + taxes and must be
-                booked by March 12, 2020.*/}
-                {/*<a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>*/}
+                booked by March 12, 2020.
+                <a href="https://book.passkey.com/event/50009558/owner/324/home">Book your room here!</a>
               </div>
             </div>
-            {/* /col end*/}
           </div>
           {/* /row end*/}
 
@@ -130,13 +130,19 @@ export default ({ data }) => (
           </div>
           <div className="col-lg-7">
             <div className="inner-content">
-              <h4>OFFICIAL CONFERENCE HOTELS - SHERATON ATLANTA </h4>
-              REFACTR.TECH has an additional hotel block at &nbsp;
-              <a href="https://www.marriott.com/hotels/travel/atlxs-sheraton-atlanta-hotel/"
-                 target="_blank"
-                 rel="noopener noreferrer">
-              Sheraton Atlanta</a> located
-              in Downtown Atlanta, only 3 blocks from the Loudermilk Conference Center.
+              <h4>OFFICIAL CONFERENCE HOTEL - SHERATON ATLANTA </h4>
+              <p>
+              The conference hotel is <a href="https://book.passkey.com/event/50358524/owner/326/home"
+              target="_blank"
+              rel="noopener noreferrer">Sheraton Atlanta.</a> It’s a short, three-block walk to the Loudermilk Conference Center and features spacious guest rooms, complimentary Wi-Fi, 32-inch LCD TVs, an indoor heated pool with retractable arched glass roof and a well-equipped fitness center. The Sheraton Atlanta also includes dining options like the top-rated Fandangles. Additionally, the hotel features a full-service business center, wireless Internet access and lounge.
+              </p>
+
+              <div className="primary-btn">
+                <a className="btn-primary " href="https://book.passkey.com/event/50358524/owner/326/home">
+                  Book here&nbsp;&nbsp;<i className="fa fa-external-link"/>
+                </a>
+              </div>
+
               {/*The &nbsp;
               <a href="https://www.marriott.com/hotels/travel/atlxs-sheraton-atlanta-hotel/"
                  target="_blank"
