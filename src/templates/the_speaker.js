@@ -160,20 +160,22 @@ export default ({ data }) => {
                       </li>
                     </ul>
                   </div>
-                  <br />
-                  <h5 style={{display: data.airtable.data.company =='Activvely' ? 'none':'block' }}>
-                    Sessions&nbsp;
-                  </h5>
-                  <span>
-                      <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
                     <br />
-                  </span>
-                  <span style={{display: data.airtable.data.company =='Activvely' ? 'block':'none' }}>
-                    <strong>Role&nbsp;</strong>
-                    <br />
-                      Emcee
-                    <br />
-                  </span>
+                    <h5 style={{display: data.airtable.data.company =='CHOZEN MEDIA' ? 'none':'block' }}>
+                      Sessions&nbsp;
+                    </h5>
+                    <span>
+                        <SpeakerSessionList sessions={data.airtable.data.Sessions}/>
+                      <br />
+                    </span>
+                    <span style={{display: data.airtable.data.company =='CHOZEN MEDIA' ? 'block':'none' }}>
+                      <strong>Role&nbsp;</strong>
+                      <br />
+                        Emcee
+                      <br />
+                    </span>
+
+
                 </div>
               </div>
               {/* /.col end*/}

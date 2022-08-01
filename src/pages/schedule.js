@@ -2,6 +2,13 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import Footer from "../components/footer";
 import { Helmet } from "react-helmet";
+import { ScheduleCardList } from "../components/ScheduleCardList";
+import { graphql } from "gatsby";
+import { Link } from "gatsby";
+import "../../src/styles/assets/css/style.css";
+import "../../src/styles/assets/css/style2.css";
+import "../../src/styles/assets/css/style.css";
+import "../../src/styles/assets/css/responsive.css";
 
 
 export default ({ data }) => (
@@ -81,22 +88,10 @@ export default ({ data }) => (
                 aria-controls="home"
                 aria-selected="true"
               >
-                August 14<br/><span style={{fontSize:"12pt"}}>Workshops</span>
+                September 14<br/><span style={{fontSize:"12pt"}}>Workshops</span>
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                id="profile-tab"
-                data-toggle="tab"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-              >
-                August 17<br/><span style={{fontSize:"12pt"}}>Career Fair</span>
-              </a>
-            </li>
+            
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -107,7 +102,7 @@ export default ({ data }) => (
                 aria-controls="contact"
                 aria-selected="false"
               >
-                August 18<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
+                September 15<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
               </a>
             </li>
             <li className="nav-item d-none d-lg-block">
@@ -120,22 +115,10 @@ export default ({ data }) => (
                 aria-controls="sunday"
                 aria-selected="false"
               >
-                August 19<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
+                September 16<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
               </a>
             </li>
-            <li className="nav-item mr-0 d-none d-lg-block">
-              <a
-                className="nav-link"
-                id="monday-tab"
-                data-toggle="tab"
-                href="#monday"
-                role="tab"
-                aria-controls="monday"
-                aria-selected="false"
-              >
-                August 20<br/><span style={{fontSize:"12pt"}}>Conference Day 3</span>
-              </a>
-            </li>
+            
           </ul>
           <div className="tab-content" id="myTabContent">
             <div
@@ -343,1000 +326,362 @@ export default ({ data }) => (
               </div>
             </div>
             <div
-              className="tab-pane fade"
+              className="tab-pane fade schedule"
               id="contact"
               role="tabpanel"
               aria-labelledby="contact-tab"
             >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Speakers</th>
-                      <th scope="col">Session</th>
-                      <th scope="col">Venue Platform</th>
-                      <th scope="col">Details</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  <tr className="inner-box">
-                      
-                  <td>
-                    <div className="event-img">
-                      <img src="/img/team/organizers/erica.jpg" alt />
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-wrap">
-                      <h3>
-                        <a href="#">Welcome
-                        </a>
-                      </h3>
-                      <div className="meta">
-                        <div className="organizers">
-                          <a href="/about">Erica Stanley, Organizer</a>
-                        </div>
-                        <div className="categories">
-                          <a href="/">Conference</a>
-                        </div>
-                        <div className="time">
-                          <span>12:05 PM ET - 12:15 PM ET 0h 10'</span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />
-                    </div>
-                  </td>
-                  <td>
-                    
-                  </td>
-                </tr>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/5a1d4e007b0c0e5ebfdf5fd1218c3784/70ff1a61" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Mentorship--2B-Sponsorship">Mentorship + Sponsorship
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/lara-hogan
-                              ">Lara Hogan, </a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#Keynotes">Keynotes</a>
-                            </div>
-                            <div className="time">
-                              <span>12:15 PM ET - 12:43 PM ET 0h 28'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-img">
-                          <img src="/img/learn-tv-square.png" alt />
-                          <img src="/img/zoom-logo.svg" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Mentorship--2B-Sponsorship">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/5a1d4e007b0c0e5ebfdf5fd1218c3784/70ff1a61" alt />
-                          <img src="/img/team/organizers/erica.jpg" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="#">Live Q &amp; A
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/lara-hogan">Lara Hogan,&nbsp;</a>
-                              <a href="/about">Erica Stanley</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#Keynotes">Keynotes</a>
-                            </div>
-                            <div className="time">
-                              <span>12:43 PM ET - 1:03 PM ET 0h 20'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-img">
-                          <img src="/img/zoom-logo.svg" alt />
-                        </div>
-                      </td>
-                      <td>
-
-                      </td>
-                    </tr>
 
 
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/952bd2370a959fb36c4b4021eb5d0668/43c3d4f6" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Microcontrollers--28MCUs-29-2C-Cloud-2C-and-a-Chance-of-AI">Microcontrollers (MCUs), Cloud, and...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/tara-walker">Tara Walker</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
-                            </div>
-                            <div className="time">
-                              <span>01:04 PM ET - 01:42 PM ET 0h 38'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/learn-tv-square.png" alt />
-                      <img src="/img/zoom-logo.svg" alt />                    </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Microcontrollers--28MCUs-29-2C-Cloud-2C-and-a-Chance-of-AI">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/dc24ebf836814dd73b319f4311a98931/381d7de5" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Building-Open-Source-Communities
-                            ">Building Open Source Communities
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/tierney-cyren
-                              ">Tierney Cyren</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
-                            </div>
-                            <div className="time">
-                              <span>02:00 PM ET - 02:27 PM ET 0h 27'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/learn-tv-square.png" alt />
-                      <img src="/img/zoom-logo.svg" alt />                    </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Building-Open-Source-Communities">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/2d897a3fe7b2165d0fe5dc15386ae6f6/6dbdfac5" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Everything-counts-21-Use-your-superpowers-for-good-21
-                            ">Everything counts! Use your super...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/diana-rodriguez
-                              ">Diana Rodriguez</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
-                            </div>
-                            <div className="time">
-                              <span>02:45 PM ET - 03:22 PM ET 0h 37'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/learn-tv-square.png" alt />
-                      <img src="/img/zoom-logo.svg" alt />                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Everything-counts-21-Use-your-superpowers-for-good-21">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
+            <table>
+            <tbody>
+		<tr>
+			<th>08:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'8:00 AM'}/>
+		</tr>
+    <tr>
+			<th>08:15</th>
+		</tr>
+		<tr>
+			<th>08:30</th>
+		</tr>
+    <tr>
+			<th>08:45</th>
+		</tr>
+		<tr>
+			<th>09:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'9:00 AM'}/>
+		</tr>
+    <tr>
+			<th>09:15</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'9:15 AM'}/>
+		</tr>
+		<tr>
+			<th>09:30</th>
+		</tr>
+    <tr>
+			<th>09:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'9:45 AM'}/>
+		</tr>
+		<tr>
+			<th>10:00</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'10:00 AM'}/>
+		</tr>
+    <tr>
+			<th>10:15</th>
+		</tr>
+		<tr>
+			<th>10:30</th>
+		</tr>
+    <tr>
+			<th>10:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'10:45 AM'}/>
+		</tr>
+		<tr>
+			<th>11:00</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'11:00 AM'}/>
+		</tr>
+		<tr>
+			<th>11:15</th>
+		</tr>
+		<tr>
+			<th>11:30</th>
+		</tr>
+    <tr>
+			<th>11:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'11:45 AM'}/>
+		</tr>
+		<tr>
+			<th>12:00</th>
+		</tr>
+		<tr>
+			<th>12:15</th>
+		</tr>
+		<tr>
+			<th>12:30</th>
+		</tr>
+    <tr>
+			<th>12:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'12:45 PM'}/>
+		</tr>
+		<tr>
+			<th>01:00</th>
+		</tr>
+		<tr>
+			<th>01:15</th>
+		</tr>
+		<tr>
+			<th>01:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'1:30 PM'}/>
+		</tr>
+    <tr>
+			<th>01:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'1:45 PM'}/>
+		</tr>
+		<tr>
+			<th>02:00</th>
+		</tr>
+		<tr>
+			<th>02:15</th>
+		</tr>
+		<tr>
+			<th>02:30</th>
+      
+		</tr>
+    <tr>
+			<th>02:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'2:45 PM'}/>
+		</tr>
+		<tr>
+			<th>03:00</th>
+		</tr>
+		<tr>
+			<th>03:15</th>
+      
+		</tr>
+		<tr>
+			<th>03:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'3:30 PM'}/>
+		</tr>
+    <tr>
+			<th>03:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'3:45 PM'}/>
+		</tr>
+		<tr>
+			<th>04:00</th>
+		</tr>
+		<tr>
+			<th>04:15</th>
+      
+		</tr>
+		<tr>
+			<th>04:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'4:30 PM'}/>
+		</tr>
+    <tr>
+			<th>04:45</th>
+		</tr>
+		<tr>
+			<th>05:00</th>
+		</tr>
+		<tr>
+			<th>05:15</th>
+		</tr>
+		<tr>
+			<th>05:30</th>
+		</tr>
+    <tr>
+			<th>05:45</th>
+		</tr>
+		<tr>
+			<th>06:00</th>
+		</tr>
+		<tr>
+			<th>06:15</th>
+		</tr>
+		<tr>
+			<th>06:30</th>
+		</tr>
+    <tr>
+			<th>06:45</th>
+		</tr>
+		<tr>
+			<th>07:00</th>
+		</tr>
+		
+    </tbody>
+</table>
 
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/6d4d1f9cc6b19546eee73a7b3d0c86ab/0c409a52" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Effective-Testing-Approaches-for-your-Application
-                            ">Effective Testing Approaches for...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/cecelia-martinez
-                              ">Cecelia Martinez</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
-                            </div>
-                            <div className="time">
-                              <span>03:45 PM ET - 04:15 PM 0h 30'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                        <img src="/img/learn-tv-square.png" alt />
-                        <img src="/img/zoom-logo.svg" alt />                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Effective-Testing-Approaches-for-your-Application">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/0d61df0497a4bcf902df0890a8bb7df8/1526e86a" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Where-to-Start-with-AWS-as-a-Developer
-                            ">Where to Start with AWS...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/sam-julien
-                              ">Sam Julien</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#SoftwareEngineering">Software Engineering</a>
-                            </div>
-                            <div className="time">
-                              <span>04:30 PM ET- 05:09 PM ET 0h 39'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                        <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Where-to-Start-with-AWS-as-a-Developer">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              
             </div>
+
+
+
             <div
-              className="tab-pane fade"
+              className="tab-pane fade schedule"
               id="sunday"
               role="tabpanel"
               aria-labelledby="sunday-tab"
             >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Speakers</th>
-                      <th scope="col">Session</th>
-                      <th scope="col">Venue Platform</th>
-                      <th scope="col">Details</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-                  <tr className="inner-box">
-                      
-                  <td>
-                    <div className="event-img">
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-wrap">
-                      <h3>
-                        <a href="#">Welcome
-                        </a>
-                      </h3>
-                      <div className="meta">
-                        <div className="organizers">
-                          <a href="/about">REFACTR.TECH Organizers</a>
-                        </div>
-                        <div className="categories">
-                          <a href="/">Conference</a>
-                        </div>
-                        <div className="time">
-                          <span>12:05 PM ET - 12:10 PM ET 0h 05'</span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />
-                    </div>
-                  </td>
-                  <td>
-                    
-                  </td>
-                </tr>
-
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/56dd1a4c2819a38dcd76d41017bfbf43/83091dbd" alt />&nbsp;
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/dc8321a7e0fc8d0f47612b43f26b0b7b/9842c8da" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Moving-Beyond-Performative-Racial-Equity-in-Tech
-                            ">Moving Beyond Performative Racial...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/albrey-bristo-brown">Albrey Bristo-Brown</a>&nbsp;<a href="/speakers/nicole-sanchez">Nicole Sanchez</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Keynotes">Keynotes</a>
-                            </div>
-                            <div className="time">
-                              <span>12:10 PM ET - 12:54P PM ET 0h 44'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                        <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Moving-Beyond-Performative-Racial-Equity-in-Tech">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                     
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/5d83a5c0c2719fe564d86a59305201d2/7a15dea4" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/FAULT-TEXT-3A-The-Adversities-in-Automated-Alternative-Text
-                            ">FAULT TEXT: The Adversities in Auto...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/henri-helvetica
-                              ">Henri Helvetica</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
-                            </div>
-                            <div className="time">
-                              <span>01:15 PM ET - 01:47 PM 0h 32'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/FAULT-TEXT-3A-The-Adversities-in-Automated-Alternative-Text">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/1df8442dc1e4260de06c4c8b445dba71/d1e75b49" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Accessibility-isn-27t-hard-3B-getting-people-to-see-it-27s-easy-ca
-                            ">Accessibility isn't hard; getting peo...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/sarrah-vesselov
-                              ">Sarrah Vesselov</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
-                            </div>
-                            <div className="time">
-                              <span>02:00 PM ET - 02:29 PM ET 0h 29'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Accessibility-isn-27t-hard-3B-getting-people-to-see-it-27s-easy-ca">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/b8be86649fa5804c8d9cef66ff02b7bd/b60681ce" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/ARIA-3A-A-Grande-Method-Of-Accessible-Markup
-                            ">ARIA: A Grande Method Of Accessible...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakrs/chris-demars
-                              ">Chris DeMars</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
-                            </div>
-                            <div className="time">
-                              <span>02:45 PM ET - 03:20 PM ET 0h 35'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/ARIA-3A-A-Grande-Method-Of-Accessible-Markup">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                     
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/4a0564bb48989bc0e87c32fedad9efdd/94000046" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Accessible-Components-
-                            ">Accessible Components</a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/homer-gaines
-                              ">Homer Gaines</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
-                            </div>
-                            <div className="time">
-                              <span>03:45 PM ET - 04:17 PM ET 0h 32'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Accessible-Components-">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/32a6ef9e5d3d6b8ca59ab252ae543e6c/d47433d3" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Shapeshifters-3A-The--231-UX-Mistake-You-Don-27t-Know-You-27re-Makin">
-                            Shapeshifters: The #1 UX Mistake Yo...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/sophia-prater
-                              ">Sophia Prater</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#UX&Accessibility">UX &amp; Accessibility</a>
-                            </div>
-                            <div className="time">
-                              <span>04:30 PM ET - 05:06 PM ET 0h 36'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Shapeshifters-3A-The--231-UX-Mistake-You-Don-27t-Know-You-27re-Makin">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              
+            
+            <table>
+		<tr>
+			<th>08:00</th>
+		</tr>
+    <tr>
+			<th>08:15</th>
+		</tr>
+		<tr>
+			<th>08:30</th>
+		</tr>
+    <tr>
+			<th>08:45</th>
+		</tr>
+		<tr>
+			<th>09:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:00 AM'}/>
+		</tr>
+    <tr>
+			<th>09:15</th>
+		</tr>
+		<tr>
+			<th>09:30</th>
+		</tr>
+    <tr>
+			<th>09:45</th>
+		</tr>
+		<tr>
+			<th>10:00</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'10:00 AM'}/>
+		</tr>
+    <tr>
+			<th>10:15</th>
+		</tr>
+		<tr>
+			<th>10:30</th>
+		</tr>
+    <tr>
+			<th>10:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'10:45 AM'}/>
+		</tr>
+		<tr>
+			<th>11:00</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:00 AM'}/>
+		</tr>
+		<tr>
+			<th>11:15</th>
+		</tr>
+		<tr>
+			<th>11:30</th>
+		</tr>
+    <tr>
+			<th>11:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:45 AM'}/>
+		</tr>
+		<tr>
+			<th>12:00</th>
+		</tr>
+		<tr>
+			<th>12:15</th>
+		</tr>
+		<tr>
+			<th>12:30</th>
+		</tr>
+    <tr>
+			<th>12:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:45 AM'}/>
+		</tr>
+		<tr>
+			<th>01:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'1:00 PM'}/>
+		</tr>
+		<tr>
+			<th>01:15</th>
+		</tr>
+		<tr>
+			<th>01:30</th>
+		</tr>
+    <tr>
+			<th>01:45</th>
+		</tr>
+		<tr>
+			<th>02:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'2:00 PM'}/>
+		</tr>
+		<tr>
+			<th>02:15</th>
+		</tr>
+		<tr>
+			<th>02:30</th>
+		</tr>
+    <tr>
+			<th>02:45</th>
+		</tr>
+		<tr>
+			<th>03:00</th>
+		</tr>
+		<tr>
+			<th>03:15</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'3:15 PM'}/>
+		</tr>
+		<tr>
+			<th>03:30</th>
+		</tr>
+    <tr>
+			<th>03:45</th>
+		</tr>
+		<tr>
+			<th>04:00</th>
+		</tr>
+		<tr>
+			<th>04:15</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:15 PM'}/>
+		</tr>
+		<tr>
+			<th>04:30</th>
+		</tr>
+    <tr>
+			<th>04:45</th>
+		</tr>
+		<tr>
+			<th>05:00</th>
+		</tr>
+		<tr>
+			<th>05:15</th>
+		</tr>
+		<tr>
+			<th>05:30</th>
+		</tr>
+    <tr>
+			<th>05:45</th>
+		</tr>
+		<tr>
+			<th>06:00</th>
+		</tr>
+		<tr>
+			<th>06:15</th>
+		</tr>
+		<tr>
+			<th>06:30</th>
+		</tr>
+    <tr>
+			<th>06:45</th>
+		</tr>
+		<tr>
+			<th>07:00</th>
+		</tr>
+		<tr>
+			<th>07:15</th>
+		</tr>
+		<tr>
+			<th>07:30</th>
+		</tr>
+    <tr>
+			<th>07:45</th>
+		</tr>
+		<tr>
+			<th>08:00</th>
+		</tr>
+		<tr>
+			<th>08:15</th>
+		</tr>
+		<tr>
+			<th>08:30</th>
+		</tr>
+    <tr>
+			<th>08:45</th>
+		</tr>
+		<tr>
+			<th>09:00</th>
+		</tr>
+</table>
+              
+            
             </div>
-            <div
-              className="tab-pane fade"
-              id="monday"
-              role="tabpanel"
-              aria-labelledby="monday-tab"
-            >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Speakers</th>
-                      <th scope="col">Session</th>
-                      <th scope="col">Venue Platform</th>
-                      <th scope="col">Details</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-
-                  <tr className="inner-box">
-                      
-                  <td>
-                    <div className="event-img">
-                      <img src="/img/team/organizers/beth.jpg" alt />
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-wrap">
-                      <h3>
-                        <a href="#">Welcome
-                        </a>
-                      </h3>
-                      <div className="meta">
-                        <div className="organizers">
-                          <a href="/about">Beth Laing, Organizer</a>
-                        </div>
-                        <div className="categories">
-                          <a href="/">Conference</a>
-                        </div>
-                        <div className="time">
-                          <span>12:05 PM ET - 12:10 PM ET 0h 05'</span>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />
-                    </div>
-                  </td>
-                  <td>
-                    
-                  </td>
-                </tr>
-
-                  <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="/img/speakers/chloe_condon.jpeg" alt />
-                          <img src="/img/team/organizers/beth.jpg" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="#">Special Guest Q &amp; A
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="https://2019.refactr.tech/speakers/chloe-condon">Chloe Condon&nbsp;</a>
-                              <a href="/about">Beth Laing</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#Keynotes">Keynotes</a>
-                            </div>
-                            <div className="time">
-                              <span>12:10 PM ET - 12:20 PM ET 0h 10'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-img">
-                          <img src="/img/zoom-logo.svg" alt />
-                        </div>
-                      </td>
-                      <td>
-
-                      </td>
-                    </tr>
-
-
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/24726fccc9630c58d72dfe3a49c1a77f/54c16104" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Gatekeepers-and-Difficulty-Anchors
-                            ">Gatekeepers and Difficulty...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/mekka-okereke
-                              ">Mekka Okereke</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
-                            </div>
-                            <div className="time">
-                              <span>12:20 PM ET - 12:55 PM ET 0h 35'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Gatekeepers-and-Difficulty-Anchors">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/a2dd8b8c4a7516a3edde945b2cac16a6/146d0710" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/7 Secrets of Highly Successful Developers
-
-                            ">7 Secrets of Highly Succ...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/kim-maida">Kim Maida</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
-                            </div>
-                            <div className="time">
-                              <span>01:10 PM ET - 01:40 PM 0h 30'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                        <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/7 Secrets of Highly Successful Developers">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/1230a5cd628aeb1aea4b4208b94f3df0/9dd71e1b" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Taking-charge-3A-how-to-own-your-career-path
-                            ">Taking charge: how to own...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/katie-wilde
-                              ">Katie Wilde</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
-                            </div>
-                            <div className="time">
-                              <span>01:55 PM ET - 02:26 PM ET 0h 31'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Taking-charge-3A-how-to-own-your-career-path">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/7e24e5a8df4e01f6382ef3da99323bcd/f20d9319" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/The-Interview-3A-What-History-and-Science-Can-Teach-Us-About-H
-                            ">The Interview: What History...
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/jason-wong
-                              ">Jason Wong</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
-                            </div>
-                            <div className="time">
-                              <span>02:40 PM ET - 03:17 PM ET 0h 37'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/The-Interview-3A-What-History-and-Science-Can-Teach-Us-About-H">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/f6ac48db29d8badd3b129712366eb357/9b2aa22b" alt />
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/bc98eaf041a8be85c2f19b85c2c5c833/0219a48e" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Keeping-up-with-the-Caldwells
-                            ">Keeping up with the Caldwells
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/nick-caldwell">Nick Caldwell</a>&nbsp;
-                              <a href="/speakers/tia-caldwell">Tia Caldwell</a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Career/Leadership">Career &amp; Leadership</a>
-                            </div>
-                            <div className="time">
-                              <span>03:40 PM ET - 04:14 PM 0h 34'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Keeping-up-with-the-Caldwells">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="https://dl.airtable.com/.attachmentThumbnails/ac71fa194dd192257f377543a6276c48/6ba48ae4" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Algorithmic-Bias-3A-Data-as-a-Weapon
-
-                            ">Algorithmic Bias: Data as a Weapon
-                            </a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/ayodele-odubela
-                              ">Ayodele Odubela
-                              </a>
-                            </div>
-                            <div className="categories">
-                            <a href="/sessions/#Keynotes">Keynotes</a>
-                            </div>
-                            <div className="time">
-                              <span>04:26 PM ET - 4:54 PM 0h 28'</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <img src="/img/zoom-logo.svg" alt />                      
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Algorithmic-Bias-3A-Data-as-a-Weapon">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-
-                  </tbody>
-                </table>
-              </div>
+            
+          
             </div>
-          </div>
           
         </div>
         {/* /col end*/}
@@ -1354,3 +699,42 @@ export default ({ data }) => (
     <Footer />
   </div>
 );
+
+export const all_sessions = graphql`
+  {
+    allAirtable(
+      filter: { table: { eq: "FullSchedule" } }
+      sort: { fields: data___rowspan }
+      ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            session__title
+            session__track
+            venue_room
+            Day
+            begins
+            ends
+            Duration
+            speaker__name
+            speaker_anchor
+            anchor_truncated
+            colspan
+            rowspan
+            speaker_meta_image {
+              thumbnails {
+                large {
+                  url
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+`;

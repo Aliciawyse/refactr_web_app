@@ -33,7 +33,7 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
                   <p>
                     <a className="detail-view">
                       {" "}
-                      {/*{session.data.Day} {session.data.date_friendly}{" ET "}({ (session.data.Duration/ 60) > 59? (session.data.Duration/ 3600) : (session.data.Duration/ 60) } {session.data.Duration < 3600 ? "min" : "hrs"})*/}
+                      {session.data.date_friendly} {session.data.end_date_friendly}
                     </a>
                   </p>
 

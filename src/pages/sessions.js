@@ -149,7 +149,7 @@ export default ({ data }) => (
                   rel="noreferrer noopener"
                 >
               <li data-tab="#tab1" className="tab-btn">
-                <div className="track-bdr-career">
+                <div className="track-bdr-CareerLeadership">
                     Career &amp; Leadership
                 </div>
               </li>
@@ -161,7 +161,7 @@ export default ({ data }) => (
               className="test"
               >
                 <li data-tab="#tab2" className="tab-btn">
-                <div className="track-bdr-comm">
+                <div className="track-bdr-CommunityAccessibility">
                         Community &amp; Accessibility
                   </div>
                 </li>
@@ -172,7 +172,7 @@ export default ({ data }) => (
                   rel="noreferrer noopener"
                 >
               <li data-tab="#tab1" className="tab-btn">
-                <div className="track-bdr-coolshit">
+                <div className="track-bdr-Coolht">
                     Cool Sh!t
                 </div>
               </li>
@@ -183,7 +183,7 @@ export default ({ data }) => (
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab3" className="tab-btn">
-                  <div className="track-bdr-culture">
+                  <div className="track-bdr-Culture">
                   Culture
                   </div>
                 </li>
@@ -194,7 +194,7 @@ export default ({ data }) => (
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab4" className="tab-btn">
-                  <div className="track-bdr-data">
+                  <div className="track-bdr-Data">
                       Data
                   </div>
                 </li>
@@ -206,7 +206,7 @@ export default ({ data }) => (
               className="test"
               >
                 <li data-tab="#tab5" className="tab-btn">
-                <div className="track-bdr-frontend">
+                <div className="track-bdr-FrontendEngineering">
                     Frontend &amp; Engineering
                   </div>
                 </li>
@@ -217,7 +217,7 @@ export default ({ data }) => (
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab6" className="tab-btn">
-                  <div className="track-bdr-keynotes">
+                  <div className="track-bdr-Keynotes">
                   Keynotes
                   </div>
                 </li>
@@ -230,7 +230,7 @@ export default ({ data }) => (
               className="test"
               >
                 <li data-tab="#tab7" className="tab-btn">
-                <div className="track-bdr-swe">
+                <div className="track-bdr-SoftwareEngineering">
                       Software Engineering
                   </div>
                 </li>
@@ -242,7 +242,7 @@ export default ({ data }) => (
                     rel="noreferrer noopener"
                   >
                 <li data-tab="#tab8" className="tab-btn">
-                  <div className="track-bdr-workshops">
+                  <div className="track-bdr-Workshops">
                   Workshops
                   </div>
                 </li>
@@ -291,6 +291,8 @@ export const all_sessions = graphql`
             title
             speaker_url
             date_friendly
+            end_date_friendly
+            ends
             Day
             Duration
             speaker_pic {

@@ -240,6 +240,11 @@ ul {
   background: #4125dd;
   color: #fff;
   cursor: pointer;
+
+  display: inline;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .pill:hover{
@@ -1267,7 +1272,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   border-bottom: 1px solid #dee2e6;
-  margin-bottom: 30px; }
+  /*margin-bottom: 30px;*/ }
   .event-schedule-area-two ul.custom-tab li {
     margin-right: 70px;
     position: relative; }
@@ -2753,39 +2758,39 @@ a {
 	color: #ffffff;
 }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-career{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-CareerLeadership{
     background-color:#FCB400;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-comm{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-CommunityAccessibility{
     background-color:#B2158B;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-coolshit{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-Coolht{
     background-color:#338A17;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-culture{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-Culture{
     background-color:#BA1E45;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-data{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-Data{
     background-color:#6B1CB0;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-frontend{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-FrontendEngineering{
     background-color:#0B76B7;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-keynotes{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-Keynotes{
     background-color:#444;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-swe{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-SoftwareEngineering{
     background-color:#06A09B;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-workshops{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-Workshops{
     background-color:#2750AE;
   }
 
@@ -2867,39 +2872,39 @@ a {
 	height: auto;
 }
 
-.track-bdr-career{
+.track-bdr-CareerLeadership{
   border-left: 6px solid #FCB400;
 }
 
-.track-bdr-comm{
+.track-bdr-CommunityAccessibility{
   border-left: 6px solid #B2158B;
 }
 
-.track-bdr-coolshit{
+.track-bdr-Coolht{
   border-left: 6px solid #338A17;
 }
 
-.track-bdr-culture{
+.track-bdr-Culture{
   border-left: 6px solid #BA1E45;
 }
 
-.track-bdr-data{
+.track-bdr-Data{
   border-left: 6px solid #6B1CB0;
 }
 
-.track-bdr-frontend{
+.track-bdr-FrontendEngineering{
   border-left: 6px solid #0B76B7;
 }
 
-.track-bdr-keynotes{
+.track-bdr-Keynotes{
   border-left: 6px solid #444;
 }
 
-.track-bdr-swe{
+.track-bdr-SoftwareEngineering{
   border-left: 6px solid #06A09B;
 }
 
-.track-bdr-workshops{
+.track-bdr-Workshops{
   border-left: 6px solid #2750AE;
 }
 
@@ -2961,3 +2966,73 @@ a {
   margin-top:50px;
   font-weight: 500;
 }
+
+.schedule table {
+	width: 100%;
+	max-width: 80rem;
+
+}
+
+.schedule tbody{
+  display:block;
+	/*align-items: center;
+	justify-content: center;*/
+}
+	
+.schedule tr:nth-child(even) th {
+  color: #ccc;
+  font-weight: normal;
+}
+
+.schedule th,
+.schedule td {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.schedule th {
+  font-weight: normal;
+  border-top: thin dotted #ccc;
+}
+
+.schedule td {
+  /*font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.4;
+  border-radius: 0.2rem;
+  transition: opacity 0.3s ease;*/
+
+  color: #585A60;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
+  -webkit-box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
+
+  padding: 20px !important;
+
+
+}
+
+.schedule td > span {
+  
+  font-size: 0.8em;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+}
+
+.schedule td > p {
+  
+  padding-top: 10px;
+  font-size: 0.9em;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+}
+
+.stage-earth {background-color: #FFA726}
+.stage-mercury {background-color: #9CCC65}
+.stage-venus {background-color: #FF8A65}
+.stage-mars {background-color: #B3E5FC}
+.stage-jupiter {background-color: #81D4FA}
+.stage-saturn {background-color: #26C6DA}

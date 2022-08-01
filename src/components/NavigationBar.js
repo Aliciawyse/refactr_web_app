@@ -104,8 +104,8 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>*/}
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/updates">
-                        Updates
+                      <Link className="nav-link" activeClassName="active" to="/travel">
+                        Travel
                       </Link>
                     </li>
 

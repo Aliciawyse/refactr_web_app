@@ -343,10 +343,63 @@ export default ({ data }) => (
       </div>
 
 
+      
+
 
         {/*Whos Speaking Area Start Here*/}
         <div className="whos-speaking-area ptb50">
           <div className="container">
+
+          <div>
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <div className="title-text mb50">
+                    <h2>Introducing Our 2022 Emcee</h2>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="row mb50 " style={{justifyContent: 'center'}}>
+
+              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div className="speakers xs-mb30">
+                <div className="spk-img">
+                  {/*headshot.localFiles && (
+                    <Img
+                      alt="Speaker - N. Liberty White"
+                      fluid={headshot.localFiles[0].childImageSharp.fluid}
+                    />
+                  )*/}
+                  <img className="img-fluid" alt="Speaker - N. Liberty White" src="https://www.refactr.tech/static/90d6f0ac357ed0825aca3f97c33cf6ef/16310/liberty-white-headshot-full-body-black.jpg"/>
+                  <ul>
+                    <li>
+                      <a href="https://twitter.com/i_am_liberty">
+                        <i className="fa fa-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/nlibertywhite">
+                        <i className="fa fa-linkedin" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="spk-info">
+                  <a href="/speakers/n.-liberty-white">
+                    <h3>
+                      N. Liberty White
+                    </h3>
+                  </a>
+                  <span>She/ Her</span>
+                  <p>CEO</p>
+                  <h6>CHOZEN MEDIA</h6>
+                </div>
+              </div>
+            </div>
+
+              </div>
+          </div>
 
           <div>
               <div className="col-lg-12">
