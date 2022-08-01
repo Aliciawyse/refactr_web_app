@@ -139,7 +139,7 @@ export default ({ data }) => {
                   <h1>{data.airtable.data.speaker_name}</h1>
                   <span>({data.airtable.data.pronouns}) &nbsp;
                   
-                    {data.airtable.data.role},{" "}
+                    {data.airtable.data.role}{ data.airtable.data.company? ", ": ""}
                     {data.airtable.data.company}&nbsp;
                   </span>
                   

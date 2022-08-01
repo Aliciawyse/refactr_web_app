@@ -3008,7 +3008,8 @@ a {
   box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
   -webkit-box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
 
-  padding: 20px !important;
+  /*padding: 20px !important;*/;
+  vertical-align: top !important;
 
 
 }

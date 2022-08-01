@@ -15,8 +15,8 @@ export const ScheduleCardList = ({ items, day, group }) => {
   return sessions_data.map(session => (
     <td colspan={session.node.data.colspan} rowspan={session.node.data.rowspan} className={`track-bdr-${session.node.data.session__track}`.replace(/[\s&$!]+/g, "")}>
     
-      <Link 
-        to={`/sessions/${session.node.data.anchor_truncated}`}>
+      <Link style={{ pointerEvents: session.node.data.anchor_truncated? "auto":"none"}}
+        to={ session.node.data.anchor_truncated? `/sessions/${session.node.data.anchor_truncated}`:""}>
       {session.node.data.session__title}
       </Link>
       <span>{session.node.data.speaker__name}</span>

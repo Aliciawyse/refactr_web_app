@@ -25,7 +25,7 @@ export const SessionSpeakerDetail = ({speaker_name, role, company, speaker_ancho
           {speaker_name}
         </span>
         <p>
-          {role},{" "}
+          {role}{company?", ":""}
           {company}
         </p>
       </div>

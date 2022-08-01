@@ -63,7 +63,7 @@ export default ({ data }) => (
           <div className="section-title text-center">
             <div className="title-text">
               <h2>Schedule</h2>
-              <p><a href="/schedule_mobile">See mobile version</a></p>
+              {/*<p><a href="/schedule_mobile">See mobile version</a></p>*/}
             </div>
             {/*<p>
               In ludus latine mea, eos paulo quaestio an. Meis possit ea sit.
@@ -83,9 +83,9 @@ export default ({ data }) => (
                 className="nav-link active"
                 id="home-taThursday"
                 data-toggle="tab"
-                href="#home"
+                href="#wednesday"
                 role="tab"
-                aria-controls="home"
+                aria-controls="wednesday"
                 aria-selected="true"
               >
                 September 14<br/><span style={{fontSize:"12pt"}}>Workshops</span>
@@ -97,9 +97,9 @@ export default ({ data }) => (
                 className="nav-link"
                 id="contact-tab"
                 data-toggle="tab"
-                href="#contact"
+                href="#thursday"
                 role="tab"
-                aria-controls="contact"
+                aria-controls="thursday"
                 aria-selected="false"
               >
                 September 15<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
@@ -110,9 +110,9 @@ export default ({ data }) => (
                 className="nav-link"
                 id="sunday-tab"
                 data-toggle="tab"
-                href="#sunday"
+                href="#friday"
                 role="tab"
-                aria-controls="sunday"
+                aria-controls="friday"
                 aria-selected="false"
               >
                 September 16<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
@@ -123,149 +123,13 @@ export default ({ data }) => (
           <div className="tab-content" id="myTabContent">
             <div
               className="tab-pane fade show active"
-              id="home"
+              id="wednesday"
               role="tabpanel"
               aria-labelledby="home-tab"
             >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Speakers</th>
-                      <th scope="col">Event</th>
-                      <th scope="col">Venue Platform</th>
-                      <th className="text-center" scope="col">
-                        Details
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="/static/06561c9a49ee7afd91be34485188ddf1/adf82/mike-hartington.png" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Cross-Platform-with-Ionic--26-Capacitor">Cross Platform with Ionic...</a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/mike-hartington">Mike Hartington</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/workshops">Workshops</a>
-                            </div>
-                            <div className="time">
-                              <span>11:00 AM ET - 04:00 PM ET 5h</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-img">
-                          <a href="https://refactrtech-workshop1.eulerr.app/">
-                            <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                          </a>
-                            <p><a href="https://refactrtech-workshop1.eulerr.app/">Join Workshop</a></p>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Cross-Platform-with-Ionic--26-Capacitor">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="/static/4d85fa3c8242da85a0e9e9fd59c764fe/e7f0a/alyssa-nicoll-05-2021.png" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Beginner-UI--26-Angular-Workshop">Beginner UI & Angular...</a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/alyssa-nicoll">Alyssa Nicoll</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/workshops">Workshops</a>
-                            </div>
-                            <div className="time">
-                              <span>11:00 AM ET - 04:00 PM ET 5h</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                      <a href="https://refactrtech-workshop3.eulerr.app/">
-                        <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                      </a>
-                        <p><a href="https://refactrtech-workshop3.eulerr.app/">Join Workshop</a></p>
-                    </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Beginner-UI--26-Angular-Workshop">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr className="inner-box border-bottom-0">
-                      
-                      <td>
-                        <div className="event-img">
-                          <img src="/static/e5819b7f81ca12c11a3f7241eac3f033/3ad1c/zack-derose.jpg" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="/sessions/Nx-Workshop---Building-a-Board-Game-Store-with-React">Nx Workshop - Building a...</a>
-                          </h3>
-                          <div className="meta">
-                            <div className="organizers">
-                              <a href="/speakers/zack-derose">Zack Derose</a>
-                            </div>
-                            <div className="categories">
-                              <a href="/workshops">Workshops</a>
-                            </div>
-                            <div className="time">
-                              <span>11:00 AM ET - 04:00 PM ET 5h</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                          <a href="https://refactrtech-workshop2.eulerr.app/">
-                            <img src="https://dl.airtable.com/.attachments/beb4c2a5fb9aa9f1a4fca328f6f281ca/57bde377/eulerr-logo.png" alt />
-                          </a>
-                            <p><a href="https://refactrtech-workshop2.eulerr.app/">Join Workshop</a></p>
-                        </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/sessions/Nx-Workshop---Building-a-Board-Game-Store-with-React">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+
+
+
             </div>
             <div
               className="tab-pane fade"
@@ -327,7 +191,7 @@ export default ({ data }) => (
             </div>
             <div
               className="tab-pane fade schedule"
-              id="contact"
+              id="thursday"
               role="tabpanel"
               aria-labelledby="contact-tab"
             >
@@ -499,7 +363,7 @@ export default ({ data }) => (
 
             <div
               className="tab-pane fade schedule"
-              id="sunday"
+              id="friday"
               role="tabpanel"
               aria-labelledby="sunday-tab"
             >
