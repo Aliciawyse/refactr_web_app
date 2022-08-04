@@ -47,7 +47,7 @@ export default () =>
                 <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="/code-of-conduct">Code of Conduct</a>
+                <a href="/code-of-conduct">Code of Conduct</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/updates">Updates</a>
                 </p>
             </div>
