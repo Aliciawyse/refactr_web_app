@@ -800,6 +800,7 @@ export const speakerPageQuery = graphql`
 
     currentSponsors: allAirtable(
       filter: { table: { eq: "Sponsors" }, data: { featureOnIndex: { eq: true } } }
+      sort: { fields: data___DisplayListOrder }
       ) {
       edges {
         node {

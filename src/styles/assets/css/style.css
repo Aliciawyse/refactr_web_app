@@ -287,6 +287,14 @@ ul {
       background: #2750AE !important;
     }
 
+    .track-BookSigning{ 
+      background: #18BFFF !important;
+    }
+
+    .track-Social{ 
+      background: #20D9D2 !important;
+    }
+
 
 
 /*price-slider*/
@@ -2796,6 +2804,7 @@ a {
 
 
 
+
 .event-topics-tabs .tabs-content{
 	position: relative;
 	padding-top: 20px;
@@ -2908,6 +2917,14 @@ a {
   border-left: 6px solid #2750AE;
 }
 
+.track-bdr-BookSigning{
+  border-left: 6px solid #18BFFF; 
+}
+
+.track-bdr-Social{
+  border-left: 6px solid #20D9D2; 
+}
+
 .anim-icons{
 	position: absolute;
 	left: 0;
@@ -2987,7 +3004,6 @@ a {
 .schedule th,
 .schedule td {
   padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
 }
 
 .schedule th {
@@ -3005,13 +3021,16 @@ a {
   color: #585A60;
   font-weight: 600;
   background-color: #fff;
-  box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
+  box-shadow: rgb(11 11 77 / 16%) 0px 5px 14px;
   -webkit-box-shadow: rgb(11 11 77 / 14%) 0px 5px 14px;
 
   /*padding: 20px !important;*/;
   vertical-align: top !important;
+  display: flexbox;
+}
 
-
+.schedule td:hover{
+  background-color: #EEEFF8;
 }
 
 .schedule td > span {

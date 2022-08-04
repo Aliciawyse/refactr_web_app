@@ -39,11 +39,11 @@ export default ({ data }) => (
                 <a href="/">Home</a>
               </li>
               <li>|</li>
-              <li>Schedule</li>
-              <li>|</li>
               <li><a href="/workshops">Workshops</a></li>
               <li>|</li>
-              <li><a href="/sessions">Sessions</a></li>
+              <li>Schedule</li>
+              <li>|</li>
+              <li><a href="/sessions">All Sessions by Track</a></li>
             </ol>
                 
               </div>
@@ -88,7 +88,7 @@ export default ({ data }) => (
                 aria-controls="wednesday"
                 aria-selected="true"
               >
-                September 14<br/><span style={{fontSize:"12pt"}}>Workshops</span>
+                September 14&nbsp;<br/><span style={{fontSize:"12pt"}}>Workshops</span>
               </a>
             </li>
             
@@ -102,10 +102,10 @@ export default ({ data }) => (
                 aria-controls="thursday"
                 aria-selected="false"
               >
-                September 15<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
+                September 15&nbsp;<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
               </a>
             </li>
-            <li className="nav-item d-none d-lg-block">
+            <li className="nav-item">
               <a
                 className="nav-link"
                 id="sunday-tab"
@@ -115,20 +115,193 @@ export default ({ data }) => (
                 aria-controls="friday"
                 aria-selected="false"
               >
-                September 16<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
+                September 16&nbsp;<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
               </a>
             </li>
             
           </ul>
           <div className="tab-content" id="myTabContent">
             <div
-              className="tab-pane fade show active"
+              className="tab-pane fade show active schedule"
               id="wednesday"
               role="tabpanel"
               aria-labelledby="home-tab"
             >
 
+            <table>
+		<tr>
+			<th>08:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'8:00 AM'}/>
+		</tr>
+    <tr>
+			<th>08:15</th>
+		</tr>
+		<tr>
+			<th>08:30</th>
+		</tr>
+    <tr>
+			<th>08:45</th>
+		</tr>
+		<tr>
+			<th>09:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'9:00 AM'}/>
+		</tr>
+    <tr>
+			<th>09:15</th>
+		</tr>
+		<tr>
+			<th>09:30</th>
+		</tr>
+    <tr>
+			<th>09:45</th>
+		</tr>
+		<tr>
+			<th>10:00</th>
+		</tr>
+    <tr>
+			<th>10:15</th>
+		</tr>
+		<tr>
+			<th>10:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'10:30 AM'}/>
 
+		</tr>
+    <tr>
+			<th>10:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'10:45 AM'}/>
+		</tr>
+		<tr>
+			<th>11:00</th>
+		</tr>
+		<tr>
+			<th>11:15</th>
+		</tr>
+		<tr>
+			<th>11:30</th>
+		</tr>
+    <tr>
+			<th>11:45</th>
+		</tr>
+		<tr>
+			<th>12:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'12:00 PM'}/>
+		</tr>
+		<tr>
+			<th>12:15</th>
+		</tr>
+		<tr>
+			<th>12:30</th>
+		</tr>
+    <tr>
+			<th>12:45</th>
+		</tr>
+		<tr>
+			<th>01:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'1:00 PM'}/>
+		</tr>
+		<tr>
+			<th>01:15</th>
+		</tr>
+		<tr>
+			<th>01:30</th>
+		</tr>
+    <tr>
+			<th>01:45</th>
+		</tr>
+		<tr>
+			<th>02:00</th>
+		</tr>
+		<tr>
+			<th>02:15</th>
+		</tr>
+		<tr>
+			<th>02:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'2:30 PM'}/>
+		</tr>
+    <tr>
+			<th>02:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'2:45 PM'}/>
+		</tr>
+		<tr>
+			<th>03:00</th>
+		</tr>
+		<tr>
+			<th>03:15</th>
+      
+		</tr>
+		<tr>
+			<th>03:30</th>
+		</tr>
+    <tr>
+			<th>03:45</th>
+		</tr>
+		<tr>
+			<th>04:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'4:00 PM'}/>
+		</tr>
+		<tr>
+			<th>04:15</th>
+      
+		</tr>
+		<tr>
+			<th>04:30</th>
+		</tr>
+    <tr>
+			<th>04:45</th>
+		</tr>
+		<tr>
+			<th>05:00</th>
+		</tr>
+		<tr>
+			<th>05:15</th>
+		</tr>
+		<tr>
+			<th>05:30</th>
+		</tr>
+    <tr>
+			<th>05:45</th>
+		</tr>
+		<tr>
+			<th>06:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'6:00 PM'}/>
+		</tr>
+		<tr>
+			<th>06:15</th>
+		</tr>
+		<tr>
+			<th>06:30</th>
+		</tr>
+    <tr>
+			<th>06:45</th>
+		</tr>
+		<tr>
+			<th>07:00</th>
+		</tr>
+    <tr>
+			<th>07:15</th>
+		</tr>
+		<tr>
+			<th>07:30</th>
+		</tr>
+    <tr>
+			<th>07:45</th>
+		</tr>
+		<tr>
+			<th>08:00</th>
+		</tr>
+    <tr>
+			<th>08:15</th>
+		</tr>
+		<tr>
+			<th>08:30</th>
+		</tr>
+    <tr>
+			<th>08:45</th>
+		</tr>
+		<tr>
+			<th>09:00</th>
+		</tr>
+</table>
 
             </div>
             <div
@@ -137,57 +310,7 @@ export default ({ data }) => (
               role="tabpanel"
               aria-labelledby="profile-tab"
             >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th scope="col"> </th>
-                      <th scope="col">Event</th>
-                      <th scope="col">Venue Platform</th>
-                      <th scope="col">Details</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="inner-box">
-                      
-                      <td>
-                        <div className="event-img">
-                        <img src="/img/careerfair-meta-square.jpeg" alt />
-                        </div>
-                      </td>
-                      <td>
-                        <div className="event-wrap">
-                          <h3>
-                            <a href="">Virtual Career Fair</a>
-                          </h3>
-                          <div className="meta">
-                            
-                            <div className="categories">
-                              <a href="">Jobs</a>
-                            </div>
-                            <div className="time">
-                              <span>11:00 AM ET - 02:00 PM ET 3h</span>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                      <div className="event-img">
-                        <img src="https://dl.airtable.com/.attachments/bfc58c616c4f481b9627636a75648260/e7841e89/gatherly-logo.png" alt />
-                      </div>
-                      </td>
-                      <td>
-                        <div className="primary-btn">
-                          <a className="btn-primary" href="/careerfair">
-                            Read More
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
-              </div>
+              
             </div>
             <div
               className="tab-pane fade schedule"
@@ -198,7 +321,6 @@ export default ({ data }) => (
 
 
             <table>
-            <tbody>
 		<tr>
 			<th>08:00</th>
       <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'8:00 AM'}/>
@@ -290,7 +412,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>02:30</th>
-      
+      <ScheduleCardList items={data.allAirtable.edges} day={'Thursday'} group={'2:30 PM'}/>
 		</tr>
     <tr>
 			<th>02:45</th>
@@ -352,8 +474,6 @@ export default ({ data }) => (
 		<tr>
 			<th>07:00</th>
 		</tr>
-		
-    </tbody>
 </table>
 
               
@@ -378,6 +498,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>08:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'8:30 AM'}/>
 		</tr>
     <tr>
 			<th>08:45</th>
@@ -391,6 +512,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>09:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:30 AM'}/>
 		</tr>
     <tr>
 			<th>09:45</th>
@@ -434,7 +556,6 @@ export default ({ data }) => (
 		</tr>
     <tr>
 			<th>12:45</th>
-      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:45 AM'}/>
 		</tr>
 		<tr>
 			<th>01:00</th>
@@ -448,6 +569,7 @@ export default ({ data }) => (
 		</tr>
     <tr>
 			<th>01:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'1:45 PM'}/>
 		</tr>
 		<tr>
 			<th>02:00</th>
@@ -461,6 +583,8 @@ export default ({ data }) => (
 		</tr>
     <tr>
 			<th>02:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'2:45 PM'}/>
+
 		</tr>
 		<tr>
 			<th>03:00</th>
@@ -477,6 +601,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>04:00</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:00 PM'}/>
 		</tr>
 		<tr>
 			<th>04:15</th>
@@ -487,6 +612,7 @@ export default ({ data }) => (
 		</tr>
     <tr>
 			<th>04:45</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:45 PM'}/>
 		</tr>
 		<tr>
 			<th>05:00</th>
@@ -520,6 +646,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>07:30</th>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'7:30 PM'}/>
 		</tr>
     <tr>
 			<th>07:45</th>
@@ -538,6 +665,9 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>09:00</th>
+		</tr>
+    <tr>
+			<th>09:30</th>
 		</tr>
 </table>
               
@@ -568,7 +698,7 @@ export const all_sessions = graphql`
   {
     allAirtable(
       filter: { table: { eq: "FullSchedule" } }
-      sort: { fields: data___rowspan }
+      sort: { fields: [data___rowspan, data___TableDisplayOrder] }
       ) {
       edges {
         node {

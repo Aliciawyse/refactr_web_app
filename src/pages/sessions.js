@@ -102,12 +102,12 @@ export default ({ data }) => (
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  {/*<li>|</li>
-                  <li><a href="/schedule">Schedule</a></li>*/}
                   <li>|</li>
                   <li><a href="/workshops">Workshops</a></li>
                   <li>|</li>
-                  <li>Sessions</li>
+                  <li><a href="/schedule">Schedule</a></li>
+                  <li>|</li>
+                  <li>All Sessions by Track</li>
                 </ol>
               </div>
             </div>
@@ -276,7 +276,7 @@ export const all_sessions = graphql`
   {
     allAirtable(
       filter: { table: { eq: "Sessions" } }
-      sort: { fields: data___Track }
+      sort: { fields: [data___Track, data___start_time] }
       ) {
       edges {
         node {

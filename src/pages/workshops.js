@@ -101,12 +101,12 @@ export default ({ data }) => (
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  {/*<li>|</li>
-                  <li><a href="/schedule">Schedule</a></li>*/}
                   <li>|</li>
                   <li>Workshops</li>
                   <li>|</li>
-                  <li><a href="/sessions">Sessions</a></li>
+                  <li><a href="/schedule">Schedule</a></li>
+                  <li>|</li>
+                  <li><a href="/sessions">All Sessions by Track</a></li>
                   {/*<li>|</li>
                   <li><a href="/careerfair">Career Fair</a></li>
                   <li>|</li>

@@ -44,8 +44,9 @@ export default () =>
         <div className="col-lg-12">
             <div className="copyright">
                 <p>©2018-2022 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="/terms-and-conditions"> Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/code-of-conduct">Code of Conduct</a>
                 <a href="/updates">Updates</a>
                 </p>
