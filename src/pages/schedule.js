@@ -725,6 +725,23 @@ export const all_sessions = graphql`
                 }
               }
             }
+            Speakers {
+              data {
+                speaker_name
+                headshot {
+                  localFiles {
+                    childImageSharp {
+                      fluid(maxWidth: 512, maxHeight:512) {
+                        ...GatsbyImageSharpFluid_tracedSVG
+                      }
+                    }
+                  }
+                }
+                role
+                company
+                speaker_anchor
+              }
+            }
             
           }
         }

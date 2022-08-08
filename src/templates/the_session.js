@@ -109,7 +109,11 @@ export default ({ data }) => {
                       <a href="/">Home</a>
                     </li>
                     <li>|</li>
-                    <li><a href="/sessions">Sessions</a></li>
+                    <li><a href="/workshops">Workshops</a></li>
+                    <li>|</li>
+                    <li><a href="/schedule">Schedule</a></li>
+                    <li>|</li>
+                    <li><a href="/sessions">All Sessions by Track</a></li>
                     <li>|</li>
                     <li>Session Details</li>
                   </ol>

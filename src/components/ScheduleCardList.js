@@ -21,11 +21,18 @@ export const ScheduleCardList = ({ items, day, group }) => {
       {session.node.data.session__title.substr(0, 67)+ (session.node.data.session__title.length > 68?"...":"")}
       </Link>
 
-      <span>
-      <Link style={{ pointerEvents: session.node.data.speaker_anchor? "auto":"none"}}
-        to={ session.node.data.speaker_anchor? `/speakers/${session.node.data.speaker_anchor}`:""}>
-        {session.node.data.speaker__name? session.node.data.speaker__name+" ":""}
-      </Link>
+      <span style={{ display: session.node.data.Speakers && session.node.data.Speakers[0]?"block":"none"}}>
+        <Link style={{ pointerEvents: session.node.data.Speakers && session.node.data.Speakers[0]? "auto":"none"}}
+          to={ session.node.data.Speakers && session.node.data.Speakers[0]? `/speakers/${session.node.data.Speakers[0].data.speaker_anchor}`:""}>
+          {session.node.data.Speakers && session.node.data.Speakers[0]? session.node.data.Speakers[0].data.speaker_name+" ":""}
+        </Link>
+      </span>
+
+      <span style={{ display: session.node.data.Speakers && session.node.data.Speakers[1]?"block":"none"}}>
+        <Link style={{ pointerEvents: session.node.data.Speakers && session.node.data.Speakers[1]? "auto":"none"}}
+          to={ session.node.data.Speakers && session.node.data.Speakers[1]? `/speakers/${session.node.data.Speakers[1].data.speaker_anchor}`:""}>
+          {session.node.data.Speakers && session.node.data.Speakers[1]? session.node.data.Speakers[1].data.speaker_name+" ":""}
+        </Link>
       </span>
 
       <p>
@@ -34,7 +41,7 @@ export const ScheduleCardList = ({ items, day, group }) => {
       {session.node.data.venue_room}
       </p>
 
-      <div style={{bottom:"0"}}>
+      <div style={{ marginBottom: "0", bottom: "0", verticalAlign: "bottom"}}>
         <Link className={`pill `+`track-${session.node.data.session__track}`.replace(/[\s&$!]+/g, "")}
           style={{ fontSize: "0.7em", verticalAlign: "bottom" }}
           title={`See more ${session.node.data.session__track} sessions`} 
