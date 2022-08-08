@@ -115,7 +115,7 @@ export default ({ data }) => (
                 aria-controls="friday"
                 aria-selected="false"
               >
-                September&nbsp;16 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp; 2</span>
+                September&nbsp;16 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp;2</span>
               </a>
             </li>
             
