@@ -88,7 +88,7 @@ export default ({ data }) => (
                 aria-controls="wednesday"
                 aria-selected="true"
               >
-                September 14&nbsp;<br/><span style={{fontSize:"12pt"}}>Workshops</span>
+                September&nbsp;14 <br/><span style={{fontSize:"12pt"}}>Workshops</span>
               </a>
             </li>
             
@@ -102,7 +102,7 @@ export default ({ data }) => (
                 aria-controls="thursday"
                 aria-selected="false"
               >
-                September 15&nbsp;<br/><span style={{fontSize:"12pt"}}>Conference Day 1</span>
+                September&nbsp;15 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp;1</span>
               </a>
             </li>
             <li className="nav-item">
@@ -115,7 +115,7 @@ export default ({ data }) => (
                 aria-controls="friday"
                 aria-selected="false"
               >
-                September 16&nbsp;<br/><span style={{fontSize:"12pt"}}>Conference Day 2</span>
+                September&nbsp;16 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp; 2</span>
               </a>
             </li>
             
