@@ -145,14 +145,12 @@ export default ({ data }) => {
                       <span>{data.airtable.data.title}</span>
                     </p>
 
-                    {/*<p>
+                    <p>
                       <a className="detail-view">
                         {" "}
-                        {data.airtable.data.Day}{" "}
-                        {data.airtable.data.date_friendly},{" "}
-                        {data.airtable.data.Time} (45 min)
+                        {data.airtable.data.date_friendly} {data.airtable.data.end_date_friendly}
                       </a>
-                    </p>*/}
+                    </p>
 
                     <p style={abstractStyle}>{data.airtable.data.Abstract}</p>
 
@@ -189,6 +187,7 @@ export const query = graphql`
         title
         Day
         date_friendly
+        end_date_friendly
         Time
         meta_description
         speaker_pic {
