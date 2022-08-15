@@ -144,7 +144,7 @@ export default ({ data }) => (
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-md-10 col-lg-7 align-self-start">
+                    <div className="col-md-8 col-lg-8 align-self-start">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr-logo-2022.svg"
@@ -164,10 +164,10 @@ export default ({ data }) => (
                   </div>*/}
 
                   <div className="row justify-content-center">
-                    <div className="col-lg-6">
+                    <div className="col-sm-8 col-md-6 col-lg-4 col-8">
                     <img
                     className="img-fluid"
-                    style={{marginTop: '80px'}}
+                    style={{marginTop: '70px'}}
                     src="/img/logo/dates-2022.svg"
                     alt="Conference dates:  September 14 - 16, 2022"
                   />
@@ -175,7 +175,7 @@ export default ({ data }) => (
                   </div>
 
                   <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-4 col-sm-5 col-6">
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <img
                     className="img-fluid"
                     style={{marginTop: '20px'}}
@@ -187,13 +187,13 @@ export default ({ data }) => (
 
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
-                    <div data-countdown="2019/06/05" /> 
-                  </div>*/}
-
-                   {/*<div className="row justify-content-center">
-                        <Countdown date={`2020-08-12T12:00:00`} />
-                        
+                    <div data-countdown="2022/09/15" /> 
                 </div>*/}
+
+                   <div className="row justify-content-center">
+                        <Countdown date={`2022-09-15T12:00:00`} />
+                        
+                </div>
                   
 
                   {/* <div className="row justify-content-end" style={{marginTop: '-30px', marginBottom: '0'}}>
@@ -287,33 +287,117 @@ export default ({ data }) => (
                 {/* </div> */}
         {/*Counter Up Area End Here*/}
 
-        {/*Keynote Speaker Area Start Here*/}
-        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        
+        {/*Pricing Tables Area Start Here*/}
+        <a name="pricing"/>
+        <div className="pricing-tables-area ptb50">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <p>Introducing Our Keynote Speakers</p>
+                    <h2>Conference Pricing</h2>
                   </div>
                 </div>
               </div>
-              
+
             </div>
-            
+
             <div className="row">
-              
-            <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                    <span>$</span>149
+                    </div>
+                  </div>
+                  <div className="pricing-title">Early Bird</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end May 23!</span></li>
+                  <li>Main Stage Keynotes</li>
+                  <li>Sessions in 5 Tracks</li>
+                  <li>Expo Hall</li>
+                  <li>Networking Opportunities</li>
+                  <li>Tons of Social Activities</li>
+                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn disabled">
+                    <a className="btn-primary disabled" href=""
+                    rel="noopener noreferrer">
+                    Sold Out
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                      <span>$</span>199
+                    </div>
+                  </div>
+                  <div className="pricing-title">Regular</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
+                    <li>Main Stage Keynotes</li>
+                    <li>Sessions in 7 Tracks</li>
+                    <li>Expo Hall</li>
+                    <li>Networking Opportunities</li>
+                    <li>Tons of Social Activities</li>
+                    <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                  </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn">
+                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                    Sales start 5/24
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                      <span>$</span>299
+                    </div>
+                  </div>
+                  <div className="pricing-title">Late</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li>&nbsp;</li>
+                  <li>Main Stage Keynotes</li>
+                  <li>Sessions in 5 Tracks</li>
+                  <li>Expo Hall</li>
+                  <li>Networking Opportunities</li>
+                  <li>Tons of Social Activities</li>
+                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn disabled">
+                    <a className="btn-primary " href="">
+                      Sales start 8/30
+                    </a>
+                  </div>
+                </div>
+              </div>
 
             </div>
-           
+
           </div>
-          
-              </div>
-        {/*Keynote Speakers Area End Here*/}
 
-
-
+        </div>
+        {/*Pricing Tables Area End Here*/}
+        
+        
+      
         <div className="counter-up-area ptb60 bg-counter parallax">
         <div className="container">
           <div className="row">
@@ -341,6 +425,38 @@ export default ({ data }) => (
           </div>
         </div>
       </div>
+
+
+        
+        
+        {/*Keynote Speaker Area Start Here*/}
+        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center">
+                  <div className="title-text mb50">
+                    <p>Introducing Our Keynote Speakers</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div className="row">
+              
+            <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
+
+            </div>
+           
+          </div>
+          
+              </div>
+        {/*Keynote Speakers Area End Here*/}
+
+
+
+        
 
 
       
@@ -479,115 +595,6 @@ export default ({ data }) => (
             </div>
           </div>
           </div>*/}
-
-
-        {/*Pricing Tables Area Start Here*/}
-        <a name="pricing"/>
-        <div className="pricing-tables-area ptb50">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center">
-                  <div className="title-text mb50">
-                    <h2>Conference Pricing</h2>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div className="row">
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                    <span>$</span>149
-                    </div>
-                  </div>
-                  <div className="pricing-title">Early Bird</div>
-                  <div className="pricing-content">
-                  <ul>
-                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end May 23!</span></li>
-                  <li>Main Stage Keynotes</li>
-                  <li>Sessions in 5 Tracks</li>
-                  <li>Expo Hall</li>
-                  <li>Networking Opportunities</li>
-                  <li>Tons of Social Activities</li>
-                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
-                </ul>
-                  </div>
-                  <br/>
-                  <div className="primary-btn disabled">
-                    <a className="btn-primary disabled" href=""
-                    rel="noopener noreferrer">
-                    Sold Out
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span>199
-                    </div>
-                  </div>
-                  <div className="pricing-title">Regular</div>
-                  <div className="pricing-content">
-                  <ul>
-                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
-                    <li>Main Stage Keynotes</li>
-                    <li>Sessions in 7 Tracks</li>
-                    <li>Expo Hall</li>
-                    <li>Networking Opportunities</li>
-                    <li>Tons of Social Activities</li>
-                    <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
-                  </ul>
-                  </div>
-                  <br/>
-                  <div className="primary-btn">
-                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
-                    Sales start 5/24
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span>299
-                    </div>
-                  </div>
-                  <div className="pricing-title">Late</div>
-                  <div className="pricing-content">
-                  <ul>
-                  <li>&nbsp;</li>
-                  <li>Main Stage Keynotes</li>
-                  <li>Sessions in 5 Tracks</li>
-                  <li>Expo Hall</li>
-                  <li>Networking Opportunities</li>
-                  <li>Tons of Social Activities</li>
-                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
-                </ul>
-                  </div>
-                  <br/>
-                  <div className="primary-btn disabled">
-                    <a className="btn-primary " href="">
-                      Sales start 8/30
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-        {/*Pricing Tables Area End Here*/}
 
 
 

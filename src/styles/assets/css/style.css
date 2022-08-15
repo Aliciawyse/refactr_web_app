@@ -2957,8 +2957,8 @@ a {
 }
 
 .Countdown{
-  margin: 25% auto 0 auto;
-  padding-bottom: 20px;
+  margin: 8% auto 0 auto;
+  /*padding-bottom: 20px;*/
 }
 
 .Countdown-col{
@@ -2967,20 +2967,20 @@ a {
 
 .Countdown-col-element{
   display: inline-block;
-  margin: 0 20px 40px 20px;
+  margin: 0 20px 15px 20px;
   display: flex;
   flex-direction: column;
-  color: #C418A3;
+  color: #1750FF;
 }
 
 .Countdown-col-element strong{
-  font-size: 7.7em;
+  font-size: 4.5em;
 }
 
 .Countdown-col-element span{
   font-size: 1.6em;
   text-align: center;
-  margin-top:50px;
+  margin-top:35px;
   font-weight: 500;
 }
 

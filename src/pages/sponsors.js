@@ -10,57 +10,57 @@ const filterSponsorsByTier = (data) => {
     const allData = data.allAirtable.edges;
     let filteredData = [
         {
-          tier: 'platinum',
+          tier: 'Platinum',
           title: 'Platinum',
           sponsors: []
         },
         {
-            tier: 'gold',
+            tier: 'Gold',
             title: 'Gold',
             sponsors: []
         },
         {
-            tier: 'silver',
+            tier: 'Silver',
             title: 'Silver',
             sponsors: []
         },
         {
-            tier: 'bronze',
+            tier: 'Bronze',
             title: 'Bronze',
             sponsors: []
         },
         {
-          tier: 'virtual_venue',
+          tier: 'Virtual Venue',
           title: 'Virtual Venue Sponsors',
           sponsors: []
         },
         {
-          tier: 'in_kind_partners',
+          tier: 'In-kind',
           title: 'In-kind Partners',
           sponsors: []
         },
         {
-          tier: 'accessibility',
+          tier: 'Accessibility',
           title: 'Accessibility',
           sponsors: []
         },
         {
-          tier: 'career_fair',
+          tier: 'Career Fair',
           title: 'Career Fair',
           sponsors: []
         },
         {
-          tier: 'name_badge',
+          tier: 'Name Badge',
           title: 'Name Badge',
           sponsors: []
         },
         {
-            tier: 'opp_grant',
+            tier: 'Opportunity Grant',
             title: 'Opportunity Grant',
             sponsors: []
         },
         {
-          tier: 'community',
+          tier: 'Community',
           title: 'Supporters and Community Partners',
           sponsors: []
       }
@@ -182,7 +182,9 @@ export default ({ data }) => {
 
 export const sponsorPageQuery = graphql`
   {
-    allAirtable(filter: { table: { eq: "Sponsors" } }) {
+    allAirtable(filter: { table: { eq: "Sponsors" } }
+    sort: { fields: data___DisplayListOrder }
+    ) {
       edges {
         node {
           fields {
