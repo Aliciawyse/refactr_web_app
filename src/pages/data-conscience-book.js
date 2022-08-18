@@ -137,26 +137,7 @@ export default ({ data }) => {
                 <h2 style={{marginTop:"25px"}}>Data&nbsp;Conscience:&nbsp;Algorithmic Siege on our Humanity</h2>
               </div>
             </div>
-            <p>
-            In Data Conscience: Algorithmic Siege on our Humanity, computer science and data inclusivity thought leader Dr. Brandeis Hill Marshall delivers a call to action for rebel tech talent, those who acknowledge and are prepared to address the current limitations of software development. In the book, Dr. Brandeis Hill Marshall discusses how the philosophy of “move fast and break things” is, itself, broken, and requires change.
-            </p>
-
-            <p>
-            You’ll learn about the ways that discrimination rears its ugly head in the digital data space and how to address them with several known algorithms, including social network analysis, linear regression, k-means, sentiment analysis, and kNN clustering.
-            </p>
-
-            <p>
-            A can’t-miss resource for software developers who have gotten their hands dirty with at least a handful of significant software development projects, Data Conscience also provides readers with:
-            </p>
-
-            <p>
-              <ul>
-                <li>Discussions of the importance of transparency</li>
-                <li>Explorations of computational thinking in practice</li>
-                <li>Strategies for encouraging accountability in tech</li>
-                <li>Ways to avoid double-edged data visualization</li>
-                <li>How to govern data structures with law and algorithms</li>
-              </ul>
+            <p>Data Conscience: Algorithmic Siege on our Humanity delivers an incisive and eye-opening discussion of how to fix tech’s dominant philosophy of “move fast and break things” with a renewed focus on equity and oppression. The book explores how to address discrimination in the digital data space with several known algorithms, including social network analysis, linear regression and sentiment analysis.
             </p>
 
     <p className="session-title"><span style={{fontSize:"18pt"}}>Getting Your Book Signed at REFACTR.TECH</span></p>
