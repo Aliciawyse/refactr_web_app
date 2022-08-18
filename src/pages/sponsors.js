@@ -60,6 +60,11 @@ const filterSponsorsByTier = (data) => {
             sponsors: []
         },
         {
+            tier: 'Lunch',
+            title: 'Lunch',
+            sponsors: []
+        },
+        {
           tier: 'Community',
           title: 'Supporters and Community Partners',
           sponsors: []
