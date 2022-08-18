@@ -108,6 +108,8 @@ export default ({ data }) => (
                   <li><a href="/schedule">Schedule</a></li>
                   <li>|</li>
                   <li>All Sessions by Track</li>
+                  <li>|</li>
+			            <li><a href="/book-signing">Book Signings</a></li>
                 </ol>
               </div>
             </div>

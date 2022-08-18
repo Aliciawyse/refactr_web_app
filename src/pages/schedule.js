@@ -44,6 +44,8 @@ export default ({ data }) => (
               <li>Schedule</li>
               <li>|</li>
               <li><a href="/sessions">All Sessions by Track</a></li>
+			  <li>|</li>
+			  <li><a href="/book-signing">Book Signings</a></li>
             </ol>
                 
               </div>
@@ -715,7 +717,7 @@ export const all_sessions = graphql`
             Duration
             speaker__name
             speaker_anchor
-            anchor_truncated
+            session__anchor_truncated
             colspan
             rowspan
             speaker_meta_image {

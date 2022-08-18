@@ -16,8 +16,8 @@ export const ScheduleCardList = ({ items, day, group }) => {
     <td colspan={session.node.data.colspan} rowspan={session.node.data.rowspan}
     className={"d-block d-xl-table-cell "+`track-bdr-${session.node.data.session__track}`.replace(/[\s&$!]+/g, "")}>
     
-      <Link style={{ pointerEvents: session.node.data.anchor_truncated? "auto":"none"}} title={session.node.data.session__title}
-        to={ session.node.data.anchor_truncated? `/sessions/${session.node.data.anchor_truncated}`:""}>
+      <Link style={{ pointerEvents: session.node.data.session__anchor_truncated? "auto":"none"}} title={session.node.data.session__title}
+        to={ session.node.data.session__anchor_truncated? session.node.data.session__anchor_truncated:""}>
       {session.node.data.session__title.substr(0, 67)+ (session.node.data.session__title.length > 68?"...":"")}
       </Link>
 
