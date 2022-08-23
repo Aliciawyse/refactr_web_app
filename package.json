@@ -16,6 +16,7 @@
     "gatsby": "^3.4.0",
     "gatsby-cli": "^3.4.0",
     "gatsby-image": "^3.4.0",
+    "gatsby-plugin-google-gtag": "^4.21.0",
     "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-offline": "^4.4.0",

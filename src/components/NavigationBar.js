@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 export default class NavigationBar extends Component {
   state = {
     openNav: false
@@ -146,14 +147,14 @@ export default class NavigationBar extends Component {
                       </li>*/}
                     
                     <li className="nav-item d-lg-none ">
-                      <a
+                      <OutboundLink
                         className="nav-link"
                         href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
                         Tickets
-                      </a>
+                      </OutboundLink>
                     </li>
                   </ul>
                 </div>
@@ -163,14 +164,14 @@ export default class NavigationBar extends Component {
            <div className="col-lg-2 d-none d-lg-block">
               <ul>
                 <li className="header-ticket">
-                  <a
+                  <OutboundLink
                     className="pr-0"
                     href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Tickets
-                  </a>
+                  </OutboundLink>
                 </li>
               </ul>
                     </div>
