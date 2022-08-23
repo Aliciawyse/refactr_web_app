@@ -12,6 +12,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
+          "G-DPQL2M21DH",
           "AW-854600055"],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
