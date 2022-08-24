@@ -9,6 +9,7 @@ import "../../src/styles/assets/css/style.css";
 import "../../src/styles/assets/css/style2.css";
 import "../../src/styles/assets/css/style.css?23";
 import "../../src/styles/assets/css/responsive.css";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 export default ({ data }) => (
 
@@ -259,13 +260,33 @@ export default ({ data }) => (
         {/*End Product Info Tabs*/}
       </div>
     </section>
+      
+    <SessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
 
-
-
-
-
-
-      <SessionCardList items={data.allAirtable.edges} showBuyTickets={false}  soldOut={false}/>
+    <div className="counter-up-area ptb60 bg-counter parallax">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                <div className="single-counter xs-mb40">
+                  <div className="count-content" style={{ textAlign: "center"}}>
+                    <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                    With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
+                      <div className="row justify-content-center">
+                        <div className="col-md-3 col-sm-12">
+                          <div className="primary-btn text-center mt30">
+                              {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
+                              <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
+                          </div>
+                        </div>
+                          
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       {/*Footer Area Start Here*/}
       <Footer />
