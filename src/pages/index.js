@@ -145,7 +145,7 @@ export default ({ data }) => (
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-md-7 col-lg-7 align-self-start">
+                    <div className="col-md-7 col-lg-6 align-self-start">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr-logo-2022.svg"
