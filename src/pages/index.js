@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
@@ -416,14 +416,14 @@ export default ({ data }) => (
                 <div className="count-content" style={{ textAlign: "center"}}>
                   <span className="count" style={{ fontSize: "3.1em"}}>Don't Miss a Thing</span>
                   <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Stay in the know! Find the latest REFACTR news by subscribing to our newsletter & checking for updates.</p>
-                    <div className="row">
-                      <div className="col-md-6 col-sm-12">
+                    <div className="row justify-content-center">
+                      <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
                             {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                             <a href="https://tech.us19.list-manage.com/subscribe?u=5ae8995a4bf065a3c7cd6ad50&id=e8f624f474" class="btn-primary" style={{border: "2px solid #fff"}}>Subscribe &nbsp;&nbsp;<i className="fa fa-external-link"/></a> 
                         </div>
                       </div>
-                      <div className="col-md-6 col-sm-12">
+                      <div className="col-md-3 col-sm-12">
                         <div className="primary-btn text-center mt30">
                             <a href="/updates" class="btn-primary" style={{border: "2px solid #fff"}}>Updates</a>
                         </div>
@@ -643,7 +643,7 @@ export default ({ data }) => (
                   <div className="section-title text-center">
                       <div className="title-text mtb30 xs-mb40">
                           <h2>Sponsor REFACTR.TECH 2022</h2>
-                      <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                       </div>
                   </div>
               </div>
@@ -663,6 +663,44 @@ export default ({ data }) => (
           </div>
         </div>
         {/*Sponsors CTA Ends Here*/}
+
+        {/*Registration CTA Starts Here*/}
+        <div className="our-sponsors-area ptb50">
+          <div className="container">
+
+            <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                    <div className="title-text mb30">
+                      <h2>Register</h2>
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                        With <Link to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!
+                      </p>
+                      <div className="row justify-content-center">
+                      <div className="primary-btn" style={{marginTop: '10px', fontWeight: "bold"}}>
+                        <OutboundLink className="btn-hero"
+                         href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                          Get Tickets Now
+                        </OutboundLink>
+                      </div>
+                    </div>
+                    
+            
+            
+                    </div>
+                  </div>
+                </div>
+            </div>
+              
+
+            
+
+            </div>
+          </div>
+          {/*Registration CTA Ends Here*/}
+
+
+
         
         <div className="counter-up-area ptb60 bg-counter parallax">
           <div className="container">
@@ -671,15 +709,15 @@ export default ({ data }) => (
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Recap Past REFACTR Events</span>
-                    <p style={{ fontSize: "1.5em", fontWeight: "400"}}>Missed the last REFACTR.TECH? Or just want to relive the vibes from our previous conferences?</p>
-                      <div className="row">
-                        <div className="col-md-6 col-sm-12">
+                    <p style={{ fontSize: "1.3em", fontWeight: "400"}}>Missed the last REFACTR.TECH? Or just want to relive the vibes from our previous conferences?</p>
+                      <div className="row justify-content-center">
+                        <div className="col-md-3 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4a2S2DAIsLRCj1dus_TGnIn" class="btn-primary" style={{border: "2px solid #fff"}}>2021 Videos</a> 
                           </div>
                         </div>
-                        <div className="col-md-6 col-sm-12">
+                        <div className="col-md-3 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               <a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Videos</a>
                           </div>
