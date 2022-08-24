@@ -116,14 +116,14 @@ export default ({ data }) => {
       <div className="conference-synopsis-area about pad100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 xs-mb40">
+            <div className="col-lg-3 xs-mb40">
               <img
                 className="img-fluid"
                 src="/img/others/element.png?123"
                 alt="element"
               />
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-6">
               <div className="inner-content">
                 <div className="section-title">
                   <div className="title-text pl">
@@ -155,6 +155,34 @@ export default ({ data }) => {
               </div>
             </div>
             {/* /col end*/}
+
+            <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
+              <div className="testimonial-wrapper">
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#4125DD"}}>REGISTER NOW</p>
+
+                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2022.
+                  </p>
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
+                </div>
+              </div>
+
+              <div className="testimonial-wrapper" style={{marginTop: "30px"}}>
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#4125DD"}}>RESERVE YOUR BOOK</p>
+
+                  <p>REFACTR.TECH attendees can get <strong><em>exclusive</em>&nbsp;&nbsp;early-access</strong> to <Link to="/data-conscience-book">Data Conscience: Algorithmic Siege on our Humanity,</Link> <em>before</em> the official release, at a <strong>28% discount!</strong></p>
+
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+
+
+
           </div>
           {/* /row end*/}
         </div>
@@ -207,7 +235,7 @@ export default ({ data }) => {
                   >
                     <h3>Angel Banks</h3>
                   </a>
-                  <p>Program Manager</p>
+                  <p>Technical Program Manager</p>
                   <h6 style={{fontWeight: '700'}}>Microsoft</h6>
                 </div>
               </div>
@@ -304,7 +332,7 @@ export default ({ data }) => {
             {/* /col end*/}
           </div>
           {/* /.row  end*/}
-          <div className="row mb50">
+          <div className="row mb50 justify-content-center">
 
             <TeamCardList items={data.allAirtable.edges} />
 

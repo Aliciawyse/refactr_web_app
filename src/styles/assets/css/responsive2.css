@@ -1,5 +1,11 @@
 /* Logo -  HTML Template*/
 
+@media (min-width:1200px){
+	.container{
+		max-width:1300px !important
+	}
+}
+
 @media only screen and (max-width: 1600px){
 	.speakers-section-two .large-container .sec-title{
 		margin-left: 0;
@@ -94,7 +100,7 @@
 }
 
 
-@media only screen and (max-width: 1140px){
+@media only screen and (max-width: 1300px){
 	
 	.main-header{
 		margin:0px !important;

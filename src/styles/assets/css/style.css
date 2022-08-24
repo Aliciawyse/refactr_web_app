@@ -2349,7 +2349,8 @@ a {
 
 .motivational-concepts-area .testimonial-wrapper {
   background-color: #fff;
-  padding: 40px 50px;
+  /*padding: 40px 50px;*/
+  padding: 15px;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -2362,8 +2363,8 @@ a {
     top: 24%;
     color: #4125dd;
     font-size: 50px;
-    content: "\f10e";
-    font-family: fontawesome; }
+    /*content: "\f10e";
+    font-family: fontawesome;*/ }
   .motivational-concepts-area .testimonial-wrapper .inner-content {
     display: -webkit-box;
     display: -ms-flexbox;
