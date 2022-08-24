@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import Footer from "../components/footer";
 import { FeaturedSpeakerCard } from "../components/FeaturedSpeakerCard";
 import { SpeakerCardList } from "../components/SpeakerCardList";
@@ -144,13 +145,22 @@ export default ({ data }) => (
                 <div className="banner-content">
 
                   <div className="row justify-content-center">
-                    <div className="col-md-8 col-lg-8 align-self-start">
+                    <div className="col-md-7 col-lg-7 align-self-start">
                         <img
                         className="img-fluid"
                         src="/img/logo/refactr-logo-2022.svg"
                         alt="REFACTR.TECH Conference theme: Carnival!"
                       />
                     </div>
+                    </div>
+
+                    <div className="row justify-content-center">
+                      <div className="primary-btn" style={{marginTop: '40px', fontWeight: "bold"}}>
+                        <OutboundLink className="btn-hero"
+                         href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                          Register
+                        </OutboundLink>
+                      </div>
                     </div>
 
                   {/*<div className="row justify-content-center" style={{marginTop: '30px'}}>
@@ -167,7 +177,7 @@ export default ({ data }) => (
                     <div className="col-sm-8 col-md-6 col-lg-4 col-8">
                     <img
                     className="img-fluid"
-                    style={{marginTop: '70px'}}
+                    style={{marginTop: '50px'}}
                     src="/img/logo/dates-2022.svg"
                     alt="Conference dates:  September 14 - 16, 2022"
                   />
@@ -354,9 +364,9 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
                     Sales start 5/24
-                    </a>
+                    </OutboundLink>
                   </div>
                 </div>
               </div>
@@ -382,9 +392,9 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn disabled">
-                    <a className="btn-primary " href="">
+                    <OutboundLink className="btn-primary " href="">
                       Sales start 8/30
-                    </a>
+                    </OutboundLink>
                   </div>
                 </div>
               </div>

@@ -156,6 +156,21 @@ ul {
   .primary-btn a.btn-primary:hover, .accent-btn a.btn-accent:hover {
     background: #C418A3; }
 
+    .primary-btn a.btn-hero{
+      color: #fff;
+      background: #C418A3;
+      padding: 10px 25px;
+      border-radius: 28px;
+      display: inline-block;
+      transform: scale(1);
+      transition: all 0.4s;
+      font-weight: bold;
+      font-size: 1.8em;
+    }
+    .primary-btn a.btn-hero:hover{
+      transform: scale(1.15);
+    }
+
 .bordered-btn a {
   color: #656565;
   font-size: 14px;
