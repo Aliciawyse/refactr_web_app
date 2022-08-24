@@ -675,7 +675,7 @@ a {
 
 /* 1.4 Backgrounds */
 .bg-color {
-  background: #f4f5fd; }
+  background-color: #f4f5fd !important; }
 
 .bg-color-brand {
   background: #4125dd; }

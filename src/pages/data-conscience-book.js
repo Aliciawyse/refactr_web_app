@@ -131,34 +131,62 @@ export default ({ data }) => {
             alt="element"
           />
         </div>
-        <div className="col-lg-9">
-          <div className="inner-content">
-            <div className="section-title">
-              <div className="title-text pl">
-                <h2 style={{marginTop:"25px"}}>Data&nbsp;Conscience:&nbsp;Algorithmic Siege on our Humanity</h2>
+        <div className="col-lg-6">
+              <div className="inner-content">
+                <div className="section-title">
+                  <div className="title-text pl">
+                    <h2 style={{marginTop:"25px"}}>Data Conscience: Algorithmic Siege on our Humanity</h2>
+                  </div>
+                </div>
+                <p>Data Conscience: Algorithmic Siege on our Humanity delivers an incisive and eye-opening discussion of how to fix tech’s dominant philosophy of “move fast and break things” with a renewed focus on equity and oppression. The book explores how to address discrimination in the digital data space with several known algorithms, including social network analysis, linear regression and sentiment analysis.</p>
+
+				<p className="session-title"><span style={{fontSize:"18pt"}}>Getting Your Book Signed at REFACTR.TECH</span></p>
+				<p>REFACTR.TECH attendees can get <strong><em>exclusive</em>&nbsp;&nbsp;early-access</strong> to Data Conscience: Algorithmic Siege on our Humanity, <em>before</em> the official release, at a <strong>28% discount!</strong></p>
+        
+        <p>Pick up your book at the conference before 11:00&nbsp;AM on September 15th, and you'll be all set to get your copy signed in-person by Dr. Brandeis Hill Marshall. Reserve yours today, before all our copies are sold out!</p>
+        
+        <p><strong>You have to <a href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">pre-order with REFACTR.TECH</a> 1&#41; to get this discount <em>and</em>&nbsp;&nbsp;2&#41; to ensure we will have your book ready for to pick up at the conference.</strong></p>
+        
+        <div className="primary-btn" style={{marginTop:"10px"}}>
+          <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+          <strong>Reserve Your Copy NOW*</strong>
+          </a>
+          <p style={{marginTop: "0", marginLeft: "42px", fontSize: "10pt"}}>*while supplies last</p>
+           
+        </div>
+        
+        
+        
+        </div>
+            </div>
+        {/* /col end*/}
+
+        <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
+              <div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
+
+                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2022.
+                  </p>
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
+                </div>
+              </div>
+
+              <div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>BOOK SIGNING</p>
+
+                  <p>REFACTR.TECH attendees can get <strong><em>exclusive</em>&nbsp;&nbsp;early-access</strong> to <Link to="/data-conscience-book">Data Conscience: Algorithmic Siege on our Humanity,</Link> <em>before</em> the official release, at a <strong>28% discount!</strong></p>
+
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
+                </div>
               </div>
             </div>
-            <p>Data Conscience: Algorithmic Siege on our Humanity delivers an incisive and eye-opening discussion of how to fix tech’s dominant philosophy of “move fast and break things” with a renewed focus on equity and oppression. The book explores how to address discrimination in the digital data space with several known algorithms, including social network analysis, linear regression and sentiment analysis.
-            </p>
+            {/* /col end*/}
 
-    <p className="session-title"><span style={{fontSize:"18pt"}}>Getting Your Book Signed at REFACTR.TECH</span></p>
-    <p>REFACTR.TECH attendees can get <strong><em>exclusive</em>&nbsp;&nbsp;early-access</strong> to Data Conscience: Algorithmic Siege on our Humanity, <em>before</em> the official release, at a <strong>28% discount!</strong> Pick up your book at the conference before 11:00&nbsp;AM on September 15th, and you'll be all set to get your copy signed in-person by Dr. Brandeis Hill Marshall. Reserve yours today, before our copies are sold out!</p>
-    
-    <p><strong>You have to <a href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">pre-order with REFACTR.TECH</a> 1&#41; to get this price <em>and</em>&nbsp;&nbsp;2&#41; to ensure we will have your book ready for to pick up at the conference.</strong></p>
-    
-    <div className="primary-btn" style={{marginTop:"10px"}}>
-      <a className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
-      Reserve Your Copy NOW*
-      </a>
-      <br />
-       *while supplies last
-    </div>
-    
-    
-    
-    </div>
-        </div>
-        {/* /col end*/}
+
       </div>
       {/* /row end*/}
 
@@ -228,7 +256,7 @@ export default ({ data }) => {
                     <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
-                        <div className="col-md-3 col-sm-12">
+                        <div className="col-md-4 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
