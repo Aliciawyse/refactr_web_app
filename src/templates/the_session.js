@@ -131,7 +131,7 @@ export default ({ data }) => {
         <div className="speakers-single-area">
           <div className="container">
             <div className="row mt50">
-              <div className="col-md-12">
+              <div className="col-md-12 col-xl-9">
                 <div className="inner-content">
                   <div>
                     <a name="frontend-sessions" />
@@ -166,6 +166,33 @@ export default ({ data }) => {
                   </div>
                 </div>
               </div>
+
+              <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
+              <div className="testimonial-wrapper">
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#4125DD"}}>REGISTER NOW</p>
+
+                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2022.
+                  </p>
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
+                </div>
+              </div>
+
+              <div className="testimonial-wrapper" style={{marginTop: "30px", marginBottom: "50px"}}>
+                <div className="section-title text-center">
+                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#4125DD"}}>RESERVE YOUR BOOK</p>
+
+                  <p>REFACTR.TECH attendees can get <strong><em>exclusive</em>&nbsp;&nbsp;early-access</strong> to <Link to="/data-conscience-book">Data Conscience: Algorithmic Siege on our Humanity,</Link> <em>before</em> the official release, at a <strong>28% discount!</strong></p>
+
+
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
+                </div>
+              </div>
+            </div>
+            {/* /col end*/}
+
+
             </div>
           </div>
         </div>
