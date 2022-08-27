@@ -67,7 +67,7 @@ const filterSponsorsByTier = (data) => {
         },
         {
           tier: 'Community',
-          title: 'Supporters and Community Partners',
+          title: 'Community and Media Partners',
           sponsors: []
       }
     ];
