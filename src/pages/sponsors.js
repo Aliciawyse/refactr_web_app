@@ -124,6 +124,10 @@ export default ({ data }) => {
                     </li>
                     <li>|</li>
                     <li>Companies</li>
+                    <li>|</li>
+                    <li>
+                      <a href="/uploadresume">Upload Resume</a>
+                    </li>
                   </ol>
                 </div>
               </div>
