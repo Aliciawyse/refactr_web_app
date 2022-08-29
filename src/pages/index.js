@@ -570,7 +570,7 @@ export default ({ data }) => (
 
                 <div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/speakers">
-                    <h3>See All Confirmed Speakers</h3>
+                    <h3>See All Confirmed Speakers &gt;&gt;</h3>
                   </a>
                   {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
                 </div>
@@ -616,13 +616,22 @@ export default ({ data }) => (
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                       <div className="title-text mb30">
-                        <h2>2022 Sponsors</h2>
+                        <h2>Featured Sponsors</h2>
                       </div>
                     </div>
                   </div>
               </div>
 
             <CurrentSponsorsList data={data.currentSponsors.edges} />
+
+            <div className="row">
+                <div className="col-lg-12">
+                  <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/sponsors">
+                    <h3>See All Sponsors &gt;&gt;</h3>
+                  </a>
+                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
+                </div>
+            </div>
 
             <hr />
 

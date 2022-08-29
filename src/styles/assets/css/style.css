@@ -2347,6 +2347,20 @@ a {
 .about p {
   margin-bottom: 20px !important; }
 
+/*.motivational-concepts-area{
+  position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.sticky-sidebar-item{
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}*/
+
 .motivational-concepts-area .testimonial-wrapper {
   background-color: #fff;
   /*padding: 40px 50px;*/

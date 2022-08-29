@@ -162,7 +162,7 @@ export default ({ data }) => {
         {/* /col end*/}
 
         <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
-              <div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
+              <div className="testimonial-wrapper bg-color sticky-sidebar-item" style={{border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
 
