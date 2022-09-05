@@ -80,11 +80,9 @@ export default ({ data }) => (
                   <strong>PARKING</strong>
                 </p>
                 <p>
-                REFACTR.TECH Attendees should park in the parking garage connected
-                to the Loudermilk Conference Center. Please bring your parking pass
-                with you to have it validated for FREE at the Help Desk on the first
-                floor. If this area fills up feel free to park at the many nearby
-                public parking options.
+                Attendees should park in the parking garage connected to the Loudermilk Conference Center. Discounted parking cost is $10 per day. 
+                Please bring your parking pass with you to have it validated at the Help Desk on the first floor -- payment is only available via card (credit or debit). 
+                There is no leave and re-enter. If this area fills up feel free to park at the many nearby public parking options.
                 </p>
               </div>
             </div>
@@ -158,6 +156,153 @@ export default ({ data }) => (
           {/* /col end*/}
         </div>
         {/* /row end*/}
+
+
+        <div className="row">
+          <div className="col-lg-5 xs-mb40">
+            <img
+              className="img-fluid mt30"
+              src="/img/travel/hartsfield-jackson-delta-airplane.jpg"
+              alt="ATL Airport"
+            />
+          </div>
+          <div className="col-lg-7">
+            <div className="inner-content">
+              <h4>Getting Here - Hartsfield-Jackson Atlanta International Airport (ATL) </h4>
+              <p>
+              Traveling by plane to Atlanta? Fly into the Hartsfield-Jackson Atlanta International Airport (ATL.com), located approximately 12 miles from our host hotel and venue. 
+              Hartsfield-Jackson is a global gateway, offering nonstop service to more than 150 domestic and nearly 70 international destinations. These locales include major commercial 
+              centers in Europe, Asia, the Caribbean, Africa, and South and Central America.
+              </p>
+
+              <p>Options for Getting to and from the Airport Include:
+                <ul>
+                  <li style={{listStyleType: "none"}}><a href="https://www.uber.com/global/en/airports/atl/">Uber</a> and <a href="https://www.lyft.com/rider/airports/ATL">Lyft</a></li>
+                  <li style={{listStyleType: "none"}}><a href="https://martaguide.com/hartsfield-jackson-international-airport-marta-tips/">MARTA</a></li>
+                </ul>
+              </p>
+
+            </div>
+          </div>
+          {/* /col end*/}
+        </div>
+        {/* /row end*/}
+
+        <div className="row">
+          <div className="col-lg-6 xs-mb40">
+            <img
+              className="img-fluid mt30"
+              src="/img/travel/refactr-ground-map.png"
+              alt="Getting to Conference Center Map"
+            />
+          </div>
+          <div className="col-lg-6">
+            <div className="inner-content">
+              <h4>Getting Here - Ground Transportation </h4>
+              <p style={{fontSize: "1.3em"}}>
+                  <strong>On MARTA Northbound or Southbound Line</strong>
+                </p>
+              <p>
+              Exit at the <i><strong>Peachtree Center Station</strong></i>, take the set of escalators to Ellis Street. Once you get to the street level, you will see the Georgia Pacific Building on your left. 
+              Cross in front of Georgia Pacific Building and take a left onto John Wesley Dobbs Avenue. At the first traffic light, go right onto Peachtree Center Avenue. Walk on Peachtree 
+              Center Avenue and make a left between The Woodruff Volunteer Center parking deck and The Woodruff Volunteer Center (United Way Building). The Loudermilk Center for the Regional 
+              Community will be on the left facing The Woodruff Volunteer Center (United Way Building). <i>View Map</i>
+              </p>
+
+              <p style={{fontSize: "1.3em"}}>
+                  <strong>From I-75/85 Northbound
+                  </strong>
+                </p>
+              <p>
+              Exit #248-B Go left at the first traffic light (Edgewood Avenue). Go Approximately 4 blocks until you cross Courtland Street. 
+              At the next traffic light go right onto Peachtree Center Avenue and take the first entrance on your right (Lynch’s Alley). 
+              The entrance to the parking garage will be past the median on the left. The Loudermilk Center is adjacent to the parking garage. <i>View Map</i>
+              </p>
+
+              <p style={{fontSize: "1.3em"}}>
+                <strong>From I-75/85 Southbound</strong>
+              </p>
+              <p>
+              Exit #249A- Courtland Street is one -way street going south. Loudermilk Center for the Regional Community will be on the right after Auburn Avenue. 
+              Turn right onto Lynch's Alley (the street after Auburn Ave. and before Edgewood Ave.) The Loudermilk Center is adjacent to the parking garage.<i>View Map</i>
+              </p>
+
+              
+              
+
+            </div>
+          </div>
+          {/* /col end*/}
+        </div>
+        {/* /row end*/}
+
+
+        <div className="row">
+          
+          <div className="col-lg-12">
+            <div className="inner-content">
+              
+            <p style={{fontSize: "1.3em", marginTop: "20px"}}>
+                <strong>From I-20 Eastbound</strong>
+              </p>
+              <p>
+              Exit #56B – Windsor/ Spring Street. Go straight to the third traffic light. Take a left on Central Avenue. Turn right onto Auburn Avenue, 
+              then right onto Courtland Street. Loudermilk Center for the Regional Community will be on the right. Turn right onto Lynches Alley (the street 
+                after Auburn Ave. and before Edgewood Ave.) The Loudermilk Center is adjacent to the parking garage. <i>View Map</i>
+              </p>
+
+              <p style={{fontSize: "1.3em"}}>
+                <strong>From I-20 Westbound</strong>
+              </p>
+              <p>
+              Exit #58A – Capital Avenue turn right at the light. Stay on Capitol Avenue, which changes into Piedmont Avenue after crossing MLK Jr. Drive. Turn left onto Auburn Avenue, then left onto Courtland Street. Loudermilk Center for the Regional Community will be on the right. Turn right onto Lynch's Alley (the street after Auburn Ave. and before Edgewood Ave.) The Loudermilk Center is adjacent to the parking garage. <i>View Map</i>
+              </p>
+
+            </div>
+          </div>
+          {/* /col end*/}
+        </div>
+        {/* /row end*/}
+
+        <div className="row">
+          <div className="col-lg-6 xs-mb40">
+            <img
+              className="img-fluid mt30"
+              src="/img/travel/atl-skyline-exposed.jpeg"
+              alt="Atlanta Skyline"
+            />
+          </div>
+          <div className="col-lg-6">
+            <div className="inner-content">
+              <h4>Things to do in Downtown Atlanta</h4>
+              
+              <p>
+              Downtown Atlanta is the largest of the city's three commercial districts and is the location of many corporate or regional headquarters; city, county, state and federal government facilities; Georgia State University; sporting venues; and most of Atlanta's tourist attractions.
+              </p>
+
+              <p>
+              Most visitors' journeys begin in Centennial Olympic Park district, the epicenter of downtown life. From its inspiring attractions such as Georgia Aquarium, SkyView Ferris Wheel, World of Coca-Cola, CNN Center and Center for Civil and Human Rights to year-round sporting events at the Georgia Dome and Philips Arena, there's always something going on in Downtown Atlanta. 
+              </p>
+
+              
+              <p>
+              The Convention & Entertainment District is where big events and family fun meet. Neighboring Fairlie-Poplar puts world-renowned performances center stage. And Castleberry Hill provides the perfect blend of eclectic artistry and city spirit. 
+              </p>
+
+              <p>
+                <ul>
+                    <li style={{listStyleType: "none"}}><a href="http://www.atlanta.net/explore/neighborhoods/downtown/">Downtown area attractions</a></li>
+                    <li style={{listStyleType: "none"}}><a href="http://www.citypass.com/atlanta">Atlanta City Pass</a></li>
+                </ul>
+              </p>
+              
+
+            </div>
+          </div>
+          {/* /col end*/}
+        </div>
+        {/* /row end*/}
+
 
         </div>
         {/* /container end*/}
