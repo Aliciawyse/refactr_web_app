@@ -162,7 +162,7 @@ export default ({ data }) => (
                         <div className="inner-content">
                           <div className="section-title">
                             <div className="title-text pl">
-                              <h2 style={{textTransform: "none"}}>Afterparty @ Revery VR Bar</h2>
+                              <h2 style={{textTransform: "none"}}>Afterparty @ Revery</h2>
                             </div>
                           </div>
                           <p>Close out REFACTR.TECH with us at <a href="https://www.reveryvrbar.com/nightlife">Revery VR Bar</a>--the nation's first full bar to incorporate virtual reality technology (SIMILAR TO A KARAOKE EXPERIENCE). Located in the heart of Midtown, by Ponce City Market, Revery is in one of the liveliest parts of Atlanta.
