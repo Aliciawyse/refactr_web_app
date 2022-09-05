@@ -76,7 +76,7 @@ export default ({ data }) => (
                               <h2 style={{textTransform: "none"}}>Shop <i>&lt;dress code/&gt;</i></h2>
                             </div>
                           </div>
-                          <p>You'll be able to shop <strong><i>&lt;dress code/&gt;</i></strong> at REFACTR.TECH! <strong><i>&lt;dress code/&gt;</i></strong>  is a Black-owned tech-inspired 
+                          <p>You'll be able to shop <strong><i><a href="https://thedresscodeco.com">&lt;dress code/&gt;</a></i></strong> at REFACTR.TECH! <strong><i>&lt;dress code/&gt;</i></strong>  is a Black-owned tech-inspired 
                           clothing brand that merges the world of fashion and tech, while doing it <strong>'for the code.ture'</strong>. <a href="https://thedresscodeco.com">thedresscodeco.com</a> 
                           </p>
                           
@@ -165,7 +165,7 @@ export default ({ data }) => (
                               <h2 style={{textTransform: "none"}}>Afterparty @ Revery</h2>
                             </div>
                           </div>
-                          <p>Close out REFACTR.TECH with us at <a href="https://www.reveryvrbar.com/nightlife">Revery VR Bar</a>--the nation's first full bar to incorporate virtual reality technology (SIMILAR TO A KARAOKE EXPERIENCE). Located in the heart of Midtown, by Ponce City Market, Revery is in one of the liveliest parts of Atlanta.
+                          <p>Close out REFACTR.TECH with us at <a href="https://www.reveryvrbar.com/nightlife">Revery VR Bar</a>--the nation's first full bar to incorporate virtual reality technology (SIMILAR TO A KARAOKE EXPERIENCE). Located in the heart of <a href="https://www.midtownatl.com/">Midtown</a>, by <a href="https://www.poncecitymarket.com/">Ponce City Market</a>, Revery is in one of the liveliest parts of Atlanta.
                           </p>
                           
                         </div>
