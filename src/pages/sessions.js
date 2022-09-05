@@ -110,6 +110,8 @@ export default ({ data }) => (
                   <li>|</li>
                   <li>All Sessions by Track</li>
                   <li>|</li>
+                  <li><a href="/special-events">Special Events</a></li>
+                  <li>|</li>
 			            <li><a href="/book-signing">Book Signings</a></li>
                 </ol>
               </div>
