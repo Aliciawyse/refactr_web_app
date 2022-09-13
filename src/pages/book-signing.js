@@ -159,7 +159,7 @@ export default ({ data }) => (
               <img
 			  style={{marginTop:"30px"}}
 			  className="img-fluid"
-                src="/img/authors/kim-crayton-headshot.jpeg"
+                src="/img/authors/JS2_9401RT.jpg"
                 alt="element"
               />
             </div>

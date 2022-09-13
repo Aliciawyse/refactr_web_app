@@ -184,17 +184,18 @@ Harassment includes offensive verbal comments related to gender, gender identity
                     If you are being harassed by a member of the REFACTR.TECH
                     community, notice that someone else is being harassed, or
                     have any other concerns, please contact us immediately via
-                    email at hello@refactr.tech.
+                    email at hello at refactr.tech. You can also report an incident 
+                    anonymously via <a href="https://refactrtech.typeform.com/to/L43WFQ" target="_blank">this form</a>. 
                   </p>
                   <p>
-                    <strong>Conference</strong>
+                    <strong>Conference</strong><br />
                     Please contact any member of our organizing, volunteer or
                     security team. Our team can be identified by their volunteer
                     t-shirts and will be trained in how to address and report
-                    any incidents that attendees bring to their attention.
+                    any incidents that attendees bring to their attention. 
                   </p>
                   <p>
-                    <strong>Slack</strong>
+                    <strong>Slack</strong><br />
                     Please contact an admin or moderator (designated with a
                     crown emoji{" "}
                     <span role="img" aria-label="img">

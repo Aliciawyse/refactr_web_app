@@ -236,6 +236,7 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>03:30</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Wednesday'} group={'3:30 PM'}/>
 		</tr>
     <tr>
 			<th>03:45</th>
@@ -725,7 +726,7 @@ export default ({ data }) => (
 export const all_sessions = graphql`
   {
     allAirtable(
-      filter: { table: { eq: "FullSchedule" } }
+      filter: { table: { eq: "FullSchedule" }, data: { display: { eq: "include" } }  }
       sort: { fields: [data___rowspan, data___TableDisplayOrder] }
       ) {
       edges {

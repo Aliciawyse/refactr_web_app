@@ -780,7 +780,7 @@ export const speakerPageQuery = graphql`
     }
 
     workshopInstructors: allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Workshops" } } }
+      filter: { table: { eq: "Speakers" }, data: { session_track: { eq: "Workshops" }, Status: { eq: "Confirmed" } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {
@@ -811,7 +811,7 @@ export const speakerPageQuery = graphql`
     }
 
     featuredSpeakers: allAirtable(
-      filter: { table: { eq: "Speakers" }, data: { featured: { eq: true } } }
+      filter: { table: { eq: "Speakers" }, data: { featured: { eq: true }, Status: { eq: "Confirmed" } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {
