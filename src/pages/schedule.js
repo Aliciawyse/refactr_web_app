@@ -646,13 +646,14 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>07:00</th>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'7:00 PM'}/>
 		</tr>
 		<tr>
 			<th>07:15</th>
 		</tr>
 		<tr>
 			<th>07:30</th>
-      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'7:30 PM'}/>
+      
 		</tr>
     <tr>
 			<th>07:45</th>
