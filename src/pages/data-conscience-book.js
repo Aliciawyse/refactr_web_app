@@ -11,7 +11,7 @@ export default ({ data }) => {
   return(
   <div>
   <Helmet>
-    <title>Data Conscience Book | REFACTR.TECH 2022</title>
+    <title>Data Conscience Book | REFACTR.TECH 2023</title>
     <meta
       name="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
@@ -24,7 +24,7 @@ export default ({ data }) => {
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="Data Conscience Book | REFACTR.TECH 2022"
+      content="Data Conscience Book | REFACTR.TECH 2023"
     />
     <meta
       property="og:description"
@@ -53,7 +53,7 @@ export default ({ data }) => {
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="Data Conscience Book | REFACTR.TECH 2022"
+      content="Data Conscience Book | REFACTR.TECH 2023"
     />
     <meta
       name="twitter:description"
@@ -65,12 +65,12 @@ export default ({ data }) => {
       content="https://refactr.tech/img/conference/marketing_header.png"
     />
     <meta name="twitter:label1" content="Date" />
-    <meta name="twitter:data1" content="September 14 -16" />
+    <meta name="twitter:data1" content="October 27" />
     <meta name="twitter:label2" content="Location" />
-    <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+    <meta name="twitter:data2" content="Atlanta, GA" />
 
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="About | REFACTR.TECH 2022" />
+    <meta itemprop="name" content="About | REFACTR.TECH 2023" />
     <meta
       itemprop="description"
       content="REFACTR.TECH is all about growing and showcasing powerful voices of marginalized people and allies in tech."
@@ -168,7 +168,7 @@ export default ({ data }) => {
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
 
-                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2022.
+                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2023.
                   </p>
 
                   <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
@@ -255,7 +255,7 @@ export default ({ data }) => {
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">

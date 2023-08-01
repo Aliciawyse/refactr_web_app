@@ -56,7 +56,7 @@ export default () => (
               </p>
               
               <p><h2>Buy tickets with confidence.</h2>
-              To ensure the health and safety of all attendees, staff, speakers, and sponsors, REFACTR.TECH 2022 is following this COVID-19 policy. We can offer a refund up to 2 weeks before the conference. If you cancel within two weeks of the event, we cannot offer a refund, but we can transfer your registration to another attendee.
+              To ensure the health and safety of all attendees, staff, speakers, and sponsors, REFACTR.TECH 2023 is following this COVID-19 policy. We can offer a refund up to 2 weeks before the conference. If you cancel within two weeks of the event, we cannot offer a refund, but we can transfer your registration to another attendee.
               </p>
 
               <p><h2>Face Covering Policy</h2>
@@ -64,7 +64,7 @@ export default () => (
               </p>
 
               <p><h2>Vaccinations</h2>
-              All attendees will be required to provide proof of full and up-to-date vaccination of COVID-19 with a WHO-approved vaccine in order to attend REFACTR.TECH 2022. The definition of <strong>fully</strong> and <strong>up-to-date vaccination</strong> will be updated to conform to guidelines in place during the event. In accordance with national <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fvaccines%2Ffully-vaccinated.html">US health policies</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/proof-of-vaccination.html">CDC traveler policy</a>, people are currently considered fully vaccinated: if a person has received all recommended COVID-19 vaccines, including any booster dose(s) when eligible.
+              All attendees will be required to provide proof of full and up-to-date vaccination of COVID-19 with a WHO-approved vaccine in order to attend REFACTR.TECH 2023. The definition of <strong>fully</strong> and <strong>up-to-date vaccination</strong> will be updated to conform to guidelines in place during the event. In accordance with national <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/stay-up-to-date.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fvaccines%2Ffully-vaccinated.html">US health policies</a> and <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/proof-of-vaccination.html">CDC traveler policy</a>, people are currently considered fully vaccinated: if a person has received all recommended COVID-19 vaccines, including any booster dose(s) when eligible.
               </p>
 
               <p>

@@ -105,7 +105,7 @@ export default ({ data }) => (
                    target="_blank"
                    rel="noopener noreferrer">
                 Westin Peachtree Plaza Hotel</a> located
-                in Downtown Atlanta, only 0.5 miles from the Loudermilk Conference Center.
+                in Atlanta, only 0.5 miles from the Loudermilk Conference Center.
                 {/*The &nbsp;
                 <a href="https://www.marriott.com/hotels/travel/atlpl-the-westin-peachtree-plaza-atlanta/"
                    target="_blank"
@@ -274,14 +274,14 @@ export default ({ data }) => (
           </div>
           <div className="col-lg-6">
             <div className="inner-content">
-              <h4>Things to do in Downtown Atlanta</h4>
+              <h4>Things to do in Atlanta</h4>
               
               <p>
-              Downtown Atlanta is the largest of the city's three commercial districts and is the location of many corporate or regional headquarters; city, county, state and federal government facilities; Georgia State University; sporting venues; and most of Atlanta's tourist attractions.
+              Atlanta is the largest of the city's three commercial districts and is the location of many corporate or regional headquarters; city, county, state and federal government facilities; Georgia State University; sporting venues; and most of Atlanta's tourist attractions.
               </p>
 
               <p>
-              Most visitors' journeys begin in Centennial Olympic Park district, the epicenter of downtown life. From its inspiring attractions such as Georgia Aquarium, SkyView Ferris Wheel, World of Coca-Cola, CNN Center and Center for Civil and Human Rights to year-round sporting events at the Georgia Dome and Philips Arena, there's always something going on in Downtown Atlanta. 
+              Most visitors' journeys begin in Centennial Olympic Park district, the epicenter of downtown life. From its inspiring attractions such as Georgia Aquarium, SkyView Ferris Wheel, World of Coca-Cola, CNN Center and Center for Civil and Human Rights to year-round sporting events at the Georgia Dome and Philips Arena, there's always something going on in Atlanta. 
               </p>
 
               
@@ -317,7 +317,7 @@ export default ({ data }) => (
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">

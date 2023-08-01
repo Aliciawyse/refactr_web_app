@@ -11,7 +11,7 @@ import styled from "styled-components";
 export default ({ data }) => (
     <div>
     <Helmet>
-    <title>Updates | REFACTR.TECH 2022</title>
+    <title>Updates | REFACTR.TECH 2023</title>
     <meta
       name="description"
       content="REFACTR.TECH offers a full day of workshops. Level up with a deep dive into VS Code, Alexa or Cypress."
@@ -25,7 +25,7 @@ export default ({ data }) => (
     <meta property="og:url" content="https://www.refactr.tech/" />
     <meta
       property="og:title"
-      content="Updates | REFACTR.TECH 2022"
+      content="Updates | REFACTR.TECH 2023"
     />
     <meta
       property="og:description"
@@ -54,7 +54,7 @@ export default ({ data }) => (
     <meta name="twitter:site" content="@RefactrTech" />
     <meta
       name="twitter:title"
-      content="Updates | REFACTR.TECH 2022"
+      content="Updates | REFACTR.TECH 2023"
     />
     <meta
       name="twitter:description"
@@ -66,12 +66,12 @@ export default ({ data }) => (
       content="https://refactr.tech/img/conference/marketing_header.png"
     />
     <meta name="twitter:label1" content="Date" />
-  <meta name="twitter:data1" content="September 14-16" />
+  <meta name="twitter:data1" content="October 27" />
   <meta name="twitter:label2" content="Location" />
-  <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+  <meta name="twitter:data2" content="Atlanta, GA" />
   
     {/* <!-- Schema.org markup for Google+ --> */}
-    <meta itemprop="name" content="Updates | REFACTR.TECH 2022" />
+    <meta itemprop="name" content="Updates | REFACTR.TECH 2023" />
     <meta
       itemprop="description"
       content="REFACTR.TECH features 20+ speakers from all over the tech industry with topics from Gatsby.js to Machine Learning to Engineering Leadership."

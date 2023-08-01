@@ -51,7 +51,7 @@ export default () => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2022"
+        content="REFACTR.TECH 2023"
       />
       <meta
         name="twitter:description"
@@ -134,7 +134,7 @@ export default () => (
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
 
-                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2022.
+                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2023.
                   </p>
 
                   <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>

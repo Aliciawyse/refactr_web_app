@@ -27,10 +27,10 @@ import 'react-toastify/dist/ReactToastify.css';
 export default ({ data }) => (
   <div>
     <Helmet>
-      <title>REFACTR.TECH 2022 - September 14 -16, Atlanta, GA</title>
+      <title>REFACTR.TECH 2023 - October 27, Atlanta, GA</title>
       <meta
         name="description"
-        content="The Southeast's premier multi-track tech conference with a focus on inclusion."
+        content="The Southeast's premier tech conference with a focus on inclusion."
       />
       
 
@@ -41,7 +41,7 @@ export default ({ data }) => (
       <meta property="og:url" content="https://www.refactr.tech/" />
       <meta
         property="og:title"
-        content="REFACTR.TECH 2022 - September 14 -16, Atlanta, GA"
+        content="REFACTR.TECH 2023 - October 27, Atlanta, GA"
       />
       <meta
         property="og:description"
@@ -69,7 +69,7 @@ export default ({ data }) => (
       <meta name="twitter:site" content="@RefactrTech" />
       <meta
         name="twitter:title"
-        content="REFACTR.TECH 2022 - Atlanta September 14 -16"
+        content="REFACTR.TECH 2023 - Atlanta October 27"
       />
       <meta
         name="twitter:description"
@@ -81,12 +81,12 @@ export default ({ data }) => (
         content="https://refactr.tech/img/conference/marketing_header.png"
       />
       <meta name="twitter:label1" content="Date" />
-      <meta name="twitter:data1" content="September 14 -16" />
+      <meta name="twitter:data1" content="October 27" />
       <meta name="twitter:label2" content="Location" />
-      <meta name="twitter:data2" content="Downtown Atlanta, GA" />
+      <meta name="twitter:data2" content="Atlanta, GA" />
 
       {/* <!-- Schema.org markup for Google+ --> */}
-      <meta itemprop="name" content="REFACTR.TECH 2022" />
+      <meta itemprop="name" content="REFACTR.TECH 2023" />
       <meta
         itemprop="description"
         content="The Southeast's premier multi-track tech conference with a focus on inclusion."
@@ -179,7 +179,7 @@ export default ({ data }) => (
                     className="img-fluid"
                     style={{marginTop: '50px'}}
                     src="/img/logo/dates-2022.svg"
-                    alt="Conference dates:  September 14 - 16, 2022"
+                    alt="Conference dates:  October 27, 2022"
                   />
                     </div>
                   </div>
@@ -651,7 +651,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                   <div className="section-title text-center">
                       <div className="title-text mtb30 xs-mb40">
-                          <h2>Sponsor REFACTR.TECH 2022</h2>
+                          <h2>Sponsor REFACTR.TECH 2023</h2>
                       <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                       </div>
                   </div>
@@ -682,7 +682,7 @@ export default ({ data }) => (
                   <div className="section-title text-center">
                     <div className="title-text mb30">
                       <h2>Register</h2>
-                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                         With <Link to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!
                       </p>
                       <div className="row justify-content-center">

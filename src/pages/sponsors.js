@@ -163,7 +163,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb30 xs-mb40">
-                            <h2>Sponsor REFACTR.TECH 2022</h2>
+                            <h2>Sponsor REFACTR.TECH 2023</h2>
                         <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                         </div>
                     </div>
@@ -189,7 +189,7 @@ export default ({ data }) => {
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, September 14 - 16 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
                     With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">
