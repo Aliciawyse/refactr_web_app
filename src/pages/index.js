@@ -21,7 +21,7 @@ import "../styles/assets/css/style2.css";
 import "../styles/assets/css/responsive.css";
 import 'react-toastify/dist/ReactToastify.css';
 
-toast.configure();
+//toast.configure();
 
 
 export default ({ data }) => (
