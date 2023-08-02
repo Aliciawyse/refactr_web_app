@@ -760,6 +760,10 @@ a {
   background-color: #000;
 }
 
+.hero-bg-6 {
+  background-image: url(../img/bg/mekka-keynote-bg.png);
+}
+
 /* .bg-3 {
   background-image: url(../img/bg/1.png); } */
 

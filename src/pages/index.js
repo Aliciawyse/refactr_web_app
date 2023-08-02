@@ -131,12 +131,12 @@ export default ({ data }) => (
       </div>*/}
 
         {/*Hero Banner Area Start Here*/}
-        <div className="hero-banner-area home-2 video-wrapper parallax" style={{marginTop: "90px" , backgroundColor: "#55C5FF"}}>
+        <div className="hero-banner-area home-2 hero-bg-6 video-wrapper parallax" style={{marginTop: "90px" }}>
 
-        <video playsInline autoPlay muted loop playbackRate="0.1" poster="img/bg/cloud-bg-poster.png">
+        {/*<video playsInline autoPlay muted loop playbackRate="0.1" poster="img/bg/cloud-bg-poster.png">
           <source src="img/bg/cloud-bg-0.5x.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
-        </video>
+      </video>*/}
 
 
           <div className="container">
@@ -144,7 +144,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="banner-content">
 
-                  <div className="row justify-content-center">
+                  {/*<div className="row justify-content-center">
                     <div className="col-md-7 col-lg-6 align-self-start">
                         <img
                         className="img-fluid"
@@ -152,12 +152,22 @@ export default ({ data }) => (
                         alt="REFACTR.TECH Conference theme: Carnival!"
                       />
                     </div>
+                  </div>*/}
+
+                  <div className="row justify-content-center" style={{marginTop: '525px'}}>
+                    <div className="col-10">
+                    <img
+                    className="img-fluid"
+                    src="/img/logo/refactr-23-date-location.svg"
+                    alt="Conference date:  October 27, 2022"
+                  />
                     </div>
+                </div>
 
                     <div className="row justify-content-center">
-                      <div className="primary-btn" style={{marginTop: '40px', fontWeight: "bold"}}>
+                      <div className="primary-btn" style={{marginTop: '20px', fontWeight: "bold"}}>
                         <OutboundLink className="btn-hero"
-                         href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                         href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
                           Register
                         </OutboundLink>
                       </div>
@@ -173,18 +183,9 @@ export default ({ data }) => (
                     </div>
                   </div>*/}
 
-                  <div className="row justify-content-center">
-                    <div className="col-sm-8 col-md-6 col-lg-4 col-8">
-                    <img
-                    className="img-fluid"
-                    style={{marginTop: '50px'}}
-                    src="/img/logo/dates-2022.svg"
-                    alt="Conference dates:  October 27, 2022"
-                  />
-                    </div>
-                  </div>
+                  
 
-                  <div className="row justify-content-center">
+                 {/* <div className="row justify-content-center">
                     <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <img
                     className="img-fluid"
@@ -193,17 +194,17 @@ export default ({ data }) => (
                     alt="Conference location: Atlanta"
                   />
                     </div>
-              </div>
+              </div>*/}
 
                   {/*<div className="upcoming">
                     <span className="is-countdown"> </span>
                     <div data-countdown="2022/09/15" /> 
                 </div>*/}
 
-                   <div className="row justify-content-center">
+                   {/*<div className="row justify-content-center">
                         <Countdown date={`2022-09-15T12:00:00`} />
                         
-                </div>
+              </div>*/}
                   
 
                   {/* <div className="row justify-content-end" style={{marginTop: '-30px', marginBottom: '0'}}>
@@ -318,7 +319,7 @@ export default ({ data }) => (
                 <div className="pricing-box bg-pricing xs-mb30">
                   <div className="pricing-header">
                     <div className="pricing-value">
-                    <span>$</span>149
+                    <span>$</span>50
                     </div>
                   </div>
                   <div className="pricing-title">Early Bird</div>
@@ -326,46 +327,17 @@ export default ({ data }) => (
                   <ul>
                   <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end May 23!</span></li>
                   <li>Main Stage Keynotes</li>
-                  <li>Sessions in 5 Tracks</li>
+                  <li>15+ Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
-                  <li>Tons of Social Activities</li>
-                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
+                  <li>Socials!</li>
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
                 </ul>
                   </div>
                   <br/>
-                  <div className="primary-btn disabled">
-                    <a className="btn-primary disabled" href=""
-                    rel="noopener noreferrer">
-                    Sold Out
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                <div className="pricing-box bg-pricing xs-mb30">
-                  <div className="pricing-header">
-                    <div className="pricing-value">
-                      <span>$</span>199
-                    </div>
-                  </div>
-                  <div className="pricing-title">Regular</div>
-                  <div className="pricing-content">
-                  <ul>
-                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
-                    <li>Main Stage Keynotes</li>
-                    <li>Sessions in 7 Tracks</li>
-                    <li>Expo Hall</li>
-                    <li>Networking Opportunities</li>
-                    <li>Tons of Social Activities</li>
-                    <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
-                  </ul>
-                  </div>
-                  <br/>
                   <div className="primary-btn">
-                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
-                    Sales start 5/24
+                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
+                    Sales start 8/2
                     </OutboundLink>
                   </div>
                 </div>
@@ -375,7 +347,35 @@ export default ({ data }) => (
                 <div className="pricing-box bg-pricing xs-mb30">
                   <div className="pricing-header">
                     <div className="pricing-value">
-                      <span>$</span>299
+                      <span>$</span>60
+                    </div>
+                  </div>
+                  <div className="pricing-title">Regular</div>
+                  <div className="pricing-content">
+                  <ul>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
+                  <li>Main Stage Keynotes</li>
+                  <li>15+ Sessions & Panels</li>
+                  <li>Expo Hall</li>
+                  <li>Networking Opportunities</li>
+                  <li>Socials!</li>
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
+                  </ul>
+                  </div>
+                  <br/>
+                  <div className="primary-btn">
+                    <OutboundLink className="btn-primary" href="" target="_blank">
+                    Sales start 8/17
+                    </OutboundLink>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div className="pricing-box bg-pricing xs-mb30">
+                  <div className="pricing-header">
+                    <div className="pricing-value">
+                      <span>$</span>75
                     </div>
                   </div>
                   <div className="pricing-title">Late</div>
@@ -383,17 +383,17 @@ export default ({ data }) => (
                   <ul>
                   <li>&nbsp;</li>
                   <li>Main Stage Keynotes</li>
-                  <li>Sessions in 5 Tracks</li>
+                  <li>15+ Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
-                  <li>Tons of Social Activities</li>
-                  <li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
-                </ul>
+                  <li>Socials!</li>
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
+                  </ul>
                   </div>
                   <br/>
                   <div className="primary-btn disabled">
                     <OutboundLink className="btn-primary " href="">
-                      Sales start 8/30
+                      Sales start 10/12
                     </OutboundLink>
                   </div>
                 </div>
@@ -440,7 +440,7 @@ export default ({ data }) => (
         
         
         {/*Keynote Speaker Area Start Here*/}
-        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -461,7 +461,7 @@ export default ({ data }) => (
            
           </div>
           
-              </div>
+                </div>*/}
         {/*Keynote Speakers Area End Here*/}
 
 
@@ -477,26 +477,21 @@ export default ({ data }) => (
           <div className="container">
 
           <div>
-              <div className="col-lg-12">
+              {/*<div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
                     <h2>Introducing Our 2022 Emcee</h2>
                   </div>
                 </div>
-              </div>
+              </div>*/}
 
 
               <div className="row mb50 " style={{justifyContent: 'center'}}>
 
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
               <div className="speakers xs-mb30">
-                <div className="spk-img">
-                  {/*headshot.localFiles && (
-                    <Img
-                      alt="Speaker - N. Liberty White"
-                      fluid={headshot.localFiles[0].childImageSharp.fluid}
-                    />
-                  )*/}
+            {/*<div className="spk-img">
+                  
                   <img className="img-fluid" alt="Speaker - N. Liberty White" src="https://www.refactr.tech/static/90d6f0ac357ed0825aca3f97c33cf6ef/16310/liberty-white-headshot-full-body-black.jpg"/>
                   <ul>
                     <li>
@@ -510,8 +505,8 @@ export default ({ data }) => (
                       </a>
                     </li>
                   </ul>
-                </div>
-                <div className="spk-info">
+            </div>*/}
+                {/*<div className="spk-info">
                   <a href="/speakers/n.-liberty-white">
                     <h3>
                       N. Liberty White
@@ -520,14 +515,14 @@ export default ({ data }) => (
                   <span>She/ Her</span>
                   <p>CEO</p>
                   <h6>CHOZEN MEDIA</h6>
+            </div>*/}
                 </div>
+                </div>
+
               </div>
             </div>
 
-              </div>
-          </div>
-
-          <div>
+          {/*<div>
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
@@ -542,7 +537,7 @@ export default ({ data }) => (
                <SpeakerCardList items={data.workshopInstructors.edges} />
 
               </div>
-          </div>
+                </div>*/}
 
 
 
@@ -550,7 +545,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Speakers</h2>
+                    <h2>Past Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -568,12 +563,12 @@ export default ({ data }) => (
 
                 <FeaturedSpeakerCard items={data.featuredSpeakers.edges} />
 
-                <div className="col-lg-12">
+                {/*<div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/speakers">
                     <h3>See All Confirmed Speakers &gt;&gt;</h3>
                   </a>
-                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
-                </div>
+                  {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>
+                </div>*/}
                 {/* /row end*/}
               </div>
               {/* /container end*/}
@@ -612,28 +607,49 @@ export default ({ data }) => (
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
 
+          <div className="row">
+              <div className="col-lg-12">
+                  <div className="section-title text-center">
+                      <div className="title-text mtb30 xs-mb40">
+                          <h2>Sponsor REFACTR.TECH 2023</h2>
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="row pad-bot30">
+                <div className="col-lg-12">
+                    <div className="primary-btn text-center">
+                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
+                    </div>
+                </div>
+            </div>
+
+            {/*<hr />
+
+
               <div className="row">
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                       <div className="title-text mb30">
-                        <h2>Featured Sponsors</h2>
+                        <h2>Past Sponsors</h2>
                       </div>
                     </div>
                   </div>
               </div>
 
-            <CurrentSponsorsList data={data.currentSponsors.edges} />
+        <CurrentSponsorsList data={data.currentSponsors.edges} />*/}
 
-            <div className="row">
+            {/*<div className="row">
                 <div className="col-lg-12">
                   <a style={{textAlign: 'center', color: '#CF057C', fontWeight: 'normal'}} href="/sponsors">
-                    <h3>See All Sponsors &gt;&gt;</h3>
-                  </a>
+                    <h3>See 2022 Sponsors &gt;&gt;</h3>
+      </a>*/}
                   {/*<p style={{textAlign: 'center'}}>More Speakers Coming Soon!</p>*/}
-                </div>
-            </div>
+                {/*</div>
+    </div>*/}
 
-            <hr />
 
             {/*<div className="row">
                 <div className="col-lg-12">
@@ -647,24 +663,7 @@ export default ({ data }) => (
 
         <FeaturedSponsorsList data={data.featuredSponsors.edges} />*/} 
 
-        <div className="row">
-              <div className="col-lg-12">
-                  <div className="section-title text-center">
-                      <div className="title-text mtb30 xs-mb40">
-                          <h2>Sponsor REFACTR.TECH 2023</h2>
-                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div className="row pad-bot30">
-                <div className="col-lg-12">
-                    <div className="primary-btn text-center">
-                        <a href="https://refactrtech.typeform.com/to/ouMvCw" class="btn-primary" rel="noreferrer noopener" target="_blank">Become a Sponsor</a>
-                    </div>
-                </div>
-            </div>
+        
 
             
       
@@ -682,13 +681,13 @@ export default ({ data }) => (
                   <div className="section-title text-center">
                     <div className="title-text mb30">
                       <h2>Register</h2>
-                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
+                      <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
                         With <Link to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!
                       </p>
                       <div className="row justify-content-center">
                       <div className="primary-btn" style={{marginTop: '10px', fontWeight: "bold"}}>
                         <OutboundLink className="btn-hero"
-                         href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank">
+                         href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
                           Get Tickets Now
                         </OutboundLink>
                       </div>
@@ -720,12 +719,21 @@ export default ({ data }) => (
                     <span className="count" style={{ fontSize: "3.1em"}}>Recap Past REFACTR Events</span>
                     <p style={{ fontSize: "1.3em", fontWeight: "400"}}>Missed the last REFACTR.TECH? Or just want to relive the vibes from our previous conferences?</p>
                       <div className="row justify-content-center">
+
+                      <div className="col-md-3 col-sm-12">
+                        <div className="primary-btn text-center mt30">
+                            {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
+                            <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4bbjFYU2RocECQv_JyQIaxK" class="btn-primary" style={{border: "2px solid #fff"}}>2022 Videos</a> 
+                        </div>
+                      </div>
+                      
                         <div className="col-md-3 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
                               <a href="https://www.youtube.com/playlist?list=PLtsNj-uCrJ4a2S2DAIsLRCj1dus_TGnIn" class="btn-primary" style={{border: "2px solid #fff"}}>2021 Videos</a> 
                           </div>
                         </div>
+
                         <div className="col-md-3 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               <a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Videos</a>

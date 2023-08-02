@@ -22,6 +22,8 @@ export default class NavigationBar extends Component {
             </div>
             {/* /col end*/}
             <div className="col-lg-9">
+
+
               <nav className="navbar navbar-expand-lg">
                 <button
                   className="navbar-toggler"
@@ -37,7 +39,15 @@ export default class NavigationBar extends Component {
                     this.state.openNav ? "" : "collapse navbar-collapse"
                   }
                 >
-                  <ul className={"navbar-nav ml-auto"}>
+                
+                <img
+                className="img-fluid col-3"
+                style={{paddingTop: '0px'}}
+                src="/img/logo/refactr-logo.svg"
+                alt="Conference location: Atlanta"
+                />
+                
+                <ul className={"navbar-nav ml-auto"}>
 
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/">
@@ -57,23 +67,23 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>*/}
               
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/schedule">
                         Schedule
                       </Link>
-                    </li>
+                  </li>*/}
 
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/speakers">
                         Speakers
                       </Link>
-                    </li>
+                </li>*/}
 
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
-                        Sponsors
+                        Past Sponsors
                       </Link>
-                    </li>
+              </li>*/}
 
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sessions">
@@ -104,11 +114,11 @@ export default class NavigationBar extends Component {
                         Jobs
                       </Link>
                     </li>*/}
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/travel">
                         Travel
                       </Link>
-                    </li>
+                  </li>*/}
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/covid-policy">
@@ -117,11 +127,11 @@ export default class NavigationBar extends Component {
                     </li>
 
                     
-                    {/*<li className="nav-item">
+                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/code-of-conduct">
                         Code of Conduct
                       </Link>
-                     </li>*/}
+                     </li>
                     
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">
@@ -149,7 +159,7 @@ export default class NavigationBar extends Component {
                     <li className="nav-item d-lg-none ">
                       <OutboundLink
                         className="nav-link"
-                        href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
+                        href="https://reg.connectevents.io/ConnectEvents/rtech2023/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
@@ -166,7 +176,7 @@ export default class NavigationBar extends Component {
                 <li className="header-ticket">
                   <OutboundLink
                     className="pr-0"
-                    href="https://reg.connectevents.io/ConnectEvents/rtech2022/"
+                    href="https://reg.connectevents.io/ConnectEvents/rtech2023/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
