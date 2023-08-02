@@ -40,12 +40,13 @@ export default class NavigationBar extends Component {
                   }
                 >
                 
-                <img
-                className="img-fluid col-3"
-                style={{paddingTop: '0px'}}
-                src="/img/logo/refactr-logo.svg"
-                alt="Conference location: Atlanta"
-                />
+                <a href="/" className="img-fluid col-3"> 
+                  <img
+                  style={{paddingTop: '0px'}}
+                  src="/img/logo/refactr-logo.svg"
+                  alt="Conference location: Atlanta"
+                  />
+                </a>
                 
                 <ul className={"navbar-nav ml-auto"}>
 

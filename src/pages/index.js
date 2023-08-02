@@ -325,9 +325,9 @@ export default ({ data }) => (
                   <div className="pricing-title">Early Bird</div>
                   <div className="pricing-content">
                   <ul>
-                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end May 23!</span></li>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end Aug 16!</span></li>
                   <li>Main Stage Keynotes</li>
-                  <li>15+ Sessions & Panels</li>
+                  <li>Single track, 15+ Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -353,9 +353,9 @@ export default ({ data }) => (
                   <div className="pricing-title">Regular</div>
                   <div className="pricing-content">
                   <ul>
-                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Aug 29th!</span></li>
+                  <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Oct 11th!</span></li>
                   <li>Main Stage Keynotes</li>
-                  <li>15+ Sessions & Panels</li>
+                  <li>Single track, 15+ Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -383,7 +383,7 @@ export default ({ data }) => (
                   <ul>
                   <li>&nbsp;</li>
                   <li>Main Stage Keynotes</li>
-                  <li>15+ Sessions & Panels</li>
+                  <li>Single track, 15+ Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -682,7 +682,7 @@ export default ({ data }) => (
                     <div className="title-text mb30">
                       <h2>Register</h2>
                       <p style={{marginTop: "15px", fontSize: "1.3em"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
-                        With <Link to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!
+                        With <Link to="/sessions">topics ranging from software engineering to leadership to data and community,</Link> there’s something for everybody!
                       </p>
                       <div className="row justify-content-center">
                       <div className="primary-btn" style={{marginTop: '10px', fontWeight: "bold"}}>

@@ -31,7 +31,7 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
               <div className="section-title text-center">
-              <h2>Events</h2>
+              <h2>2022 Events</h2>
             </div>
             <ol className="breadcrumb">
               <li>
@@ -46,7 +46,7 @@ export default ({ data }) => (
               <li>|</li>
               <li><a href="/special-events">Special Events</a></li>
               <li>|</li>
-			        <li>Book Signings</li>
+			        <li>2022 Book Signings</li>
             </ol>
                 
               </div>

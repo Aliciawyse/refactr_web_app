@@ -28,7 +28,7 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
                 <div className="section-title text-center">
-                  <h2>Special Events</h2>
+                  <h2>2022 Special Events</h2>
                 </div>
                 <ol className="breadcrumb">
               <li>
@@ -41,7 +41,7 @@ export default ({ data }) => (
               <li>|</li>
               <li><a href="/sessions">All Sessions by Track</a></li>
               <li>|</li>
-              <li>Special Events</li>
+              <li>2022 Special Events</li>
               <li>|</li>
               <li><a href="/book-signing">Book Signings</a></li>
             </ol>
