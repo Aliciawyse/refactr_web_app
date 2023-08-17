@@ -327,7 +327,7 @@ export default ({ data }) => (
                   <ul>
                   <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Early Bird sales end Aug 16!</span></li>
                   <li>Main Stage Keynotes</li>
-                  <li>Single track, 15+ Sessions & Panels</li>
+                  <li>Single track, 14 Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -336,8 +336,8 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
-                    Sales start 8/2
+                    <OutboundLink className="btn-primary disabled" href="" target="_blank">
+                    Sold Out
                     </OutboundLink>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export default ({ data }) => (
                   <ul>
                   <li><span style={{ color: '#4225DD', fontWeight: 'bold' }}>Regular sales end Oct 11th!</span></li>
                   <li>Main Stage Keynotes</li>
-                  <li>Single track, 15+ Sessions & Panels</li>
+                  <li>Single track, 14 Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -364,7 +364,7 @@ export default ({ data }) => (
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <OutboundLink className="btn-primary" href="" target="_blank">
+                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
                     Sales start 8/17
                     </OutboundLink>
                   </div>
@@ -383,7 +383,7 @@ export default ({ data }) => (
                   <ul>
                   <li>&nbsp;</li>
                   <li>Main Stage Keynotes</li>
-                  <li>Single track, 15+ Sessions & Panels</li>
+                  <li>Single track, 14 Sessions & Panels</li>
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
@@ -391,8 +391,8 @@ export default ({ data }) => (
                   </ul>
                   </div>
                   <br/>
-                  <div className="primary-btn disabled">
-                    <OutboundLink className="btn-primary " href="">
+                  <div className="primary-btn">
+                    <OutboundLink className="btn-primary disabled" href="">
                       Sales start 10/12
                     </OutboundLink>
                   </div>

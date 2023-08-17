@@ -155,6 +155,10 @@ ul {
     border-color: #4125dd !important; }
   .primary-btn a.btn-primary:hover, .accent-btn a.btn-accent:hover {
     background: #C418A3; }
+  .disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
 
     .primary-btn a.btn-hero{
       color: #fff;
