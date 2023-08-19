@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import MailChimpEmbeddedForm from "../components/MailChimpEmbeddedForm.js";
 
 export default () => 
 
@@ -8,7 +9,7 @@ export default () =>
             <div className="col-lg-5">
                 <div className="am">
                     <div className="f-logo">
-                        <img src="/img/logo/logo-2.png?123" width="428" height="188" alt=""/>
+                        <img src="/img/logo/refactr-logo.svg" width="428" height="188" alt=""/>
                     </div>
                 <div className="border-right"></div>
             </div>
@@ -20,22 +21,20 @@ export default () =>
                     <div className="f-icon">
                         <i className="fa fa-map-marker"></i>
                     </div>
-                    <span>40 Courtland St NE<br/> Atlanta, GA 30303</span>
+                    <span>3423 Piedmont Rd NE<br/> Atlanta, GA 30305</span>
                 </div>
                 <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
-                <div id="mc_embed_signup_scroll" className="sub-btn">
-                    <form id="mc-embedded-subscribe-form" className="validate">
-                        <input type="text" placeholder="Your email address " name="EMAIL" className="required email" id="mce-EMAIL"/>
-                          
-                        <div style={{position: "absolute", left: "-5000px", ariaHidden: "true"}}><input type="text" tabIndex="-1" /></div>
-            
-                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                    </form>
-                </div>
+                {/* mailchimp embed form component starts here */}
+                
+                <MailChimpEmbeddedForm />
+
+                {/* mailchimp embed form component ends here */}
                 <div className="f-social">
                     <ul>
                         <li><a href="https://twitter.com/RefactrTech"><i className="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.instagram.com/RefactrTech/"><i className="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfBdXCYPCHEXX8ISwOQM08A"><i className="fa fa-youtube"></i></a></li>
+                        <li><a href="mailto:hello@refactr.tech"><i className="fa fa-envelope-square"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -44,10 +43,12 @@ export default () =>
     <div className="row">
         <div className="col-lg-12">
             <div className="copyright">
-                <p>©2018-2019 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>©2018-2023 ConnectEvents.io&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/about">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="/privacy-policy">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="/terms-and-conditions"> Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="/code-of-conduct">Code of Conduct</a>
+                <a href="/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/code-of-conduct">Code of Conduct</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/updates">Updates</a>
                 </p>
             </div>
         </div>
