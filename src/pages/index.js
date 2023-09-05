@@ -545,7 +545,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Past Speakers</h2>
+                    <h2>Speakers</h2>
                   </div>
                 </div>
               </div>

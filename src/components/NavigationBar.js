@@ -74,11 +74,11 @@ export default class NavigationBar extends Component {
                       </Link>
                   </li>*/}
 
-                    {/*<li className="nav-item">
+                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/speakers">
                         Speakers
                       </Link>
-                </li>*/}
+                </li>
 
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
@@ -121,11 +121,11 @@ export default class NavigationBar extends Component {
                       </Link>
                   </li>*/}
 
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/covid-policy">
                         COVID Policy
                       </Link>
-                    </li>
+                </li>*/}
 
                     
                     <li className="nav-item">

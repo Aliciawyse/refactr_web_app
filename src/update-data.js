@@ -21,7 +21,7 @@ export default [
     },
     {
         id: 3,
-        imageSource: '/img/bg/Stop-Asian-Hate-cropped.jpg',
+        imageSource: '/img/bg/stop-AAPI-hate.png',
         date: 'March 23, 2021',
         title: 'Stop Asian Hate',
         description: 'We at REFACTR.TECH stand in strength and solidarity with our AAPI family. We see you. We hear you. We hurt with you. And we will continue to stand with and for you.',        details: 'workshops.html#flutter',

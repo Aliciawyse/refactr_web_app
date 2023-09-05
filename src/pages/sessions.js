@@ -99,7 +99,7 @@ export default ({ data }) => (
                 <div className="section-title text-center">
                   <h2>2022 Events</h2>
                 </div>
-                <ol className="breadcrumb">
+                {/*<ol className="breadcrumb">
                   <li>
                     <a href="/">Home</a>
                   </li>
@@ -113,7 +113,7 @@ export default ({ data }) => (
                   <li><a href="/special-events">Special Events</a></li>
                   <li>|</li>
 			            <li><a href="/book-signing">Book Signings</a></li>
-                </ol>
+                </ol>*/}
               </div>
             </div>
             {/* /col*/}
@@ -133,7 +133,7 @@ export default ({ data }) => (
         <span className="icon icon-circle-5" />
       </div>
       <div className="auto-container">
-        <div className="sec-title">
+        {/*<div className="sec-title">
           <h2>Tracks</h2>
           <p>
             <span style={{ color: "#C41579", fontWeight: "bold" }}>
@@ -141,12 +141,11 @@ export default ({ data }) => (
             </span>
             &nbsp;&nbsp;Check out this year's sessions by track.
           </p>
-        </div>
+              </div>*/}
 
         {/*Event Topics*/}
-        <div className="event-topics-tabs">
+        {/* <div className="event-topics-tabs">
           <div className="tabs-box">
-            {/*Tab Btns*/}
             <ul className="tab-btns tab-buttons clearfix">
 
             <Link
@@ -258,7 +257,7 @@ export default ({ data }) => (
 
             </ul>
           </div>
-        </div>
+            </div> */}
         {/*End Product Info Tabs*/}
       </div>
     </section>

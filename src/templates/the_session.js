@@ -105,7 +105,7 @@ export default ({ data }) => {
                   <div className="section-title text-center">
                     <h2>Events</h2>
                   </div>
-                  <ol className="breadcrumb">
+                  {/* <ol className="breadcrumb">
                     <li>
                       <a href="/">Home</a>
                     </li>
@@ -117,7 +117,7 @@ export default ({ data }) => {
                     <li><a href="/sessions">All Sessions by Track</a></li>
                     <li>|</li>
                     <li>Session Details</li>
-                  </ol>
+                  </ol> */}
                 </div>
               </div>
               {/* /col*/}
@@ -146,12 +146,12 @@ export default ({ data }) => {
                       <span>{data.airtable.data.title}</span>
                     </p>
 
-                    <p>
+                    {/*<p>
                       <a className="detail-view">
                         {" "}
                         {data.airtable.data.date_friendly} {data.airtable.data.end_date_friendly}
                       </a>
-                    </p>
+                </p>*/}
 
                     <p style={abstractStyle}>{data.airtable.data.Abstract}</p>
 

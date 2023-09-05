@@ -161,14 +161,14 @@ export default ({ data }) => {
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
 
-                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2023.
+                  <p> Get your ticket to attend REFACTR.TECH 2023 for a day full of keynotes, tech sessions, and of course, parties!
                   </p>
 
-                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
+                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
                 </div>
               </div>
 
-              <div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
+              {/*<div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>BOOK SIGNING</p>
 
@@ -177,7 +177,7 @@ export default ({ data }) => {
 
                   <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
                 </div>
-              </div>
+              </div>*/}
             </div>
             {/* /col end*/}
 
@@ -319,7 +319,7 @@ export default ({ data }) => {
       {/*Whos Organizing Area End Here*/}
 
       {/*Team Area Starts Here*/}
-      <div className="whos-speaking-area pad25">
+      {/*<div className="whos-speaking-area pad25">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -329,18 +329,14 @@ export default ({ data }) => {
                 </div>
               </div>
             </div>
-            {/* /col end*/}
           </div>
-          {/* /.row  end*/}
           <div className="row mb50 justify-content-center">
 
             <TeamCardList items={data.allAirtable.edges} />
 
           </div>
-          {/* /row end*/}
         </div>
-        {/* /container end*/}
-      </div>
+            </div> */}
       {/*Team Area Ends Here*/}       
 
       {/*Advisory Board Area Starts Here*/}
@@ -352,13 +348,13 @@ export default ({ data }) => {
                 <div className="single-counter xs-mb40">
                   <div className="count-content" style={{ textAlign: "center"}}>
                     <span className="count" style={{ fontSize: "3.1em"}}>Register</span>
-                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for 3 days packed full of workshops, keynotes, tech sessions and demos, and of course, parties! 
-                    With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">tracks from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
+                    <p style={{ fontSize: "1.3em", fontWeight: "400", textTransform:"none"}}>Get your ticket to attend REFACTR.TECH in Atlanta, October 27 for a day full of keynotes, tech sessions and demos, and of course, parties! 
+                    With <Link style={{ color: "white", textDecoration: "underline"}} to="/sessions">topics ranging from software engineering to leadership to data and community,</Link> there’s something for everybody!</p>
                       <div className="row justify-content-center">
                         <div className="col-md-4 col-sm-12">
                           <div className="primary-btn text-center mt30">
                               {/* <a href="https://2019.refactr.tech" class="btn-primary" style={{border: "2px solid #fff"}}>2019 Conference</a> */}
-                              <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
+                              <OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" class="btn-primary" style={{border: "2px solid #fff", fontSize: "1.5em"}}>Get Tickets Now</OutboundLink> 
                           </div>
                         </div>
                           

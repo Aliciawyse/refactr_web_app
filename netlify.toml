@@ -3,19 +3,19 @@
 # will inherit these settings.
 [context.development]
   [context.development.environment]
-    GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+    GATSBY_AIRTABLE_BASE_KEY="appjEFNuK5jwLsL1K"
 
 [context.production]
   [context.production.environment]
-  #  GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
-  GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+  #  GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+  GATSBY_AIRTABLE_BASE_KEY="appjEFNuK5jwLsL1K"
 
 # Deploy Preview context:
 # All deploys generated from a pull/merge request
 # will inherit these settings.
     [context.deploy-preview.environment]
-     #   GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
-     GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+     #   GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+     GATSBY_AIRTABLE_BASE_KEY="appjEFNuK5jwLsL1K"
 
 # Branch deploy context:
 # All deploys that are not from a pull/merge request
@@ -26,7 +26,13 @@
 # and override their current ones.
 [context.stage]
   [context.stage.environment]
-#    GATSBY_AIRTABLE_BASE_KEY="applkDl61yyt4LQxd"
+#    GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
+    GATSBY_AIRTABLE_BASE_KEY="appjEFNuK5jwLsL1K"
+
+# Deploys from this branch will take these settings
+# and override their current ones.
+[context."2022"]
+  [context."2022".environment]
     GATSBY_AIRTABLE_BASE_KEY="appIyFZYmlNH0GaWJ"
 
 # Deploys from this branch will take these settings
