@@ -30,12 +30,12 @@ export const SessionCardList = ({ items, showBuyTickets, soldOut }) => {
                     <span className="m0">{session.data.title}</span>
                   </p>
                   <br/>
-                  <p>
+                  {/*<p>
                     <a className="detail-view">
                       {" "}
                       {session.data.date_friendly} {session.data.end_date_friendly}
                     </a>
-                  </p>
+              </p>*/}
 
                   <p>{session.data.Abstract}</p>
 
