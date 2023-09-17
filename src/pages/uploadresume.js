@@ -103,7 +103,7 @@ export default () => (
                       <a href="/sponsors">Companies</a>
                   </li>*/}
                   <li>|</li>
-                  <li>Upload Resume</li>
+                  <li>Upload Your Resume</li>
                   
                 </ol>
               </div>
