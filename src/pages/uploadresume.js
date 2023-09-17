@@ -98,10 +98,10 @@ export default () => (
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>|</li>
+                  {/*<li>|</li>
                   <li>
                       <a href="/sponsors">Companies</a>
-                  </li>
+                  </li>*/}
                   <li>|</li>
                   <li>Upload Resume</li>
                   
@@ -122,7 +122,7 @@ export default () => (
             <div className="col-lg-9">
               <div className="inner-content">
                 
-              <p><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrVEgNp8GRIB78Ln?backgroundColor=pink" frameborder="0" onmousewheel="" width="100%" height="2010" style={{background: "transparent"}}></iframe></p>
+              <p><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/appjEFNuK5jwLsL1K/shr1QtfzfDcbNXVL6?backgroundColor=pink" frameborder="0" onmousewheel="" width="100%" height="2010" style={{background: "transparent"}}></iframe></p>
 
 
               </div>
@@ -132,16 +132,16 @@ export default () => (
             <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
               <div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">
-                  <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
+                <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
 
-                  <p> Get accesss to 50+ sessions in 7 tracks, 3 full-day workshops, 2 book signings, socials and more at REFACTR.TECH 2023.
-                  </p>
+                <p> Get your ticket to attend REFACTR.TECH 2023 for a day full of keynotes, tech sessions, and of course, parties!
+                </p>
 
-                  <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
-                </div>
+                <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
+              </div>
               </div>
 
-              <div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
+              {/*<div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">
                   <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>BOOK SIGNING</p>
 
@@ -150,7 +150,7 @@ export default () => (
 
                   <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2022/" target="_blank" style={{color: "#C418A3"}}>Reserve Your Book Here</OutboundLink></p>
                 </div>
-              </div>
+                </div>*/}
             </div>
             {/* /col end*/}
 
