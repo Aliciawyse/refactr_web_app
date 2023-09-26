@@ -80,11 +80,6 @@ export default class NavigationBar extends Component {
                       </Link>
                 </li>
 
-                    {/*<li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/sponsors">
-                        Past Sponsors
-                      </Link>
-              </li>*/}
 
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sessions">
@@ -121,14 +116,15 @@ export default class NavigationBar extends Component {
                       </Link>
                   </li>*/}
 
-                    {/*<li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/covid-policy">
-                        COVID Policy
-                      </Link>
-                </li>*/}
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sessions">
                         Sessions
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/sponsors">
+                      Sponsors
                       </Link>
                     </li>
 
@@ -138,12 +134,18 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
 
+                     <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/covid-policy">
+                        COVID Policy
+                      </Link>
+                    </li>
+
                     
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/code-of-conduct">
                         Code of Conduct
                       </Link>
-                     </li>
+                </li>*/}
                     
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/workshops">

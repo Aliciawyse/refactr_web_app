@@ -545,7 +545,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Speakers</h2>
+                    <h2>Featured Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -870,27 +870,6 @@ export const speakerPageQuery = graphql`
       }
     }
 
-    currentSponsors: allAirtable(
-      filter: { table: { eq: "Sponsors" }, data: { featureOnIndex: { eq: true } } }
-      sort: { fields: data___DisplayListOrder }
-      ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          data {
-            company_name
-            url
-            tier
-            logo {
-              filename
-              url
-            }
-          }
-        }
-      }
-    }
 
   }
 `;

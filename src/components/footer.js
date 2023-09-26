@@ -21,7 +21,7 @@ export default () =>
                     <div className="f-icon">
                         <i className="fa fa-map-marker"></i>
                     </div>
-                    <span>3423 Piedmont Rd NE<br/> Atlanta, GA 30305</span>
+                    <span><strong><a style={{color: "white"}} href="https://www.atlantatechvillage.com/" target="_blank">Atlanta Tech Village</a></strong><br/> 3423 Piedmont Rd NE<br/> Atlanta, GA 30305</span>
                 </div>
                 <p>Don't miss the buzz about our speakers, sessions and events! Sign up below to get the latest news about REFACTR.TECH right in your inbox. </p>
                 {/* mailchimp embed form component starts here */}

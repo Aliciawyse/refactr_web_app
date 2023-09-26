@@ -11,6 +11,11 @@ const filterSponsorsByTier = (data) => {
     const allData = data.allAirtable.edges;
     let filteredData = [
         {
+          tier: 'Recently Added',
+          title: 'Recently Added',
+          sponsors: []
+        },
+        {
           tier: 'Platinum',
           title: 'Platinum',
           sponsors: []
@@ -78,7 +83,7 @@ const filterSponsorsByTier = (data) => {
         let addSponsor = {
             company_name: sponsor.node.data.company_name,
             url: sponsor.node.data.url,
-            logo: sponsor.node.data.logo[0].url,
+            logo: sponsor.node.data.logo,
             tier: sponsor.node.data.tier
         };
         idx.sponsors.push(addSponsor);
@@ -148,7 +153,7 @@ export default ({ data }) => {
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                         <div className="title-text mb50 xs-mb40">
-                            <h2>2022 Sponsors</h2>
+                            <h2>2023 Sponsors</h2>
                         </div>
                         <hr />
                         <div className="single-sponsers">
@@ -164,7 +169,7 @@ export default ({ data }) => {
                     <div className="section-title text-center">
                         <div className="title-text mb30 xs-mb40">
                             <h2>Sponsor REFACTR.TECH 2023</h2>
-                        <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds at our Exhibit Hall and Career Expo? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
+                        <p style={{marginTop: "15px"}}>Companies, are you looking for an opportunity to engage with hundreds of technologists from diverse backgrounds? Check out our sponsorship prospectus to review the many ways to partner with REFACTR.TECH.</p>
                         </div>
                     </div>
                 </div>
@@ -230,8 +235,13 @@ export const sponsorPageQuery = graphql`
             url
             tier
             logo {
-              filename
-              url
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
             }
           }
         }
