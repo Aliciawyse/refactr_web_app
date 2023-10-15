@@ -168,7 +168,7 @@ export default ({ data }) => (
                       <div className="primary-btn" style={{marginTop: '20px', fontWeight: "bold"}}>
                         <OutboundLink className="btn-hero"
                          href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
-                          Register
+                          Sold Out
                         </OutboundLink>
                       </div>
                     </div>
@@ -300,7 +300,7 @@ export default ({ data }) => (
 
         
         {/*Pricing Tables Area Start Here*/}
-        <a name="pricing"/>
+        {/*<a name="pricing"/>
         <div className="pricing-tables-area ptb50">
           <div className="container">
             <div className="row">
@@ -331,7 +331,7 @@ export default ({ data }) => (
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
-                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
                 </ul>
                   </div>
                   <br/>
@@ -359,13 +359,13 @@ export default ({ data }) => (
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
-                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
                   </ul>
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <OutboundLink className="btn-primary" href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
-                    Sales start 8/17
+                    <OutboundLink className="btn-primary disabled" href="" target="_blank">
+                    Sold Out
                     </OutboundLink>
                   </div>
                 </div>
@@ -387,13 +387,13 @@ export default ({ data }) => (
                   <li>Expo Hall</li>
                   <li>Networking Opportunities</li>
                   <li>Socials!</li>
-                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>*/}
+                  {/*<li><a style={{ color: '#F20688', fontWeight: 'bold' }} href="/workshops">+ Add full-day workshop for $99</a></li>
                   </ul>
                   </div>
                   <br/>
                   <div className="primary-btn">
-                    <OutboundLink className="btn-primary disabled" href="">
-                      Sales start 10/12
+                    <OutboundLink className="btn-primary disabled" href="" target="_blank">
+                    Sold Out
                     </OutboundLink>
                   </div>
                 </div>
@@ -403,7 +403,7 @@ export default ({ data }) => (
 
           </div>
 
-        </div>
+                </div>*/}
         {/*Pricing Tables Area End Here*/}
         
         
@@ -440,7 +440,7 @@ export default ({ data }) => (
         
         
         {/*Keynote Speaker Area Start Here*/}
-        {/*<div className="whos-speaking-area-two speakers bg-team parallax pad100">
+        <div className="whos-speaking-area-two speakers bg-team parallax pad100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -453,7 +453,7 @@ export default ({ data }) => (
               
             </div>
             
-            <div className="row">
+            <div className="row justify-content-center">
               
             <KeynoteSpeakerList items={data.keynoteSpeakers.edges} />
 
@@ -461,7 +461,7 @@ export default ({ data }) => (
            
           </div>
           
-                </div>*/}
+                </div>
         {/*Keynote Speakers Area End Here*/}
 
 
@@ -522,22 +522,29 @@ export default ({ data }) => (
               </div>
             </div>
 
-          {/*<div>
+          <div>
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Workshops</h2>
+                    <h2>Ethics in AI Keynote Panelists</h2>
                   </div>
                 </div>
               </div>
 
 
-              <div className="row mb50 " style={{justifyContent: 'center'}}>
+              <div className="row mb30 " style={{justifyContent: 'center'}}>
 
-               <SpeakerCardList items={data.workshopInstructors.edges} />
+               <SpeakerCardList items={data.panelists.edges} />
 
               </div>
-                </div>*/}
+
+              <div className="row justify-content-center mb50">
+                <h2>Moderator &amp; Curator</h2>   
+              </div>
+              <div className="row justify-content-center">
+                  <SpeakerCardList items={data.mods.edges} />
+              </div>
+                </div>
 
 
 
@@ -545,7 +552,7 @@ export default ({ data }) => (
               <div className="col-lg-12">
                 <div className="section-title text-center">
                   <div className="title-text mb50">
-                    <h2>Featured Speakers</h2>
+                    <h2>Speakers</h2>
                   </div>
                 </div>
               </div>
@@ -571,6 +578,7 @@ export default ({ data }) => (
                 </div>*/}
                 {/* /row end*/}
               </div>
+              
               {/* /container end*/}
             </div>
             {/*Whos Speaking Area End Here*/}
@@ -606,6 +614,18 @@ export default ({ data }) => (
         {/*Sponsors CTA Starts Here*/}
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
+
+          <div className="row">
+                <div className="col-lg-12">
+                    <div className="section-title text-center">
+                      <div className="title-text mb30">
+                        <h2>Sponsors</h2>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        <FeaturedSponsorsList data={data.featuredSponsors.edges} /> 
 
           <div className="row">
               <div className="col-lg-12">
@@ -650,19 +670,6 @@ export default ({ data }) => (
                 {/*</div>
     </div>*/}
 
-
-            {/*<div className="row">
-                <div className="col-lg-12">
-                    <div className="section-title text-center">
-                      <div className="title-text mb30">
-                        <h2>Featured Past Sponsors</h2>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-
-        <FeaturedSponsorsList data={data.featuredSponsors.edges} />*/} 
-
         
 
             
@@ -673,7 +680,7 @@ export default ({ data }) => (
         {/*Sponsors CTA Ends Here*/}
 
         {/*Registration CTA Starts Here*/}
-        <div className="our-sponsors-area ptb50">
+        {/*<div className="our-sponsors-area ptb50">
           <div className="container">
 
             <div className="row">
@@ -688,7 +695,7 @@ export default ({ data }) => (
                       <div className="primary-btn" style={{marginTop: '10px', fontWeight: "bold"}}>
                         <OutboundLink className="btn-hero"
                          href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank">
-                          Get Tickets Now
+                          Sold Out
                         </OutboundLink>
                       </div>
                     </div>
@@ -704,7 +711,7 @@ export default ({ data }) => (
             
 
             </div>
-          </div>
+  </div>*/}
           {/*Registration CTA Ends Here*/}
 
 
@@ -758,6 +765,69 @@ export const speakerPageQuery = graphql`
   {
     keynoteSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { keynotes: { eq: true } } }
+      sort: { fields: data___speaker_name }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            linkedIn
+            company_url
+            pronouns
+          }
+        }
+      }
+    }
+
+
+    panelists: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { panelist: { eq: true } } }
+      sort: { fields: data___speaker_name }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          data {
+            speaker_name
+            role
+            company
+            twitter
+            headshot {
+              localFiles {
+                childImageSharp {
+                  fluid(maxWidth: 512, maxHeight: 512) {
+                    ...GatsbyImageSharpFluid_tracedSVG
+                  }
+                }
+              }
+            }
+            linkedIn
+            company_url
+            pronouns
+          }
+        }
+      }
+    }
+
+    mods: allAirtable(
+      filter: { table: { eq: "Speakers" }, data: { moderator: { eq: true } } }
       sort: { fields: data___speaker_name }
     ) {
       edges {

@@ -129,16 +129,15 @@ export default class NavigationBar extends Component {
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/uploadresume">
-                        Resume Upload
-                      </Link>
+                    <OutboundLink
+                    className="nav-link"
+                    href="https://www.atlantatechvillage.com/about/directions"
+                    rel="noreferrer noopener"
+                    target="_blank">Venue
+                    </OutboundLink>
                     </li>
 
-                     <li className="nav-item">
-                      <Link className="nav-link" activeClassName="active" to="/covid-policy">
-                        COVID Policy
-                      </Link>
-                    </li>
+      
 
                     
                     {/*<li className="nav-item">
@@ -173,7 +172,7 @@ export default class NavigationBar extends Component {
                         rel="noreferrer noopener"
                         target="_blank"
                       >
-                        Tickets
+                        Sold Out
                       </OutboundLink>
                     </li>
                   </ul>
@@ -190,7 +189,7 @@ export default class NavigationBar extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Tickets
+                    Sold Out
                   </OutboundLink>
                 </li>
               </ul>
