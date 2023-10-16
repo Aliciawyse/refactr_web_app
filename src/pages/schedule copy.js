@@ -83,7 +83,7 @@ export default ({ data }) => (
       <div className="row">
         <div className="col-lg-12">
           <ul className="nav custom-tab" style={{textAlign:"center"}} id="myTab" role="tablist">
-            {/*<li className="nav-item">
+            <li className="nav-item">
               <a
                 className="nav-link active"
                 id="home-taThursday"
@@ -109,7 +109,7 @@ export default ({ data }) => (
               >
                 September&nbsp;15 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp;1</span>
               </a>
-		</li>*/}
+            </li>
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -120,13 +120,13 @@ export default ({ data }) => (
                 aria-controls="friday"
                 aria-selected="false"
               >
-                October&nbsp;27 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp;1</span>
+                September&nbsp;16 <br/><span style={{fontSize:"12pt"}}>Conference&nbsp;Day&nbsp;2</span>
               </a>
             </li>
             
           </ul>
           <div className="tab-content" id="myTabContent">
-            {/*<div
+            <div
               className="tab-pane fade show active schedule"
               id="wednesday"
               role="tabpanel"
@@ -483,12 +483,12 @@ export default ({ data }) => (
 </table>
 
               
-	</div>*/}
+            </div>
 
 
 
             <div
-              className="tab-pane fade show active schedule"
+              className="tab-pane fade schedule"
               id="friday"
               role="tabpanel"
               aria-labelledby="sunday-tab"
@@ -498,7 +498,6 @@ export default ({ data }) => (
             <table>
 		<tr>
 			<th>08:00</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'8:00 AM'}/>
 		</tr>
     <tr>
 			<th>08:15</th>
@@ -513,27 +512,23 @@ export default ({ data }) => (
 		<tr>
 			<th>09:00</th>
       <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:00 AM'}/>
-	  
 		</tr>
     <tr>
 			<th>09:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:05 AM'}/>
 		</tr>
 		<tr>
 			<th>09:30</th>
-      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:35 AM'}/>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:30 AM'}/>
 		</tr>
     <tr>
 			<th>09:45</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'9:45 AM'}/>
 		</tr>
 		<tr>
 			<th>10:00</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'10:05 AM'}/>
+			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'10:00 AM'}/>
 		</tr>
     <tr>
 			<th>10:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'10:25 AM'}/>
 		</tr>
 		<tr>
 			<th>10:30</th>
@@ -551,19 +546,16 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>11:30</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:30 AM'}/>
 		</tr>
     <tr>
 			<th>11:45</th>
-      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:50 AM'}/>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'11:45 AM'}/>
 		</tr>
 		<tr>
 			<th>12:00</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'12:00 PM'}/>
 		</tr>
 		<tr>
 			<th>12:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'12:20 PM'}/>
 		</tr>
 		<tr>
 			<th>12:30</th>
@@ -573,26 +565,24 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>01:00</th>
-      
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'1:00 PM'}/>
 		</tr>
 		<tr>
 			<th>01:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'1:15 PM'}/>
 		</tr>
 		<tr>
 			<th>01:30</th>
 		</tr>
     <tr>
 			<th>01:45</th>
-      
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'1:45 PM'}/>
 		</tr>
 		<tr>
 			<th>02:00</th>
-      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'2:05 PM'}/>
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'2:00 PM'}/>
 		</tr>
 		<tr>
 			<th>02:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'2:15 PM'}/>
 		</tr>
 		<tr>
 			<th>02:30</th>
@@ -611,11 +601,9 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>03:30</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'3:30 PM'}/>
 		</tr>
     <tr>
 			<th>03:45</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'3:50 PM'}/>
 		</tr>
 		<tr>
 			<th>04:00</th>
@@ -623,24 +611,20 @@ export default ({ data }) => (
 		</tr>
 		<tr>
 			<th>04:15</th>
-      
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:15 PM'}/>
 		</tr>
 		<tr>
 			<th>04:30</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:30 PM'}/>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:40 PM'}/>
 		</tr>
     <tr>
 			<th>04:45</th>
-      
+      <ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:45 PM'}/>
 		</tr>
 		<tr>
 			<th>05:00</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'5:10 PM'}/>
 		</tr>
 		<tr>
 			<th>05:15</th>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'5:15 PM'}/>
 		</tr>
 		<tr>
 			<th>05:30</th>

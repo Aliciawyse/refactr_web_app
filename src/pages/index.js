@@ -615,7 +615,7 @@ export default ({ data }) => (
         <div className="our-sponsors-area ptb50 bg-color">
           <div className="container">
 
-          <div className="row">
+          {/*<div className="row">
                 <div className="col-lg-12">
                     <div className="section-title text-center">
                       <div className="title-text mb30">
@@ -625,7 +625,7 @@ export default ({ data }) => (
                   </div>
               </div>
 
-        <FeaturedSponsorsList data={data.featuredSponsors.edges} /> 
+        <FeaturedSponsorsList data={data.featuredSponsors.edges} />*/}
 
           <div className="row">
               <div className="col-lg-12">

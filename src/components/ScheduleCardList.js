@@ -13,7 +13,7 @@ export const ScheduleCardList = ({ items, day, group }) => {
   console.log('sessions data in schedule?', sessions_data);
 
   return sessions_data.map(session => (
-    <td colspan={session.node.data.colspan} rowspan={session.node.data.rowspan}
+    <td colspan={session.node.data.colspan} rowspan={ session.node.data.begins == '9:05 AM'? 1: session.node.data.rowspan}
     className={"d-block d-xl-table-cell "+`track-bdr-${session.node.data.session__track}`.replace(/[\s&$!]+/g, "")}>
     
       <Link style={{ pointerEvents: session.node.data.session__anchor_truncated? "auto":"none"}} title={session.node.data.session__title}
