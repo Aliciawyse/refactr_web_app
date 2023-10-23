@@ -123,6 +123,12 @@ export default class NavigationBar extends Component {
                     </li>
 
                     <li className="nav-item">
+                      <Link className="nav-link" activeClassName="active" to="/schedule">
+                        Schedule
+                      </Link>
+                    </li>
+
+                    <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
                       Sponsors
                       </Link>

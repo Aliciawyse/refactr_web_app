@@ -765,7 +765,7 @@ export const speakerPageQuery = graphql`
   {
     keynoteSpeakers: allAirtable(
       filter: { table: { eq: "Speakers" }, data: { keynotes: { eq: true } } }
-      sort: { fields: data___speaker_name }
+      sort: { fields: data___order }
     ) {
       edges {
         node {
@@ -786,6 +786,7 @@ export const speakerPageQuery = graphql`
                 }
               }
             }
+            order
             linkedIn
             company_url
             pronouns

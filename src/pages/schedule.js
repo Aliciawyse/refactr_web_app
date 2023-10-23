@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import { ScheduleCardList } from "../components/ScheduleCardList";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
-import "../../src/styles/assets/css/style.css";
+import "../../src/styles/assets/css/style.css?111";
 import "../../src/styles/assets/css/style2.css";
 import "../../src/styles/assets/css/style.css";
 import "../../src/styles/assets/css/responsive.css";
@@ -33,22 +33,22 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
               <div className="section-title text-center">
-              <h2>2022 Events</h2>
+              <h2>Events</h2>
             </div>
             <ol className="breadcrumb">
               <li>
                 <a href="/">Home</a>
               </li>
               <li>|</li>
-              <li><a href="/workshops">Workshops</a></li>
+              {/* <li><a href="/workshops">Workshops</a></li>
+<li>|</li> */}
+              <li> Schedule</li>
               <li>|</li>
-              <li>2022 Schedule</li>
-              <li>|</li>
-              <li><a href="/sessions">2022 Sessions by Track</a></li>
-			  <li>|</li>
+              <li><a href="/sessions">Sessions by Track</a></li>
+			  {/* <li>|</li>
             	<li><a href="/special-events">Special Events</a></li>
 			  <li>|</li>
-			  <li><a href="/book-signing">Book Signings</a></li>
+<li><a href="/book-signing">Book Signings</a></li> */}
             </ol>
                 
               </div>
@@ -628,11 +628,11 @@ export default ({ data }) => (
 		<tr>
 			<th>04:30</th>
 			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:30 PM'}/>
-			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:40 PM'}/>
+			
 		</tr>
     <tr>
 			<th>04:45</th>
-      
+			<ScheduleCardList items={data.allAirtable.edges} day={'Friday'} group={'4:40 PM'}/>
 		</tr>
 		<tr>
 			<th>05:00</th>
@@ -744,7 +744,7 @@ export const all_sessions = graphql`
   {
     allAirtable(
       filter: { table: { eq: "FullSchedule" }, data: { display: { eq: "include" } }  }
-      sort: { fields: [data___rowspan, data___TableDisplayOrder] }
+      sort: { fields: [data___TableDisplayOrder, data___rowspan] }
       ) {
       edges {
         node {
@@ -764,6 +764,7 @@ export const all_sessions = graphql`
             session__anchor_truncated
             colspan
             rowspan
+			url
             speaker_meta_image {
               thumbnails {
                 large {

@@ -97,23 +97,23 @@ export default ({ data }) => (
             <div className="col-lg-12">
               <div className="about-content">
                 <div className="section-title text-center">
-                  <h2>2023 Events</h2>
+                  <h2>Events</h2>
                 </div>
-                {/*<ol className="breadcrumb">
+                <ol className="breadcrumb">
                   <li>
                     <a href="/">Home</a>
                   </li>
                   <li>|</li>
-                  <li><a href="/workshops">Workshops</a></li>
-                  <li>|</li>
+                  {/* <li><a href="/workshops">Workshops</a></li>
+                  <li>|</li> */}
                   <li><a href="/schedule">Schedule</a></li>
                   <li>|</li>
-                  <li>2022 Sessions by Track</li>
-                  <li>|</li>
+                  <li>Sessions by Track</li>
+                  {/* <li>|</li>
                   <li><a href="/special-events">Special Events</a></li>
                   <li>|</li>
-			            <li><a href="/book-signing">Book Signings</a></li>
-                </ol>*/}
+                <li><a href="/book-signing">Book Signings</a></li> */}
+                </ol>
               </div>
             </div>
             {/* /col*/}
@@ -144,7 +144,7 @@ export default ({ data }) => (
               </div>*/}
 
         {/*Event Topics*/}
-        {/* <div className="event-topics-tabs">
+        <div className="event-topics-tabs">
           <div className="tabs-box">
             <ul className="tab-btns tab-buttons clearfix">
 
@@ -160,18 +160,18 @@ export default ({ data }) => (
             </Link>
               
             <Link
-              to="/sessions/#Community&Accessibility"
+              to="/sessions/#Culture&Community"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab2" className="tab-btn">
-                <div className="track-bdr-CommunityAccessibility">
-                        Community &amp; Accessibility
+                <div className="track-bdr-CultureCommunity">
+                        Culture &amp; Community
                   </div>
                 </li>
               </Link>
 
-              <Link
+              {/* <Link
                   to="/sessions/#Cool$h!t"
                   rel="noreferrer noopener"
                 >
@@ -180,9 +180,9 @@ export default ({ data }) => (
                     Cool Sh!t
                 </div>
               </li>
-            </Link>
+            </Link> */}
 
-              <Link
+              {/* <Link
                     to="/sessions/#Culture"
                     rel="noreferrer noopener"
                   >
@@ -191,9 +191,9 @@ export default ({ data }) => (
                   Culture
                   </div>
                 </li>
-              </Link>
+          </Link> */}
             
-              <Link
+              {/* <Link
                     to="/sessions/#Data"
                     rel="noreferrer noopener"
                   >
@@ -202,9 +202,9 @@ export default ({ data }) => (
                       Data
                   </div>
                 </li>
-              </Link>
+          </Link> */}
 
-              <Link
+              {/* <Link
               to="/sessions/#FrontendEngineering"
               rel="noreferrer noopener"
               className="test"
@@ -214,7 +214,7 @@ export default ({ data }) => (
                     Frontend &amp; Engineering
                   </div>
                 </li>
-              </Link>
+          </Link> */}
 
               <Link
                     to="/sessions/#Keynotes"
@@ -229,19 +229,19 @@ export default ({ data }) => (
             
               <Link
               id="test"
-              to="#SoftwareEngineering"
+              to="#Software&Systems"
               rel="noreferrer noopener"
               className="test"
               >
                 <li data-tab="#tab7" className="tab-btn">
-                <div className="track-bdr-SoftwareEngineering">
-                      Software Engineering
+                <div className="track-bdr-SoftwareSystems">
+                      Software &amp; Systems
                   </div>
                 </li>
               </Link>
      
 
-              <Link
+              {/* <Link
                     to="/sessions/#Workshops"
                     rel="noreferrer noopener"
                   >
@@ -250,14 +250,14 @@ export default ({ data }) => (
                   Workshops
                   </div>
                 </li>
-              </Link>
+          </Link> */}
 
               
 
 
             </ul>
           </div>
-            </div> */}
+            </div>
         {/*End Product Info Tabs*/}
       </div>
     </section>

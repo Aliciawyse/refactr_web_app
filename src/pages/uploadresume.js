@@ -130,16 +130,16 @@ export default () => (
             {/* /col end*/}
 
             <div className="col-lg-3 motivational-concepts-area d-none d-xl-block">
-              <div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
-                <div className="section-title text-center">
-                <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>REGISTER NOW</p>
+            <div className="testimonial-wrapper bg-color" style={{border: "1px solid #c9c9c9"}}>
+            <div className="section-title text-center">
+              <p style={{fontSize:"1.3em", fontWeight:"bold", color:"#1E1C7F"}}>SUBMIT YOUR RESUME</p>
 
-                <p> Get your ticket to attend REFACTR.TECH 2023 for a day full of keynotes, tech sessions, and of course, parties!
-                </p>
+              <p> Share your resume and personal info with our sponsors! 
+              </p>
 
-                <p><OutboundLink href="https://reg.connectevents.io/ConnectEvents/rtech2023/" target="_blank" style={{color: "#C418A3"}}>Register</OutboundLink></p>
-              </div>
-              </div>
+              <p><a href="/uploadresume" target="_blank" style={{color: "#C418A3"}}>Upload Now</a></p>
+            </div>
+          </div>
 
               {/*<div className="testimonial-wrapper bg-color" style={{marginTop: "30px", border: "1px solid #c9c9c9"}}>
                 <div className="section-title text-center">

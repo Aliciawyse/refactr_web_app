@@ -215,7 +215,7 @@ ul {
       background: #FCB400 !important;
     }
 
-    h2.track-title-CommunityAccessibility:before{ 
+    h2.track-title-CultureCommunity:before{ 
       background: #B2158B !important;
     }
 
@@ -239,12 +239,20 @@ ul {
       background: #444 !important;
     }
 
-    h2.track-title-SoftwareEngineering:before{ 
+    h2.track-title-SoftwareSystems:before{ 
       background: #06A09B !important;
     }
 
-    h2.track-title-Workshops:before{ 
+    h2.track-title-Meal:before{ 
       background: #2750AE !important;
+    }
+
+    h2.track-title-Vendor:before{
+      background: #3cd2b4 !important;
+    }
+
+    h2.track-title-Break:before{
+      background: #999 !important;
     }
 
 
@@ -274,7 +282,7 @@ ul {
       background: #FCB400 !important;
     }
 
-    .track-CommunityAccessibility{ 
+    .track-CultureCommunity{ 
       background: #B2158B !important;
     }
 
@@ -298,7 +306,7 @@ ul {
       background: #444 !important;
     }
 
-    .track-SoftwareEngineering{ 
+    .track-SoftwareSystems{ 
       background: #06A09B !important;
     }
 
@@ -311,7 +319,19 @@ ul {
     }
 
     .track-Social{ 
-      background: #20D9D2 !important;
+      background: #18BFFF !important;
+    }
+
+    .track-Meal{ 
+      background: #2750AE !important;
+    }
+
+    .track-Vendor{
+      background: #3cd2b4 !important;
+    }
+
+    .track-Break{
+      background: #999 !important;
     }
 
 
@@ -2808,7 +2828,7 @@ a {
     background-color:#FCB400;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-CommunityAccessibility{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-CultureCommunity{
     background-color:#B2158B;
   }
 
@@ -2832,7 +2852,7 @@ a {
     background-color:#444;
   }
 
-  .event-topics-tabs .tab-btns li:hover .track-bdr-SoftwareEngineering{
+  .event-topics-tabs .tab-btns li:hover .track-bdr-SoftwareSystems{
     background-color:#06A09B;
   }
 
@@ -2923,7 +2943,7 @@ a {
   border-left: 6px solid #FCB400;
 }
 
-.track-bdr-CommunityAccessibility{
+.track-bdr-CultureCommunity{
   border-left: 6px solid #B2158B;
 }
 
@@ -2947,11 +2967,15 @@ a {
   border-left: 6px solid #444;
 }
 
-.track-bdr-SoftwareEngineering{
+.track-bdr-Break{
+  border-left: 6px solid #999;
+}
+
+.track-bdr-SoftwareSystems{
   border-left: 6px solid #06A09B;
 }
 
-.track-bdr-Workshops{
+.track-bdr-Meal{
   border-left: 6px solid #2750AE;
 }
 
@@ -2960,7 +2984,11 @@ a {
 }
 
 .track-bdr-Social{
-  border-left: 6px solid #20D9D2; 
+  border-left: 6px solid #18BFFF; 
+}
+
+.track-bdr-Vendor{
+  border-left: 6px solid #3cd2b4;
 }
 
 .anim-icons{
