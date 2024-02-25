@@ -110,6 +110,8 @@ export default class NavigationBar extends Component {
                         Jobs
                       </Link>
                     </li>*/}
+                    
+                    
                     {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/travel">
                         Travel
@@ -123,10 +125,19 @@ export default class NavigationBar extends Component {
                     </li>
 
                     <li className="nav-item">
+                    <OutboundLink
+                    className="nav-link"
+                    href="https://www.meetup.com/refactr-tech/"
+                    rel="noreferrer noopener"
+                    target="_blank">Events
+                    </OutboundLink>
+              </li>
+
+                    {/*<li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/schedule">
                         Schedule
                       </Link>
-                    </li>
+                </li>*/}
 
                     <li className="nav-item">
                       <Link className="nav-link" activeClassName="active" to="/sponsors">
@@ -134,14 +145,14 @@ export default class NavigationBar extends Component {
                       </Link>
                     </li>
 
-                    <li className="nav-item">
+                    {/*<li className="nav-item">
                     <OutboundLink
                     className="nav-link"
                     href="https://www.atlantatechvillage.com/about/directions"
                     rel="noreferrer noopener"
                     target="_blank">Venue
                     </OutboundLink>
-                    </li>
+              </li>*/}
 
       
 
@@ -174,11 +185,11 @@ export default class NavigationBar extends Component {
                     <li className="nav-item d-lg-none ">
                       <OutboundLink
                         className="nav-link"
-                        href="https://reg.connectevents.io/ConnectEvents/rtech2023/"
+                        href="https://www.meetup.com/refactr-tech/"
                         rel="noreferrer noopener"
                         target="_blank"
                       >
-                        Sold Out
+                        Join
                       </OutboundLink>
                     </li>
                   </ul>
@@ -191,11 +202,11 @@ export default class NavigationBar extends Component {
                 <li className="header-ticket">
                   <OutboundLink
                     className="pr-0"
-                    href="https://reg.connectevents.io/ConnectEvents/rtech2023/"
+                    href="https://www.meetup.com/refactr-tech/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Sold Out
+                    Join
                   </OutboundLink>
                 </li>
               </ul>
