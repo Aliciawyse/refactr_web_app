@@ -5,10 +5,10 @@ sharp.cache(false)
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
-  
+
   if (node.internal.type === `Airtable` && node.table === `Speakers`) {
     const slug =
-      "/speakers/" + node.data.anchor
+      "/speakers/" + node.data.speaker_anchor
     createNodeField({
       node,
       name: `slug`,
@@ -25,11 +25,14 @@ exports.onCreateNode = ({ node, actions }) => {
       value: slug
     });
   }
+
 };
 
 exports.createPages = ({ actions, graphql }) => {
+
+
   const { createPage } = actions;
-  // Go get the data that satisfy 
+  // Go get the data that satisfy
   return graphql(
     `
       query {
@@ -51,6 +54,8 @@ exports.createPages = ({ actions, graphql }) => {
             }
           }
         }
+        
+  
       }
     `
   ).then(result => {
@@ -77,5 +82,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       });
     });
+    
+
   });
 };

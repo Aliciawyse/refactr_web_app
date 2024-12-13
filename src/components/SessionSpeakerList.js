@@ -3,7 +3,7 @@ import { SessionSpeakerDetail } from "./SessionSpeakerDetail";
 
 export const SessionSpeakerList = ({speakers=[]}) => {
 
-    if (speakers.length === 0){
+    if (speakers === null){
         return (<div>Sorry no speaker!</div>)
     }
 
